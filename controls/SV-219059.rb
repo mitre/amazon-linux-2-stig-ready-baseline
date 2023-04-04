@@ -13,7 +13,7 @@ control 'SV-219059' do
   tag fix_id: 'F-36318r602663_fix'
   tag cci: ['CCI-000366', 'CCI-000778', 'CCI-001958']
   tag legacy: ['V-100023', 'SV-109127']
-  tag nist: ['CM-6 b']
+  tag nist: ['CM-6 b', 'IA-3']
   tag subsystems: ["gui", "automount"]
   tag 'host'
 

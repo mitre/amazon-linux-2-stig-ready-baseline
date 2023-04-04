@@ -14,7 +14,7 @@ control 'SV-228564' do
   tag fix_id: 'F-23603r419770_fix'
   tag cci: ['CCI-000162', 'CCI-000163', 'CCI-000164', 'CCI-001314']
   tag legacy: []
-  tag nist: ['AU-9']
+  tag nist: ['AU-9', 'SI-11 c']
   tag subsystems: ["audit"]
   tag 'host'
 
