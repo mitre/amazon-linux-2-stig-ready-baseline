@@ -79,7 +79,7 @@ control 'SV-204444' do
 
     users_to_ignore = [
       'root',
-      'system_u',
+      'system_u'
     ]
 
     seusers.each do |user, context|
@@ -91,7 +91,7 @@ control 'SV-204444' do
         elsif admin_logins.include?(user)
           let(:valid_users) do
             [
-              'staff_u',
+              'staff_u'
             ]
           end
         else
@@ -99,7 +99,7 @@ control 'SV-204444' do
             [
               'user_u',
               'guest_u',
-              'xguest_u',
+              'xguest_u'
             ]
           end
         end

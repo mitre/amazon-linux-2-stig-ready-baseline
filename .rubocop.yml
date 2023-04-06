@@ -13,5 +13,9 @@ Style/TrailingCommaInHashLiteral:
   Enabled: true
   EnforcedStyleForMultiline: no_comma
 
+Style/TrailingCommaInArrayLiteral:
+  Enabled: true
+  EnforcedStyleForMultiline: no_comma
+
 Style/BlockDelimiters:
   Enabled: false
