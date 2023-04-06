@@ -39,8 +39,7 @@ control 'SV-204422' do
       its('lines') { should match_pam_rule("password (required|requisite|sufficient) pam_(unix|pwhistory).so remember=#{reuse_generations}") }
     end
     describe pam('/etc/pam.d/password-auth') do
-      its('lines') {
-        should match_pam_rule("password (required|requisite|sufficient) pam_(unix|pwhistory).soremember=#{reuse_generations}") }
+      its('lines') { should match_pam_rule("password (required|requisite|sufficient) pam_(unix|pwhistory).soremember=#{reuse_generations}") }
     end
   end
 
