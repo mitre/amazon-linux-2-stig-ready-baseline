@@ -1,6 +1,8 @@
 control 'SV-251702' do
   title 'The Red Hat Enterprise Linux operating system must not have accounts configured with blank or null passwords.'
   desc  'If an account has an empty password, anyone could log on and run commands with the privileges of that account. Accounts with empty passwords should never be used in operational environments.'
+  desc 'check', "Check the \"/etc/shadow\" file for blank passwords with the following command:\n\n$ sudo awk -F: '!$2 {print $1}' /etc/shadow\n\nIf the command returns any results, this is a finding."
+  desc 'fix', "Configure all accounts on the system to have a password or lock the account with the following commands:\n\nPerform a password reset:\n$ sudo passwd [username]\nLock an account:\n$ sudo passwd -l [username]"
   impact 0.7
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
@@ -11,10 +13,9 @@ control 'SV-251702' do
   tag fix_id: 'F-55093r809219_fix'
   tag cci: ['CCI-000366']
   tag legacy: []
+  tag nist: ['CM-6 b']
   tag subsystems: ["password", "/etc/shadow"]
   tag 'host', 'container'
-  tag check: "Check the \"/etc/shadow\" file for blank passwords with the following command:\n\n$ sudo awk -F: '!$2 {print $1}' /etc/shadow\n\nIf the command returns any results, this is a finding."
-  tag fix: "Configure all accounts on the system to have a password or lock the account with the following commands:\n\nPerform a password reset:\n$ sudo passwd [username]\nLock an account:\n$ sudo passwd -l [username]"
 
   empty_pw_users = shadow.where { password == '' }.users
 
