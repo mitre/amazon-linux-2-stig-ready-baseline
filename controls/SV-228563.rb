@@ -14,15 +14,15 @@ control 'SV-228563' do
   tag cci: ['CCI-000366']
   tag legacy: []
   tag nist: ['CM-6 b']
-  tag subsystems: ["world_writable","ww_dirs"]
+  tag subsystems: ['world_writable', 'ww_dirs']
   tag 'host'
 
   if virtualization.system.eql?('docker')
     impact 0.0
-    describe "Control not applicable to a container" do
-      skip "Control not applicable to a container"
+    describe 'Control not applicable to a container' do
+      skip 'Control not applicable to a container'
     end
-  else 
+  else
     ww_dirs = Set[]
     partitions = etc_fstab.params.map { |partition| partition['mount_point'] }.uniq
     partitions.each do |part|

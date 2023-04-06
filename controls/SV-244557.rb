@@ -14,37 +14,33 @@ control 'SV-244557' do
   tag cci: ['CCI-000213']
   tag legacy: []
   tag nist: ['AC-3']
-  tag subsystems: ["grub"]
+  tag subsystems: ['grub']
   tag 'host'
 
   if virtualization.system.eql?('docker')
     impact 0.0
-    describe "Control not applicable to a container" do
-      skip "Control not applicable to a container"
+    describe 'Control not applicable to a container' do
+      skip 'Control not applicable to a container'
     end
-  else 
-    unless file('/sys/firmware/efi').exist?
-      if os[:release] >= '7.2'
+  elsif file('/sys/firmware/efi').exist?
+    impact 0.0
+    describe 'System running UEFI' do
+      skip 'The System is running UEFI, this control is Not Applicable.'
+    end
+  elsif os[:release] >= '7.2'
+    options = {
+        assignment_regex: /^\s*(.*)=\"?([^\"]+)\"?$/
+      }
 
-        options = {
-          assignment_regex: /^\s*(.*)=\"?([^\"]+)\"?$/
-        }
+    describe parse_config_file(input('grub_main_cfg'), options) do
+      its('set superusers') { should_not be nil }
+      its('set superusers') { should_not be_in users.usernames }
+    end
 
-        describe parse_config_file(input('grub_main_cfg'), options) do
-          its('set superusers') { should_not be nil }
-          its('set superusers') { should_not be_in users.usernames }
-        end
-      else
-        impact 0.0
-        describe 'System running version of RHEL prior to 7.2' do
-          skip 'The System is running an outdated version of RHEL, this control is Not Applicable.'
-        end
-      end
-    else
-      impact 0.0
-      describe 'System running UEFI' do
-        skip 'The System is running UEFI, this control is Not Applicable.'
-      end
+  else
+    impact 0.0
+    describe 'System running version of RHEL prior to 7.2' do
+      skip 'The System is running an outdated version of RHEL, this control is Not Applicable.'
     end
   end
 end

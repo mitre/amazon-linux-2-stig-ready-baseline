@@ -12,3 +12,6 @@ Style/TrailingCommaInHashLiteral:
   Description: 'https://docs.rubocop.org/rubocop/cops_style.html#styletrailingcommainhashliteral'
   Enabled: true
   EnforcedStyleForMultiline: no_comma
+
+Style/BlockDelimiters:
+  Enabled: false

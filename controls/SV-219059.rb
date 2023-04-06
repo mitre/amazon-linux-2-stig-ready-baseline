@@ -14,38 +14,35 @@ control 'SV-219059' do
   tag cci: ['CCI-000366', 'CCI-000778', 'CCI-001958']
   tag legacy: ['V-100023', 'SV-109127']
   tag nist: ['CM-6 b', 'IA-3']
-  tag subsystems: ["gui", "automount"]
+  tag subsystems: ['gui', 'automount']
   tag 'host'
 
   if virtualization.system.eql?('docker')
     impact 0.0
-    describe "Control not applicable within a container" do
-      skip "Control not applicable within a container"
+    describe 'Control not applicable within a container' do
+      skip 'Control not applicable within a container'
     end
-  else
-    if package('gnome-desktop3').installed?
-
-      options = {
+  elsif package('gnome-desktop3').installed?
+    options = {
         assignment_regex: /^\s*([^=]*?)\s*=\s*(.*?)\s*$/
       }
 
-      describe parse_config_file(input('automount_config'), options) do
-        its('automount') { should cmp 'false' }
-        its('automount-open') { should cmp 'false' }
-        its('autorun-never') { should cmp 'true' }
-      end
-      describe file(input('automount_locks_config')) do
-        its('content') { should match /automount$/ }
-        its('content') { should match /automount-open$/ }
-        its('content') { should match /autorun-never$/ }
-      end
-    else
-      impact 0.0
-      describe 'The system does not have GNOME installed' do
-        skip "The system does not have GNOME installed, this requirement is Not
+    describe parse_config_file(input('automount_config'), options) do
+      its('automount') { should cmp 'false' }
+      its('automount-open') { should cmp 'false' }
+      its('autorun-never') { should cmp 'true' }
+    end
+    describe file(input('automount_locks_config')) do
+      its('content') { should match /automount$/ }
+      its('content') { should match /automount-open$/ }
+      its('content') { should match /autorun-never$/ }
+    end
+
+  else
+    impact 0.0
+    describe 'The system does not have GNOME installed' do
+      skip "The system does not have GNOME installed, this requirement is Not
         Applicable."
-      end
     end
   end
-
 end

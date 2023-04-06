@@ -13,14 +13,14 @@ control 'SV-250312' do
   tag fix_id: 'F-53700r792842_fix'
   tag cci: ['CCI-002165', 'CCI-002235']
   tag legacy: []
-  tag nist: ['AC-3 (4)','AC-6 (10)']
-  tag subsystems: ["selinux"]
+  tag nist: ['AC-3 (4)', 'AC-6 (10)']
+  tag subsystems: ['selinux']
   tag 'host'
 
   if virtualization.system.eql?('docker')
     impact 0.0
-    describe "Control not applicable within a container -- kernel config" do
-      skip "Control not applicable within a container -- kernel config"
+    describe 'Control not applicable within a container -- kernel config' do
+      skip 'Control not applicable within a container -- kernel config'
     end
   else
 
@@ -31,9 +31,8 @@ control 'SV-250312' do
 
     selinux_users = command('semanage user -l').stdout.strip
 
-    describe "SELinux user-role mappings" do
+    describe 'SELinux user-role mappings' do
       expected_mapping.keys.each do |user|
-
         staff_user_mapping = selinux_users.match(/^#{user}.+\d+\s+(?<roles>.*)$/)
         staff_user_roles = staff_user_mapping['roles'].split.to_set unless staff_user_mapping.nil?
 

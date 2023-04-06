@@ -29,7 +29,7 @@ control 'SV-204422' do
   tag 'fix_id': 'F-4546r88459_fix'
   tag 'cci': ['CCI-000200']
   tag nist: ['IA-5 (1) (e)']
-  tag subsystems: ["pam","password"]
+  tag subsystems: ['pam', 'password']
   tag 'host', 'container'
 
   reuse_generations = input('expected_reuse_generations')
@@ -43,8 +43,8 @@ control 'SV-204422' do
     end
   end
 
-  describe "input value" do
-    it "for reuse_generations should be in line with maximum/minimum allowed values by policy" do
+  describe 'input value' do
+    it 'for reuse_generations should be in line with maximum/minimum allowed values by policy' do
       expect(input('expected_reuse_generations')).to cmp >= input('min_reuse_generations')
     end
   end
