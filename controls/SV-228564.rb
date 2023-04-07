@@ -15,13 +15,13 @@ control 'SV-228564' do
   tag cci: ['CCI-000162', 'CCI-000163', 'CCI-000164', 'CCI-001314']
   tag legacy: []
   tag nist: ['AU-9', 'SI-11 c']
-  tag subsystems: ["audit"]
+  tag subsystems: ['audit']
   tag 'host'
 
   if virtualization.system.eql?('docker')
     impact 0.0
-    describe "Control not applicable - audit config must be done on the host" do
-      skip "Control not applicable - audit config must be done on the host"
+    describe 'Control not applicable - audit config must be done on the host' do
+      skip 'Control not applicable - audit config must be done on the host'
     end
   else
     describe file(auditd_conf.log_file) do

@@ -13,17 +13,17 @@ control 'SV-250314' do
   tag fix_id: 'F-53702r792848_fix'
   tag cci: ['CCI-002165', 'CCI-002235']
   tag legacy: []
-  tag nist: ['AC-3 (4)','AC-6 (10)']
-  tag subsystems: ["selinux"]
+  tag nist: ['AC-3 (4)', 'AC-6 (10)']
+  tag subsystems: ['selinux']
   tag 'host'
 
   if virtualization.system.eql?('docker')
     impact 0.0
-    describe "Control not applicable within a container -- kernel config" do
-      skip "Control not applicable within a container -- kernel config"
+    describe 'Control not applicable within a container -- kernel config' do
+      skip 'Control not applicable within a container -- kernel config'
     end
   else
-    describe command("grep sysadm_r /etc/sudoers /etc/sudoers.d/*").stdout.strip do
+    describe command('grep sysadm_r /etc/sudoers /etc/sudoers.d/*').stdout.strip do
       it { should match /TYPE=sysadm_t\s+ROLE=sysadm_r/ }
       it { should_not match /\n/ }
     end

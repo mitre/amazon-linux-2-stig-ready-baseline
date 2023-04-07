@@ -14,13 +14,13 @@ control 'SV-251703' do
   tag cci: ['CCI-000366']
   tag legacy: []
   tag nist: ['CM-6 b']
-  tag subsystems: ["sudo"]
+  tag subsystems: ['sudo']
   tag 'host'
 
-  if virtualization.system.eql?('docker') && !command("sudo").exist?
+  if virtualization.system.eql?('docker') && !command('sudo').exist?
     impact 0.0
-    describe "Control not applicable within a container without sudo enabled" do
-      skip "Control not applicable within a container without sudo enabled"
+    describe 'Control not applicable within a container without sudo enabled' do
+      skip 'Control not applicable within a container without sudo enabled'
     end
   else
     options = {

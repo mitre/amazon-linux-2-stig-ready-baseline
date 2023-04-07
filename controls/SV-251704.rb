@@ -15,13 +15,13 @@ control 'SV-251704' do
   tag cci: ['CCI-002038']
   tag legacy: []
   tag nist: ['IA-11']
-  tag subsystems: ["sudo"]
+  tag subsystems: ['sudo']
   tag 'host'
 
-  if virtualization.system.eql?('docker') && !command("sudo").exist?
+  if virtualization.system.eql?('docker') && !command('sudo').exist?
     impact 0.0
-    describe "Control not applicable within a container without sudo enabled" do
-      skip "Control not applicable within a container without sudo enabled"
+    describe 'Control not applicable within a container without sudo enabled' do
+      skip 'Control not applicable within a container without sudo enabled'
     end
   else
     describe parse_config_file('/etc/pam.d/sudo') do

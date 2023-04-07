@@ -13,14 +13,14 @@ control 'SV-250313' do
   tag fix_id: 'F-53701r792845_fix'
   tag cci: ['CCI-002165', 'CCI-002235']
   tag legacy: []
-  tag nist: ['AC-3 (4)','AC-6 (10)']
-  tag subsystems: ["ssh"]
+  tag nist: ['AC-3 (4)', 'AC-6 (10)']
+  tag subsystems: ['ssh']
   tag 'host'
 
   if virtualization.system.eql?('docker')
     impact 0.0
-    describe "Control not applicable within a container -- kernel config" do
-      skip "Control not applicable within a container -- kernel config"
+    describe 'Control not applicable within a container -- kernel config' do
+      skip 'Control not applicable within a container -- kernel config'
     end
   else
     describe command('getsebool ssh_sysadm_login').stdout.strip do

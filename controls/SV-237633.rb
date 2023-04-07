@@ -14,18 +14,18 @@ control 'SV-237633' do
   tag cci: ['CCI-000366']
   tag legacy: []
   tag nist: ['CM-6 b']
-  tag subsystems: ["sudo"]
+  tag subsystems: ['sudo']
   tag 'host'
 
-  if virtualization.system.eql?('docker') && !command("sudo").exist?
+  if virtualization.system.eql?('docker') && !command('sudo').exist?
     impact 0.0
-    describe "Control not applicable within a container without sudo enabled" do
-      skip "Control not applicable within a container without sudo enabled"
+    describe 'Control not applicable within a container without sudo enabled' do
+      skip 'Control not applicable within a container without sudo enabled'
     end
   else
     sudoers = command("grep -iw 'ALL' /etc/sudoers /etc/sudoers.d/*").stdout
-    describe "Sudoers file" do
-      it "should restrict access to privilege escalation" do
+    describe 'Sudoers file' do
+      it 'should restrict access to privilege escalation' do
         expect(sudoers).not_to match(/ALL\s+ALL=\(ALL[:ALL]?\)\s+ALL/)
       end
     end

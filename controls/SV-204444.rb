@@ -48,13 +48,13 @@ control 'SV-204444' do
   tag 'fix_id': 'F-4568r792825_fix'
   tag 'cci': ['CCI-002165', 'CCI-002235']
   tag nist: ['AC-3 (4)', 'AC-6 (10)']
-  tag subsystems: ["selinux"]
+  tag subsystems: ['selinux']
   tag 'host'
 
   if virtualization.system.eql?('docker')
     impact 0.0
-    describe "Control not applicable - SELinux settings must be handled on host" do
-      skip "Control not applicable - SELinux settings must be handled on host"
+    describe 'Control not applicable - SELinux settings must be handled on host' do
+      skip 'Control not applicable - SELinux settings must be handled on host'
     end
   else
 

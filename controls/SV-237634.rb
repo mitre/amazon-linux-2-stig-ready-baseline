@@ -14,52 +14,52 @@ control 'SV-237634' do
   tag cci: ['CCI-002227']
   tag legacy: []
   tag nist: ['AC-6 (5)']
-  tag subsystems: ["sudo"]
+  tag subsystems: ['sudo']
   tag 'host'
 
-  if virtualization.system.eql?('docker') && !command("sudo").exist?
+  if virtualization.system.eql?('docker') && !command('sudo').exist?
     impact 0.0
-    describe "Control not applicable within a container without sudo enabled" do
-      skip "Control not applicable within a container without sudo enabled"
+    describe 'Control not applicable within a container without sudo enabled' do
+      skip 'Control not applicable within a container without sudo enabled'
     end
   else
     sudoers_settings = command("egrep -i '(!rootpw|!targetpw|!runaspw)' /etc/sudoers /etc/sudoers.d/* | grep -v '#'").stdout.strip
-    
+
     target_match = sudoers_settings.scan(/^([^:]+):Defaults\s+!targetpw$/).flatten
     root_match = sudoers_settings.scan(/^([^:]+):Defaults\s+!rootpw$/).flatten
     runas_match = sudoers_settings.scan(/^([^:]+):Defaults\s+!runaspw$/).flatten
 
     target_match_file = target_match.empty? ? nil : target_match.first
 
-    describe "!targetpw flag" do
-      it "should be set" do
+    describe '!targetpw flag' do
+      it 'should be set' do
         expect(target_match).not_to be_empty
       end
-      it "should be set in exactly one file" do
+      it 'should be set in exactly one file' do
         expect(target_match.count).to cmp 1
       end
     end
 
-    describe "!rootpw flag" do
-      it "should be set" do
+    describe '!rootpw flag' do
+      it 'should be set' do
         expect(root_match).not_to be_empty
       end
-      it "should be set in the same file as targetpw" do
+      it 'should be set in the same file as targetpw' do
         expect(root_match.first).to cmp target_match_file
       end
-      it "should be set in exactly one file" do
+      it 'should be set in exactly one file' do
         expect(root_match.count).to cmp 1
       end
     end
 
-    describe "!runaspw flag" do
-      it "should be set" do
+    describe '!runaspw flag' do
+      it 'should be set' do
         expect(runas_match).not_to be_empty
       end
-      it "should be set in the same file as targetpw" do
+      it 'should be set in the same file as targetpw' do
         expect(runas_match.first).to cmp target_match_file
       end
-      it "should be set in exactly one file" do
+      it 'should be set in exactly one file' do
         expect(runas_match.count).to cmp 1
       end
     end

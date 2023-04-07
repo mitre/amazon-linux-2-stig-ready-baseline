@@ -14,7 +14,7 @@ control 'SV-251705' do
   tag cci: ['CCI-002696']
   tag legacy: []
   tag nist: ['SI-6 a']
-  tag subsystems: ["file_integrity_tool"]
+  tag subsystems: ['file_integrity_tool']
   tag 'host', 'container'
 
   describe package(input('file_integrity_tool')) do

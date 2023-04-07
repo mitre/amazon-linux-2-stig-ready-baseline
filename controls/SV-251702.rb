@@ -14,7 +14,7 @@ control 'SV-251702' do
   tag cci: ['CCI-000366']
   tag legacy: []
   tag nist: ['CM-6 b']
-  tag subsystems: ["password", "/etc/shadow"]
+  tag subsystems: ['password', '/etc/shadow']
   tag 'host', 'container'
 
   empty_pw_users = shadow.where { password == '' }.users

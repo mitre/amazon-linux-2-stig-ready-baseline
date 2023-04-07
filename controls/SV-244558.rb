@@ -14,32 +14,30 @@ control 'SV-244558' do
   tag cci: ['CCI-000213']
   tag legacy: []
   tag nist: ['AC-3']
-  tag subsystems: ["grub"]
+  tag subsystems: ['grub']
   tag 'host', 'container'
 
   if virtualization.system.eql?('docker')
     impact 0.0
-    describe "Control not applicable to a container" do
-      skip "Control not applicable to a container"
+    describe 'Control not applicable to a container' do
+      skip 'Control not applicable to a container'
     end
-  else 
-    if file('/sys/firmware/efi').exist?
-      if os[:release] >= '7.2'
-        describe parse_config_file(input('grub_uefi_main_cfg')) do
-          its('set superusers') { should exist }
-          its('set superusers') { should_not be_in users.usernames }
-        end
-      else
-        impact 0.0
-        describe 'System running version of RHEL prior to 7.2' do
-          skip 'The System is running an outdated version of RHEL, this control is Not Applicable.'
-        end
+  elsif file('/sys/firmware/efi').exist?
+    if os[:release] >= '7.2'
+      describe parse_config_file(input('grub_uefi_main_cfg')) do
+        its('set superusers') { should exist }
+        its('set superusers') { should_not be_in users.usernames }
       end
     else
       impact 0.0
-      describe 'System running BIOS' do
-        skip 'The System is running BIOS, this control is Not Applicable.'
+      describe 'System running version of RHEL prior to 7.2' do
+        skip 'The System is running an outdated version of RHEL, this control is Not Applicable.'
       end
+    end
+  else
+    impact 0.0
+    describe 'System running BIOS' do
+      skip 'The System is running BIOS, this control is Not Applicable.'
     end
   end
 end
