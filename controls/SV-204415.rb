@@ -4,7 +4,6 @@ control 'SV-204415' do
   desc 'Passwords need to be protected at all times, and encryption is the standard method for protecting passwords.
     If passwords are not encrypted, they can be plainly read (i.e., clear text) and easily compromised. Passwords
     encrypted with a weak algorithm are no more protected than if they are kept in plain text.'
-  desc 'rationale', ''
   desc 'check', 'Verify the PAM system service is configured to store only encrypted representations of passwords.
     The strength of encryption that must be used to hash passwords for all accounts is SHA512.
     Check that the system is configured to create SHA512 hashed passwords with the following command:
@@ -15,33 +14,34 @@ control 'SV-204415' do
     If the "/etc/pam.d/system-auth" and "/etc/pam.d/password-auth" configuration files allow for password hashes other
     than SHA512 to be used, this is a finding.'
   desc 'fix', 'Configure the operating system to store only SHA512 encrypted representations of passwords.
-    Add the following line in "/etc/pam.d/system-auth":
-    pam_unix.so sha512 shadow try_first_pass use_authtok
-    Add the following line in "/etc/pam.d/password-auth":
-    pam_unix.so sha512 shadow try_first_pass use_authtok
-    Note: Manual changes to the listed files may be overwritten by the "authconfig" program. The "authconfig" program
-    should not be used to update the configurations listed in this requirement.'
+
+Add the following line in "/etc/pam.d/system-auth":
+     pam_unix.so sha512 shadow try_first_pass use_authtok
+
+Add the following line in "/etc/pam.d/password-auth":
+     pam_unix.so sha512 shadow try_first_pass use_authtok
+
+Note: Per requirement RHEL-07-010199, RHEL 7 must be configured to not overwrite custom authentication configuration settings while using the authconfig utility, otherwise manual changes to the listed files will be overwritten whenever the authconfig utility is used.'
   impact 0.5
-  tag 'legacy': ['V-71919', 'SV-86543']
-  tag 'severity': 'medium'
-  tag 'gtitle': 'SRG-OS-000073-GPOS-00041'
-  tag 'gid': 'V-204415'
-  tag 'rid': 'SV-204415r603261_rule'
-  tag 'stig_id': 'RHEL-07-010200'
-  tag 'fix_id': 'F-4539r88438_fix'
-  tag 'cci': ['CCI-000196']
+  tag legacy: ['V-71919', 'SV-86543']
+  tag severity: 'medium'
+  tag gtitle: 'SRG-OS-000073-GPOS-00041'
+  tag gid: 'V-204415'
+  tag rid: 'SV-204415r880833_rule'
+  tag stig_id: 'RHEL-07-010200'
+  tag fix_id: 'F-4539r880832_fix'
+  tag cci: ['CCI-000196']
   tag nist: ['IA-5 (1) (c)']
   tag subsystems: ['pam', 'password']
-  tag 'host', 'container'
+  tag 'host'
+  tag 'container'
 
-  describe.one do
-    describe pam('/etc/pam.d/password-auth') do
-      its('lines') { should match_pam_rule('password sufficient pam_unix.so sha512') }
-      its('lines') { should_not match_pam_rule('password .* pam_unix.so (md5|bigcrypt|sha256|blowfish)') }
-    end
-    describe pam('/etc/pam.d/system-auth') do
-      its('lines') { should match_pam_rule('password sufficient pam_unix.so sha512') }
-      its('lines') { should_not match_pam_rule('password .* pam_unix.so (md5|bigcrypt|sha256|blowfish)') }
-    end
+  describe pam('/etc/pam.d/password-auth') do
+    its('lines') { should match_pam_rule('password sufficient pam_unix.so sha512') }
+    its('lines') { should_not match_pam_rule('password .* pam_unix.so (md5|bigcrypt|sha256|blowfish)') }
+  end
+  describe pam('/etc/pam.d/system-auth') do
+    its('lines') { should match_pam_rule('password sufficient pam_unix.so sha512') }
+    its('lines') { should_not match_pam_rule('password .* pam_unix.so (md5|bigcrypt|sha256|blowfish)') }
   end
 end

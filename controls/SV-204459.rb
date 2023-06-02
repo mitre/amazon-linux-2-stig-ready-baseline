@@ -8,54 +8,42 @@ control 'SV-204459' do
     exist, patches are usually made available by the vendor to resolve the problems. If the most recent security patches
     and updates are not installed, unauthorized users may take advantage of weaknesses in the unpatched software. The
     lack of prompt attention to patching could result in a system compromise.'
+  desc 'check', 'Verify the operating system security patches and updates are installed and up to date. Updates are required to be applied with a frequency determined by the site or Program Management Office (PMO).
 
-  desc 'check', "Verify the operating system security patches and updates are installed and
-      up to date. Updates are required to be applied with a frequency determined by
-      the site or Program Management Office (PMO).
+Obtain the list of available package security updates from Red Hat. The URL for updates is https://rhn.redhat.com/errata/. It is important to note that updates provided by Red Hat may not be present on the system if the underlying packages are not installed.
 
-      Obtain the list of available package security updates from Red Hat. The URL
-      for updates is https://rhn.redhat.com/errata/. It is important to note that
-      updates provided by Red Hat may not be present on the system if the underlying
-      packages are not installed.
+Check that the available package security updates have been installed on the system with the following command:
 
-      Check that the available package security updates have been installed on
-      the system with the following command:
+# yum history list | more
+Loaded plugins: langpacks, product-id, subscription-manager
+ID     | Command line             | Date and time    | Action(s)      | Altered
+-------------------------------------------------------------------------------
+    70 | install aide             | 2016-05-05 10:58 | Install       |     1
+    69 | update -y                | 2016-05-04 14:34 | Update     |   18 EE
+    68 | install vlc                | 2016-04-21 17:12 | Install        |   21
+    67 | update -y                | 2016-04-21 17:04 | Update     |     7 EE
+    66 | update -y                | 2016-04-15 16:47 | E, I, U         |   84 EE
 
-          # yum history list | more
-          Loaded plugins: langpacks, product-id, subscription-manager
-          ID     | Command line             | Date and time    | Action(s)      |
-      Altered
+If package updates have not been performed on the system within the timeframe that the site/program documentation requires, this is a finding.
 
-      -------------------------------------------------------------------------------
-              70 | install aide             | 2016-05-05 10:58 | Install       |
-      1
-              69 | update -y                | 2016-05-04 14:34 | Update     |   18 EE
-              68 | install vlc                | 2016-04-21 17:12 | Install        |
-      21
-              67 | update -y                | 2016-04-21 17:04 | Update     |     7 EE
-              66 | update -y                | 2016-04-15 16:47 | E, I, U         |
-      84 EE
+Typical update frequency may be overridden by Information Assurance Vulnerability Alert (IAVA) notifications from CYBERCOM.
 
-          If package updates have not been performed on the system within the
-      timeframe that the site/program documentation requires, this is a finding.
-
-    If the operating system is in non-compliance with the Information Assurance
-Vulnerability Management (IAVM) process, this is a finding.
-  "
+If the operating system is in non-compliance with the Information Assurance Vulnerability Management (IAVM) process, this is a finding.'
   desc 'fix', 'Install the operating system patches or updated packages available from Red Hat within 30 days or
     sooner as local policy dictates.'
   impact 0.5
-  tag 'legacy': ['SV-86623', 'V-71999']
-  tag 'severity': 'medium'
-  tag 'gtitle': 'SRG-OS-000480-GPOS-00227'
-  tag 'gid': 'V-204459'
-  tag 'rid': 'SV-204459r603261_rule'
-  tag 'stig_id': 'RHEL-07-020260'
-  tag 'fix_id': 'F-4583r88570_fix'
-  tag 'cci': ['CCI-000366']
+  tag legacy: ['SV-86623', 'V-71999']
+  tag severity: 'medium'
+  tag gtitle: 'SRG-OS-000480-GPOS-00227'
+  tag gid: 'V-204459'
+  tag rid: 'SV-204459r603261_rule'
+  tag stig_id: 'RHEL-07-020260'
+  tag fix_id: 'F-4583r88570_fix'
+  tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['packages']
-  tag 'host', 'container'
+  tag 'host'
+  tag 'container'
 
   if input('disconnected_system')
     describe "The system is set to a `disconnected` state and you must validate
