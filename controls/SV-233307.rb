@@ -1,5 +1,5 @@
 control 'SV-233307' do
-  title 'The Red Hat Enterprise Linux operating system SSH daemon must prevent remote hosts from connecting to the proxy display.'
+  title 'The Amazon Linux 2 operating system SSH daemon must prevent remote hosts from connecting to the proxy display.'
   desc 'When X11 forwarding is enabled, there may be additional exposure to the server and client displays if the sshd proxy display is configured to listen on the wildcard address. By default, sshd binds the forwarding server to the loopback address and sets the hostname part of the DIPSLAY environment variable to localhost. This prevents remote hosts from connecting to the proxy display.'
   desc 'check', 'Verify the SSH daemon prevents remote hosts from connecting to the proxy display.
 

@@ -1,5 +1,5 @@
 control 'SV-204479' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that all system device files are
+  title 'The Amazon Linux 2 operating system must be configured so that all system device files are
     correctly labeled to prevent unauthorized modification.'
   desc 'If an unauthorized or modified device is allowed to exist on the system, there is the possibility the system
     may perform unintended or unauthorized operations.'

@@ -1,5 +1,5 @@
 control 'SV-204472' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that all files and directories
+  title 'The Amazon Linux 2 operating system must be configured so that all files and directories
     contained in local interactive user home directories are group-owned by a group of which the home directory owner is
     a member.'
   desc "If a local interactive user's files are group-owned by a group of which the user is not a member, unintended

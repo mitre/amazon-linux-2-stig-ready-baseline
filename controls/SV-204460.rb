@@ -1,5 +1,5 @@
 control 'SV-204460' do
-  title 'The Red Hat Enterprise Linux operating system must not have unnecessary accounts.'
+  title 'The Amazon Linux 2 operating system must not have unnecessary accounts.'
   desc 'Accounts providing no operational purpose provide additional opportunities for system compromise.
     Unnecessary accounts include user accounts for individuals not requiring access to the system and application
     accounts for applications not installed on the system.'

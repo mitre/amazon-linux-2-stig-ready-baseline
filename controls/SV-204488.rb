@@ -1,5 +1,5 @@
 control 'SV-204488' do
-  title 'The Red Hat Enterprise Linux operating system must set the umask value to 077 for all local interactive
+  title 'The Amazon Linux 2 operating system must set the umask value to 077 for all local interactive
     user accounts.'
   desc 'The umask controls the default access mode assigned to newly created files. A umask of 077 limits new files
     to mode 700 or less permissive. Although umask can be represented as a four-digit number, the first digit

@@ -1,5 +1,5 @@
 control 'SV-204396' do
-  title 'The Red Hat Enterprise Linux operating system must enable a user session lock until that user
+  title 'The Amazon Linux 2 operating system must enable a user session lock until that user
     re-establishes access using established identification and authentication procedures.'
   desc 'A session lock is a temporary action taken when a user stops work and moves away from the immediate physical
     vicinity of the information system but does not want to log out because of the temporary nature of the absence.

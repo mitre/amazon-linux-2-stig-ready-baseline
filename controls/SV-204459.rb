@@ -1,5 +1,5 @@
 control 'SV-204459' do
-  title 'The Red Hat Enterprise Linux operating system security patches and updates must be installed and up to
+  title 'The Amazon Linux 2 operating system security patches and updates must be installed and up to
     date.'
   desc 'Timely patching is critical for maintaining the operational availability, confidentiality, and integrity of
     information technology (IT) systems. However, failure to keep operating system and application software patched is a

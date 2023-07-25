@@ -1,5 +1,5 @@
 control 'SV-204634' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that all wireless network adapters are
+  title 'The Amazon Linux 2 operating system must be configured so that all wireless network adapters are
     disabled.'
   desc "The use of wireless networking can introduce many different attack vectors into the organization's network.
     Common attack vectors such as malicious association and ad hoc networks will allow an attacker to spoof a wireless

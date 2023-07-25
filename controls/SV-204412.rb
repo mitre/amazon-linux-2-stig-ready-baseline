@@ -1,5 +1,5 @@
 control 'SV-204412' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that when passwords are changed a
+  title 'The Amazon Linux 2 operating system must be configured so that when passwords are changed a
     minimum of four character classes must be changed.'
   desc 'Use of a complex password helps to increase the time and resources required to compromise the password.
     Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing

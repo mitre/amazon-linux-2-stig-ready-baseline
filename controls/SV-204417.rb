@@ -1,5 +1,5 @@
 control 'SV-204417' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that user and group account
+  title 'The Amazon Linux 2 operating system must be configured so that user and group account
     administration utilities are configured to store only encrypted representations of passwords.'
   desc 'Passwords need to be protected at all times, and encryption is the standard method for protecting passwords.
     If passwords are not encrypted, they can be plainly read (i.e., clear text) and easily compromised. Passwords

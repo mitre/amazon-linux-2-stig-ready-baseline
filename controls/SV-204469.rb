@@ -1,5 +1,5 @@
 control 'SV-204469' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that all local interactive user home
+  title 'The Amazon Linux 2 operating system must be configured so that all local interactive user home
     directories are owned by their respective users.'
   desc "If a local interactive user does not own their home directory, unauthorized users could access or modify the
     user's files, and the users may not be able to access their own files."

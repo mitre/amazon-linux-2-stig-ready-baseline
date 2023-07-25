@@ -1,5 +1,5 @@
 control 'SV-204621' do
-  title 'The Red Hat Enterprise Linux operating system must not have the Trivial File Transfer Protocol (TFTP)
+  title 'The Amazon Linux 2 operating system must not have the Trivial File Transfer Protocol (TFTP)
     server package installed if not required for operational support.'
   desc 'If TFTP is required for operational support (such as the transmission of router configurations) its use must
     be documented with the Information System Security Officer (ISSO), restricted to only authorized personnel, and have

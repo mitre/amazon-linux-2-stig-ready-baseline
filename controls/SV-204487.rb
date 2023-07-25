@@ -1,5 +1,5 @@
 control 'SV-204487' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that all world-writable directories are
+  title 'The Amazon Linux 2 operating system must be configured so that all world-writable directories are
     group-owned by root, sys, bin, or an application group.'
   desc 'If a world-writable directory is not group-owned by root, sys, bin, or an application Group Identifier
     (GID), unauthorized users may be able to modify files created by others.

@@ -1,5 +1,5 @@
 control 'SV-204483' do
-  title 'The Red Hat Enterprise Linux operating system must prevent binary files from being executed on file systems
+  title 'The Amazon Linux 2 operating system must prevent binary files from being executed on file systems
     that are being imported via Network File System (NFS).'
   desc 'The "noexec" mount option causes the system to not execute binary files. This option must be used for
     mounting any file system not containing approved binary files as they may be incompatible. Executing files from

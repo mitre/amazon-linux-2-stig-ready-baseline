@@ -1,5 +1,5 @@
 control 'SV-204480' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that file systems containing user home
+  title 'The Amazon Linux 2 operating system must be configured so that file systems containing user home
     directories are mounted to prevent files with the setuid and setgid bit set from being executed.'
   desc 'The "nosuid" mount option causes the system to not execute setuid and setgid files with owner privileges.
     This option must be used for mounting any file system not containing approved setuid and setguid files. Executing

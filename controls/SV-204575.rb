@@ -1,5 +1,5 @@
 control 'SV-204575' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that the rsyslog daemon does not accept
+  title 'The Amazon Linux 2 operating system must be configured so that the rsyslog daemon does not accept
     log messages from other servers unless the server is being used for log aggregation.'
   desc "Unintentionally running a rsyslog server accepting remote messages puts the system at increased risk.
     Malicious rsyslog messages sent to the server could exploit vulnerabilities in the server software itself, could

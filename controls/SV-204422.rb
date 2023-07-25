@@ -1,5 +1,5 @@
 control 'SV-204422' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that passwords are prohibited from
+  title 'The Amazon Linux 2 operating system must be configured so that passwords are prohibited from
     reuse for a minimum of five generations.'
   desc 'Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at
     guessing and brute-force attacks. If the information system or application allows the user to consecutively reuse

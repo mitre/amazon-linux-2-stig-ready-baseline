@@ -1,5 +1,5 @@
 control 'SV-204576' do
-  title 'The Red Hat Enterprise Linux operating system must limit the number of concurrent sessions to 10 for all
+  title 'The Amazon Linux 2 operating system must limit the number of concurrent sessions to 10 for all
     accounts and/or account types.'
   desc 'Operating system management includes the ability to control the number of users and user sessions that
     utilize an operating system. Limiting the number of allowed users and sessions per user is helpful in reducing the

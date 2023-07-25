@@ -1,5 +1,5 @@
 control 'SV-204433' do
-  title 'The Red Hat Enterprise Linux operating system must not allow an unrestricted logon to the system.'
+  title 'The Amazon Linux 2 operating system must not allow an unrestricted logon to the system.'
   desc 'Failure to restrict system access to authenticated users negatively impacts operating system security.'
   desc 'check', 'Verify the operating system does not allow an unrestricted logon to the system via a graphical user
     interface.

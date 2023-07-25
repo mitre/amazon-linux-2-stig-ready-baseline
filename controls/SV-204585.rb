@@ -1,5 +1,5 @@
 control 'SV-204585' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that all networked systems have SSH
+  title 'The Amazon Linux 2 operating system must be configured so that all networked systems have SSH
     installed.'
   desc 'Without protection of the transmitted information, confidentiality and integrity may be compromised because
     unprotected communications can be intercepted and either read or altered.

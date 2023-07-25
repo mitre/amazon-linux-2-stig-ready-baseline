@@ -1,5 +1,5 @@
 control 'SV-204486' do
-  title 'The Red Hat Enterprise Linux operating system must mount /dev/shm with secure options.'
+  title 'The Amazon Linux 2 operating system must mount /dev/shm with secure options.'
   desc 'The "noexec" mount option causes the system to not execute binary files. This option must be used for
     mounting any file system not containing approved binary files as they may be incompatible. Executing files from
     untrusted file systems increases the opportunity for unprivileged users to attain unauthorized administrative

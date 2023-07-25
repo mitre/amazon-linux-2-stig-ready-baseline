@@ -1,5 +1,5 @@
 control 'SV-204598' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that the SSH daemon does not permit
+  title 'The Amazon Linux 2 operating system must be configured so that the SSH daemon does not permit
     Generic Security Service Application Program Interface (GSSAPI) authentication unless needed.'
   desc "GSSAPI authentication is used to provide additional authentication mechanisms to applications. Allowing
     GSSAPI authentication through SSH exposes the system's GSSAPI to remote hosts, increasing the attack surface of the

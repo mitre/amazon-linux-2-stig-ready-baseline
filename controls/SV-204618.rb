@@ -1,5 +1,5 @@
 control 'SV-204618' do
-  title 'Network interfaces configured on the Red Hat Enterprise Linux operating system must not be in promiscuous
+  title 'Network interfaces configured on the Amazon Linux 2 operating system must not be in promiscuous
     mode.'
   desc 'Network interfaces in promiscuous mode allow for the capture of all network traffic visible to the system.
     If unauthorized individuals can access these applications, it may allow then to collect information such as logon

@@ -1,5 +1,5 @@
 control 'SV-204626' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that the Network File System (NFS) is
+  title 'The Amazon Linux 2 operating system must be configured so that the Network File System (NFS) is
     configured to use RPCSEC_GSS.'
   desc 'When an NFS server is configured to use RPCSEC_SYS, a selected userid and groupid are used to handle
     requests from the remote user. The userid and groupid could mistakenly or maliciously be set incorrectly. The

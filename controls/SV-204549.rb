@@ -1,5 +1,5 @@
 control 'SV-204549' do
-  title 'The Red Hat Enterprise Linux operating system must audit all uses of the sudoers file and all files in the
+  title 'The Amazon Linux 2 operating system must audit all uses of the sudoers file and all files in the
     /etc/sudoers.d/ directory.'
   desc 'Reconstruction of harmful events or forensic analysis is not possible if audit records do not contain enough
     information.

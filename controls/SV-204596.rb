@@ -1,5 +1,5 @@
 control 'SV-204596' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that the SSH public host key files have
+  title 'The Amazon Linux 2 operating system must be configured so that the SSH public host key files have
     mode 0644 or less permissive.'
   desc 'If a public host key file is modified by an unauthorized user, the SSH service may be compromised.'
   desc 'check', %q(Verify the SSH public host key files have mode "0644" or less permissive.

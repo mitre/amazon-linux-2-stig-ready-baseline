@@ -1,5 +1,5 @@
 control 'SV-204601' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that the SSH daemon uses privilege
+  title 'The Amazon Linux 2 operating system must be configured so that the SSH daemon uses privilege
     separation.'
   desc 'SSH daemon privilege separation causes the SSH process to drop root privileges when not needed, which would
     decrease the impact of software vulnerabilities in the unprivileged section.'

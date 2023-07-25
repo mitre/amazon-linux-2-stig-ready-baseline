@@ -1,5 +1,5 @@
 control 'SV-204619' do
-  title 'The Red Hat Enterprise Linux operating system must be configured to prevent unrestricted mail relaying.'
+  title 'The Amazon Linux 2 operating system must be configured to prevent unrestricted mail relaying.'
   desc 'If unrestricted mail relaying is permitted, unauthorized senders could use this host as a mail relay for the
     purpose of sending spam or other unauthorized activity.'
   desc 'check', 'Verify the system is configured to prevent unrestricted mail relaying.

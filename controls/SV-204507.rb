@@ -1,9 +1,9 @@
 control 'SV-204507' do
-  title 'The Red Hat Enterprise Linux operating system must take appropriate action when the remote logging buffer
+  title 'The Amazon Linux 2 operating system must take appropriate action when the remote logging buffer
     is full.'
   desc 'Information stored in one location is vulnerable to accidental or incidental deletion or alteration.
     Off-loading is a common process in information systems with limited audit storage capacity.
-    One method of off-loading audit logs in Red Hat Enterprise Linux is with the use of the audisp-remote dameon.  When
+    One method of off-loading audit logs in Amazon Linux 2 is with the use of the audisp-remote dameon.  When
     the remote buffer is full, audit logs will not be collected and sent to the central log server.'
   desc 'check', 'Verify the audisp daemon is configured to take an appropriate action when the internal queue is
     full:

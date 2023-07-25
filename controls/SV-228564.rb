@@ -1,5 +1,5 @@
 control 'SV-228564' do
-  title 'The Red Hat Enterprise Linux operating system must protect audit information from unauthorized read, modification, or deletion.'
+  title 'The Amazon Linux 2 operating system must protect audit information from unauthorized read, modification, or deletion.'
   desc 'If audit information were to become compromised, then forensic analysis and discovery of the true source of potentially malicious system activity is impossible to achieve.
 
 To ensure the veracity of audit information, the operating system must protect audit information from unauthorized modification.

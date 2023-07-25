@@ -1,5 +1,5 @@
 control 'SV-204427' do
-  title 'The Red Hat Enterprise Linux operating system must be configured to lock accounts for a minimum of 15
+  title 'The Amazon Linux 2 operating system must be configured to lock accounts for a minimum of 15
     minutes after three unsuccessful logon attempts within a 15-minute timeframe.'
   desc 'By limiting the number of failed logon attempts, the risk of unauthorized system access via user password
     guessing, otherwise known as brute-forcing, is reduced. Limits are imposed by locking the account.'

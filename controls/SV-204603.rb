@@ -1,5 +1,5 @@
 control 'SV-204603' do
-  title 'The Red Hat Enterprise Linux operating system must, for networked systems, synchronize clocks with a server
+  title 'The Amazon Linux 2 operating system must, for networked systems, synchronize clocks with a server
     that is synchronized to one of the redundant United States Naval Observatory (USNO) time servers, a time server
     designated for the appropriate DoD network (NIPRNet/SIPRNet), and/or the Global Positioning System (GPS).'
   desc 'Inaccurate time stamps make it more difficult to correlate events and can lead to an inaccurate analysis.

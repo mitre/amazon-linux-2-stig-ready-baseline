@@ -1,5 +1,5 @@
 control 'SV-204624' do
-  title 'The Red Hat Enterprise Linux operating system must not have a graphical display manager installed unless
+  title 'The Amazon Linux 2 operating system must not have a graphical display manager installed unless
     approved.'
   desc 'Internet services that are not required for system or application processes must not be active to decrease
     the attack surface of the system. Graphical display managers have a long history of security vulnerabilities and

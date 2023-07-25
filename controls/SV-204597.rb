@@ -1,5 +1,5 @@
 control 'SV-204597' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that the SSH private host key files have mode 0640 or less permissive.'
+  title 'The Amazon Linux 2 operating system must be configured so that the SSH private host key files have mode 0640 or less permissive.'
   desc 'If an unauthorized user obtains the private SSH host key file, the host could be impersonated.'
   desc 'check', %q(Verify the SSH private host key files have mode "0640" or less permissive.
 

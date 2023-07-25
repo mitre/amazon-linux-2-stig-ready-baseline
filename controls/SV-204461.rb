@@ -1,5 +1,5 @@
 control 'SV-204461' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that all Group Identifiers (GIDs)
+  title 'The Amazon Linux 2 operating system must be configured so that all Group Identifiers (GIDs)
     referenced in the /etc/passwd file are defined in the /etc/group file.'
   desc 'If a user is assigned the GID of a group not existing on the system, and a group with the GID is
     subsequently created, the user may have unintended rights to any files associated with the group.'

@@ -1,9 +1,9 @@
 control 'SV-204500' do
-  title 'The Red Hat Enterprise Linux operating system must use a file integrity tool that is configured to use FIPS
+  title 'The Amazon Linux 2 operating system must use a file integrity tool that is configured to use FIPS
     140-2 approved cryptographic hashes for validating file contents and directories.'
   desc 'File integrity tools use cryptographic hashes for verifying file contents and directories have not been
     altered. These hashes must be FIPS 140-2 approved cryptographic hashes.
-    Red Hat Enterprise Linux operating system installation media ships with an optional file integrity tool called
+    Amazon Linux 2 operating system installation media ships with an optional file integrity tool called
     Advanced Intrusion Detection Environment (AIDE). AIDE is highly configurable at install time. This requirement
     assumes the "aide.conf" file is under the "/etc" directory.'
   desc 'check', 'Verify the file integrity tool is configured to use FIPS 140-2-approved cryptographic hashes for validating file contents and directories.

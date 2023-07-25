@@ -1,5 +1,5 @@
 control 'SV-204620' do
-  title 'The Red Hat Enterprise Linux operating system must not have a File Transfer Protocol (FTP) server package
+  title 'The Amazon Linux 2 operating system must not have a File Transfer Protocol (FTP) server package
     installed unless needed.'
   desc 'The FTP service provides an unencrypted remote access that does not provide for the confidentiality and
     integrity of user passwords or the remote session. If a privileged user were to log on using this service, the

@@ -1,5 +1,5 @@
 control 'SV-204513' do
-  title 'The Red Hat Enterprise Linux operating system must initiate an action to notify the System Administrator
+  title 'The Amazon Linux 2 operating system must initiate an action to notify the System Administrator
     (SA) and Information System Security Officer ISSO, at a minimum, when allocated audit record storage volume reaches
     75% of the repository maximum audit record storage capacity.'
   desc 'If security personnel are not notified immediately when storage volume reaches 75 percent utilization, they

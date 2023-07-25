@@ -1,5 +1,5 @@
 control 'SV-204444' do
-  title 'The Red Hat Enterprise Linux operating system must prevent non-privileged users from executing privileged
+  title 'The Amazon Linux 2 operating system must prevent non-privileged users from executing privileged
     functions to include disabling, circumventing, or altering implemented security safeguards/countermeasures.'
   desc 'Preventing non-privileged users from executing privileged functions mitigates the risk that unauthorized
     individuals or processes may gain unnecessary access to information or privileges.

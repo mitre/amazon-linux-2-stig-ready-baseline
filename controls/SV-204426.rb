@@ -1,5 +1,5 @@
 control 'SV-204426' do
-  title 'The Red Hat Enterprise Linux operating system must disable account identifiers (individuals, groups, roles,
+  title 'The Amazon Linux 2 operating system must disable account identifiers (individuals, groups, roles,
     and devices) if the password expires.'
   desc 'Inactive identifiers pose a risk to systems and applications because attackers may exploit an inactive
     identifier and potentially obtain undetected access to the system. Owners of inactive accounts will not notice if

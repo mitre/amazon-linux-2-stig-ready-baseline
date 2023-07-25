@@ -1,5 +1,5 @@
 control 'SV-204395' do
-  title 'The Red Hat Enterprise Linux operating system must display the Standard Mandatory DoD Notice and Consent
+  title 'The Amazon Linux 2 operating system must display the Standard Mandatory DoD Notice and Consent
     Banner before granting local or remote access to the system via a command line user logon.'
   desc 'Display of a standardized and approved use notification before granting access to the operating system
     ensures privacy and security notification verbiage used is consistent with applicable federal laws, Executive

@@ -1,5 +1,5 @@
 control 'SV-204478' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that local initialization files do not
+  title 'The Amazon Linux 2 operating system must be configured so that local initialization files do not
     execute world-writable programs.'
   desc 'If user start-up files execute world-writable programs, especially in
     unprotected directories, they could be maliciously modified to destroy user

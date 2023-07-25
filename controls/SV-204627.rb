@@ -1,5 +1,5 @@
 control 'SV-204627' do
-  title 'SNMP community strings on the Red Hat Enterprise Linux operating system must be changed from the default.'
+  title 'SNMP community strings on the Amazon Linux 2 operating system must be changed from the default.'
   desc 'Whether active or not, default Simple Network Management Protocol (SNMP) community strings must be changed
     to maintain security. If the service is running with the default authenticators, anyone can gather data about the
     system and the network and use the information to potentially compromise the integrity of the system or network(s).

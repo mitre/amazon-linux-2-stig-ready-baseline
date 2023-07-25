@@ -1,5 +1,5 @@
 control 'SV-204630' do
-  title 'The Red Hat Enterprise Linux operating system must not forward IPv6 source-routed packets.'
+  title 'The Amazon Linux 2 operating system must not forward IPv6 source-routed packets.'
   desc 'Source-routed packets allow the source of the packet to suggest that routers forward the packet along a
     different path than configured on the router, which can be used to bypass network security measures. This
     requirement applies only to the forwarding of source-routed traffic, such as when IPv6 forwarding is enabled and the

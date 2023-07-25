@@ -1,5 +1,5 @@
 control 'SV-204577' do
-  title 'The Red Hat Enterprise Linux operating system must be configured to prohibit or restrict the use of
+  title 'The Amazon Linux 2 operating system must be configured to prohibit or restrict the use of
     functions, ports, protocols, and/or services, as defined in the Ports, Protocols, and Services Management Component
     Local Service Assessment (PPSM CLSA) and vulnerability assessments.'
   desc 'In order to prevent unauthorized connection of devices, unauthorized transfer of information, or

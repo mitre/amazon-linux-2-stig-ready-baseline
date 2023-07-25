@@ -1,5 +1,5 @@
 control 'SV-204497' do
-  title 'The Red Hat Enterprise Linux operating system must implement NIST FIPS-validated cryptography for the
+  title 'The Amazon Linux 2 operating system must implement NIST FIPS-validated cryptography for the
     following: to provision digital signatures, to generate cryptographic hashes, and to protect data requiring
     data-at-rest protections in accordance with applicable federal laws, Executive Orders, directives, policies,
     regulations, and standards.'

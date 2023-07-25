@@ -1,5 +1,5 @@
 control 'SV-204602' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that the SSH daemon does not allow
+  title 'The Amazon Linux 2 operating system must be configured so that the SSH daemon does not allow
     compression or only allows compression after successful authentication.'
   desc 'If compression is allowed in an SSH connection prior to authentication, vulnerabilities in the compression
     software could result in compromise of the system from an unauthenticated connection, potentially with root

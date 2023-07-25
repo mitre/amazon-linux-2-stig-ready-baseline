@@ -1,5 +1,5 @@
 control 'SV-204550' do
-  title 'The Red Hat Enterprise Linux operating system must audit all uses of the newgrp command.'
+  title 'The Amazon Linux 2 operating system must audit all uses of the newgrp command.'
   desc 'Reconstruction of harmful events or forensic analysis is not possible if audit records do not contain enough
     information.
     At a minimum, the organization must audit the full-text recording of privileged access commands. The organization

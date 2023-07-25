@@ -1,5 +1,5 @@
 control 'SV-204613' do
-  title 'The Red Hat Enterprise Linux operating system must not respond to Internet Protocol version 4 (IPv4)
+  title 'The Amazon Linux 2 operating system must not respond to Internet Protocol version 4 (IPv4)
     Internet Control Message Protocol (ICMP) echoes sent to a broadcast address.'
   desc 'Responding to broadcast (ICMP) echoes facilitates network mapping and provides a vector for amplification
     attacks.'

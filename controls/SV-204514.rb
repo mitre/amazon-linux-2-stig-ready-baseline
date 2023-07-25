@@ -1,5 +1,5 @@
 control 'SV-204514' do
-  title 'The Red Hat Enterprise Linux operating system must immediately notify the System Administrator (SA) and
+  title 'The Amazon Linux 2 operating system must immediately notify the System Administrator (SA) and
     Information System Security Officer (ISSO) (at a minimum) via email when the threshold for the repository maximum
     audit record storage capacity is reached.'
   desc 'If security personnel are not notified immediately when the threshold for the repository maximum audit

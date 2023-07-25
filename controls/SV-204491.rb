@@ -1,5 +1,5 @@
 control 'SV-204491' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that the cron.allow file, if it exists,
+  title 'The Amazon Linux 2 operating system must be configured so that the cron.allow file, if it exists,
     is group-owned by root.'
   desc 'If the group owner of the "cron.allow" file is not set to root, sensitive information could be viewed or
     edited by unauthorized users.'

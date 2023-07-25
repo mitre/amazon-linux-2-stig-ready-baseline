@@ -1,5 +1,5 @@
 control 'SV-204503' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that auditing is configured to produce
+  title 'The Amazon Linux 2 operating system must be configured so that auditing is configured to produce
     records containing information to establish what type of events occurred, where the events occurred, the source of
     the events, and the outcome of the events. These audit records must also identify individual identities of group
     account users.'

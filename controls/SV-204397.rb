@@ -1,5 +1,5 @@
 control 'SV-204397' do
-  title 'The Red Hat Enterprise Linux operating system must uniquely identify and must authenticate users using
+  title 'The Amazon Linux 2 operating system must uniquely identify and must authenticate users using
     multifactor authentication via a graphical user logon.'
   desc 'To assure accountability and prevent unauthenticated access, users must be identified and authenticated to
     prevent potential misuse and compromise of the system.

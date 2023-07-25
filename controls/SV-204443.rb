@@ -1,5 +1,5 @@
 control 'SV-204443' do
-  title 'The Red Hat Enterprise Linux operating system must not have the ypserv package installed.'
+  title 'The Amazon Linux 2 operating system must not have the ypserv package installed.'
   desc 'Removing the "ypserv" package decreases the risk of the accidental (or intentional) activation of NIS or
     NIS+ services.'
   desc 'check', 'The NIS service provides an unencrypted authentication service that does not provide for the

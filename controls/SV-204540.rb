@@ -1,5 +1,5 @@
 control 'SV-204540' do
-  title 'The Red Hat Enterprise Linux operating system must generate audit records for all unsuccessful account
+  title 'The Amazon Linux 2 operating system must generate audit records for all unsuccessful account
     access events.'
   desc 'Without generating audit records that are specific to the security and mission needs of the organization, it
     would be difficult to establish, correlate, and investigate the events relating to an incident or identify those

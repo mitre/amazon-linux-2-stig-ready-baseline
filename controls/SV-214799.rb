@@ -1,5 +1,5 @@
 control 'SV-214799' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that the cryptographic hash of system
+  title 'The Amazon Linux 2 operating system must be configured so that the cryptographic hash of system
     files and commands matches vendor values.'
   desc 'Without cryptographic integrity protections, system command and files can be altered by unauthorized users
     without detection.

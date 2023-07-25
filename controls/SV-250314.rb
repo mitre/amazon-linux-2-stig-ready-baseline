@@ -1,5 +1,5 @@
 control 'SV-250314' do
-  title 'The Red Hat Enterprise Linux operating system must elevate the SELinux context when an administrator calls the sudo command.'
+  title 'The Amazon Linux 2 operating system must elevate the SELinux context when an administrator calls the sudo command.'
   desc 'Preventing non-privileged users from executing privileged functions mitigates the risk that unauthorized individuals or processes may gain unnecessary access to information or privileges.
 
 Privileged functions include, for example, establishing accounts, performing system integrity checks, or administering cryptographic key management activities. Non-privileged users are individuals who do not possess appropriate authorizations. Circumventing intrusion detection and prevention mechanisms or malicious code protection mechanisms are examples of privileged functions that require protection from non-privileged users.'

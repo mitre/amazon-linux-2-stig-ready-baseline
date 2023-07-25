@@ -1,5 +1,5 @@
 control 'SV-204581' do
-  title 'The Red Hat Enterprise Linux operating system must implement cryptography to protect the integrity of
+  title 'The Amazon Linux 2 operating system must implement cryptography to protect the integrity of
     Lightweight Directory Access Protocol (LDAP) authentication communications.'
   desc 'Without cryptographic integrity protections, information can be altered by unauthorized users without
     detection.

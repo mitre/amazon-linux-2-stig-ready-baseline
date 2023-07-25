@@ -1,5 +1,5 @@
 control 'SV-204470' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that all local interactive user home
+  title 'The Amazon Linux 2 operating system must be configured so that all local interactive user home
     directories are group-owned by the home directory owners primary group.'
   desc "If the Group Identifier (GID) of a local interactive user's home directory is not the same as the primary
     GID of the user, this would allow unauthorized access to the user's files, and users that share the same group may

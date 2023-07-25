@@ -1,5 +1,5 @@
 control 'SV-204558' do
-  title 'The Red Hat Enterprise Linux operating system must audit all uses of the pam_timestamp_check command.'
+  title 'The Amazon Linux 2 operating system must audit all uses of the pam_timestamp_check command.'
   desc 'Without generating audit records that are specific to the security and mission needs of the organization, it
     would be difficult to establish, correlate, and investigate the events relating to an incident or identify those
     responsible for one.

@@ -1,9 +1,9 @@
 control 'SV-204512' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that the audit system takes appropriate
+  title 'The Amazon Linux 2 operating system must be configured so that the audit system takes appropriate
     action when there is an error sending audit records to a remote system.'
   desc 'Taking appropriate action when there is an error sending audit records to a remote system will minimize the
     possibility of losing audit records.
-    One method of off-loading audit logs in Red Hat Enterprise Linux is with the use of the audisp-remote dameon.'
+    One method of off-loading audit logs in Amazon Linux 2 is with the use of the audisp-remote dameon.'
   desc 'check', 'Verify the action the operating system takes if there is an error sending audit records to a remote
     system.
     Check the action that takes place if there is an error sending audit records to a remote system with the following

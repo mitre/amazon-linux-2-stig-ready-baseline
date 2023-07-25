@@ -1,5 +1,5 @@
 control 'SV-204438' do
-  title 'Red Hat Enterprise Linux operating systems version 7.2 or newer with a Basic Input/Output System (BIOS)
+  title 'Amazon Linux 2 operating systems version 7.2 or newer with a Basic Input/Output System (BIOS)
     must require authentication upon booting into single-user and maintenance modes.'
   desc 'If the system does not require valid authentication before it boots into single-user or maintenance mode,
     anyone who invokes single-user or maintenance mode is granted privileged access to all files on the system. GRUB 2

@@ -1,5 +1,5 @@
 control 'SV-204564' do
-  title 'The Red Hat Enterprise Linux operating system must generate audit records for all account creations,
+  title 'The Amazon Linux 2 operating system must generate audit records for all account creations,
     modifications, disabling, and termination events that affect /etc/passwd.'
   desc 'Without generating audit records that are specific to the security and mission needs of the organization, it
     would be difficult to establish, correlate, and investigate the events relating to an incident or identify those

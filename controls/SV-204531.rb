@@ -1,5 +1,5 @@
 control 'SV-204531' do
-  title 'The Red Hat Enterprise Linux operating system must audit all uses of the creat, open, openat,
+  title 'The Amazon Linux 2 operating system must audit all uses of the creat, open, openat,
     open_by_handle_at, truncate, and ftruncate syscalls.'
   desc 'Without generating audit records that are specific to the security and mission needs of the organization, it
     would be difficult to establish, correlate, and investigate the events relating to an incident or identify those

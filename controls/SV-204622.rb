@@ -1,5 +1,5 @@
 control 'SV-204622' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that remote X connections are disabled
+  title 'The Amazon Linux 2 operating system must be configured so that remote X connections are disabled
     except to fulfill documented and validated mission requirements.'
   desc "The security risk of using X11 forwarding is that the client's X11 display server may be exposed to attack
     when the SSH client requests forwarding. A system administrator may have a stance in which they want to protect

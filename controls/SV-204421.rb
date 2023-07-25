@@ -1,5 +1,5 @@
 control 'SV-204421' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that existing passwords are restricted
+  title 'The Amazon Linux 2 operating system must be configured so that existing passwords are restricted
     to a 60-day maximum lifetime.'
   desc 'Any password, no matter how complex, can eventually be cracked. Therefore, passwords need to be changed
     periodically. If the operating system does not limit the lifetime of passwords and force users to change their

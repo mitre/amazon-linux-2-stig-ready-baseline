@@ -1,5 +1,5 @@
 control 'SV-204495' do
-  title 'The Red Hat Enterprise Linux operating system must use a separate file system for the system audit data
+  title 'The Amazon Linux 2 operating system must use a separate file system for the system audit data
     path.'
   desc 'The use of separate file systems for different paths can protect the system from failures resulting from a
     file system becoming full or failing.'

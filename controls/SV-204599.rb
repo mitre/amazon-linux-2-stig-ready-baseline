@@ -1,5 +1,5 @@
 control 'SV-204599' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that the SSH daemon does not permit
+  title 'The Amazon Linux 2 operating system must be configured so that the SSH daemon does not permit
     Kerberos authentication unless needed.'
   desc "Kerberos authentication for SSH is often implemented using Generic Security Service Application Program
     Interface (GSSAPI). If Kerberos is enabled through SSH, the SSH daemon provides a means of access to the system's

@@ -1,5 +1,5 @@
 control 'SV-204589' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that all network connections associated
+  title 'The Amazon Linux 2 operating system must be configured so that all network connections associated
     with SSH traffic terminate after a period of inactivity.'
   desc 'Terminating an idle SSH session within a short time period reduces the window of opportunity for
     unauthorized personnel to take control of a management session enabled on the console or console port that has been

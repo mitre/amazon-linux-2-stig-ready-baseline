@@ -1,5 +1,5 @@
 control 'SV-204467' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that all local interactive users have a
+  title 'The Amazon Linux 2 operating system must be configured so that all local interactive users have a
     home directory assigned and defined in the /etc/passwd file.'
   desc 'If local interactive users are not assigned a valid home directory, there is no place for the storage and
     control of files they should own.

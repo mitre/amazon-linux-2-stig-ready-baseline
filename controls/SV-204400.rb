@@ -1,5 +1,5 @@
 control 'SV-204400' do
-  title 'The Red Hat Enterprise Linux operating system must prevent a user from overriding the session idle-delay
+  title 'The Amazon Linux 2 operating system must prevent a user from overriding the session idle-delay
     setting for the graphical user interface.'
   desc "A session time-out lock is a temporary action taken when a user stops work and moves away from the immediate
     physical vicinity of the information system but does not log out because of the temporary nature of the absence.

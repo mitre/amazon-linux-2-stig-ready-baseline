@@ -1,5 +1,5 @@
 control 'SV-204446' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that designated personnel are notified
+  title 'The Amazon Linux 2 operating system must be configured so that designated personnel are notified
     if baseline configurations are changed in an unauthorized manner.'
   desc "Unauthorized changes to the baseline configuration could make the system vulnerable to various attacks or allow unauthorized access to the operating system. Changes to operating system configurations can have unintended side effects, some of which may be relevant to security.
 

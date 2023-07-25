@@ -1,5 +1,5 @@
 control 'SV-204452' do
-  title 'The Red Hat Enterprise Linux operating system must remove all software components after updated versions
+  title 'The Amazon Linux 2 operating system must remove all software components after updated versions
     have been installed.'
   desc 'Previous versions of software components that are not removed from the information system after updates have
     been installed may be exploited by adversaries. Some information technology products may remove older versions of

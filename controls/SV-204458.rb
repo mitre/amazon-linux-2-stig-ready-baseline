@@ -1,15 +1,15 @@
 control 'SV-204458' do
-  title 'The Red Hat Enterprise Linux operating system must be a vendor supported release.'
+  title 'The Amazon Linux 2 operating system must be a vendor supported release.'
   desc 'An operating system release is considered "supported" if the vendor continues to provide security patches
     for the product. With an unsupported release, it will not be possible to resolve security issues discovered in the
     system software.
-    Red Hat offers the Extended Update Support (EUS) Add-On to a Red Hat Enterprise Linux subscription, for a fee, for
+    Red Hat offers the Extended Update Support (EUS) Add-On to a Amazon Linux 2 subscription, for a fee, for
     those customers who wish to standardize on a specific minor release for an extended period. RHEL 7.7 marks the final
     minor release that EUS will be available, while 7.9 is the final minor release overall.'
   desc 'check', 'Verify the version of the operating system is vendor supported.
     Check the version of the operating system with the following command:
     # cat /etc/redhat-release
-    Red Hat Enterprise Linux Server release 7.9 (Maipo)
+    Amazon Linux 2 Server release 7.9 (Maipo)
     Current End of Extended Update Support for RHEL 7.6 is 31 May 2021.
     Current End of Extended Update Support for RHEL 7.7 is 30 August 2021.
     Current End of Maintenance Support for RHEL 7.9 is 30 June 2024.

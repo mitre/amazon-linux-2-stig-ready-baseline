@@ -1,5 +1,5 @@
 control 'SV-204600' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that the SSH daemon performs strict
+  title 'The Amazon Linux 2 operating system must be configured so that the SSH daemon performs strict
     mode checking of home directory configuration files.'
   desc 'If other users have access to modify user-specific SSH configuration files, they may be able to log on to
     the system as another user.'

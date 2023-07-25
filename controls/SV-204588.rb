@@ -1,5 +1,5 @@
 control 'SV-204588' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that the SSH daemon does not allow
+  title 'The Amazon Linux 2 operating system must be configured so that the SSH daemon does not allow
     authentication using RSA rhosts authentication.'
   desc 'Configuring this setting for the SSH daemon provides additional assurance that remote logon via SSH will
     require a password, even in the event of misconfiguration elsewhere.'

@@ -1,5 +1,5 @@
 control 'SV-204493' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that a separate file system is used for
+  title 'The Amazon Linux 2 operating system must be configured so that a separate file system is used for
     user home directories (such as /home or an equivalent).'
   desc 'The use of separate file systems for different paths can protect the system from failures resulting from a
     file system becoming full or failing.'

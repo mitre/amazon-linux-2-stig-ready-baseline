@@ -1,5 +1,5 @@
 control 'SV-204445' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that a file integrity tool verifies the
+  title 'The Amazon Linux 2 operating system must be configured so that a file integrity tool verifies the
     baseline operating system configuration at least weekly.'
   desc "Unauthorized changes to the baseline configuration could make the system vulnerable to various attacks or allow unauthorized access to the operating system. Changes to operating system configurations can have unintended side effects, some of which may be relevant to security.
 

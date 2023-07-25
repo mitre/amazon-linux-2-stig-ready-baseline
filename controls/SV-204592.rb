@@ -1,5 +1,5 @@
 control 'SV-204592' do
-  title 'The Red Hat Enterprise Linux operating system must not permit direct logons to the root account using
+  title 'The Amazon Linux 2 operating system must not permit direct logons to the root account using
     remote access via SSH.'
   desc 'Even though the communications channel may be encrypted, an additional layer of security is gained by
     extending the policy of not logging on directly as root. In addition, logging on with a user-specific account

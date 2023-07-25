@@ -1,5 +1,5 @@
 control 'SV-204457' do
-  title 'The Red Hat Enterprise Linux operating system must define default permissions for all authenticated users
+  title 'The Amazon Linux 2 operating system must define default permissions for all authenticated users
     in such a way that the user can only read and modify their own files.'
   desc 'Setting the most restrictive default permissions ensures that when new accounts are created, they do not
     have unnecessary access.'

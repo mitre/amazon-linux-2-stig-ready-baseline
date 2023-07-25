@@ -1,5 +1,5 @@
 control 'SV-204449' do
-  title 'The Red Hat Enterprise Linux operating system must be configured to disable USB mass storage.'
+  title 'The Amazon Linux 2 operating system must be configured to disable USB mass storage.'
   desc 'USB mass storage permits easy introduction of unknown devices, thereby facilitating malicious activity.'
   desc 'check', 'Verify the operating system disables the ability to load the USB Storage kernel module.
     # grep -r usb-storage /etc/modprobe.d/* | grep -i "/bin/true" | grep -v "^#"

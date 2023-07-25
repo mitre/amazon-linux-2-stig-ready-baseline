@@ -1,5 +1,5 @@
 control 'SV-204492' do
-  title 'The Red Hat Enterprise Linux operating system must disable Kernel core dumps unless needed.'
+  title 'The Amazon Linux 2 operating system must disable Kernel core dumps unless needed.'
   desc 'Kernel core dumps may contain the full contents of system memory at the time of the crash. Kernel core dumps
     may consume a considerable amount of disk space and may result in denial of service by exhausting the available
     space on the target file system partition.'

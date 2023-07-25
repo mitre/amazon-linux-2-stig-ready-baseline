@@ -1,5 +1,5 @@
 control 'SV-204608' do
-  title 'For Red Hat Enterprise Linux operating systems using DNS resolution, at least two name servers must be
+  title 'For Amazon Linux 2 operating systems using DNS resolution, at least two name servers must be
     configured.'
   desc 'To provide availability for name resolution services, multiple redundant name servers are mandated. A
     failure in name resolution could lead to the failure of security functions requiring name resolution, which may

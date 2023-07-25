@@ -1,5 +1,5 @@
 control 'SV-204468' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that all local interactive user home
+  title 'The Amazon Linux 2 operating system must be configured so that all local interactive user home
     directories have mode 0750 or less permissive.'
   desc 'Excessive permissions on local interactive user home directories may allow unauthorized access to user files
     by other users.'

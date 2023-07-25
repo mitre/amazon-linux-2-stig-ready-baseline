@@ -1,5 +1,5 @@
 control 'SV-204623' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that if the Trivial File Transfer
+  title 'The Amazon Linux 2 operating system must be configured so that if the Trivial File Transfer
     Protocol (TFTP) server is required, the TFTP daemon is configured to operate in secure mode.'
   desc 'Restricting TFTP to a specific directory prevents remote users from copying, transferring, or overwriting
     system files.'

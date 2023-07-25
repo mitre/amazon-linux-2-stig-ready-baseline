@@ -1,5 +1,5 @@
 control 'SV-204462' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that the root account must be the only
+  title 'The Amazon Linux 2 operating system must be configured so that the root account must be the only
     account having unrestricted access to the system.'
   desc 'If an account other than root also has a User Identifier (UID) of "0", it has root authority, giving that
     account unrestricted access to the entire operating system. Multiple accounts with a UID of "0" afford an

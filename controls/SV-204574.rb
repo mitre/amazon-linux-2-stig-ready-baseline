@@ -1,5 +1,5 @@
 control 'SV-204574' do
-  title 'The Red Hat Enterprise Linux operating system must send rsyslog output to a log aggregation server.'
+  title 'The Amazon Linux 2 operating system must send rsyslog output to a log aggregation server.'
   desc 'Sending rsyslog output to another system ensures that the logs cannot be removed or modified in the event
     that the system is compromised or has a hardware failure.'
   desc 'check', 'Verify "rsyslog" is configured to send all messages to a log aggregation server.

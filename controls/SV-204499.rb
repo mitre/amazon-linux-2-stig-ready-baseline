@@ -1,5 +1,5 @@
 control 'SV-204499' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that the file integrity tool is
+  title 'The Amazon Linux 2 operating system must be configured so that the file integrity tool is
     configured to verify extended attributes.'
   desc 'Extended attributes in file systems are used to contain arbitrary data and file metadata with security
     implications.'

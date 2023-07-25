@@ -1,5 +1,5 @@
 control 'SV-204423' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that passwords are a minimum of 15
+  title 'The Amazon Linux 2 operating system must be configured so that passwords are a minimum of 15
     characters in length.'
   desc 'The shorter the password, the lower the number of possible combinations that need to be tested before the
     password is compromised.

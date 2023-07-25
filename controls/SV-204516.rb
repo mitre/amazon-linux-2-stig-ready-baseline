@@ -1,5 +1,5 @@
 control 'SV-204516' do
-  title 'The Red Hat Enterprise Linux operating system must audit all executions of privileged functions.'
+  title 'The Amazon Linux 2 operating system must audit all executions of privileged functions.'
   desc 'Misuse of privileged functions, either intentionally or unintentionally by authorized users, or by
     unauthorized external entities that have compromised information system accounts, is a serious and ongoing concern
     and can have significant adverse impacts on organizations. Auditing the use of privileged functions is one way to

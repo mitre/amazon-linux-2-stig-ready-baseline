@@ -1,5 +1,5 @@
 control 'SV-214800' do
-  title 'The Red Hat Enterprise Linux operating system must implement the Endpoint Security for Linux Threat
+  title 'The Amazon Linux 2 operating system must implement the Endpoint Security for Linux Threat
     Prevention tool.'
   desc "Adding endpoint security tools can provide the capability to automatically take actions in response to
     malicious behavior, which can provide additional agility in reacting to network threats. These tools also often

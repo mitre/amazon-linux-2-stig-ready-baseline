@@ -1,9 +1,9 @@
 control 'SV-204508' do
-  title 'The Red Hat Enterprise Linux operating system must label all off-loaded audit logs before sending them to
+  title 'The Amazon Linux 2 operating system must label all off-loaded audit logs before sending them to
     the central log server.'
   desc 'Information stored in one location is vulnerable to accidental or incidental deletion or alteration.
     Off-loading is a common process in information systems with limited audit storage capacity.
-    One method of off-loading audit logs in Red Hat Enterprise Linux is with the use of the audisp-remote dameon.  When
+    One method of off-loading audit logs in Amazon Linux 2 is with the use of the audisp-remote dameon.  When
     audit logs are not labeled before they are sent to a central log server, the audit data will not be able to be
     analyzed and tied back to the correct system.'
   desc 'check', 'Verify the audisp daemon is configured to label all off-loaded audit logs:

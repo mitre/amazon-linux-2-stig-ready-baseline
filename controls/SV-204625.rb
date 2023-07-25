@@ -1,5 +1,5 @@
 control 'SV-204625' do
-  title 'The Red Hat Enterprise Linux operating system must not be performing packet forwarding unless the system is
+  title 'The Amazon Linux 2 operating system must not be performing packet forwarding unless the system is
     a router.'
   desc 'Routing protocol daemons are typically used on routers to exchange network topology information with other
     routers. If this software is used when not required, system network information may be unnecessarily transmitted

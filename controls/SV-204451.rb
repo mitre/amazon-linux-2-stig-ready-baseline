@@ -1,5 +1,5 @@
 control 'SV-204451' do
-  title 'The Red Hat Enterprise Linux operating system must disable the file system automounter unless required.'
+  title 'The Amazon Linux 2 operating system must disable the file system automounter unless required.'
   desc 'Automatically mounting file systems permits easy introduction of unknown devices, thereby facilitating
     malicious activity.'
   desc 'check', 'Verify the operating system disables the ability to automount devices.

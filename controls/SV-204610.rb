@@ -1,5 +1,5 @@
 control 'SV-204610' do
-  title 'The Red Hat Enterprise Linux operating system must use a reverse-path filter for IPv4 network traffic when
+  title 'The Amazon Linux 2 operating system must use a reverse-path filter for IPv4 network traffic when
     possible on all interfaces.'
   desc 'Enabling reverse path filtering drops packets with source addresses that should not have been able to be received on the interface they were received on. It should not be used on systems that are routers for complicated networks, but is helpful for end hosts and routers serving small networks.'
   desc 'check', 'Verify the system uses a reverse-path filter for IPv4:

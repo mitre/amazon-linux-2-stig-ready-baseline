@@ -1,5 +1,5 @@
 control 'SV-204594' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that the SSH daemon is configured to
+  title 'The Amazon Linux 2 operating system must be configured so that the SSH daemon is configured to
     only use the SSHv2 protocol.'
   desc 'SSHv1 is an insecure implementation of the SSH protocol and has many well-known vulnerability exploits.
     Exploits of the SSH daemon could provide immediate root access to the system.'

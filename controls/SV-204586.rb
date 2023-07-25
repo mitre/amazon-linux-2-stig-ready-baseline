@@ -1,5 +1,5 @@
 control 'SV-204586' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that all networked systems use SSH for
+  title 'The Amazon Linux 2 operating system must be configured so that all networked systems use SSH for
     confidentiality and integrity of transmitted and received information as well as information during preparation for
     transmission.'
   desc 'Without protection of the transmitted information, confidentiality and integrity may be compromised because

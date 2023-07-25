@@ -1,5 +1,5 @@
 control 'SV-204431' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that the delay between logon prompts
+  title 'The Amazon Linux 2 operating system must be configured so that the delay between logon prompts
     following a failed console logon attempt is at least four seconds.'
   desc 'Configuring the operating system to implement organization-wide security implementation guides and security
     checklists verifies compliance with federal standards and establishes a common security baseline across DoD that

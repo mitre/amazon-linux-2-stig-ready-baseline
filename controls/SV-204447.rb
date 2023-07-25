@@ -1,5 +1,5 @@
 control 'SV-204447' do
-  title 'The Red Hat Enterprise Linux operating system must prevent the installation of software, patches, service
+  title 'The Amazon Linux 2 operating system must prevent the installation of software, patches, service
     packs, device drivers, or operating system components from a repository without verification they have been
     digitally signed using a certificate that is issued by a Certificate Authority (CA) that is recognized and approved
     by the organization.'

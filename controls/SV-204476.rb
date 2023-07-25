@@ -1,5 +1,5 @@
 control 'SV-204476' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that all local initialization files
+  title 'The Amazon Linux 2 operating system must be configured so that all local initialization files
     have mode 0740 or less permissive.'
   desc "Local initialization files are used to configure the user's shell environment upon logon. Malicious
     modification of these files could compromise accounts upon logon."

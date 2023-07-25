@@ -1,5 +1,5 @@
 control 'SV-204612' do
-  title 'The Red Hat Enterprise Linux operating system must not forward Internet Protocol version 4 (IPv4)
+  title 'The Amazon Linux 2 operating system must not forward Internet Protocol version 4 (IPv4)
     source-routed packets by default.'
   desc 'Source-routed packets allow the source of the packet to suggest that routers forward the packet along a
     different path than configured on the router, which can be used to bypass network security measures. This

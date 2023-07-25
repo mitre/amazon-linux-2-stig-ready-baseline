@@ -1,5 +1,5 @@
 control 'SV-204628' do
-  title 'The Red Hat Enterprise Linux operating system access control program must be configured to grant or deny
+  title 'The Amazon Linux 2 operating system access control program must be configured to grant or deny
     system access to specific hosts and services.'
   desc 'If the systems access control program is not configured with appropriate rules for allowing and denying
     access to system network resources, services may be accessible to unauthorized hosts.'

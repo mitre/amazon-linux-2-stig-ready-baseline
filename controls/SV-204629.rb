@@ -1,5 +1,5 @@
 control 'SV-204629' do
-  title 'The Red Hat Enterprise Linux operating system must not have unauthorized IP tunnels configured.'
+  title 'The Amazon Linux 2 operating system must not have unauthorized IP tunnels configured.'
   desc 'IP tunneling mechanisms can be used to bypass network filtering. If tunneling is required, it must be
     documented with the Information System Security Officer (ISSO).'
   desc 'check', 'Verify the system does not have unauthorized IP tunnels configured.

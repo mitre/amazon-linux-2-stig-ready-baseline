@@ -1,5 +1,5 @@
 control 'SV-214801' do
-  title 'The Red Hat Enterprise Linux operating system must use a virus scan program.'
+  title 'The Amazon Linux 2 operating system must use a virus scan program.'
   desc 'Virus scanning software can be used to protect a system from penetration from computer viruses and to limit
     their spread through intermediate systems.
     The virus scanning software should be configured to perform scans dynamically on accessed files. If this capability

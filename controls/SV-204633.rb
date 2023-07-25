@@ -1,5 +1,5 @@
 control 'SV-204633' do
-  title 'The Red Hat Enterprise Linux operating system must implement certificate status checking for PKI
+  title 'The Amazon Linux 2 operating system must implement certificate status checking for PKI
     authentication.'
   desc 'Using an authentication device, such as a CAC or token that is separate from the information system, ensures
     that even if the information system is compromised, that compromise will not affect credentials stored on the

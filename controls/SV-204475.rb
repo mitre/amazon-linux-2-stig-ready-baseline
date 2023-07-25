@@ -1,5 +1,5 @@
 control 'SV-204475' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that all local initialization files for
+  title 'The Amazon Linux 2 operating system must be configured so that all local initialization files for
     local interactive users are be group-owned by the users primary group or root.'
   desc "Local initialization files for interactive users are used to configure the user's shell environment upon
     logon. Malicious modification of these files could compromise accounts upon logon."

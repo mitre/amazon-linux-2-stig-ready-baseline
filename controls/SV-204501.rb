@@ -1,5 +1,5 @@
 control 'SV-204501' do
-  title 'The Red Hat Enterprise Linux operating system must not allow removable media to be used as the boot loader
+  title 'The Amazon Linux 2 operating system must not allow removable media to be used as the boot loader
     unless approved.'
   desc 'Malicious users with removable boot media can gain access to a system configured to use removable media as
     the boot loader. If removable media is designed to be used as the boot loader, the requirement must be documented

@@ -1,5 +1,5 @@
 control 'SV-204415' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that the PAM system service is
+  title 'The Amazon Linux 2 operating system must be configured so that the PAM system service is
     configured to store only encrypted representations of passwords.'
   desc 'Passwords need to be protected at all times, and encryption is the standard method for protecting passwords.
     If passwords are not encrypted, they can be plainly read (i.e., clear text) and easily compromised. Passwords

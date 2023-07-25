@@ -1,5 +1,5 @@
 control 'SV-204437' do
-  title 'The Red Hat Enterprise Linux operating system must require authentication upon booting into single-user and
+  title 'The Amazon Linux 2 operating system must require authentication upon booting into single-user and
     maintenance modes.'
   desc 'If the system does not require valid root authentication before it boots into single-user or maintenance
     mode, anyone who invokes single-user or maintenance mode is granted privileged access to all files on the system.'

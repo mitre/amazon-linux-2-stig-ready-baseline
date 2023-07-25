@@ -1,5 +1,5 @@
 control 'SV-204572' do
-  title 'The Red Hat Enterprise Linux operating system must audit all uses of the unlink, unlinkat, rename,
+  title 'The Amazon Linux 2 operating system must audit all uses of the unlink, unlinkat, rename,
     renameat, and rmdir syscalls.'
   desc 'If the system is not configured to audit certain activities and write them to an audit log, it is more
     difficult to detect and track system compromises and damages incurred during a system compromise.

@@ -1,5 +1,5 @@
 control 'SV-204456' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that the x86 Ctrl-Alt-Delete key
+  title 'The Amazon Linux 2 operating system must be configured so that the x86 Ctrl-Alt-Delete key
     sequence is disabled in the Graphical User Interface.'
   desc 'A locally logged-on user who presses Ctrl-Alt-Delete, when at the console, can reboot the system. If
     accidentally pressed, as could happen in the case of a mixed OS environment, this can create the risk of short-term

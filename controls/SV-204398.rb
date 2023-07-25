@@ -1,5 +1,5 @@
 control 'SV-204398' do
-  title 'The Red Hat Enterprise Linux operating system must initiate a screensaver after a 15-minute period of
+  title 'The Amazon Linux 2 operating system must initiate a screensaver after a 15-minute period of
     inactivity for graphical user interfaces.'
   desc "A session time-out lock is a temporary action taken when a user stops work and moves away from the immediate
     physical vicinity of the information system but does not log out because of the temporary nature of the absence.

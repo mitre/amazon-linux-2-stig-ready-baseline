@@ -1,5 +1,5 @@
 control 'SV-204424' do
-  title 'The Red Hat Enterprise Linux operating system must not allow accounts configured with blank or null
+  title 'The Amazon Linux 2 operating system must not allow accounts configured with blank or null
     passwords.'
   desc 'If an account has an empty password, anyone could log on and run commands with the privileges of that
     account. Accounts with empty passwords should never be used in operational environments.'

@@ -1,9 +1,9 @@
 control 'SV-204511' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that the audit system takes appropriate
+  title 'The Amazon Linux 2 operating system must be configured so that the audit system takes appropriate
     action when the audit storage volume is full.'
   desc 'Taking appropriate action in case of a filled audit storage volume will minimize the possibility of losing
     audit records.
-    One method of off-loading audit logs in Red Hat Enterprise Linux is with the use of the audisp-remote dameon.'
+    One method of off-loading audit logs in Amazon Linux 2 is with the use of the audisp-remote dameon.'
   desc 'check', 'Verify the action the operating system takes if the disk the audit records are written to becomes
     full.
     To determine the action that takes place if the disk is full on the remote server, use the following command:

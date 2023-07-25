@@ -1,5 +1,5 @@
 control 'SV-255925' do
-  title 'The Red Hat Enterprise Linux operating system SSH server must be configured to use only FIPS-validated key exchange algorithms.'
+  title 'The Amazon Linux 2 operating system SSH server must be configured to use only FIPS-validated key exchange algorithms.'
   desc 'The use of FIPS-validated cryptographic algorithms is enforced by enabling kernel FIPS mode. In the event that kernel FIPS mode is disabled, the use of nonvalidated cryptographic algorithms will be permitted systemwide. The SSH server configuration must manually define only FIPS-validated key exchange algorithms to prevent the use of nonvalidated algorithms.'
   desc 'check', 'Verify that the SSH server is configured to use only FIPS-validated key exchange algorithms:
 

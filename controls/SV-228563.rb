@@ -1,5 +1,5 @@
 control 'SV-228563' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that all world-writable directories are owned by root, sys, bin, or an application user.'
+  title 'The Amazon Linux 2 operating system must be configured so that all world-writable directories are owned by root, sys, bin, or an application user.'
   desc 'If a world-writable directory is not owned by root, sys, bin, or an application User Identifier (UID), unauthorized users may be able to modify files created by others.
 
 The only authorized public directories are those temporary directories supplied with the system or those designed to be temporary file repositories. The setting is normally reserved for directories used by the system and by users for temporary file storage, (e.g., /tmp), and for directories requiring global read/write access.'

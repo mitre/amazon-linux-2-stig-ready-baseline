@@ -1,5 +1,5 @@
 control 'SV-204595' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that the SSH daemon is configured to
+  title 'The Amazon Linux 2 operating system must be configured so that the SSH daemon is configured to
     only use Message Authentication Codes (MACs) employing FIPS 140-2 approved cryptographic hash algorithms.'
   desc 'DoD information systems are required to use FIPS 140-2 approved cryptographic hash functions. The only SSHv2
     hash algorithm meeting this requirement is SHA.

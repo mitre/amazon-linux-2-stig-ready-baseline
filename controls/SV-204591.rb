@@ -1,5 +1,5 @@
 control 'SV-204591' do
-  title 'The Red Hat Enterprise Linux operating system must display the date and time of the last successful account
+  title 'The Amazon Linux 2 operating system must display the date and time of the last successful account
     logon upon an SSH logon.'
   desc 'Providing users with feedback on when account accesses via SSH last occurred facilitates user recognition
     and reporting of unauthorized account use.'

@@ -1,5 +1,5 @@
 control 'SV-204471' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that all files and directories
+  title 'The Amazon Linux 2 operating system must be configured so that all files and directories
     contained in local interactive user home directories have a valid owner.'
   desc 'Unowned files and directories may be unintentionally inherited if a user is assigned the same User
     Identifier "UID" as the UID of the un-owned files.'

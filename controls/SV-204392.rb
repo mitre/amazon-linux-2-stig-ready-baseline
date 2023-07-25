@@ -1,5 +1,5 @@
 control 'SV-204392' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that the file permissions, ownership,
+  title 'The Amazon Linux 2 operating system must be configured so that the file permissions, ownership,
     and group membership of system files and commands match the vendor values.'
   desc 'Discretionary access control is weakened if a user or group has access permissions to system files and
     directories greater than the default.'

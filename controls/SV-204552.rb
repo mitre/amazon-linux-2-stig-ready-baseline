@@ -1,5 +1,5 @@
 control 'SV-204552' do
-  title 'The Red Hat Enterprise Linux operating system must audit all uses of the mount command and syscall.'
+  title 'The Amazon Linux 2 operating system must audit all uses of the mount command and syscall.'
   desc 'Reconstruction of harmful events or forensic analysis is not possible if audit records do not contain enough
     information.
     At a minimum, the organization must audit the full-text recording of privileged mount commands. The organization

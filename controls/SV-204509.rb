@@ -1,5 +1,5 @@
 control 'SV-204509' do
-  title 'The Red Hat Enterprise Linux operating system must off-load audit records onto a different system or media
+  title 'The Amazon Linux 2 operating system must off-load audit records onto a different system or media
     from the system being audited.'
   desc 'Information stored in one location is vulnerable to accidental or incidental deletion or alteration.
     Off-loading is a common process in information systems with limited audit storage capacity.'

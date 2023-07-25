@@ -1,5 +1,5 @@
 control 'SV-204498' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that the file integrity tool is
+  title 'The Amazon Linux 2 operating system must be configured so that the file integrity tool is
     configured to verify Access Control Lists (ACLs).'
   desc 'ACLs can provide permissions beyond those permitted through the file mode and must be verified by file
     integrity tools.'

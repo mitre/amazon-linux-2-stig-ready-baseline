@@ -1,5 +1,5 @@
 control 'SV-204489' do
-  title 'The Red Hat Enterprise Linux operating system must have cron logging implemented.'
+  title 'The Amazon Linux 2 operating system must have cron logging implemented.'
   desc 'Cron logging can be used to trace the successful or unsuccessful execution of cron jobs. It can also be used
     to spot intrusions into the use of the cron facility by unauthorized and malicious users.'
   desc 'check', 'Verify that "rsyslog" is configured to log cron events.

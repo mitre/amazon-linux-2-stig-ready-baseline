@@ -1,5 +1,5 @@
 control 'SV-204617' do
-  title 'The Red Hat Enterprise Linux operating system must not send Internet Protocol version 4 (IPv4) Internet
+  title 'The Amazon Linux 2 operating system must not send Internet Protocol version 4 (IPv4) Internet
     Control Message Protocol (ICMP) redirects.'
   desc "ICMP redirect messages are used by routers to inform hosts that a more direct route exists for a particular
     destination. These messages contain information from the system's route table, possibly revealing portions of the

@@ -1,5 +1,5 @@
 control 'SV-204607' do
-  title 'The Red Hat Enterprise Linux operating system must not contain shosts.equiv files.'
+  title 'The Amazon Linux 2 operating system must not contain shosts.equiv files.'
   desc 'The shosts.equiv files are used to configure host-based authentication for the system via SSH. Host-based
     authentication is not sufficient for preventing unauthorized access to the system, as it does not require
     interactive identification and authentication of a connection request, or for the use of two-factor authentication.'

@@ -1,5 +1,5 @@
 control 'SV-204419' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that passwords are restricted to a 24
+  title 'The Amazon Linux 2 operating system must be configured so that passwords are restricted to a 24
     hours/1 day minimum lifetime.'
   desc "Enforcing a minimum password lifetime helps to prevent repeated password changes to defeat the password
     reuse or history enforcement requirement. If users are allowed to immediately and continually change their password,

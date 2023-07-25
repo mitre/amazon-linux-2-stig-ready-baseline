@@ -1,5 +1,5 @@
 control 'SV-204632' do
-  title 'The Red Hat Enterprise Linux operating system must implement multifactor authentication for access to
+  title 'The Amazon Linux 2 operating system must implement multifactor authentication for access to
     privileged accounts via pluggable authentication modules (PAM).'
   desc 'Using an authentication device, such as a CAC or token that is separate from the information system, ensures
     that even if the information system is compromised, that compromise will not affect credentials stored on the

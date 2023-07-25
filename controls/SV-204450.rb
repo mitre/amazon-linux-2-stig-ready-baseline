@@ -1,5 +1,5 @@
 control 'SV-204450' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that the Datagram Congestion Control
+  title 'The Amazon Linux 2 operating system must be configured so that the Datagram Congestion Control
     Protocol (DCCP) kernel module is disabled unless required.'
   desc 'Disabling DCCP protects the system against exploitation of any flaws in the protocol implementation.'
   desc 'check', 'Verify the operating system disables the ability to load the DCCP kernel module.

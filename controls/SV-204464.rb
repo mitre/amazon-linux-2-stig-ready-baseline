@@ -1,5 +1,5 @@
 control 'SV-204464' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that all files and directories have a
+  title 'The Amazon Linux 2 operating system must be configured so that all files and directories have a
     valid group owner.'
   desc 'Files without a valid group owner may be unintentionally inherited if a group is assigned the same Group
     Identifier (GID) as the GID of the files without a valid group owner.'

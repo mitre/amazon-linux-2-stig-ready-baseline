@@ -1,5 +1,5 @@
 control 'SV-204481' do
-  title 'The Red Hat Enterprise Linux operating system must prevent files with the setuid and setgid bit set from
+  title 'The Amazon Linux 2 operating system must prevent files with the setuid and setgid bit set from
     being executed on file systems that are used with removable media.'
   desc 'The "nosuid" mount option causes the system to not execute "setuid" and "setgid" files with owner
     privileges. This option must be used for mounting any file system not containing approved "setuid" and "setguid"

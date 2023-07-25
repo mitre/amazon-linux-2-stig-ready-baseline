@@ -1,5 +1,5 @@
 control 'SV-204429' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that users must provide a password for
+  title 'The Amazon Linux 2 operating system must be configured so that users must provide a password for
     privilege escalation.'
   desc 'Without re-authentication, users may access resources or perform tasks for which they do not have
     authorization.

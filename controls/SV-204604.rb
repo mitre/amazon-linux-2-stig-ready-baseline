@@ -1,5 +1,5 @@
 control 'SV-204604' do
-  title 'The Red Hat Enterprise Linux operating system must enable an application firewall, if available.'
+  title 'The Amazon Linux 2 operating system must enable an application firewall, if available.'
   desc 'Firewalls protect computers from network attacks by blocking or limiting access to open network ports.
     Application firewalls limit which applications are allowed to communicate over the network.'
   desc 'check', 'Verify the operating system enabled an application firewall.

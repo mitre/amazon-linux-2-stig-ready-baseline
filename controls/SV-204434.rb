@@ -1,5 +1,5 @@
 control 'SV-204434' do
-  title 'The Red Hat Enterprise Linux operating system must not allow users to override SSH environment variables.'
+  title 'The Amazon Linux 2 operating system must not allow users to override SSH environment variables.'
   desc 'Failure to restrict system access to authenticated users negatively impacts operating system security.'
   desc 'check', 'Verify the operating system does not allow users to override environment variables to the SSH
     daemon.

@@ -1,5 +1,5 @@
 control 'SV-204441' do
-  title 'The Red Hat Enterprise Linux operating system must uniquely identify and must authenticate organizational
+  title 'The Amazon Linux 2 operating system must uniquely identify and must authenticate organizational
     users (or processes acting on behalf of organizational users) using multifactor authentication.'
   desc 'To assure accountability and prevent unauthenticated access, organizational users must be identified and
     authenticated to prevent potential misuse and compromise of the system.

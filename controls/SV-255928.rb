@@ -1,5 +1,5 @@
 control 'SV-255928' do
-  title 'The Red Hat Enterprise Linux operating system must be configured to prevent overwriting of custom authentication configuration settings by the authconfig utility.'
+  title 'The Amazon Linux 2 operating system must be configured to prevent overwriting of custom authentication configuration settings by the authconfig utility.'
   desc 'When using the authconfig utility to modify authentication configuration settings, the "system-auth" and "password-auth" files and any custom settings that they may contain are overwritten. This can be avoided by creating new local configuration files and creating new or moving existing symbolic links to them. The authconfig utility will recognize the local configuration files and not overwrite them, while writing its own settings to the original configuration files.'
   desc 'check', 'Verify "system-auth" and "password-auth" files are symbolic links pointing to "system-auth-local" and "password-auth-local":
      $ sudo ls -l /etc/pam.d/{password,system}-auth

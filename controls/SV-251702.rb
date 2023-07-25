@@ -1,5 +1,5 @@
 control 'SV-251702' do
-  title 'The Red Hat Enterprise Linux operating system must not have accounts configured with blank or null passwords.'
+  title 'The Amazon Linux 2 operating system must not have accounts configured with blank or null passwords.'
   desc 'If an account has an empty password, anyone could log on and run commands with the privileges of that account. Accounts with empty passwords should never be used in operational environments.'
   desc 'check', %q(Check the "/etc/shadow" file for blank passwords with the following command:
 

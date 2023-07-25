@@ -1,5 +1,5 @@
 control 'SV-204413' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that when passwords are changed the
+  title 'The Amazon Linux 2 operating system must be configured so that when passwords are changed the
     number of repeating consecutive characters must not be more than three characters.'
   desc 'Use of a complex password helps to increase the time and resources required to compromise the password.
     Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing

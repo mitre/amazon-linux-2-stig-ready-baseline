@@ -1,5 +1,5 @@
 control 'SV-204631' do
-  title 'The Red Hat Enterprise Linux operating system must have the required packages for multifactor
+  title 'The Amazon Linux 2 operating system must have the required packages for multifactor
     authentication installed.'
   desc 'Using an authentication device, such as a CAC or token that is separate from the information system, ensures
     that even if the information system is compromised, that compromise will not affect credentials stored on the

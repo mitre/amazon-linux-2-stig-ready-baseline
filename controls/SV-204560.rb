@@ -1,5 +1,5 @@
 control 'SV-204560' do
-  title 'The Red Hat Enterprise Linux operating system must audit all uses of the init_module and finit_module
+  title 'The Amazon Linux 2 operating system must audit all uses of the init_module and finit_module
     syscalls.'
   desc 'Without generating audit records that are specific to the security and mission needs of the organization, it
     would be difficult to establish, correlate, and investigate the events relating to an incident or identify those

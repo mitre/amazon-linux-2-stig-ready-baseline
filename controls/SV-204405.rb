@@ -1,5 +1,5 @@
 control 'SV-204405' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that /etc/pam.d/passwd implements
+  title 'The Amazon Linux 2 operating system must be configured so that /etc/pam.d/passwd implements
     /etc/pam.d/system-auth when changing passwords.'
   desc 'Pluggable authentication modules (PAM) allow for a modular approach to integrating authentication methods.
     PAM operates in a top-down processing model and if the modules are not listed in the correct order, an important

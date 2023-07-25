@@ -1,5 +1,5 @@
 control 'SV-204453' do
-  title 'The Red Hat Enterprise Linux operating system must enable SELinux.'
+  title 'The Amazon Linux 2 operating system must enable SELinux.'
   desc 'Without verification of the security functions, security functions may not operate correctly and the failure
     may go unnoticed. Security function is defined as the hardware, software, and/or firmware of the information system
     responsible for enforcing the system security policy and supporting the isolation of code and data on which the

@@ -1,5 +1,5 @@
 control 'SV-204584' do
-  title 'The Red Hat Enterprise Linux operating system must implement virtual address space randomization.'
+  title 'The Amazon Linux 2 operating system must implement virtual address space randomization.'
   desc "Address space layout randomization (ASLR) makes it more difficult for an attacker to predict the location of
     attack code he or she has introduced into a process's address space during an attempt at exploitation. Additionally,
     ASLR also makes it more difficult for an attacker to know the location of existing code in order to repurpose it

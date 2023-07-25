@@ -1,5 +1,5 @@
 control 'SV-204477' do
-  title 'The Red Hat Enterprise Linux operating system must be configured so that all local interactive user
+  title 'The Amazon Linux 2 operating system must be configured so that all local interactive user
     initialization files executable search paths contain only paths that resolve to the users home directory.'
   desc "The executable search path (typically the PATH environment variable) contains a list of directories for the
     shell to search to find executables. If this path includes the current working directory (other than the user's home

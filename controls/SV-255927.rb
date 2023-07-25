@@ -1,5 +1,5 @@
 control 'SV-255927' do
-  title 'The Red Hat Enterprise Linux operating system must restrict access to the kernel message buffer.'
+  title 'The Amazon Linux 2 operating system must restrict access to the kernel message buffer.'
   desc 'Restricting access to the kernel message buffer limits access only to root. This prevents attackers from gaining additional system information as a non-privileged user.'
   desc 'check', 'Verify the operating system is configured to restrict access to the kernel message buffer with the following commands:
 

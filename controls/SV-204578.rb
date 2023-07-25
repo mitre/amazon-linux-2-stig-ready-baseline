@@ -1,5 +1,5 @@
 control 'SV-204578' do
-  title 'The Red Hat Enterprise Linux 7 operating system must implement DoD-approved encryption to protect the
+  title 'The Amazon Linux 2 7 operating system must implement DoD-approved encryption to protect the
     confidentiality of SSH connections.'
   desc 'Unapproved mechanisms that are used for authentication to the cryptographic module are not verified and
     therefore cannot be relied upon to provide confidentiality or integrity, and DoD data may be compromised.
