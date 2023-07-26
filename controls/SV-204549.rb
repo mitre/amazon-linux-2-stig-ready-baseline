@@ -1,4 +1,4 @@
-control 'SV-204549' do
+control 'AMZL-02-730700' do
   title 'The Amazon Linux 2 operating system must audit all uses of the sudoers file and all files in the
     /etc/sudoers.d/ directory.'
   desc 'Reconstruction of harmful events or forensic analysis is not possible if audit records do not contain enough
@@ -27,7 +27,7 @@ control 'SV-204549' do
   tag gtitle: 'SRG-OS-000037-GPOS-00015'
   tag satisfies: ['SRG-OS-000037-GPOS-00015', 'SRG-OS-000042-GPOS-00020', 'SRG-OS-000392-GPOS-00172', 'SRG-OS-000462-GPOS-00206', 'SRG-OS-000471-GPOS-00215']
   tag gid: 'V-204549'
-  tag rid: 'SV-204549r853953_rule'
+  tag rid: 'AMZL-02-730700r853953_rule'
   tag stig_id: 'RHEL-07-030700'
   tag fix_id: 'F-4673r88840_fix'
   tag cci: ['CCI-000130', 'CCI-000135', 'CCI-000172', 'CCI-002884']

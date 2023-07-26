@@ -1,4 +1,4 @@
-control 'SV-204421' do
+control 'AMZL-02-710260' do
   title 'The Amazon Linux 2 operating system must be configured so that existing passwords are restricted
     to a 60-day maximum lifetime.'
   desc 'Any password, no matter how complex, can eventually be cracked. Therefore, passwords need to be changed
@@ -14,7 +14,7 @@ control 'SV-204421' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000076-GPOS-00044'
   tag gid: 'V-204421'
-  tag rid: 'SV-204421r603261_rule'
+  tag rid: 'AMZL-02-710260r603261_rule'
   tag stig_id: 'RHEL-07-010260'
   tag fix_id: 'F-4545r88456_fix'
   tag cci: ['CCI-000199']

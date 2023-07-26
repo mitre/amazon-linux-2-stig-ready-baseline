@@ -1,4 +1,4 @@
-control 'SV-204437' do
+control 'AMZL-02-710481' do
   title 'The Amazon Linux 2 operating system must require authentication upon booting into single-user and
     maintenance modes.'
   desc 'If the system does not require valid root authentication before it boots into single-user or maintenance
@@ -19,7 +19,7 @@ control 'SV-204437' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000080-GPOS-00048'
   tag gid: 'V-204437'
-  tag rid: 'SV-204437r603261_rule'
+  tag rid: 'AMZL-02-710481r603261_rule'
   tag stig_id: 'RHEL-07-010481'
   tag fix_id: 'F-4561r88504_fix'
   tag cci: ['CCI-000213']

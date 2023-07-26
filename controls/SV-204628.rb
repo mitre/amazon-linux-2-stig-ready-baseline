@@ -1,4 +1,4 @@
-control 'SV-204628' do
+control 'AMZL-02-740810' do
   title 'The Amazon Linux 2 operating system access control program must be configured to grant or deny
     system access to specific hosts and services.'
   desc 'If the systems access control program is not configured with appropriate rules for allowing and denying
@@ -47,7 +47,7 @@ control 'SV-204628' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204628'
-  tag rid: 'SV-204628r603261_rule'
+  tag rid: 'AMZL-02-740810r603261_rule'
   tag stig_id: 'RHEL-07-040810'
   tag fix_id: 'F-4752r89077_fix'
   tag cci: ['CCI-000366']

@@ -1,4 +1,4 @@
-control 'SV-204443' do
+control 'AMZL-02-720010' do
   title 'The Amazon Linux 2 operating system must not have the ypserv package installed.'
   desc 'Removing the "ypserv" package decreases the risk of the accidental (or intentional) activation of NIS or
     NIS+ services.'
@@ -15,7 +15,7 @@ control 'SV-204443' do
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000095-GPOS-00049'
   tag gid: 'V-204443'
-  tag rid: 'SV-204443r603261_rule'
+  tag rid: 'AMZL-02-720010r603261_rule'
   tag stig_id: 'RHEL-07-020010'
   tag fix_id: 'F-4567r88522_fix'
   tag cci: ['CCI-000381']

@@ -1,4 +1,4 @@
-control 'SV-204423' do
+control 'AMZL-02-710280' do
   title 'The Amazon Linux 2 operating system must be configured so that passwords are a minimum of 15
     characters in length.'
   desc 'The shorter the password, the lower the number of possible combinations that need to be tested before the
@@ -21,7 +21,7 @@ control 'SV-204423' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000078-GPOS-00046'
   tag gid: 'V-204423'
-  tag rid: 'SV-204423r603261_rule'
+  tag rid: 'AMZL-02-710280r603261_rule'
   tag stig_id: 'RHEL-07-010280'
   tag fix_id: 'F-4547r88462_fix'
   tag cci: ['CCI-000205']

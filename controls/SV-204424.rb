@@ -1,4 +1,4 @@
-control 'SV-204424' do
+control 'AMZL-02-710290' do
   title 'The Amazon Linux 2 operating system must not allow accounts configured with blank or null
     passwords.'
   desc 'If an account has an empty password, anyone could log on and run commands with the privileges of that
@@ -17,7 +17,7 @@ Note: Per requirement RHEL-07-010199, RHEL 7 must be configured to not overwrite
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204424'
-  tag rid: 'SV-204424r880839_rule'
+  tag rid: 'AMZL-02-710290r880839_rule'
   tag stig_id: 'RHEL-07-010290'
   tag fix_id: 'F-4548r880838_fix'
   tag cci: ['CCI-000366']

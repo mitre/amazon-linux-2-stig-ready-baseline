@@ -1,4 +1,4 @@
-control 'SV-204470' do
+control 'AMZL-02-720650' do
   title 'The Amazon Linux 2 operating system must be configured so that all local interactive user home
     directories are group-owned by the home directory owners primary group.'
   desc "If the Group Identifier (GID) of a local interactive user's home directory is not the same as the primary
@@ -27,7 +27,7 @@ If the user home directory referenced in "/etc/passwd" is not group-owned by tha
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204470'
-  tag rid: 'SV-204470r880764_rule'
+  tag rid: 'AMZL-02-720650r880764_rule'
   tag stig_id: 'RHEL-07-020650'
   tag fix_id: 'F-4594r880763_fix'
   tag cci: ['CCI-000366']

@@ -1,4 +1,4 @@
-control 'SV-204488' do
+control 'AMZL-02-721040' do
   title 'The Amazon Linux 2 operating system must set the umask value to 077 for all local interactive
     user accounts.'
   desc 'The umask controls the default access mode assigned to newly created files. A umask of 077 limits new files
@@ -26,7 +26,7 @@ If any local interactive user initialization files are found to have a umask sta
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204488'
-  tag rid: 'SV-204488r861006_rule'
+  tag rid: 'AMZL-02-721040r861006_rule'
   tag stig_id: 'RHEL-07-021040'
   tag fix_id: 'F-4612r88657_fix'
   tag cci: ['CCI-000318', 'CCI-000368', 'CCI-001812', 'CCI-001813', 'CCI-001814']

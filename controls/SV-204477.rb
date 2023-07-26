@@ -1,4 +1,4 @@
-control 'SV-204477' do
+control 'AMZL-02-720720' do
   title 'The Amazon Linux 2 operating system must be configured so that all local interactive user
     initialization files executable search paths contain only paths that resolve to the users home directory.'
   desc "The executable search path (typically the PATH environment variable) contains a list of directories for the
@@ -26,7 +26,7 @@ control 'SV-204477' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204477'
-  tag rid: 'SV-204477r792828_rule'
+  tag rid: 'AMZL-02-720720r792828_rule'
   tag stig_id: 'RHEL-07-020720'
   tag fix_id: 'F-4601r88624_fix'
   tag cci: ['CCI-000366']

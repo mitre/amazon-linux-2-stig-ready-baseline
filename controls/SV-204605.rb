@@ -1,4 +1,4 @@
-control 'SV-204605' do
+control 'AMZL-02-740530' do
   title 'The Amazon Linux 2 operating system must display the date and time of the last successful account
     logon upon logon.'
   desc 'Providing users with feedback on when account accesses last occurred facilitates user recognition and
@@ -17,7 +17,7 @@ control 'SV-204605' do
   tag severity: 'low'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204605'
-  tag rid: 'SV-204605r858478_rule'
+  tag rid: 'AMZL-02-740530r858478_rule'
   tag stig_id: 'RHEL-07-040530'
   tag fix_id: 'F-4729r89008_fix'
   tag cci: ['CCI-000366', 'CCI-000052']

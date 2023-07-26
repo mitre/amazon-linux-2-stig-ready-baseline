@@ -1,4 +1,4 @@
-control 'SV-228563' do
+control 'AMZL-02-721031' do
   title 'The Amazon Linux 2 operating system must be configured so that all world-writable directories are owned by root, sys, bin, or an application user.'
   desc 'If a world-writable directory is not owned by root, sys, bin, or an application User Identifier (UID), unauthorized users may be able to modify files created by others.
 
@@ -14,7 +14,7 @@ If there is output, this is a finding.'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag satisfies: nil
   tag gid: 'V-228563'
-  tag rid: 'SV-228563r744119_rule'
+  tag rid: 'AMZL-02-721031r744119_rule'
   tag stig_id: 'RHEL-07-021031'
   tag fix_id: 'F-19547r377220_fix'
   tag cci: ['CCI-000366']

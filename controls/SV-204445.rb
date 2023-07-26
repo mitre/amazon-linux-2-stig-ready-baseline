@@ -1,4 +1,4 @@
-control 'SV-204445' do
+control 'AMZL-02-720030' do
   title 'The Amazon Linux 2 operating system must be configured so that a file integrity tool verifies the
     baseline operating system configuration at least weekly.'
   desc "Unauthorized changes to the baseline configuration could make the system vulnerable to various attacks or allow unauthorized access to the operating system. Changes to operating system configurations can have unintended side effects, some of which may be relevant to security.
@@ -31,7 +31,7 @@ If the file integrity application does not exist, or a script file controlling t
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000363-GPOS-00150'
   tag gid: 'V-204445'
-  tag rid: 'SV-204445r880848_rule'
+  tag rid: 'AMZL-02-720030r880848_rule'
   tag stig_id: 'RHEL-07-020030'
   tag fix_id: 'F-36304r880847_fix'
   tag cci: ['CCI-001744']

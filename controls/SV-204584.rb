@@ -1,4 +1,4 @@
-control 'SV-204584' do
+control 'AMZL-02-740201' do
   title 'The Amazon Linux 2 operating system must implement virtual address space randomization.'
   desc "Address space layout randomization (ASLR) makes it more difficult for an attacker to predict the location of
     attack code he or she has introduced into a process's address space during an attempt at exploitation. Additionally,
@@ -30,7 +30,7 @@ If conflicting results are returned, this is a finding.'
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204584'
-  tag rid: 'SV-204584r880794_rule'
+  tag rid: 'AMZL-02-740201r880794_rule'
   tag stig_id: 'RHEL-07-040201'
   tag fix_id: 'F-4708r880793_fix'
   tag cci: ['CCI-000366']

@@ -1,4 +1,4 @@
-control 'SV-204572' do
+control 'AMZL-02-730910' do
   title 'The Amazon Linux 2 operating system must audit all uses of the unlink, unlinkat, rename,
     renameat, and rmdir syscalls.'
   desc 'If the system is not configured to audit certain activities and write them to an audit log, it is more
@@ -30,7 +30,7 @@ control 'SV-204572' do
   tag gtitle: 'SRG-OS-000466-GPOS-00210'
   tag satisfies: ['SRG-OS-000466-GPOS-00210', 'SRG-OS-000467-GPOS-00211', 'SRG-OS-000468-GPOS-00212', 'SRG-OS-000392-GPOS-00172']
   tag gid: 'V-204572'
-  tag rid: 'SV-204572r853985_rule'
+  tag rid: 'AMZL-02-730910r853985_rule'
   tag stig_id: 'RHEL-07-030910'
   tag fix_id: 'F-4696r853984_fix'
   tag cci: ['CCI-000172', 'CCI-002884']

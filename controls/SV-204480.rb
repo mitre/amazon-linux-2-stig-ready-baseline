@@ -1,4 +1,4 @@
-control 'SV-204480' do
+control 'AMZL-02-721000' do
   title 'The Amazon Linux 2 operating system must be configured so that file systems containing user home
     directories are mounted to prevent files with the setuid and setgid bit set from being executed.'
   desc 'The "nosuid" mount option causes the system to not execute setuid and setgid files with owner privileges.
@@ -24,7 +24,7 @@ control 'SV-204480' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204480'
-  tag rid: 'SV-204480r603838_rule'
+  tag rid: 'AMZL-02-721000r603838_rule'
   tag stig_id: 'RHEL-07-021000'
   tag fix_id: 'F-4604r88633_fix'
   tag cci: ['CCI-000366']

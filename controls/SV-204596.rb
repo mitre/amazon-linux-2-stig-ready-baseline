@@ -1,4 +1,4 @@
-control 'SV-204596' do
+control 'AMZL-02-740410' do
   title 'The Amazon Linux 2 operating system must be configured so that the SSH public host key files have
     mode 0644 or less permissive.'
   desc 'If a public host key file is modified by an unauthorized user, the SSH service may be compromised.'
@@ -19,7 +19,7 @@ control 'SV-204596' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204596'
-  tag rid: 'SV-204596r603261_rule'
+  tag rid: 'AMZL-02-740410r603261_rule'
   tag stig_id: 'RHEL-07-040410'
   tag fix_id: 'F-4720r88981_fix'
   tag cci: ['CCI-000366']

@@ -1,4 +1,4 @@
-control 'SV-237635' do
+control 'AMZL-02-710343' do
   title 'The Amazon Linux 2 operating system must require re-authentication when using the "sudo" command.'
   desc %q(Without re-authentication, users may access resources or perform tasks for which they do not have authorization.
 
@@ -27,7 +27,7 @@ Remove any duplicate or conflicting lines from /etc/sudoers and /etc/sudoers.d/ 
   tag gtitle: 'SRG-OS-000373-GPOS-00156'
   tag satisfies: nil
   tag gid: 'V-237635'
-  tag rid: 'SV-237635r861075_rule'
+  tag rid: 'AMZL-02-710343r861075_rule'
   tag stig_id: 'RHEL-07-010343'
   tag fix_id: 'F-40817r858491_fix'
   tag cci: ['CCI-002038']

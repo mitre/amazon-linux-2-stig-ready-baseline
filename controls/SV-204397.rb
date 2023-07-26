@@ -1,4 +1,4 @@
-control 'SV-204397' do
+control 'AMZL-02-710061' do
   title 'The Amazon Linux 2 operating system must uniquely identify and must authenticate users using
     multifactor authentication via a graphical user logon.'
   desc 'To assure accountability and prevent unauthenticated access, users must be identified and authenticated to
@@ -35,7 +35,7 @@ control 'SV-204397' do
   tag gtitle: 'SRG-OS-000375-GPOS-00160'
   tag satisfies: ['SRG-OS-000375-GPOS-00161', 'SRG-OS-000375-GPOS-00162']
   tag gid: 'V-204397'
-  tag rid: 'SV-204397r853879_rule'
+  tag rid: 'AMZL-02-710061r853879_rule'
   tag stig_id: 'RHEL-07-010061'
   tag fix_id: 'F-4521r88384_fix'
   tag cci: ['CCI-001948', 'CCI-001953', 'CCI-001954']

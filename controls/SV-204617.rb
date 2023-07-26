@@ -1,4 +1,4 @@
-control 'SV-204617' do
+control 'AMZL-02-740660' do
   title 'The Amazon Linux 2 operating system must not send Internet Protocol version 4 (IPv4) Internet
     Control Message Protocol (ICMP) redirects.'
   desc "ICMP redirect messages are used by routers to inform hosts that a more direct route exists for a particular
@@ -29,7 +29,7 @@ If conflicting results are returned, this is a finding.'
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204617'
-  tag rid: 'SV-204617r880821_rule'
+  tag rid: 'AMZL-02-740660r880821_rule'
   tag stig_id: 'RHEL-07-040660'
   tag fix_id: 'F-4741r880820_fix'
   tag cci: ['CCI-000366']

@@ -1,4 +1,4 @@
-control 'SV-204492' do
+control 'AMZL-02-721300' do
   title 'The Amazon Linux 2 operating system must disable Kernel core dumps unless needed.'
   desc 'Kernel core dumps may contain the full contents of system memory at the time of the crash. Kernel core dumps
     may consume a considerable amount of disk space and may result in denial of service by exhausting the available
@@ -22,7 +22,7 @@ control 'SV-204492' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204492'
-  tag rid: 'SV-204492r603261_rule'
+  tag rid: 'AMZL-02-721300r603261_rule'
   tag stig_id: 'RHEL-07-021300'
   tag fix_id: 'F-4616r88669_fix'
   tag cci: ['CCI-000366']

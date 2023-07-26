@@ -1,4 +1,4 @@
-control 'SV-204623' do
+control 'AMZL-02-740720' do
   title 'The Amazon Linux 2 operating system must be configured so that if the Trivial File Transfer
     Protocol (TFTP) server is required, the TFTP daemon is configured to operate in secure mode.'
   desc 'Restricting TFTP to a specific directory prevents remote users from copying, transferring, or overwriting
@@ -20,7 +20,7 @@ control 'SV-204623' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204623'
-  tag rid: 'SV-204623r603261_rule'
+  tag rid: 'AMZL-02-740720r603261_rule'
   tag stig_id: 'RHEL-07-040720'
   tag fix_id: 'F-4747r89062_fix'
   tag cci: ['CCI-000366']

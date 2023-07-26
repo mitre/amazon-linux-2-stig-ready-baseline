@@ -1,4 +1,4 @@
-control 'SV-214801' do
+control 'AMZL-02-732000' do
   title 'The Amazon Linux 2 operating system must use a virus scan program.'
   desc 'Virus scanning software can be used to protect a system from penetration from computer viruses and to limit
     their spread through intermediate systems.
@@ -15,7 +15,7 @@ control 'SV-214801' do
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-214801'
-  tag rid: 'SV-214801r854324_rule'
+  tag rid: 'AMZL-02-732000r854324_rule'
   tag stig_id: 'RHEL-07-032000'
   tag fix_id: 'F-15999r192369_fix'
   tag cci: ['CCI-001668', 'CCI-000366']

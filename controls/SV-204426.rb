@@ -1,4 +1,4 @@
-control 'SV-204426' do
+control 'AMZL-02-710310' do
   title 'The Amazon Linux 2 operating system must disable account identifiers (individuals, groups, roles,
     and devices) if the password expires.'
   desc 'Inactive identifiers pose a risk to systems and applications because attackers may exploit an inactive
@@ -23,7 +23,7 @@ control 'SV-204426' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000118-GPOS-00060'
   tag gid: 'V-204426'
-  tag rid: 'SV-204426r809190_rule'
+  tag rid: 'AMZL-02-710310r809190_rule'
   tag stig_id: 'RHEL-07-010310'
   tag fix_id: 'F-4550r809189_fix'
   tag cci: ['CCI-000795']

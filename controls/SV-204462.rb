@@ -1,4 +1,4 @@
-control 'SV-204462' do
+control 'AMZL-02-720310' do
   title 'The Amazon Linux 2 operating system must be configured so that the root account must be the only
     account having unrestricted access to the system.'
   desc 'If an account other than root also has a User Identifier (UID) of "0", it has root authority, giving that
@@ -15,7 +15,7 @@ control 'SV-204462' do
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204462'
-  tag rid: 'SV-204462r603261_rule'
+  tag rid: 'AMZL-02-720310r603261_rule'
   tag stig_id: 'RHEL-07-020310'
   tag fix_id: 'F-4586r88579_fix'
   tag cci: ['CCI-000366']

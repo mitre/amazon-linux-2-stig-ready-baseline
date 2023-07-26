@@ -1,4 +1,4 @@
-control 'SV-204618' do
+control 'AMZL-02-740670' do
   title 'Network interfaces configured on the Amazon Linux 2 operating system must not be in promiscuous
     mode.'
   desc 'Network interfaces in promiscuous mode allow for the capture of all network traffic visible to the system.
@@ -19,7 +19,7 @@ control 'SV-204618' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204618'
-  tag rid: 'SV-204618r603261_rule'
+  tag rid: 'AMZL-02-740670r603261_rule'
   tag stig_id: 'RHEL-07-040670'
   tag fix_id: 'F-4742r89047_fix'
   tag cci: ['CCI-000366']

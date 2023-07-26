@@ -1,4 +1,4 @@
-control 'SV-204600' do
+control 'AMZL-02-740450' do
   title 'The Amazon Linux 2 operating system must be configured so that the SSH daemon performs strict
     mode checking of home directory configuration files.'
   desc 'If other users have access to modify user-specific SSH configuration files, they may be able to log on to
@@ -19,7 +19,7 @@ control 'SV-204600' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204600'
-  tag rid: 'SV-204600r603261_rule'
+  tag rid: 'AMZL-02-740450r603261_rule'
   tag stig_id: 'RHEL-07-040450'
   tag fix_id: 'F-4724r88993_fix'
   tag cci: ['CCI-000366']

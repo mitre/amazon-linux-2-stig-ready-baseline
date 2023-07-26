@@ -1,4 +1,4 @@
-control 'SV-204496' do
+control 'AMZL-02-721340' do
   title 'The Amazon Linux 2 operating system must use a separate file system for /tmp (or equivalent).'
   desc 'The use of separate file systems for different paths can protect the system from failures resulting from a
     file system becoming full or failing.'
@@ -21,7 +21,7 @@ control 'SV-204496' do
   tag severity: 'low'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204496'
-  tag rid: 'SV-204496r603261_rule'
+  tag rid: 'AMZL-02-721340r603261_rule'
   tag stig_id: 'RHEL-07-021340'
   tag fix_id: 'F-36309r602637_fix'
   tag cci: ['CCI-000366']

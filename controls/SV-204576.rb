@@ -1,4 +1,4 @@
-control 'SV-204576' do
+control 'AMZL-02-740000' do
   title 'The Amazon Linux 2 operating system must limit the number of concurrent sessions to 10 for all
     accounts and/or account types.'
   desc 'Operating system management includes the ability to control the number of users and user sessions that
@@ -24,7 +24,7 @@ control 'SV-204576' do
   tag severity: 'low'
   tag gtitle: 'SRG-OS-000027-GPOS-00008'
   tag gid: 'V-204576'
-  tag rid: 'SV-204576r877399_rule'
+  tag rid: 'AMZL-02-740000r877399_rule'
   tag stig_id: 'RHEL-07-040000'
   tag fix_id: 'F-4700r88921_fix'
   tag cci: ['CCI-000054']

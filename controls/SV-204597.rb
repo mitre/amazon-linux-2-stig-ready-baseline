@@ -1,4 +1,4 @@
-control 'SV-204597' do
+control 'AMZL-02-740420' do
   title 'The Amazon Linux 2 operating system must be configured so that the SSH private host key files have mode 0640 or less permissive.'
   desc 'If an unauthorized user obtains the private SSH host key file, the host could be impersonated.'
   desc 'check', %q(Verify the SSH private host key files have mode "0640" or less permissive.
@@ -20,7 +20,7 @@ If any file has a mode more permissive than "0640", this is a finding.)
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204597'
-  tag rid: 'SV-204597r880743_rule'
+  tag rid: 'AMZL-02-740420r880743_rule'
   tag stig_id: 'RHEL-07-040420'
   tag fix_id: 'F-4721r880742_fix'
   tag cci: ['CCI-000366']

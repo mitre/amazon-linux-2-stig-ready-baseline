@@ -1,4 +1,4 @@
-control 'SV-204489' do
+control 'AMZL-02-721100' do
   title 'The Amazon Linux 2 operating system must have cron logging implemented.'
   desc 'Cron logging can be used to trace the successful or unsuccessful execution of cron jobs. It can also be used
     to spot intrusions into the use of the cron facility by unauthorized and malicious users.'
@@ -24,7 +24,7 @@ control 'SV-204489' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204489'
-  tag rid: 'SV-204489r744109_rule'
+  tag rid: 'AMZL-02-721100r744109_rule'
   tag stig_id: 'RHEL-07-021100'
   tag fix_id: 'F-4613r744108_fix'
   tag cci: ['CCI-000366']

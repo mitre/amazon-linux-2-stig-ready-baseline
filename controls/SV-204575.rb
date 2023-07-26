@@ -1,4 +1,4 @@
-control 'SV-204575' do
+control 'AMZL-02-731010' do
   title 'The Amazon Linux 2 operating system must be configured so that the rsyslog daemon does not accept
     log messages from other servers unless the server is being used for log aggregation.'
   desc "Unintentionally running a rsyslog server accepting remote messages puts the system at increased risk.
@@ -25,7 +25,7 @@ control 'SV-204575' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204575'
-  tag rid: 'SV-204575r853986_rule'
+  tag rid: 'AMZL-02-731010r853986_rule'
   tag stig_id: 'RHEL-07-031010'
   tag fix_id: 'F-4699r88918_fix'
   tag cci: ['CCI-000318', 'CCI-000368', 'CCI-001812', 'CCI-001813', 'CCI-001814']

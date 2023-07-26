@@ -1,4 +1,4 @@
-control 'SV-204563' do
+control 'AMZL-02-730840' do
   title 'The Amazon Linux 2 operating system must audit all uses of the kmod command.'
   desc 'Without generating audit records that are specific to the security and mission needs of the organization, it
     would be difficult to establish, correlate, and investigate the events relating to an incident or identify those
@@ -30,7 +30,7 @@ The audit daemon must be restarted for the changes to take effect.'
   tag gtitle: 'SRG-OS-000471-GPOS-00216'
   tag satisfies: ['SRG-OS-000471-GPOS-00216', 'SRG-OS-000477-GPOS-00222']
   tag gid: 'V-204563'
-  tag rid: 'SV-204563r858498_rule'
+  tag rid: 'AMZL-02-730840r858498_rule'
   tag stig_id: 'RHEL-07-030840'
   tag fix_id: 'F-4687r858497_fix'
   tag cci: ['CCI-000172']

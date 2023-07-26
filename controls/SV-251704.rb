@@ -1,4 +1,4 @@
-control 'SV-251704' do
+control 'AMZL-02-710344' do
   title 'The Amazon Linux 2 operating system must not be configured to bypass password requirements for privilege escalation.'
   desc 'Without re-authentication, users may access resources or perform tasks for which they do not have authorization.
 
@@ -21,7 +21,7 @@ Remove any occurrences of "pam_succeed_if" in the file.'
   tag gtitle: 'SRG-OS-000373-GPOS-00156'
   tag satisfies: ['SRG-OS-000373-GPOS-00156', 'SRG-OS-000373-GPOS-00157', 'SRG-OS-000373-GPOS-00158']
   tag gid: 'V-251704'
-  tag rid: 'SV-251704r854012_rule'
+  tag rid: 'AMZL-02-710344r854012_rule'
   tag stig_id: 'RHEL-07-010344'
   tag fix_id: 'F-55095r854011_fix'
   tag cci: ['CCI-002038']

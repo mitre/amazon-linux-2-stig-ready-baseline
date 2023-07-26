@@ -1,4 +1,4 @@
-control 'SV-204608' do
+control 'AMZL-02-740600' do
   title 'For Amazon Linux 2 operating systems using DNS resolution, at least two name servers must be
     configured.'
   desc 'To provide availability for name resolution services, multiple redundant name servers are mandated. A
@@ -39,7 +39,7 @@ control 'SV-204608' do
   tag severity: 'low'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204608'
-  tag rid: 'SV-204608r603261_rule'
+  tag rid: 'AMZL-02-740600r603261_rule'
   tag stig_id: 'RHEL-07-040600'
   tag fix_id: 'F-4732r89017_fix'
   tag cci: ['CCI-000366']

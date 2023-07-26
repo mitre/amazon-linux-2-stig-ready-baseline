@@ -1,4 +1,4 @@
-control 'SV-204589' do
+control 'AMZL-02-740340' do
   title 'The Amazon Linux 2 operating system must be configured so that all network connections associated
     with SSH traffic terminate after a period of inactivity.'
   desc 'Terminating an idle SSH session within a short time period reduces the window of opportunity for
@@ -29,7 +29,7 @@ control 'SV-204589' do
   tag gtitle: 'SRG-OS-000163-GPOS-00072'
   tag satisfies: ['SRG-OS-000163-GPOS-00072', 'SRG-OS-000279-GPOS-00109']
   tag gid: 'V-204589'
-  tag rid: 'SV-204589r853992_rule'
+  tag rid: 'AMZL-02-740340r853992_rule'
   tag stig_id: 'RHEL-07-040340'
   tag fix_id: 'F-4713r88960_fix'
   tag cci: ['CCI-001133', 'CCI-002361']

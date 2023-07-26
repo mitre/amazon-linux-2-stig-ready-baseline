@@ -1,4 +1,4 @@
-control 'SV-204408' do
+control 'AMZL-02-710130' do
   title 'The Amazon Linux 2 operating system must be configured so that when passwords are changed or new
     passwords are established, the new password must contain at least one lower-case character.'
   desc 'Use of a complex password helps to increase the time and resources required to compromise the password.
@@ -23,7 +23,7 @@ control 'SV-204408' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000070-GPOS-00038'
   tag gid: 'V-204408'
-  tag rid: 'SV-204408r603261_rule'
+  tag rid: 'AMZL-02-710130r603261_rule'
   tag stig_id: 'RHEL-07-010130'
   tag fix_id: 'F-4532r88417_fix'
   tag cci: ['CCI-000193']

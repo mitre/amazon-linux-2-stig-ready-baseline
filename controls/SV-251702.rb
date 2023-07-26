@@ -1,4 +1,4 @@
-control 'SV-251702' do
+control 'AMZL-02-710291' do
   title 'The Amazon Linux 2 operating system must not have accounts configured with blank or null passwords.'
   desc 'If an account has an empty password, anyone could log on and run commands with the privileges of that account. Accounts with empty passwords should never be used in operational environments.'
   desc 'check', %q(Check the "/etc/shadow" file for blank passwords with the following command:
@@ -17,7 +17,7 @@ $ sudo passwd -l [username]'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag satisfies: nil
   tag gid: 'V-251702'
-  tag rid: 'SV-251702r809220_rule'
+  tag rid: 'AMZL-02-710291r809220_rule'
   tag stig_id: 'RHEL-07-010291'
   tag fix_id: 'F-55093r809219_fix'
   tag cci: ['CCI-000366']

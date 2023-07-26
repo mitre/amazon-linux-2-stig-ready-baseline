@@ -1,4 +1,4 @@
-control 'SV-204466' do
+control 'AMZL-02-720610' do
   title 'The Amazon Linux 2 operating system must be configured so that all local interactive user
     accounts, upon creation, are assigned a home directory.'
   desc 'If local interactive users are not assigned a valid home directory, there is no place for the storage and
@@ -18,7 +18,7 @@ control 'SV-204466' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204466'
-  tag rid: 'SV-204466r603261_rule'
+  tag rid: 'AMZL-02-720610r603261_rule'
   tag stig_id: 'RHEL-07-020610'
   tag fix_id: 'F-4590r88591_fix'
   tag cci: ['CCI-000366']

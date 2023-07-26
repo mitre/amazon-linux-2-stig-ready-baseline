@@ -1,4 +1,4 @@
-control 'SV-204524' do
+control 'AMZL-02-730440' do
   title 'The Amazon Linux 2 operating system must audit all uses of the setxattr, fsetxattr, lsetxattr,
     removexattr, fremovexattr, and lremovexattr syscalls.'
   desc 'Without generating audit records that are specific to the security and mission needs of the organization, it
@@ -37,7 +37,7 @@ control 'SV-204524' do
   tag gtitle: 'SRG-OS-000458-GPOS-00203'
   tag satisfies: ['SRG-OS-000458-GPOS-00203', 'SRG-OS-000392-GPOS-00172', 'SRG-OS-000064-GPOS-00033']
   tag gid: 'V-204524'
-  tag rid: 'SV-204524r809775_rule'
+  tag rid: 'AMZL-02-730440r809775_rule'
   tag stig_id: 'RHEL-07-030440'
   tag fix_id: 'F-4648r809774_fix'
   tag cci: ['CCI-000172']

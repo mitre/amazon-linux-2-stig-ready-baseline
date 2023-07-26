@@ -1,4 +1,4 @@
-control 'SV-204464' do
+control 'AMZL-02-720330' do
   title 'The Amazon Linux 2 operating system must be configured so that all files and directories have a
     valid group owner.'
   desc 'Files without a valid group owner may be unintentionally inherited if a group is assigned the same Group
@@ -16,7 +16,7 @@ control 'SV-204464' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204464'
-  tag rid: 'SV-204464r853898_rule'
+  tag rid: 'AMZL-02-720330r853898_rule'
   tag stig_id: 'RHEL-07-020330'
   tag fix_id: 'F-4588r88585_fix'
   tag cci: ['CCI-002165']

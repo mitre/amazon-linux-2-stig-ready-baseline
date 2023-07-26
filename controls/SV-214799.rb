@@ -1,4 +1,4 @@
-control 'SV-214799' do
+control 'AMZL-02-710020' do
   title 'The Amazon Linux 2 operating system must be configured so that the cryptographic hash of system
     files and commands matches vendor values.'
   desc 'Without cryptographic integrity protections, system command and files can be altered by unauthorized users
@@ -29,7 +29,7 @@ command:
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-214799'
-  tag rid: 'SV-214799r854001_rule'
+  tag rid: 'AMZL-02-710020r854001_rule'
   tag stig_id: 'RHEL-07-010020'
   tag fix_id: 'F-15997r192363_fix'
   tag cci: ['CCI-001749']

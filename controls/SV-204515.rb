@@ -1,4 +1,4 @@
-control 'SV-204515' do
+control 'AMZL-02-730350' do
   title 'The Amazon Linux 2 operating system must immediately notify the System Administrator (SA) and
     Information System Security Officer (ISSO) (at a minimum) when the threshold for the repository maximum audit record
     storage capacity is reached.'
@@ -23,7 +23,7 @@ control 'SV-204515' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000343-GPOS-00134'
   tag gid: 'V-204515'
-  tag rid: 'SV-204515r877389_rule'
+  tag rid: 'AMZL-02-730350r877389_rule'
   tag stig_id: 'RHEL-07-030350'
   tag fix_id: 'F-4639r88738_fix'
   tag cci: ['CCI-001855']

@@ -1,4 +1,4 @@
-control 'SV-204469' do
+control 'AMZL-02-720640' do
   title 'The Amazon Linux 2 operating system must be configured so that all local interactive user home
     directories are owned by their respective users.'
   desc "If a local interactive user does not own their home directory, unauthorized users could access or modify the
@@ -17,7 +17,7 @@ control 'SV-204469' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204469'
-  tag rid: 'SV-204469r603830_rule'
+  tag rid: 'AMZL-02-720640r603830_rule'
   tag stig_id: 'RHEL-07-020640'
   tag fix_id: 'F-4593r88600_fix'
   tag cci: ['CCI-000366']

@@ -1,4 +1,4 @@
-control 'SV-204620' do
+control 'AMZL-02-740690' do
   title 'The Amazon Linux 2 operating system must not have a File Transfer Protocol (FTP) server package
     installed unless needed.'
   desc 'The FTP service provides an unencrypted remote access that does not provide for the confidentiality and
@@ -19,7 +19,7 @@ control 'SV-204620' do
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204620'
-  tag rid: 'SV-204620r603261_rule'
+  tag rid: 'AMZL-02-740690r603261_rule'
   tag stig_id: 'RHEL-07-040690'
   tag fix_id: 'F-4744r89053_fix'
   tag cci: ['CCI-000366']

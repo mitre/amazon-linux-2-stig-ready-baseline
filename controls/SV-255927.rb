@@ -1,4 +1,4 @@
-control 'SV-255927' do
+control 'AMZL-02-710375' do
   title 'The Amazon Linux 2 operating system must restrict access to the kernel message buffer.'
   desc 'Restricting access to the kernel message buffer limits access only to root. This prevents attackers from gaining additional system information as a non-privileged user.'
   desc 'check', 'Verify the operating system is configured to restrict access to the kernel message buffer with the following commands:
@@ -38,7 +38,7 @@ Reload settings from all system configuration files with the following command:
   tag check_id: 'C-59604r880789_chk'
   tag severity: 'low'
   tag gid: 'V-255927'
-  tag rid: 'SV-255927r880791_rule'
+  tag rid: 'AMZL-02-710375r880791_rule'
   tag stig_id: 'RHEL-07-010375'
   tag gtitle: 'SRG-OS-000138-GPOS-00069'
   tag fix_id: 'F-59547r880790_fix'

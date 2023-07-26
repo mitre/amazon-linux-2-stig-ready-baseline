@@ -1,4 +1,4 @@
-control 'SV-204411' do
+control 'AMZL-02-710160' do
   title 'The Amazon Linux 2 operating system must be configured so that when passwords are changed a
     minimum of eight of the total number of characters must be changed.'
   desc 'Use of a complex password helps to increase the time and resources required to compromise the password.
@@ -22,7 +22,7 @@ control 'SV-204411' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000072-GPOS-00040'
   tag gid: 'V-204411'
-  tag rid: 'SV-204411r603261_rule'
+  tag rid: 'AMZL-02-710160r603261_rule'
   tag stig_id: 'RHEL-07-010160'
   tag fix_id: 'F-4535r88426_fix'
   tag cci: ['CCI-000195']

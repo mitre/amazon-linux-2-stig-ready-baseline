@@ -1,4 +1,4 @@
-control 'SV-204476' do
+control 'AMZL-02-720710' do
   title 'The Amazon Linux 2 operating system must be configured so that all local initialization files
     have mode 0740 or less permissive.'
   desc "Local initialization files are used to configure the user's shell environment upon logon. Malicious
@@ -23,7 +23,7 @@ of "/home/smithj".
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204476'
-  tag rid: 'SV-204476r603261_rule'
+  tag rid: 'AMZL-02-720710r603261_rule'
   tag stig_id: 'RHEL-07-020710'
   tag fix_id: 'F-4600r88621_fix'
   tag cci: ['CCI-000366']

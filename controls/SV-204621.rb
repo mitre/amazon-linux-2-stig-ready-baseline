@@ -1,4 +1,4 @@
-control 'SV-204621' do
+control 'AMZL-02-740700' do
   title 'The Amazon Linux 2 operating system must not have the Trivial File Transfer Protocol (TFTP)
     server package installed if not required for operational support.'
   desc 'If TFTP is required for operational support (such as the transmission of router configurations) its use must
@@ -16,7 +16,7 @@ control 'SV-204621' do
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204621'
-  tag rid: 'SV-204621r853996_rule'
+  tag rid: 'AMZL-02-740700r853996_rule'
   tag stig_id: 'RHEL-07-040700'
   tag fix_id: 'F-4745r89056_fix'
   tag cci: ['CCI-000318', 'CCI-000368', 'CCI-001812', 'CCI-001813', 'CCI-001814']

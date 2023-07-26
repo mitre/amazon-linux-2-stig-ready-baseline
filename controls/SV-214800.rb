@@ -1,4 +1,4 @@
-control 'SV-214800' do
+control 'AMZL-02-720019' do
   title 'The Amazon Linux 2 operating system must implement the Endpoint Security for Linux Threat
     Prevention tool.'
   desc "Adding endpoint security tools can provide the capability to automatically take actions in response to
@@ -20,7 +20,7 @@ control 'SV-214800' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-214800'
-  tag rid: 'SV-214800r854323_rule'
+  tag rid: 'AMZL-02-720019r854323_rule'
   tag stig_id: 'RHEL-07-020019'
   tag fix_id: 'F-36317r754750_fix'
   tag cci: ['CCI-001263', 'CCI-000366']

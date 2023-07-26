@@ -1,4 +1,4 @@
-control 'SV-204463' do
+control 'AMZL-02-720320' do
   title 'The Amazon Linux 2 operating system must be configured so that all files and directories have a
     valid owner.'
   desc 'Unowned files and directories may be unintentionally inherited if a user is assigned the same User
@@ -16,7 +16,7 @@ control 'SV-204463' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204463'
-  tag rid: 'SV-204463r853897_rule'
+  tag rid: 'AMZL-02-720320r853897_rule'
   tag stig_id: 'RHEL-07-020320'
   tag fix_id: 'F-4587r88582_fix'
   tag cci: ['CCI-002165']

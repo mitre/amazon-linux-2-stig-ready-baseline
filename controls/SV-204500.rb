@@ -1,4 +1,4 @@
-control 'SV-204500' do
+control 'AMZL-02-721620' do
   title 'The Amazon Linux 2 operating system must use a file integrity tool that is configured to use FIPS
     140-2 approved cryptographic hashes for validating file contents and directories.'
   desc 'File integrity tools use cryptographic hashes for verifying file contents and directories have not been
@@ -32,7 +32,7 @@ If the "sha512" rule is not being used on all uncommented selection lines in the
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204500'
-  tag rid: 'SV-204500r880860_rule'
+  tag rid: 'AMZL-02-721620r880860_rule'
   tag stig_id: 'RHEL-07-021620'
   tag fix_id: 'F-4624r792830_fix'
   tag cci: ['CCI-000366']

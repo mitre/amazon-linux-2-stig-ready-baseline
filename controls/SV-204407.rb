@@ -1,4 +1,4 @@
-control 'SV-204407' do
+control 'AMZL-02-710120' do
   title 'The Amazon Linux 2 operating system must be configured so that when passwords are changed or new
     passwords are established, the new password must contain at least one upper-case character.'
   desc 'Use of a complex password helps to increase the time and resources required to compromise the password.
@@ -22,7 +22,7 @@ control 'SV-204407' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000069-GPOS-00037'
   tag gid: 'V-204407'
-  tag rid: 'SV-204407r603261_rule'
+  tag rid: 'AMZL-02-710120r603261_rule'
   tag stig_id: 'RHEL-07-010120'
   tag fix_id: 'F-4531r88414_fix'
   tag cci: ['CCI-000192']

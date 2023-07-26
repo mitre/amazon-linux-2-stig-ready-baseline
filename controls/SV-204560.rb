@@ -1,4 +1,4 @@
-control 'SV-204560' do
+control 'AMZL-02-730820' do
   title 'The Amazon Linux 2 operating system must audit all uses of the init_module and finit_module
     syscalls.'
   desc 'Without generating audit records that are specific to the security and mission needs of the organization, it
@@ -36,7 +36,7 @@ The audit daemon must be restarted for the changes to take effect.'
   tag gtitle: 'SRG-OS-000471-GPOS-00216'
   tag satisfies: ['SRG-OS-000471-GPOS-00216', 'SRG-OS-000477-GPOS-00222']
   tag gid: 'V-204560'
-  tag rid: 'SV-204560r833172_rule'
+  tag rid: 'AMZL-02-730820r833172_rule'
   tag stig_id: 'RHEL-07-030820'
   tag fix_id: 'F-4684r833171_fix'
   tag cci: ['CCI-000172']

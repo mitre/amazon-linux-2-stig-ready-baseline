@@ -1,4 +1,4 @@
-control 'SV-204453' do
+control 'AMZL-02-720210' do
   title 'The Amazon Linux 2 operating system must enable SELinux.'
   desc 'Without verification of the security functions, security functions may not operate correctly and the failure
     may go unnoticed. Security function is defined as the hardware, software, and/or firmware of the information system
@@ -25,7 +25,7 @@ control 'SV-204453' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000445-GPOS-00199'
   tag gid: 'V-204453'
-  tag rid: 'SV-204453r853895_rule'
+  tag rid: 'AMZL-02-720210r853895_rule'
   tag stig_id: 'RHEL-07-020210'
   tag fix_id: 'F-36306r602628_fix'
   tag cci: ['CCI-002165', 'CCI-002696']

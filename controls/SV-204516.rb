@@ -1,4 +1,4 @@
-control 'SV-204516' do
+control 'AMZL-02-730360' do
   title 'The Amazon Linux 2 operating system must audit all executions of privileged functions.'
   desc 'Misuse of privileged functions, either intentionally or unintentionally by authorized users, or by
     unauthorized external entities that have compromised information system accounts, is a serious and ongoing concern
@@ -25,7 +25,7 @@ control 'SV-204516' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000327-GPOS-00127'
   tag gid: 'V-204516'
-  tag rid: 'SV-204516r853914_rule'
+  tag rid: 'AMZL-02-730360r853914_rule'
   tag stig_id: 'RHEL-07-030360'
   tag fix_id: 'F-4640r88741_fix'
   tag cci: ['CCI-002234']

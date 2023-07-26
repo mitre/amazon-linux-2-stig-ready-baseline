@@ -1,4 +1,4 @@
-control 'SV-204512' do
+control 'AMZL-02-730321' do
   title 'The Amazon Linux 2 operating system must be configured so that the audit system takes appropriate
     action when there is an error sending audit records to a remote system.'
   desc 'Taking appropriate action when there is an error sending audit records to a remote system will minimize the
@@ -26,7 +26,7 @@ control 'SV-204512' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000342-GPOS-00133'
   tag gid: 'V-204512'
-  tag rid: 'SV-204512r877390_rule'
+  tag rid: 'AMZL-02-730321r877390_rule'
   tag stig_id: 'RHEL-07-030321'
   tag fix_id: 'F-36315r602655_fix'
   tag cci: ['CCI-001851']

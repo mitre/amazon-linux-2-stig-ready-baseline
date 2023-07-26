@@ -1,4 +1,4 @@
-control 'SV-204508' do
+control 'AMZL-02-730211' do
   title 'The Amazon Linux 2 operating system must label all off-loaded audit logs before sending them to
     the central log server.'
   desc 'Information stored in one location is vulnerable to accidental or incidental deletion or alteration.
@@ -24,7 +24,7 @@ control 'SV-204508' do
   tag gtitle: 'SRG-OS-000342-GPOS-00133'
   tag satisfies: ['SRG-OS-000342-GPOS-00133', 'SRG-OS-000479-GPOS-00224']
   tag gid: 'V-204508'
-  tag rid: 'SV-204508r877390_rule'
+  tag rid: 'AMZL-02-730211r877390_rule'
   tag stig_id: 'RHEL-07-030211'
   tag fix_id: 'F-36313r602649_fix'
   tag cci: ['CCI-001851']

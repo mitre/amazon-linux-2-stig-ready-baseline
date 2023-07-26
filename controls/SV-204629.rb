@@ -1,4 +1,4 @@
-control 'SV-204629' do
+control 'AMZL-02-740820' do
   title 'The Amazon Linux 2 operating system must not have unauthorized IP tunnels configured.'
   desc 'IP tunneling mechanisms can be used to bypass network filtering. If tunneling is required, it must be
     documented with the Information System Security Officer (ISSO).'
@@ -23,7 +23,7 @@ control 'SV-204629' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204629'
-  tag rid: 'SV-204629r603261_rule'
+  tag rid: 'AMZL-02-740820r603261_rule'
   tag stig_id: 'RHEL-07-040820'
   tag fix_id: 'F-4753r89080_fix'
   tag cci: ['CCI-000366']

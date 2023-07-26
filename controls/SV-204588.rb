@@ -1,4 +1,4 @@
-control 'SV-204588' do
+control 'AMZL-02-740330' do
   title 'The Amazon Linux 2 operating system must be configured so that the SSH daemon does not allow
     authentication using RSA rhosts authentication.'
   desc 'Configuring this setting for the SSH daemon provides additional assurance that remote logon via SSH will
@@ -20,7 +20,7 @@ control 'SV-204588' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204588'
-  tag rid: 'SV-204588r603261_rule'
+  tag rid: 'AMZL-02-740330r603261_rule'
   tag stig_id: 'RHEL-07-040330'
   tag fix_id: 'F-4712r88957_fix'
   tag cci: ['CCI-000366']

@@ -1,4 +1,4 @@
-control 'SV-204422' do
+control 'AMZL-02-710270' do
   title 'The Amazon Linux 2 operating system must be configured so that passwords are prohibited from
     reuse for a minimum of five generations.'
   desc 'Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at
@@ -24,7 +24,7 @@ Note: Per requirement RHEL-07-010199, RHEL 7 must be configured to not overwrite
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000077-GPOS-00045'
   tag gid: 'V-204422'
-  tag rid: 'SV-204422r880836_rule'
+  tag rid: 'AMZL-02-710270r880836_rule'
   tag stig_id: 'RHEL-07-010270'
   tag fix_id: 'F-4546r880835_fix'
   tag cci: ['CCI-000200']

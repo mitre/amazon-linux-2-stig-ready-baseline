@@ -1,4 +1,4 @@
-control 'SV-204632' do
+control 'AMZL-02-741002' do
   title 'The Amazon Linux 2 operating system must implement multifactor authentication for access to
     privileged accounts via pluggable authentication modules (PAM).'
   desc 'Using an authentication device, such as a CAC or token that is separate from the information system, ensures
@@ -30,7 +30,7 @@ control 'SV-204632' do
   tag gtitle: 'SRG-OS-000375-GPOS-00160'
   tag satisfies: ['SRG-OS-000375-GPOS-00160', 'SRG-OS-000375-GPOS-00161', 'SRG-OS-000375-GPOS-00162']
   tag gid: 'V-204632'
-  tag rid: 'SV-204632r853998_rule'
+  tag rid: 'AMZL-02-741002r853998_rule'
   tag stig_id: 'RHEL-07-041002'
   tag fix_id: 'F-4756r89089_fix'
   tag cci: ['CCI-001948', 'CCI-001953', 'CCI-001954']

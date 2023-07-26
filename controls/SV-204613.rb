@@ -1,4 +1,4 @@
-control 'SV-204613' do
+control 'AMZL-02-740630' do
   title 'The Amazon Linux 2 operating system must not respond to Internet Protocol version 4 (IPv4)
     Internet Control Message Protocol (ICMP) echoes sent to a broadcast address.'
   desc 'Responding to broadcast (ICMP) echoes facilitates network mapping and provides a vector for amplification
@@ -31,7 +31,7 @@ directory (or modify the line to have the required value):
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204613'
-  tag rid: 'SV-204613r880809_rule'
+  tag rid: 'AMZL-02-740630r880809_rule'
   tag stig_id: 'RHEL-07-040630'
   tag fix_id: 'F-4737r880808_fix'
   tag cci: ['CCI-000366']

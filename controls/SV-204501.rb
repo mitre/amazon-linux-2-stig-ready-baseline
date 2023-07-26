@@ -1,4 +1,4 @@
-control 'SV-204501' do
+control 'AMZL-02-721700' do
   title 'The Amazon Linux 2 operating system must not allow removable media to be used as the boot loader
     unless approved.'
   desc 'Malicious users with removable boot media can gain access to a system configured to use removable media as
@@ -30,7 +30,7 @@ If the system is using an alternate boot loader on removable media, and document
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000364-GPOS-00151'
   tag gid: 'V-204501'
-  tag rid: 'SV-204501r861008_rule'
+  tag rid: 'AMZL-02-721700r861008_rule'
   tag stig_id: 'RHEL-07-021700'
   tag fix_id: 'F-4625r88696_fix'
   tag cci: ['CCI-000318', 'CCI-000368', 'CCI-001812', 'CCI-001813', 'CCI-001814']

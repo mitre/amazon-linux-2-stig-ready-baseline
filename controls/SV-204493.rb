@@ -1,4 +1,4 @@
-control 'SV-204493' do
+control 'AMZL-02-721310' do
   title 'The Amazon Linux 2 operating system must be configured so that a separate file system is used for
     user home directories (such as /home or an equivalent).'
   desc 'The use of separate file systems for different paths can protect the system from failures resulting from a
@@ -27,7 +27,7 @@ control 'SV-204493' do
   tag severity: 'low'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204493'
-  tag rid: 'SV-204493r603840_rule'
+  tag rid: 'AMZL-02-721310r603840_rule'
   tag stig_id: 'RHEL-07-021310'
   tag fix_id: 'F-4617r88672_fix'
   tag cci: ['CCI-000366']

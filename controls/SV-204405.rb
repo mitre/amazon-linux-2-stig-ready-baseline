@@ -1,4 +1,4 @@
-control 'SV-204405' do
+control 'AMZL-02-710118' do
   title 'The Amazon Linux 2 operating system must be configured so that /etc/pam.d/passwd implements
     /etc/pam.d/system-auth when changing passwords.'
   desc 'Pluggable authentication modules (PAM) allow for a modular approach to integrating authentication methods.
@@ -16,7 +16,7 @@ control 'SV-204405' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000069-GPOS-00037'
   tag gid: 'V-204405'
-  tag rid: 'SV-204405r603261_rule'
+  tag rid: 'AMZL-02-710118r603261_rule'
   tag stig_id: 'RHEL-07-010118'
   tag fix_id: 'F-4529r88408_fix'
   tag cci: ['CCI-000192']

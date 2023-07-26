@@ -1,4 +1,4 @@
-control 'SV-204440' do
+control 'AMZL-02-710491' do
   title 'Amazon Linux 2 operating systems version 7.2 or newer using Unified Extensible Firmware Interface
     (UEFI) must require authentication upon booting into single-user and maintenance modes.'
   desc 'If the system does not require valid authentication before it boots into single-user or maintenance mode,
@@ -22,7 +22,7 @@ control 'SV-204440' do
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000080-GPOS-00048'
   tag gid: 'V-204440'
-  tag rid: 'SV-204440r744098_rule'
+  tag rid: 'AMZL-02-710491r744098_rule'
   tag stig_id: 'RHEL-07-010491'
   tag fix_id: 'F-4564r744097_fix'
   tag cci: ['CCI-000213']

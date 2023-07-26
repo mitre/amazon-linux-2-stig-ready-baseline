@@ -1,4 +1,4 @@
-control 'SV-204601' do
+control 'AMZL-02-740460' do
   title 'The Amazon Linux 2 operating system must be configured so that the SSH daemon uses privilege
     separation.'
   desc 'SSH daemon privilege separation causes the SSH process to drop root privileges when not needed, which would
@@ -19,7 +19,7 @@ control 'SV-204601' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204601'
-  tag rid: 'SV-204601r603261_rule'
+  tag rid: 'AMZL-02-740460r603261_rule'
   tag stig_id: 'RHEL-07-040460'
   tag fix_id: 'F-4725r88996_fix'
   tag cci: ['CCI-000366']

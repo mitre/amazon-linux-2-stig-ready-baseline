@@ -1,4 +1,4 @@
-control 'SV-204435' do
+control 'AMZL-02-710470' do
   title 'The Amazon Linux 2 operating system must not allow a non-certificate trusted host SSH logon to
     the system.'
   desc 'Failure to restrict system access to authenticated users negatively impacts operating system security.'
@@ -17,7 +17,7 @@ control 'SV-204435' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00229'
   tag gid: 'V-204435'
-  tag rid: 'SV-204435r877377_rule'
+  tag rid: 'AMZL-02-710470r877377_rule'
   tag stig_id: 'RHEL-07-010470'
   tag fix_id: 'F-4559r88498_fix'
   tag cci: ['CCI-000366']

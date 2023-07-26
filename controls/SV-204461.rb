@@ -1,4 +1,4 @@
-control 'SV-204461' do
+control 'AMZL-02-720300' do
   title 'The Amazon Linux 2 operating system must be configured so that all Group Identifiers (GIDs)
     referenced in the /etc/passwd file are defined in the /etc/group file.'
   desc 'If a user is assigned the GID of a group not existing on the system, and a group with the GID is
@@ -15,7 +15,7 @@ control 'SV-204461' do
   tag severity: 'low'
   tag gtitle: 'SRG-OS-000104-GPOS-00051'
   tag gid: 'V-204461'
-  tag rid: 'SV-204461r603261_rule'
+  tag rid: 'AMZL-02-720300r603261_rule'
   tag stig_id: 'RHEL-07-020300'
   tag fix_id: 'F-4585r88576_fix'
   tag cci: ['CCI-000764']

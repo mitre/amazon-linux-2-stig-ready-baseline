@@ -1,4 +1,4 @@
-control 'SV-204395' do
+control 'AMZL-02-710050' do
   title 'The Amazon Linux 2 operating system must display the Standard Mandatory DoD Notice and Consent
     Banner before granting local or remote access to the system via a command line user logon.'
   desc 'Display of a standardized and approved use notification before granting access to the operating system
@@ -68,7 +68,7 @@ control 'SV-204395' do
   tag gtitle: 'SRG-OS-000023-GPOS-00006'
   tag satisfies: ['SRG-OS-000023-GPOS-00006', 'SRG-OS-000024-GPOS-00007']
   tag gid: 'V-204395'
-  tag rid: 'SV-204395r603261_rule'
+  tag rid: 'AMZL-02-710050r603261_rule'
   tag stig_id: 'RHEL-07-010050'
   tag fix_id: 'F-4519r88378_fix'
   tag cci: ['CCI-000048']

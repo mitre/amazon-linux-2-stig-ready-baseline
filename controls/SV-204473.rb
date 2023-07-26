@@ -1,4 +1,4 @@
-control 'SV-204473' do
+control 'AMZL-02-720680' do
   title 'The Amazon Linux 2 operating system must be configured so that all files and directories
     contained in local interactive user home directories have a mode of 0750 or less permissive.'
   desc 'If a local interactive user files have excessive permissions, unintended users may be able to access or
@@ -26,7 +26,7 @@ directory with the following command:
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204473'
-  tag rid: 'SV-204473r603261_rule'
+  tag rid: 'AMZL-02-720680r603261_rule'
   tag stig_id: 'RHEL-07-020680'
   tag fix_id: 'F-4597r88612_fix'
   tag cci: ['CCI-000366']

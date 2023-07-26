@@ -1,4 +1,4 @@
-control 'SV-204498' do
+control 'AMZL-02-721600' do
   title 'The Amazon Linux 2 operating system must be configured so that the file integrity tool is
     configured to verify Access Control Lists (ACLs).'
   desc 'ACLs can provide permissions beyond those permitted through the file mode and must be verified by file
@@ -27,7 +27,7 @@ If the "acl" rule is not being used on all uncommented selection lines in the "/
   tag severity: 'low'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204498'
-  tag rid: 'SV-204498r880856_rule'
+  tag rid: 'AMZL-02-721600r880856_rule'
   tag stig_id: 'RHEL-07-021600'
   tag fix_id: 'F-4622r88687_fix'
   tag cci: ['CCI-000366']

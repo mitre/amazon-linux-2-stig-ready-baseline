@@ -1,4 +1,4 @@
-control 'SV-204467' do
+control 'AMZL-02-720620' do
   title 'The Amazon Linux 2 operating system must be configured so that all local interactive users have a
     home directory assigned and defined in the /etc/passwd file.'
   desc 'If local interactive users are not assigned a valid home directory, there is no place for the storage and
@@ -33,7 +33,7 @@ control 'SV-204467' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204467'
-  tag rid: 'SV-204467r603826_rule'
+  tag rid: 'AMZL-02-720620r603826_rule'
   tag stig_id: 'RHEL-07-020620'
   tag fix_id: 'F-4591r462550_fix'
   tag cci: ['CCI-000366']

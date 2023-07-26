@@ -1,4 +1,4 @@
-control 'SV-255926' do
+control 'AMZL-02-710090' do
   title 'The Amazon Linux 2 operating system must have the screen package installed.'
   desc "A session time-out lock is a temporary action taken when a user stops work and moves away from the immediate physical vicinity of the information system but does not log out because of the temporary nature of the absence. Rather than relying on the user to manually lock their operating system session prior to vacating the vicinity, operating systems need to be able to identify when a user's session has idled and take action to initiate the session lock.
 
@@ -31,7 +31,7 @@ Install the tmux program (if it is not on the system) with the following command
   tag check_id: 'C-59603r880777_chk'
   tag severity: 'medium'
   tag gid: 'V-255926'
-  tag rid: 'SV-255926r880779_rule'
+  tag rid: 'AMZL-02-710090r880779_rule'
   tag stig_id: 'RHEL-07-010090'
   tag gtitle: 'SRG-OS-000029-GPOS-00010'
   tag fix_id: 'F-59546r880778_fix'

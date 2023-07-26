@@ -1,4 +1,4 @@
-control 'SV-204531' do
+control 'AMZL-02-730510' do
   title 'The Amazon Linux 2 operating system must audit all uses of the creat, open, openat,
     open_by_handle_at, truncate, and ftruncate syscalls.'
   desc 'Without generating audit records that are specific to the security and mission needs of the organization, it
@@ -47,7 +47,7 @@ control 'SV-204531' do
   tag gtitle: 'SRG-OS-000064-GPOS-00033'
   tag satisfies: ['SRG-OS-000064-GPOS-00033', 'SRG-OS-000458-GPOS-00203', 'SRG-OS-000461-GPOS-00205', 'SRG-OS-000392-GPOS-00172']
   tag gid: 'V-204531'
-  tag rid: 'SV-204531r853917_rule'
+  tag rid: 'AMZL-02-730510r853917_rule'
   tag stig_id: 'RHEL-07-030510'
   tag fix_id: 'F-4655r853916_fix'
   tag cci: ['CCI-000172', 'CCI-002884']

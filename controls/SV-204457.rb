@@ -1,4 +1,4 @@
-control 'SV-204457' do
+control 'AMZL-02-720240' do
   title 'The Amazon Linux 2 operating system must define default permissions for all authenticated users
     in such a way that the user can only read and modify their own files.'
   desc 'Setting the most restrictive default permissions ensures that when new accounts are created, they do not
@@ -21,7 +21,7 @@ control 'SV-204457' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00228'
   tag gid: 'V-204457'
-  tag rid: 'SV-204457r603261_rule'
+  tag rid: 'AMZL-02-720240r603261_rule'
   tag stig_id: 'RHEL-07-020240'
   tag fix_id: 'F-4581r88564_fix'
   tag cci: ['CCI-000366']

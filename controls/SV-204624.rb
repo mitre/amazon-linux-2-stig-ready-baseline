@@ -1,4 +1,4 @@
-control 'SV-204624' do
+control 'AMZL-02-740730' do
   title 'The Amazon Linux 2 operating system must not have a graphical display manager installed unless
     approved.'
   desc 'Internet services that are not required for system or application processes must not be active to decrease
@@ -25,7 +25,7 @@ control 'SV-204624' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204624'
-  tag rid: 'SV-204624r646847_rule'
+  tag rid: 'AMZL-02-740730r646847_rule'
   tag stig_id: 'RHEL-07-040730'
   tag fix_id: 'F-36316r646846_fix'
   tag cci: ['CCI-000366']

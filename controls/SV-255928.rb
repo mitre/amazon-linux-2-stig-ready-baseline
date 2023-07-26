@@ -1,4 +1,4 @@
-control 'SV-255928' do
+control 'AMZL-02-710199' do
   title 'The Amazon Linux 2 operating system must be configured to prevent overwriting of custom authentication configuration settings by the authconfig utility.'
   desc 'When using the authconfig utility to modify authentication configuration settings, the "system-auth" and "password-auth" files and any custom settings that they may contain are overwritten. This can be avoided by creating new local configuration files and creating new or moving existing symbolic links to them. The authconfig utility will recognize the local configuration files and not overwrite them, while writing its own settings to the original configuration files.'
   desc 'check', 'Verify "system-auth" and "password-auth" files are symbolic links pointing to "system-auth-local" and "password-auth-local":
@@ -75,7 +75,7 @@ Note: With this solution in place any custom settings to "system-auth" and "pass
   tag check_id: 'C-59605r880828_chk'
   tag severity: 'medium'
   tag gid: 'V-255928'
-  tag rid: 'SV-255928r880830_rule'
+  tag rid: 'AMZL-02-710199r880830_rule'
   tag stig_id: 'RHEL-07-010199'
   tag gtitle: 'SRG-OS-000073-GPOS-00041'
   tag fix_id: 'F-59548r880829_fix'

@@ -1,4 +1,4 @@
-control 'SV-204606' do
+control 'AMZL-02-740540' do
   title 'The Amazon Linux 2 operating system must not contain .shosts files.'
   desc 'The .shosts files are used to configure host-based authentication for individual users or the system via
     SSH. Host-based authentication is not sufficient for preventing unauthorized access to the system, as it does not
@@ -15,7 +15,7 @@ control 'SV-204606' do
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204606'
-  tag rid: 'SV-204606r603261_rule'
+  tag rid: 'AMZL-02-740540r603261_rule'
   tag stig_id: 'RHEL-07-040540'
   tag fix_id: 'F-4730r89011_fix'
   tag cci: ['CCI-000366']

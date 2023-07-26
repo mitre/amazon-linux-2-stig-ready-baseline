@@ -1,4 +1,4 @@
-control 'SV-204502' do
+control 'AMZL-02-721710' do
   title 'The Amazon Linux 2 operating system must not have the telnet-server package installed.'
   desc 'It is detrimental for operating systems to provide, or install by default, functionality exceeding
     requirements or mission objectives. These unnecessary capabilities or services are often overlooked and therefore
@@ -25,7 +25,7 @@ control 'SV-204502' do
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000095-GPOS-00049'
   tag gid: 'V-204502'
-  tag rid: 'SV-204502r603261_rule'
+  tag rid: 'AMZL-02-721710r603261_rule'
   tag stig_id: 'RHEL-07-021710'
   tag fix_id: 'F-4626r88699_fix'
   tag cci: ['CCI-000381']

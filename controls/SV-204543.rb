@@ -1,4 +1,4 @@
-control 'SV-204543' do
+control 'AMZL-02-730640' do
   title 'The Amazon Linux 2 operating system must audit all uses of the unix_chkpwd command.'
   desc 'Reconstruction of harmful events or forensic analysis is not possible if audit records do not contain enough
     information.
@@ -30,7 +30,7 @@ The audit daemon must be restarted for the changes to take effect.'
   tag gtitle: 'SRG-OS-000042-GPOS-00020'
   tag satisfies: ['SRG-OS-000042-GPOS-00020', 'SRG-OS-000392-GPOS-00172', 'SRG-OS-000471-GPOS-00215']
   tag gid: 'V-204543'
-  tag rid: 'SV-204543r861029_rule'
+  tag rid: 'AMZL-02-730640r861029_rule'
   tag stig_id: 'RHEL-07-030640'
   tag fix_id: 'F-4667r861028_fix'
   tag cci: ['CCI-000135', 'CCI-000172', 'CCI-002884']

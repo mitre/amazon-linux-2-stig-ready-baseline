@@ -1,4 +1,4 @@
-control 'SV-204392' do
+control 'AMZL-02-710010' do
   title 'The Amazon Linux 2 operating system must be configured so that the file permissions, ownership,
     and group membership of system files and commands match the vendor values.'
   desc 'Discretionary access control is weakened if a user or group has access permissions to system files and
@@ -42,7 +42,7 @@ following command:
   tag gtitle: 'SRG-OS-000257-GPOS-00098'
   tag satisfies: ['SRG-OS-000257-GPOS-00098', 'SRG-OS-000278-GPOS-00108']
   tag gid: 'V-204392'
-  tag rid: 'SV-204392r880752_rule'
+  tag rid: 'AMZL-02-710010r880752_rule'
   tag stig_id: 'RHEL-07-010010'
   tag fix_id: 'F-36302r880751_fix'
   tag cci: ['CCI-001494', 'CCI-001496', 'CCI-002165', 'CCI-002235']

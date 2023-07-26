@@ -1,4 +1,4 @@
-control 'SV-233307' do
+control 'AMZL-02-740711' do
   title 'The Amazon Linux 2 operating system SSH daemon must prevent remote hosts from connecting to the proxy display.'
   desc 'When X11 forwarding is enabled, there may be additional exposure to the server and client displays if the sshd proxy display is configured to listen on the wildcard address. By default, sshd binds the forwarding server to the loopback address and sets the hostname part of the DIPSLAY environment variable to localhost. This prevents remote hosts from connecting to the proxy display.'
   desc 'check', 'Verify the SSH daemon prevents remote hosts from connecting to the proxy display.
@@ -19,7 +19,7 @@ X11UseLocalhost yes'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag satisfies: nil
   tag gid: 'V-233307'
-  tag rid: 'SV-233307r603301_rule'
+  tag rid: 'AMZL-02-740711r603301_rule'
   tag stig_id: 'RHEL-07-040711'
   tag fix_id: 'F-36466r622234_fix'
   tag cci: ['CCI-000366']

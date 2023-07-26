@@ -1,4 +1,4 @@
-control 'SV-204400' do
+control 'AMZL-02-710082' do
   title 'The Amazon Linux 2 operating system must prevent a user from overriding the session idle-delay
     setting for the graphical user interface.'
   desc "A session time-out lock is a temporary action taken when a user stops work and moves away from the immediate
@@ -37,7 +37,7 @@ If the command does not return a result, this is a finding.'
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000029-GPOS-00010'
   tag gid: 'V-204400'
-  tag rid: 'SV-204400r880776_rule'
+  tag rid: 'AMZL-02-710082r880776_rule'
   tag stig_id: 'RHEL-07-010082'
   tag fix_id: 'F-4524r880775_fix'
   tag cci: ['CCI-000057']

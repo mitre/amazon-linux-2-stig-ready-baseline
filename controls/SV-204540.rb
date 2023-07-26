@@ -1,4 +1,4 @@
-control 'SV-204540' do
+control 'AMZL-02-730610' do
   title 'The Amazon Linux 2 operating system must generate audit records for all unsuccessful account
     access events.'
   desc 'Without generating audit records that are specific to the security and mission needs of the organization, it
@@ -22,7 +22,7 @@ control 'SV-204540' do
   tag gtitle: 'SRG-OS-000392-GPOS-00172'
   tag satisfies: ['SRG-OS-000392-GPOS-00172', 'SRG-OS-000470-GPOS-00214', 'SRG-OS-000473-GPOS-00218']
   tag gid: 'V-204540'
-  tag rid: 'SV-204540r853930_rule'
+  tag rid: 'AMZL-02-730610r853930_rule'
   tag stig_id: 'RHEL-07-030610'
   tag fix_id: 'F-4664r88813_fix'
   tag cci: ['CCI-000126', 'CCI-000172', 'CCI-002884']

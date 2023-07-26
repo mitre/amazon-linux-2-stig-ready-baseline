@@ -1,4 +1,4 @@
-control 'SV-204448' do
+control 'AMZL-02-720060' do
   title 'The Amazon Linux 2 operating system must prevent the installation of software, patches, service
     packs, device drivers, or operating system components of local packages without verification they have been
     digitally signed using a certificate that is issued by a Certificate Authority (CA) that is recognized and approved
@@ -31,7 +31,7 @@ control 'SV-204448' do
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000366-GPOS-00153'
   tag gid: 'V-204448'
-  tag rid: 'SV-204448r877463_rule'
+  tag rid: 'AMZL-02-720060r877463_rule'
   tag stig_id: 'RHEL-07-020060'
   tag fix_id: 'F-4572r88537_fix'
   tag cci: ['CCI-001749']

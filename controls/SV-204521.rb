@@ -1,4 +1,4 @@
-control 'SV-204521' do
+control 'AMZL-02-730410' do
   title 'The Amazon Linux 2 operating system must audit all uses of the chmod, fchmod, and fchmodat
     syscalls.'
   desc 'Without generating audit records that are specific to the security and mission needs of the organization, it
@@ -33,7 +33,7 @@ control 'SV-204521' do
   tag gtitle: 'SRG-OS-000458-GPOS-00203'
   tag satisfies: ['SRG-OS-000458-GPOS-00203', 'SRG-OS-000392-GPOS-00172', 'SRG-OS-000064-GPOS-00033']
   tag gid: 'V-204521'
-  tag rid: 'SV-204521r809772_rule'
+  tag rid: 'AMZL-02-730410r809772_rule'
   tag stig_id: 'RHEL-07-030410'
   tag fix_id: 'F-4645r809771_fix'
   tag cci: ['CCI-000172']

@@ -1,4 +1,4 @@
-control 'SV-204504' do
+control 'AMZL-02-730010' do
   title 'The Amazon Linux 2 operating system must shut down upon audit processing failure, unless
     availability is an overriding concern. If availability is a concern, the system must alert the designated staff
     (System Administrator [SA] and Information System Security Officer [ISSO] at a minimum) in the event of an audit
@@ -44,7 +44,7 @@ If the "failure" setting is set to "1" but the availability concern is not docum
   tag gtitle: 'SRG-OS-000046-GPOS-00022'
   tag satisfies: ['SRG-OS-000046-GPOS-00022', 'SRG-OS-000047-GPOS-00023']
   tag gid: 'V-204504'
-  tag rid: 'SV-204504r880761_rule'
+  tag rid: 'AMZL-02-730010r880761_rule'
   tag stig_id: 'RHEL-07-030010'
   tag fix_id: 'F-4628r880760_fix'
   tag cci: ['CCI-000139']

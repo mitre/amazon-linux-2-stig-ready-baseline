@@ -1,4 +1,4 @@
-control 'SV-204431' do
+control 'AMZL-02-710430' do
   title 'The Amazon Linux 2 operating system must be configured so that the delay between logon prompts
     following a failed console logon attempt is at least four seconds.'
   desc 'Configuring the operating system to implement organization-wide security implementation guides and security
@@ -24,7 +24,7 @@ control 'SV-204431' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00226'
   tag gid: 'V-204431'
-  tag rid: 'SV-204431r603261_rule'
+  tag rid: 'AMZL-02-710430r603261_rule'
   tag stig_id: 'RHEL-07-010430'
   tag fix_id: 'F-4555r88486_fix'
   tag cci: ['CCI-000366']

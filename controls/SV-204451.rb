@@ -1,4 +1,4 @@
-control 'SV-204451' do
+control 'AMZL-02-720110' do
   title 'The Amazon Linux 2 operating system must disable the file system automounter unless required.'
   desc 'Automatically mounting file systems permits easy introduction of unknown devices, thereby facilitating
     malicious activity.'
@@ -21,7 +21,7 @@ control 'SV-204451' do
   tag gtitle: 'SRG-OS-000114-GPOS-00059'
   tag satisfies: ['SRG-OS-000114-GPOS-00059', 'SRG-OS-000378-GPOS-00163', 'SRG-OS-000480-GPOS-00227']
   tag gid: 'V-204451'
-  tag rid: 'SV-204451r853893_rule'
+  tag rid: 'AMZL-02-720110r853893_rule'
   tag stig_id: 'RHEL-07-020110'
   tag fix_id: 'F-4575r88546_fix'
   tag cci: ['CCI-000366', 'CCI-000778', 'CCI-001958']

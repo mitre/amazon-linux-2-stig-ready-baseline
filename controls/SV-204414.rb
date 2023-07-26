@@ -1,4 +1,4 @@
-control 'SV-204414' do
+control 'AMZL-02-710190' do
   title 'The Amazon Linux 2 operating system must be configured so that when passwords are changed the
     number of repeating characters of the same character class must not be more than four characters.'
   desc 'Use of a complex password helps to increase the time and resources required to compromise the password.
@@ -22,7 +22,7 @@ control 'SV-204414' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000072-GPOS-00040'
   tag gid: 'V-204414'
-  tag rid: 'SV-204414r809186_rule'
+  tag rid: 'AMZL-02-710190r809186_rule'
   tag stig_id: 'RHEL-07-010190'
   tag fix_id: 'F-4538r88435_fix'
   tag cci: ['CCI-000195']

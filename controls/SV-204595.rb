@@ -1,4 +1,4 @@
-control 'SV-204595' do
+control 'AMZL-02-740400' do
   title 'The Amazon Linux 2 operating system must be configured so that the SSH daemon is configured to
     only use Message Authentication Codes (MACs) employing FIPS 140-2 approved cryptographic hash algorithms.'
   desc 'DoD information systems are required to use FIPS 140-2 approved cryptographic hash functions. The only SSHv2
@@ -25,7 +25,7 @@ control 'SV-204595' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000250-GPOS-00093'
   tag gid: 'V-204595'
-  tag rid: 'SV-204595r877394_rule'
+  tag rid: 'AMZL-02-740400r877394_rule'
   tag stig_id: 'RHEL-07-040400'
   tag fix_id: 'F-4719r622309_fix'
   tag cci: ['CCI-001453']

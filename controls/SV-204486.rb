@@ -1,4 +1,4 @@
-control 'SV-204486' do
+control 'AMZL-02-721024' do
   title 'The Amazon Linux 2 operating system must mount /dev/shm with secure options.'
   desc 'The "noexec" mount option causes the system to not execute binary files. This option must be used for
     mounting any file system not containing approved binary files as they may be incompatible. Executing files from
@@ -27,7 +27,7 @@ control 'SV-204486' do
   tag severity: 'low'
   tag gtitle: 'SRG-OS-000368-GPOS-00154'
   tag gid: 'V-204486'
-  tag rid: 'SV-204486r853900_rule'
+  tag rid: 'AMZL-02-721024r853900_rule'
   tag stig_id: 'RHEL-07-021024'
   tag fix_id: 'F-4610r462553_fix'
   tag cci: ['CCI-001764']

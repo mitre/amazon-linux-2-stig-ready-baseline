@@ -1,4 +1,4 @@
-control 'SV-204475' do
+control 'AMZL-02-720700' do
   title 'The Amazon Linux 2 operating system must be configured so that all local initialization files for
     local interactive users are be group-owned by the users primary group or root.'
   desc "Local initialization files for interactive users are used to configure the user's shell environment upon
@@ -31,7 +31,7 @@ control 'SV-204475' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204475'
-  tag rid: 'SV-204475r603836_rule'
+  tag rid: 'AMZL-02-720700r603836_rule'
   tag stig_id: 'RHEL-07-020700'
   tag fix_id: 'F-4599r88618_fix'
   tag cci: ['CCI-000366']

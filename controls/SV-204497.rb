@@ -1,4 +1,4 @@
-control 'SV-204497' do
+control 'AMZL-02-721350' do
   title 'The Amazon Linux 2 operating system must implement NIST FIPS-validated cryptography for the
     following: to provision digital signatures, to generate cryptographic hashes, and to protect data requiring
     data-at-rest protections in accordance with applicable federal laws, Executive Orders, directives, policies,
@@ -72,7 +72,7 @@ control 'SV-204497' do
   tag gtitle: 'SRG-OS-000033-GPOS-00014'
   tag satisfies: ['SRG-OS-000033-GPOS-00014', 'SRG-OS-000185-GPOS-00079', 'SRG-OS-000396-GPOS-00176', 'SRG-OS-000405-GPOS-00184', 'SRG-OS-000478-GPOS-00223']
   tag gid: 'V-204497'
-  tag rid: 'SV-204497r877398_rule'
+  tag rid: 'AMZL-02-721350r877398_rule'
   tag stig_id: 'RHEL-07-021350'
   tag fix_id: 'F-36310r602640_fix'
   tag cci: ['CCI-000068', 'CCI-001199', 'CCI-002450', 'CCI-002476']

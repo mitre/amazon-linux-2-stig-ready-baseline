@@ -1,4 +1,4 @@
-control 'SV-204622' do
+control 'AMZL-02-740710' do
   title 'The Amazon Linux 2 operating system must be configured so that remote X connections are disabled
     except to fulfill documented and validated mission requirements.'
   desc "The security risk of using X11 forwarding is that the client's X11 display server may be exposed to attack
@@ -27,7 +27,7 @@ control 'SV-204622' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204622'
-  tag rid: 'SV-204622r603849_rule'
+  tag rid: 'AMZL-02-740710r603849_rule'
   tag stig_id: 'RHEL-07-040710'
   tag fix_id: 'F-4746r622312_fix'
   tag cci: ['CCI-000366']

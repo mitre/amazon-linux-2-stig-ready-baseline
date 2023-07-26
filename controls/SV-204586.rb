@@ -1,4 +1,4 @@
-control 'SV-204586' do
+control 'AMZL-02-740310' do
   title 'The Amazon Linux 2 operating system must be configured so that all networked systems use SSH for
     confidentiality and integrity of transmitted and received information as well as information during preparation for
     transmission.'
@@ -29,7 +29,7 @@ control 'SV-204586' do
   tag gtitle: 'SRG-OS-000423-GPOS-00187'
   tag satisfies: ['SRG-OS-000423-GPOS-00187', 'SRG-OS-000423-GPOS-00188', 'SRG-OS-000423-GPOS-00189', 'SRG-OS-000423-GPOS-00190', 'SRG-OS-000424-GPOS-00188', 'SRG-OS-000425-GPOS-00189', 'SRG-OS-000426-GPOS-00190']
   tag gid: 'V-204586'
-  tag rid: 'SV-204586r861071_rule'
+  tag rid: 'AMZL-02-740310r861071_rule'
   tag stig_id: 'RHEL-07-040310'
   tag fix_id: 'F-4710r88951_fix'
   tag cci: ['CCI-002418', 'CCI-002420', 'CCI-002421', 'CCI-002422']

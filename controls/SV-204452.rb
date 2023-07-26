@@ -1,4 +1,4 @@
-control 'SV-204452' do
+control 'AMZL-02-720200' do
   title 'The Amazon Linux 2 operating system must remove all software components after updated versions
     have been installed.'
   desc 'Previous versions of software components that are not removed from the information system after updates have
@@ -20,7 +20,7 @@ control 'SV-204452' do
   tag severity: 'low'
   tag gtitle: 'SRG-OS-000437-GPOS-00194'
   tag gid: 'V-204452'
-  tag rid: 'SV-204452r853894_rule'
+  tag rid: 'AMZL-02-720200r853894_rule'
   tag stig_id: 'RHEL-07-020200'
   tag fix_id: 'F-4576r88549_fix'
   tag cci: ['CCI-002617']

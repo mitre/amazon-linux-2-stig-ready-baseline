@@ -1,4 +1,4 @@
-control 'SV-204434' do
+control 'AMZL-02-710460' do
   title 'The Amazon Linux 2 operating system must not allow users to override SSH environment variables.'
   desc 'Failure to restrict system access to authenticated users negatively impacts operating system security.'
   desc 'check', 'Verify the operating system does not allow users to override environment variables to the SSH
@@ -17,7 +17,7 @@ control 'SV-204434' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00229'
   tag gid: 'V-204434'
-  tag rid: 'SV-204434r877377_rule'
+  tag rid: 'AMZL-02-710460r877377_rule'
   tag stig_id: 'RHEL-07-010460'
   tag fix_id: 'F-4558r88495_fix'
   tag cci: ['CCI-000366']

@@ -1,4 +1,4 @@
-control 'SV-204459' do
+control 'AMZL-02-720260' do
   title 'The Amazon Linux 2 operating system security patches and updates must be installed and up to
     date.'
   desc 'Timely patching is critical for maintaining the operational availability, confidentiality, and integrity of
@@ -36,7 +36,7 @@ If the operating system is in non-compliance with the Information Assurance Vuln
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204459'
-  tag rid: 'SV-204459r603261_rule'
+  tag rid: 'AMZL-02-720260r603261_rule'
   tag stig_id: 'RHEL-07-020260'
   tag fix_id: 'F-4583r88570_fix'
   tag cci: ['CCI-000366']

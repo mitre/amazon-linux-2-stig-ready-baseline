@@ -1,4 +1,4 @@
-control 'SV-204566' do
+control 'AMZL-02-730872' do
   title 'The Amazon Linux 2 operating system must generate audit records for all account creations,
     modifications, disabling, and termination events that affect /etc/gshadow.'
   desc 'Without generating audit records that are specific to the security and mission needs of the organization, it
@@ -22,7 +22,7 @@ control 'SV-204566' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000004-GPOS-00004'
   tag gid: 'V-204566'
-  tag rid: 'SV-204566r853980_rule'
+  tag rid: 'AMZL-02-730872r853980_rule'
   tag stig_id: 'RHEL-07-030872'
   tag fix_id: 'F-4690r88891_fix'
   tag cci: ['CCI-000018', 'CCI-000172', 'CCI-001403', 'CCI-002130']

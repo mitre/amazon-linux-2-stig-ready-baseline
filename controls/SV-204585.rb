@@ -1,4 +1,4 @@
-control 'SV-204585' do
+control 'AMZL-02-740300' do
   title 'The Amazon Linux 2 operating system must be configured so that all networked systems have SSH
     installed.'
   desc 'Without protection of the transmitted information, confidentiality and integrity may be compromised because
@@ -24,7 +24,7 @@ control 'SV-204585' do
   tag gtitle: 'SRG-OS-000423-GPOS-00187'
   tag satisfies: ['SRG-OS-000423-GPOS-00187', 'SRG-OS-000424-GPOS-00188', 'SRG-OS-000425-GPOS-00189', 'SRG-OS-000426-GPOS-00190']
   tag gid: 'V-204585'
-  tag rid: 'SV-204585r853989_rule'
+  tag rid: 'AMZL-02-740300r853989_rule'
   tag stig_id: 'RHEL-07-040300'
   tag fix_id: 'F-4709r88948_fix'
   tag cci: ['CCI-002418', 'CCI-002420', 'CCI-002421', 'CCI-002422']

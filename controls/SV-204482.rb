@@ -1,4 +1,4 @@
-control 'SV-204482' do
+control 'AMZL-02-721020' do
   title 'The Amazon Linux 2 operating system must prevent files with the setuid and setgid bit set from
     being executed on file systems that are being imported via Network File System (NFS).'
   desc 'The "nosuid" mount option causes the system to not execute "setuid" and "setgid" files with owner
@@ -21,7 +21,7 @@ control 'SV-204482' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204482'
-  tag rid: 'SV-204482r603261_rule'
+  tag rid: 'AMZL-02-721020r603261_rule'
   tag stig_id: 'RHEL-07-021020'
   tag fix_id: 'F-4606r88639_fix'
   tag cci: ['CCI-000366']

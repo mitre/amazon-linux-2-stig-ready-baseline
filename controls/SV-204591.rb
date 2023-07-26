@@ -1,4 +1,4 @@
-control 'SV-204591' do
+control 'AMZL-02-740360' do
   title 'The Amazon Linux 2 operating system must display the date and time of the last successful account
     logon upon an SSH logon.'
   desc 'Providing users with feedback on when account accesses via SSH last occurred facilitates user recognition
@@ -21,7 +21,7 @@ control 'SV-204591' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204591'
-  tag rid: 'SV-204591r858477_rule'
+  tag rid: 'AMZL-02-740360r858477_rule'
   tag stig_id: 'RHEL-07-040360'
   tag fix_id: 'F-4715r88966_fix'
   tag cci: ['CCI-000366', 'CCI-000052']

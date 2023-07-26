@@ -1,4 +1,4 @@
-control 'SV-204428' do
+control 'AMZL-02-710330' do
   title 'The Amazon Linux 2 operating system must lock the associated account after three unsuccessful
     root logon attempts are made within a 15-minute period.'
   desc 'By limiting the number of failed logon attempts, the risk of unauthorized system access via user password
@@ -33,7 +33,7 @@ Note: Per requirement RHEL-07-010199, RHEL 7 must be configured to not overwrite
   tag gtitle: 'SRG-OS-000329-GPOS-00128'
   tag satisfies: ['SRG-OS-000329-GPOS-00128', 'SRG-OS-000021-GPOS-00005']
   tag gid: 'V-204428'
-  tag rid: 'SV-204428r880845_rule'
+  tag rid: 'AMZL-02-710330r880845_rule'
   tag stig_id: 'RHEL-07-010330'
   tag fix_id: 'F-4552r880844_fix'
   tag cci: ['CCI-002238']

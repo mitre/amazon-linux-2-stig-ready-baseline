@@ -1,4 +1,4 @@
-control 'SV-204587' do
+control 'AMZL-02-740320' do
   title 'The Amazon Linux 2 operating system must be configured so that all network connections associated
     with SSH traffic are terminated at the end of the session or after 10 minutes of inactivity, except to fulfill
     documented and validated mission requirements.'
@@ -32,7 +32,7 @@ control 'SV-204587' do
   tag gtitle: 'SRG-OS-000163-GPOS-00072'
   tag satisfies: ['SRG-OS-000163-GPOS-00072', 'SRG-OS-000279-GPOS-00109']
   tag gid: 'V-204587'
-  tag rid: 'SV-204587r861072_rule'
+  tag rid: 'AMZL-02-740320r861072_rule'
   tag stig_id: 'RHEL-07-040320'
   tag fix_id: 'F-4711r88954_fix'
   tag cci: ['CCI-001133', 'CCI-002361']

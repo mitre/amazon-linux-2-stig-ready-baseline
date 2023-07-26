@@ -1,4 +1,4 @@
-control 'SV-204495' do
+control 'AMZL-02-721330' do
   title 'The Amazon Linux 2 operating system must use a separate file system for the system audit data
     path.'
   desc 'The use of separate file systems for different paths can protect the system from failures resulting from a
@@ -17,7 +17,7 @@ control 'SV-204495' do
   tag severity: 'low'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204495'
-  tag rid: 'SV-204495r603261_rule'
+  tag rid: 'AMZL-02-721330r603261_rule'
   tag stig_id: 'RHEL-07-021330'
   tag fix_id: 'F-4619r88678_fix'
   tag cci: ['CCI-000366']

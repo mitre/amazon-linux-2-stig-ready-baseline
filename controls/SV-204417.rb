@@ -1,4 +1,4 @@
-control 'SV-204417' do
+control 'AMZL-02-710220' do
   title 'The Amazon Linux 2 operating system must be configured so that user and group account
     administration utilities are configured to store only encrypted representations of passwords.'
   desc 'Passwords need to be protected at all times, and encryption is the standard method for protecting passwords.
@@ -20,7 +20,7 @@ control 'SV-204417' do
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000073-GPOS-00041'
   tag gid: 'V-204417'
-  tag rid: 'SV-204417r877397_rule'
+  tag rid: 'AMZL-02-710220r877397_rule'
   tag stig_id: 'RHEL-07-010220'
   tag fix_id: 'F-4541r88444_fix'
   tag cci: ['CCI-000196']

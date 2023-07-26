@@ -1,4 +1,4 @@
-control 'SV-204633' do
+control 'AMZL-02-741003' do
   title 'The Amazon Linux 2 operating system must implement certificate status checking for PKI
     authentication.'
   desc 'Using an authentication device, such as a CAC or token that is separate from the information system, ensures
@@ -41,7 +41,7 @@ authentication.
   tag gtitle: 'SRG-OS-000375-GPOS-00160'
   tag satisfies: ['SRG-OS-000375-GPOS-00160', 'SRG-OS-000375-GPOS-00161', 'SRG-OS-000375-GPOS-00162']
   tag gid: 'V-204633'
-  tag rid: 'SV-204633r853999_rule'
+  tag rid: 'AMZL-02-741003r853999_rule'
   tag stig_id: 'RHEL-07-041003'
   tag fix_id: 'F-4757r89092_fix'
   tag cci: ['CCI-001948', 'CCI-001953', 'CCI-001954']

@@ -1,4 +1,4 @@
-control 'SV-204478' do
+control 'AMZL-02-720730' do
   title 'The Amazon Linux 2 operating system must be configured so that local initialization files do not
     execute world-writable programs.'
   desc 'If user start-up files execute world-writable programs, especially in
@@ -23,7 +23,7 @@ the following command:
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204478'
-  tag rid: 'SV-204478r603261_rule'
+  tag rid: 'AMZL-02-720730r603261_rule'
   tag stig_id: 'RHEL-07-020730'
   tag fix_id: 'F-4602r88627_fix'
   tag cci: ['CCI-000366']

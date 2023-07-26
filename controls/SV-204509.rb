@@ -1,4 +1,4 @@
-control 'SV-204509' do
+control 'AMZL-02-730300' do
   title 'The Amazon Linux 2 operating system must off-load audit records onto a different system or media
     from the system being audited.'
   desc 'Information stored in one location is vulnerable to accidental or incidental deletion or alteration.
@@ -20,7 +20,7 @@ control 'SV-204509' do
   tag gtitle: 'SRG-OS-000342-GPOS-00133'
   tag satisfies: ['SRG-OS-000342-GPOS-00133', 'SRG-OS-000479-GPOS-00224']
   tag gid: 'V-204509'
-  tag rid: 'SV-204509r877390_rule'
+  tag rid: 'AMZL-02-730300r877390_rule'
   tag stig_id: 'RHEL-07-030300'
   tag fix_id: 'F-4633r88720_fix'
   tag cci: ['CCI-001851']

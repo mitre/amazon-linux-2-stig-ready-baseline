@@ -1,4 +1,4 @@
-control 'SV-204627' do
+control 'AMZL-02-740800' do
   title 'SNMP community strings on the Amazon Linux 2 operating system must be changed from the default.'
   desc 'Whether active or not, default Simple Network Management Protocol (SNMP) community strings must be changed
     to maintain security. If the service is running with the default authenticators, anyone can gather data about the
@@ -21,7 +21,7 @@ control 'SV-204627' do
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204627'
-  tag rid: 'SV-204627r603261_rule'
+  tag rid: 'AMZL-02-740800r603261_rule'
   tag stig_id: 'RHEL-07-040800'
   tag fix_id: 'F-4751r89074_fix'
   tag cci: ['CCI-000366']

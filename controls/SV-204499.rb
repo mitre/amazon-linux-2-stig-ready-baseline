@@ -1,4 +1,4 @@
-control 'SV-204499' do
+control 'AMZL-02-721610' do
   title 'The Amazon Linux 2 operating system must be configured so that the file integrity tool is
     configured to verify extended attributes.'
   desc 'Extended attributes in file systems are used to contain arbitrary data and file metadata with security
@@ -26,7 +26,7 @@ If the "xattrs" rule is not being used on all uncommented selection lines in the
   tag severity: 'low'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204499'
-  tag rid: 'SV-204499r880858_rule'
+  tag rid: 'AMZL-02-721610r880858_rule'
   tag stig_id: 'RHEL-07-021610'
   tag fix_id: 'F-4623r88690_fix'
   tag cci: ['CCI-000366']
