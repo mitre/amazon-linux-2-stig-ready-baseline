@@ -29,7 +29,6 @@ If "idle-activation-enabled" is not set to "true", this is a finding.'
     # dconf update
     Users must log out and back in again before the system-wide settings take effect.'
   impact 0.5
-  tag legacy: ['V-71899', 'SV-86523']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000029-GPOS-00010'
   tag gid: 'V-204402'
