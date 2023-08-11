@@ -33,7 +33,7 @@ control 'AMZL-02-740110' do
   tag satisfies: ['SRG-OS-000033-GPOS-00014', 'SRG-OS-000120-GPOS-00061', 'SRG-OS-000125-GPOS-00065', 'SRG-OS-000250-GPOS-00093', 'SRG-OS-000393-GPOS-00173']
   tag gid: 'V-204578'
   tag rid: 'AMZL-02-740110r877398_rule'
-  tag stig_id: 'RHEL-07-040110'
+  tag stig_id: 'AMZL-02-740110'
   tag fix_id: 'F-4702r622306_fix'
   tag cci: ['CCI-000068', 'CCI-000366', 'CCI-000803']
   tag nist: ['AC-17 (2)', 'CM-6 b', 'IA-7']

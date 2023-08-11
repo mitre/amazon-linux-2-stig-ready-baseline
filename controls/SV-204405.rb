@@ -17,7 +17,7 @@ control 'AMZL-02-710118' do
   tag gtitle: 'SRG-OS-000069-GPOS-00037'
   tag gid: 'V-204405'
   tag rid: 'AMZL-02-710118r603261_rule'
-  tag stig_id: 'RHEL-07-010118'
+  tag stig_id: 'AMZL-02-710118'
   tag fix_id: 'F-4529r88408_fix'
   tag cci: ['CCI-000192']
   tag subsystems: ['pam', 'password']

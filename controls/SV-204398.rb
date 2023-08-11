@@ -36,7 +36,7 @@ If the "idle-delay" setting is missing or is not set to "900" or less, this is a
   tag gtitle: 'SRG-OS-000029-GPOS-00010'
   tag gid: 'V-204398'
   tag rid: 'AMZL-02-710070r880770_rule'
-  tag stig_id: 'RHEL-07-010070'
+  tag stig_id: 'AMZL-02-710070'
   tag fix_id: 'F-4522r880769_fix'
   tag cci: ['CCI-000057']
   tag nist: ['AC-11 a']

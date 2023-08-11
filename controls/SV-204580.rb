@@ -79,7 +79,7 @@ control 'AMZL-02-740170' do
   tag satisfies: ['SRG-OS-000023-GPOS-00006', 'SRG-OS-000024-GPOS-00007', 'SRG-OS-000228-GPOS-00088']
   tag gid: 'V-204580'
   tag rid: 'AMZL-02-740170r603261_rule'
-  tag stig_id: 'RHEL-07-040170'
+  tag stig_id: 'AMZL-02-740170'
   tag fix_id: 'F-4704r297486_fix'
   tag cci: ['CCI-000048', 'CCI-000050', 'CCI-001384', 'CCI-001385', 'CCI-001386', 'CCI-001387', 'CCI-001388']
   tag nist: ['AC-8 a', 'AC-8 b', 'AC-8 c 1', 'AC-8 c 2', 'AC-8 c 2', 'AC-8 c 3']

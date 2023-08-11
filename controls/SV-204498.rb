@@ -28,7 +28,7 @@ If the "acl" rule is not being used on all uncommented selection lines in the "/
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204498'
   tag rid: 'AMZL-02-721600r880856_rule'
-  tag stig_id: 'RHEL-07-021600'
+  tag stig_id: 'AMZL-02-721600'
   tag fix_id: 'F-4622r88687_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']

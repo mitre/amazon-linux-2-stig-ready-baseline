@@ -20,7 +20,7 @@ control 'AMZL-02-710230' do
   tag gtitle: 'SRG-OS-000075-GPOS-00043'
   tag gid: 'V-204418'
   tag rid: 'AMZL-02-710230r603261_rule'
-  tag stig_id: 'RHEL-07-010230'
+  tag stig_id: 'AMZL-02-710230'
   tag fix_id: 'F-4542r88447_fix'
   tag cci: ['CCI-000198']
   tag nist: ['IA-5 (1) (d)']

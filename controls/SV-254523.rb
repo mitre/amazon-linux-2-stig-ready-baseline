@@ -23,7 +23,7 @@ The automatic expiration or disabling time period may be extended as needed unti
   tag severity: 'medium'
   tag gid: 'V-254523'
   tag rid: 'AMZL-02-710271r858501_rule'
-  tag stig_id: 'RHEL-07-010271'
+  tag stig_id: 'AMZL-02-710271'
   tag gtitle: 'SRG-OS-000123-GPOS-00064'
   tag fix_id: 'F-57956r858500_fix'
   tag 'documentable'

@@ -40,7 +40,7 @@ The following example output is generic. It will set cron to run AIDE daily and 
   tag gtitle: 'SRG-OS-000363-GPOS-00150'
   tag gid: 'V-204446'
   tag rid: 'AMZL-02-720040r880851_rule'
-  tag stig_id: 'RHEL-07-020040'
+  tag stig_id: 'AMZL-02-720040'
   tag fix_id: 'F-36305r880850_fix'
   tag cci: ['CCI-001744']
   tag nist: ['CM-3 (5)']

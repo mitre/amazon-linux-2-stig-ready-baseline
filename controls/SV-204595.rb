@@ -7,7 +7,7 @@ control 'AMZL-02-740400' do
     values "strongest to weakest" is a method to ensure the use of the strongest hash available to secure the SSH
     connection.'
   desc 'check', 'Verify the SSH daemon is configured to only use MACs employing FIPS 140-2-approved hashes.
-    Note: If RHEL-07-021350 is a finding, this is automatically a finding as the system cannot implement FIPS
+    Note: If AMZL-02-721350 is a finding, this is automatically a finding as the system cannot implement FIPS
     140-2-approved cryptographic algorithms and hashes.
     Check that the SSH daemon is configured to only use MACs employing FIPS 140-2-approved hashes with the following
     command:
@@ -26,7 +26,7 @@ control 'AMZL-02-740400' do
   tag gtitle: 'SRG-OS-000250-GPOS-00093'
   tag gid: 'V-204595'
   tag rid: 'AMZL-02-740400r877394_rule'
-  tag stig_id: 'RHEL-07-040400'
+  tag stig_id: 'AMZL-02-740400'
   tag fix_id: 'F-4719r622309_fix'
   tag cci: ['CCI-001453']
   tag nist: ['AC-17 (2)']

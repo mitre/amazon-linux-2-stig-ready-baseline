@@ -28,7 +28,7 @@ Remove any duplicate or conflicting lines from /etc/sudoers and /etc/sudoers.d/ 
   tag satisfies: nil
   tag gid: 'V-237635'
   tag rid: 'AMZL-02-710343r861075_rule'
-  tag stig_id: 'RHEL-07-010343'
+  tag stig_id: 'AMZL-02-710343'
   tag fix_id: 'F-40817r858491_fix'
   tag cci: ['CCI-002038']
   tag legacy: []

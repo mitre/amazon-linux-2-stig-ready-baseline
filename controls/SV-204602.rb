@@ -25,7 +25,7 @@ If the "Compression" keyword is set to "yes", is missing, or the returned line i
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204602'
   tag rid: 'AMZL-02-740470r880758_rule'
-  tag stig_id: 'RHEL-07-040470'
+  tag stig_id: 'AMZL-02-740470'
   tag fix_id: 'F-4726r880757_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']

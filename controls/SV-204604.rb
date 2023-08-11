@@ -31,7 +31,7 @@ control 'AMZL-02-740520' do
   tag satisfies: ['SRG-OS-000480-GPOS-00227', 'SRG-OS-000480-GPOS-00231', 'SRG-OS-000480-GPOS-00232']
   tag gid: 'V-204604'
   tag rid: 'AMZL-02-740520r603261_rule'
-  tag stig_id: 'RHEL-07-040520'
+  tag stig_id: 'AMZL-02-740520'
   tag fix_id: 'F-4728r89005_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']

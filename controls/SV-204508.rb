@@ -25,7 +25,7 @@ control 'AMZL-02-730211' do
   tag satisfies: ['SRG-OS-000342-GPOS-00133', 'SRG-OS-000479-GPOS-00224']
   tag gid: 'V-204508'
   tag rid: 'AMZL-02-730211r877390_rule'
-  tag stig_id: 'RHEL-07-030211'
+  tag stig_id: 'AMZL-02-730211'
   tag fix_id: 'F-36313r602649_fix'
   tag cci: ['CCI-001851']
   tag nist: ['AU-4 (1)']

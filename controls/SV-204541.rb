@@ -22,7 +22,7 @@ control 'AMZL-02-730620' do
   tag satisfies: ['SRG-OS-000392-GPOS-00172', 'SRG-OS-000470-GPOS-00214', 'SRG-OS-000473-GPOS-00218']
   tag gid: 'V-204541'
   tag rid: 'AMZL-02-730620r853931_rule'
-  tag stig_id: 'RHEL-07-030620'
+  tag stig_id: 'AMZL-02-730620'
   tag fix_id: 'F-4665r88816_fix'
   tag cci: ['CCI-000126', 'CCI-000172', 'CCI-002884']
   tag nist: ['AU-2 d', 'AU-12 c', 'MA-4 (1) (a)', 'AU-2 c']

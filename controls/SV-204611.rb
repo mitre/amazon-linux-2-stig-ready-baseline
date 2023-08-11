@@ -34,7 +34,7 @@ directory (or modify the line to have the required value):
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204611'
   tag rid: 'AMZL-02-740612r880803_rule'
-  tag stig_id: 'RHEL-07-040612'
+  tag stig_id: 'AMZL-02-740612'
   tag fix_id: 'F-4735r880802_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']

@@ -69,7 +69,7 @@ control 'AMZL-02-710050' do
   tag satisfies: ['SRG-OS-000023-GPOS-00006', 'SRG-OS-000024-GPOS-00007']
   tag gid: 'V-204395'
   tag rid: 'AMZL-02-710050r603261_rule'
-  tag stig_id: 'RHEL-07-010050'
+  tag stig_id: 'AMZL-02-710050'
   tag fix_id: 'F-4519r88378_fix'
   tag cci: ['CCI-000048']
   tag nist: ['AC-8 a']

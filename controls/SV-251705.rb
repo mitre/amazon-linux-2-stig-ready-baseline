@@ -45,7 +45,7 @@ Done.'
   tag satisfies: nil
   tag gid: 'V-251705'
   tag rid: 'AMZL-02-720029r880854_rule'
-  tag stig_id: 'RHEL-07-020029'
+  tag stig_id: 'AMZL-02-720029'
   tag fix_id: 'F-55096r880853_fix'
   tag cci: ['CCI-002696']
   tag legacy: []

@@ -28,7 +28,7 @@ Remove any configurations that conflict with the above from the following locati
   tag satisfies: nil
   tag gid: 'V-250314'
   tag rid: 'AMZL-02-720023r877392_rule'
-  tag stig_id: 'RHEL-07-020023'
+  tag stig_id: 'AMZL-02-720023'
   tag fix_id: 'F-53702r858494_fix'
   tag cci: ['CCI-002165', 'CCI-002235']
   tag legacy: []

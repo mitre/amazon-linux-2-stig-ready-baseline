@@ -30,7 +30,7 @@ If conflicting results are returned, this is a finding.'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204616'
   tag rid: 'AMZL-02-740650r880818_rule'
-  tag stig_id: 'RHEL-07-040650'
+  tag stig_id: 'AMZL-02-740650'
   tag fix_id: 'F-4740r880817_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']

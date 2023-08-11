@@ -59,7 +59,7 @@ Run the following command to update the database:
   tag satisfies: ['SRG-OS-000114-GPOS-00059', 'SRG-OS-000378-GPOS-00163', 'SRG-OS-000480-GPOS-00227']
   tag gid: 'V-219059'
   tag rid: 'AMZL-02-720111r854002_rule'
-  tag stig_id: 'RHEL-07-020111'
+  tag stig_id: 'AMZL-02-720111'
   tag fix_id: 'F-36318r602663_fix'
   tag cci: ['CCI-000366', 'CCI-000778', 'CCI-001958']
   tag legacy: ['V-100023', 'SV-109127']

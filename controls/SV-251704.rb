@@ -22,7 +22,7 @@ Remove any occurrences of "pam_succeed_if" in the file.'
   tag satisfies: ['SRG-OS-000373-GPOS-00156', 'SRG-OS-000373-GPOS-00157', 'SRG-OS-000373-GPOS-00158']
   tag gid: 'V-251704'
   tag rid: 'AMZL-02-710344r854012_rule'
-  tag stig_id: 'RHEL-07-010344'
+  tag stig_id: 'AMZL-02-710344'
   tag fix_id: 'F-55095r854011_fix'
   tag cci: ['CCI-002038']
   tag legacy: []

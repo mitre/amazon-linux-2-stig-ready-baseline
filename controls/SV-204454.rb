@@ -38,7 +38,7 @@ control 'AMZL-02-720220' do
   tag gtitle: 'SRG-OS-000445-GPOS-00199'
   tag gid: 'V-204454'
   tag rid: 'AMZL-02-720220r853896_rule'
-  tag stig_id: 'RHEL-07-020220'
+  tag stig_id: 'AMZL-02-720220'
   tag fix_id: 'F-36307r602631_fix'
   tag cci: ['CCI-002165', 'CCI-002696']
   tag nist: ['AC-3 (4)', 'SI-6 a']

@@ -35,7 +35,7 @@ If the "lock-delay" setting is missing, or is not set to "5" or less, this is a 
   tag gtitle: 'SRG-OS-000029-GPOS-00010'
   tag gid: 'V-204404'
   tag rid: 'AMZL-02-710110r880788_rule'
-  tag stig_id: 'RHEL-07-010110'
+  tag stig_id: 'AMZL-02-710110'
   tag fix_id: 'F-4528r880787_fix'
   tag cci: ['CCI-000057']
   tag nist: ['AC-11 a']

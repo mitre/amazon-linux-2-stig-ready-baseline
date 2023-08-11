@@ -27,7 +27,7 @@ directory with the following command:
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204473'
   tag rid: 'AMZL-02-720680r603261_rule'
-  tag stig_id: 'RHEL-07-020680'
+  tag stig_id: 'AMZL-02-720680'
   tag fix_id: 'F-4597r88612_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']

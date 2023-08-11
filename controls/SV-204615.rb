@@ -33,7 +33,7 @@ following line to "/etc/sysctl.conf" or a configuration file in the
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204615'
   tag rid: 'AMZL-02-740641r880815_rule'
-  tag stig_id: 'RHEL-07-040641'
+  tag stig_id: 'AMZL-02-740641'
   tag fix_id: 'F-4739r880814_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']

@@ -34,7 +34,7 @@ If the "lock-enabled" setting is missing or is not set to "true", this is a find
   tag satisfies: ['SRG-OS-000028-GPOS-00009', 'SRG-OS-000030-GPOS-00011']
   tag gid: 'V-204396'
   tag rid: 'AMZL-02-710060r880746_rule'
-  tag stig_id: 'RHEL-07-010060'
+  tag stig_id: 'AMZL-02-710060'
   tag fix_id: 'F-4520r880745_fix'
   tag cci: ['CCI-000056']
   tag nist: ['AC-11 b']

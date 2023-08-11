@@ -42,7 +42,7 @@ following command:
   tag satisfies: ['SRG-OS-000257-GPOS-00098', 'SRG-OS-000278-GPOS-00108']
   tag gid: 'V-204392'
   tag rid: 'AMZL-02-710010r880752_rule'
-  tag stig_id: 'RHEL-07-010010'
+  tag stig_id: 'AMZL-02-710010'
   tag fix_id: 'F-36302r880751_fix'
   tag cci: ['CCI-001494', 'CCI-001496', 'CCI-002165', 'CCI-002235']
   tag nist: ['AU-9', 'AU-9 (3)', 'AC-3 (4)', 'AC-6 (10)']

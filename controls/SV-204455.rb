@@ -30,7 +30,7 @@ $ sudo systemctl mask ctrl-alt-del.target'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204455'
   tag rid: 'AMZL-02-720230r833106_rule'
-  tag stig_id: 'RHEL-07-020230'
+  tag stig_id: 'AMZL-02-720230'
   tag fix_id: 'F-4579r833105_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']

@@ -20,7 +20,7 @@ X11UseLocalhost yes'
   tag satisfies: nil
   tag gid: 'V-233307'
   tag rid: 'AMZL-02-740711r603301_rule'
-  tag stig_id: 'RHEL-07-040711'
+  tag stig_id: 'AMZL-02-740711'
   tag fix_id: 'F-36466r622234_fix'
   tag cci: ['CCI-000366']
   tag legacy: []

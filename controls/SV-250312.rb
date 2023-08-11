@@ -36,7 +36,7 @@ $ sudo semanage -m user_u -R user_r'
   tag satisfies: nil
   tag gid: 'V-250312'
   tag rid: 'AMZL-02-720021r877392_rule'
-  tag stig_id: 'RHEL-07-020021'
+  tag stig_id: 'AMZL-02-720021'
   tag fix_id: 'F-53700r792842_fix'
   tag cci: ['CCI-002165', 'CCI-002235']
   tag legacy: []

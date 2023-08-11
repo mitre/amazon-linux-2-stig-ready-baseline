@@ -30,7 +30,7 @@ $ sudo grub2-mkconfig -o /boot/efi/EFI/redhat/grub.cfg'
   tag satisfies: nil
   tag gid: 'V-244558'
   tag rid: 'AMZL-02-710492r833187_rule'
-  tag stig_id: 'RHEL-07-010492'
+  tag stig_id: 'AMZL-02-710492'
   tag fix_id: 'F-47790r833186_fix'
   tag cci: ['CCI-000213']
   tag legacy: []

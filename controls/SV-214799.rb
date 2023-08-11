@@ -30,7 +30,7 @@ command:
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-214799'
   tag rid: 'AMZL-02-710020r854001_rule'
-  tag stig_id: 'RHEL-07-010020'
+  tag stig_id: 'AMZL-02-710020'
   tag fix_id: 'F-15997r192363_fix'
   tag cci: ['CCI-001749']
   tag nist: ['CM-5 (3)']

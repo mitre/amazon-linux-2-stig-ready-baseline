@@ -34,7 +34,7 @@ control 'AMZL-02-730410' do
   tag satisfies: ['SRG-OS-000458-GPOS-00203', 'SRG-OS-000392-GPOS-00172', 'SRG-OS-000064-GPOS-00033']
   tag gid: 'V-204521'
   tag rid: 'AMZL-02-730410r809772_rule'
-  tag stig_id: 'RHEL-07-030410'
+  tag stig_id: 'AMZL-02-730410'
   tag fix_id: 'F-4645r809771_fix'
   tag cci: ['CCI-000172']
   tag nist: ['AU-12 c']

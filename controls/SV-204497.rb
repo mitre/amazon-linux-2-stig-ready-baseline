@@ -73,7 +73,7 @@ control 'AMZL-02-721350' do
   tag satisfies: ['SRG-OS-000033-GPOS-00014', 'SRG-OS-000185-GPOS-00079', 'SRG-OS-000396-GPOS-00176', 'SRG-OS-000405-GPOS-00184', 'SRG-OS-000478-GPOS-00223']
   tag gid: 'V-204497'
   tag rid: 'AMZL-02-721350r877398_rule'
-  tag stig_id: 'RHEL-07-021350'
+  tag stig_id: 'AMZL-02-721350'
   tag fix_id: 'F-36310r602640_fix'
   tag cci: ['CCI-000068', 'CCI-001199', 'CCI-002450', 'CCI-002476']
   tag nist: ['AC-17 (2)', 'SC-28', 'SC-13', 'SC-28 (1)', 'SC-13 b']

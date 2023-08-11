@@ -32,7 +32,7 @@ Install the tmux program (if it is not on the system) with the following command
   tag severity: 'medium'
   tag gid: 'V-255926'
   tag rid: 'AMZL-02-710090r880779_rule'
-  tag stig_id: 'RHEL-07-010090'
+  tag stig_id: 'AMZL-02-710090'
   tag gtitle: 'SRG-OS-000029-GPOS-00010'
   tag fix_id: 'F-59546r880778_fix'
   tag 'documentable'

@@ -39,7 +39,7 @@ Reload settings from all system configuration files with the following command:
   tag severity: 'low'
   tag gid: 'V-255927'
   tag rid: 'AMZL-02-710375r880791_rule'
-  tag stig_id: 'RHEL-07-010375'
+  tag stig_id: 'AMZL-02-710375'
   tag gtitle: 'SRG-OS-000138-GPOS-00069'
   tag fix_id: 'F-59547r880790_fix'
   tag 'documentable'

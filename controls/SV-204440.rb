@@ -23,7 +23,7 @@ control 'AMZL-02-710491' do
   tag gtitle: 'SRG-OS-000080-GPOS-00048'
   tag gid: 'V-204440'
   tag rid: 'AMZL-02-710491r744098_rule'
-  tag stig_id: 'RHEL-07-010491'
+  tag stig_id: 'AMZL-02-710491'
   tag fix_id: 'F-4564r744097_fix'
   tag cci: ['CCI-000213']
   tag nist: ['AC-3']

@@ -32,7 +32,7 @@ If "TMOUT" is not set to "900" or less to enforce session termination after inac
   tag gtitle: 'SRG-OS-000163-GPOS-00072'
   tag gid: 'V-204579'
   tag rid: 'AMZL-02-740160r861070_rule'
-  tag stig_id: 'RHEL-07-040160'
+  tag stig_id: 'AMZL-02-740160'
   tag fix_id: 'F-4703r646843_fix'
   tag cci: ['CCI-001133', 'CCI-002361']
   tag nist: ['SC-10', 'AC-12']

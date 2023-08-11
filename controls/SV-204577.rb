@@ -39,7 +39,7 @@ control 'AMZL-02-740100' do
   tag satisfies: ['SRG-OS-000096-GPOS-00050', 'SRG-OS-000297-GPOS-00115']
   tag gid: 'V-204577'
   tag rid: 'AMZL-02-740100r861069_rule'
-  tag stig_id: 'RHEL-07-040100'
+  tag stig_id: 'AMZL-02-740100'
   tag fix_id: 'F-4701r88924_fix'
   tag cci: ['CCI-000382', 'CCI-002314']
   tag nist: ['CM-7 b', 'AC-17 (1)']

@@ -23,7 +23,7 @@ control 'AMZL-02-730872' do
   tag gtitle: 'SRG-OS-000004-GPOS-00004'
   tag gid: 'V-204566'
   tag rid: 'AMZL-02-730872r853980_rule'
-  tag stig_id: 'RHEL-07-030872'
+  tag stig_id: 'AMZL-02-730872'
   tag fix_id: 'F-4690r88891_fix'
   tag cci: ['CCI-000018', 'CCI-000172', 'CCI-001403', 'CCI-002130']
   tag nist: ['AC-2 (4)', 'AU-12 c', 'AC-2 (4)', 'AC-2 (4)']

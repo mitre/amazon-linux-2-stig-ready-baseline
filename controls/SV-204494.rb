@@ -14,7 +14,7 @@ control 'AMZL-02-721320' do
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204494'
   tag rid: 'AMZL-02-721320r603261_rule'
-  tag stig_id: 'RHEL-07-021320'
+  tag stig_id: 'AMZL-02-721320'
   tag fix_id: 'F-4618r88675_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']

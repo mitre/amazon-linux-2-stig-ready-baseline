@@ -27,7 +27,7 @@ control 'AMZL-02-730321' do
   tag gtitle: 'SRG-OS-000342-GPOS-00133'
   tag gid: 'V-204512'
   tag rid: 'AMZL-02-730321r877390_rule'
-  tag stig_id: 'RHEL-07-030321'
+  tag stig_id: 'AMZL-02-730321'
   tag fix_id: 'F-36315r602655_fix'
   tag cci: ['CCI-001851']
   tag nist: ['AU-4 (1)']

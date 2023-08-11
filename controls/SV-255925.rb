@@ -19,7 +19,7 @@ Restart the "sshd" service for changes to take effect:
   tag severity: 'medium'
   tag gid: 'V-255925'
   tag rid: 'AMZL-02-740712r880749_rule'
-  tag stig_id: 'RHEL-07-040712'
+  tag stig_id: 'AMZL-02-740712'
   tag gtitle: 'SRG-OS-000033-GPOS-00014'
   tag fix_id: 'F-59545r880748_fix'
   tag 'documentable'

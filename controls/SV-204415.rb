@@ -21,14 +21,14 @@ Add the following line in "/etc/pam.d/system-auth":
 Add the following line in "/etc/pam.d/password-auth":
      pam_unix.so sha512 shadow try_first_pass use_authtok
 
-Note: Per requirement RHEL-07-010199, RHEL 7 must be configured to not overwrite custom authentication configuration settings while using the authconfig utility, otherwise manual changes to the listed files will be overwritten whenever the authconfig utility is used.'
+Note: Per requirement AMZL-02-710199, RHEL 7 must be configured to not overwrite custom authentication configuration settings while using the authconfig utility, otherwise manual changes to the listed files will be overwritten whenever the authconfig utility is used.'
   impact 0.5
   tag legacy: ['V-71919', 'SV-86543']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000073-GPOS-00041'
   tag gid: 'V-204415'
   tag rid: 'AMZL-02-710200r880833_rule'
-  tag stig_id: 'RHEL-07-010200'
+  tag stig_id: 'AMZL-02-710200'
   tag fix_id: 'F-4539r880832_fix'
   tag cci: ['CCI-000196']
   tag nist: ['IA-5 (1) (c)']

@@ -42,7 +42,7 @@ authentication.
   tag satisfies: ['SRG-OS-000375-GPOS-00160', 'SRG-OS-000375-GPOS-00161', 'SRG-OS-000375-GPOS-00162']
   tag gid: 'V-204633'
   tag rid: 'AMZL-02-741003r853999_rule'
-  tag stig_id: 'RHEL-07-041003'
+  tag stig_id: 'AMZL-02-741003'
   tag fix_id: 'F-4757r89092_fix'
   tag cci: ['CCI-001948', 'CCI-001953', 'CCI-001954']
   tag nist: ['IA-2 (11)', 'IA-2 (12)', 'IA-2 (12)']

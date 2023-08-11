@@ -16,7 +16,7 @@ control 'AMZL-02-720010' do
   tag gtitle: 'SRG-OS-000095-GPOS-00049'
   tag gid: 'V-204443'
   tag rid: 'AMZL-02-720010r603261_rule'
-  tag stig_id: 'RHEL-07-020010'
+  tag stig_id: 'AMZL-02-720010'
   tag fix_id: 'F-4567r88522_fix'
   tag cci: ['CCI-000381']
   tag nist: ['CM-7 a']

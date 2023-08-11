@@ -16,7 +16,7 @@ ALL     ALL=(ALL:ALL) ALL'
   tag satisfies: nil
   tag gid: 'V-237633'
   tag rid: 'AMZL-02-710341r646850_rule'
-  tag stig_id: 'RHEL-07-010341'
+  tag stig_id: 'AMZL-02-710341'
   tag fix_id: 'F-40815r646849_fix'
   tag cci: ['CCI-000366']
   tag legacy: []

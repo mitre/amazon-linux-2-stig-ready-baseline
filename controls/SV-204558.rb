@@ -28,7 +28,7 @@ The audit daemon must be restarted for the changes to take effect.'
   tag gtitle: 'SRG-OS-000471-GPOS-00215'
   tag gid: 'V-204558'
   tag rid: 'AMZL-02-730810r833166_rule'
-  tag stig_id: 'RHEL-07-030810'
+  tag stig_id: 'AMZL-02-730810'
   tag fix_id: 'F-4682r833165_fix'
   tag cci: ['CCI-000172']
   tag nist: ['AU-12 c']

@@ -32,7 +32,7 @@ The audit daemon must be restarted for the changes to take effect.'
   tag satisfies: ['SRG-OS-000471-GPOS-00216', 'SRG-OS-000477-GPOS-00222']
   tag gid: 'V-204562'
   tag rid: 'AMZL-02-730830r833175_rule'
-  tag stig_id: 'RHEL-07-030830'
+  tag stig_id: 'AMZL-02-730830'
   tag fix_id: 'F-4686r833174_fix'
   tag cci: ['CCI-000172']
   tag nist: ['AU-12 c']

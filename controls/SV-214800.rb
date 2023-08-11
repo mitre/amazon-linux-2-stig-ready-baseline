@@ -21,7 +21,7 @@ control 'AMZL-02-720019' do
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-214800'
   tag rid: 'AMZL-02-720019r854323_rule'
-  tag stig_id: 'RHEL-07-020019'
+  tag stig_id: 'AMZL-02-720019'
   tag fix_id: 'F-36317r754750_fix'
   tag cci: ['CCI-001263', 'CCI-000366']
   tag nist: ['SI-4 (5)', 'CM-6 b']

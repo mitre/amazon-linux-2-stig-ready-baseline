@@ -32,7 +32,7 @@ If the file integrity application does not exist, or a script file controlling t
   tag gtitle: 'SRG-OS-000363-GPOS-00150'
   tag gid: 'V-204445'
   tag rid: 'AMZL-02-720030r880848_rule'
-  tag stig_id: 'RHEL-07-020030'
+  tag stig_id: 'AMZL-02-720030'
   tag fix_id: 'F-36304r880847_fix'
   tag cci: ['CCI-001744']
   tag nist: ['CM-3 (5)']

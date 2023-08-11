@@ -38,7 +38,7 @@ If the command does not return a result, this is a finding.'
   tag gtitle: 'SRG-OS-000029-GPOS-00010'
   tag gid: 'V-214937'
   tag rid: 'AMZL-02-710062r880767_rule'
-  tag stig_id: 'RHEL-07-010062'
+  tag stig_id: 'AMZL-02-710062'
   tag fix_id: 'F-16135r880766_fix'
   tag cci: ['CCI-000057']
   tag nist: ['AC-11 a']

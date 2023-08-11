@@ -32,7 +32,7 @@ Change the owner and group owner of the audit log files with the following comma
   tag satisfies: ['SRG-OS-000057-GPOS-00027', 'SRG-OS-000058-GPOS-00028', 'SRG-OS-000059-GPOS-00029', 'SRG-OS-000206-GPOS-00084']
   tag gid: 'V-228564'
   tag rid: 'AMZL-02-710055r606407_rule'
-  tag stig_id: 'RHEL-07-910055'
+  tag stig_id: 'AMZL-02-710055'
   tag fix_id: 'F-23603r419770_fix'
   tag cci: ['CCI-000162', 'CCI-000163', 'CCI-000164', 'CCI-001314']
   tag legacy: []

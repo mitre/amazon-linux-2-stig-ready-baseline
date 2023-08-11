@@ -40,7 +40,7 @@ If the command does not return a result, this is a finding.'
   tag gtitle: 'SRG-OS-000029-GPOS-00010'
   tag gid: 'V-204403'
   tag rid: 'AMZL-02-710101r880785_rule'
-  tag stig_id: 'RHEL-07-010101'
+  tag stig_id: 'AMZL-02-710101'
   tag fix_id: 'F-4527r880784_fix'
   tag cci: ['CCI-000057']
   tag nist: ['AC-11 a']

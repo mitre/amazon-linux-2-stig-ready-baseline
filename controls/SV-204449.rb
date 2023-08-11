@@ -29,7 +29,7 @@ control 'AMZL-02-720100' do
   tag satisfies: ['SRG-OS-000114-GPOS-00059', 'SRG-OS-000378-GPOS-00163', 'SRG-OS-000480-GPOS-00227']
   tag gid: 'V-204449'
   tag rid: 'AMZL-02-720100r853891_rule'
-  tag stig_id: 'RHEL-07-020100'
+  tag stig_id: 'AMZL-02-720100'
   tag fix_id: 'F-4573r462538_fix'
   tag cci: ['CCI-000366', 'CCI-000778', 'CCI-001958']
   tag nist: ['CM-6 b', 'IA-3', 'IA-3']

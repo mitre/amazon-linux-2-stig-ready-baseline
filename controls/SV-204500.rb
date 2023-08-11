@@ -33,7 +33,7 @@ If the "sha512" rule is not being used on all uncommented selection lines in the
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204500'
   tag rid: 'AMZL-02-721620r880860_rule'
-  tag stig_id: 'RHEL-07-021620'
+  tag stig_id: 'AMZL-02-721620'
   tag fix_id: 'F-4624r792830_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']

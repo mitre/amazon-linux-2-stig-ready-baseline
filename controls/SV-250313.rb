@@ -28,7 +28,7 @@ This must be documented with the ISSO as an operational requirement.'
   tag satisfies: nil
   tag gid: 'V-250313'
   tag rid: 'AMZL-02-720022r877392_rule'
-  tag stig_id: 'RHEL-07-020022'
+  tag stig_id: 'AMZL-02-720022'
   tag fix_id: 'F-53701r792845_fix'
   tag cci: ['CCI-002165', 'CCI-002235']
   tag legacy: []

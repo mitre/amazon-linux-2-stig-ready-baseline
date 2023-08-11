@@ -32,7 +32,7 @@ Add or modify the following line:
   tag satisfies: nil
   tag gid: 'V-251703'
   tag rid: 'AMZL-02-710339r833183_rule'
-  tag stig_id: 'RHEL-07-010339'
+  tag stig_id: 'AMZL-02-710339'
   tag fix_id: 'F-55094r809222_fix'
   tag cci: ['CCI-000366']
   tag legacy: []

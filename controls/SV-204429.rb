@@ -30,7 +30,7 @@ Remove any occurrences of "NOPASSWD" tags in the file.'
   tag satisfies: ['SRG-OS-000373-GPOS-00156', 'SRG-OS-000373-GPOS-00157', 'SRG-OS-000373-GPOS-00158']
   tag gid: 'V-204429'
   tag rid: 'AMZL-02-710340r861003_rule'
-  tag stig_id: 'RHEL-07-010340'
+  tag stig_id: 'AMZL-02-710340'
   tag fix_id: 'F-36303r861002_fix'
   tag cci: ['CCI-002038']
   tag nist: ['IA-11']

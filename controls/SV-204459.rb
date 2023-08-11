@@ -37,7 +37,7 @@ If the operating system is in non-compliance with the Information Assurance Vuln
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag gid: 'V-204459'
   tag rid: 'AMZL-02-720260r603261_rule'
-  tag stig_id: 'RHEL-07-020260'
+  tag stig_id: 'AMZL-02-720260'
   tag fix_id: 'F-4583r88570_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
