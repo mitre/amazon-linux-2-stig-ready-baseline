@@ -32,13 +32,9 @@ If the operating system is in non-compliance with the Information Assurance Vuln
   desc 'fix', 'Install the operating system patches or updated packages available from Red Hat within 30 days or
     sooner as local policy dictates.'
   impact 0.5
-  tag legacy: ['SV-86623', 'V-71999']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204459'
-  tag rid: 'AMZL-02-720260r603261_rule'
   tag stig_id: 'AMZL-02-720260'
-  tag fix_id: 'F-4583r88570_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['packages']

@@ -23,13 +23,9 @@ control 'AMZL-02-721024' do
     adding /modifying the /etc/fstab with the following line:
     tmpfs /dev/shm tmpfs defaults,nodev,nosuid,noexec 0 0'
   impact 0.3
-  tag legacy: ['SV-95725', 'V-81013']
   tag severity: 'low'
   tag gtitle: 'SRG-OS-000368-GPOS-00154'
-  tag gid: 'V-204486'
-  tag rid: 'AMZL-02-721024r853900_rule'
   tag stig_id: 'AMZL-02-721024'
-  tag fix_id: 'F-4610r462553_fix'
   tag cci: ['CCI-001764']
   tag nist: ['CM-7 (2)']
   tag subsystems: ['etc_fstab', 'mount']

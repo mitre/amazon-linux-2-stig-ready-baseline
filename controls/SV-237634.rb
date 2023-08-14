@@ -26,12 +26,8 @@ Remove any configurations that conflict with the above from the following locati
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag satisfies: nil
-  tag gid: 'V-237634'
-  tag rid: 'AMZL-02-710342r880755_rule'
   tag stig_id: 'AMZL-02-710342'
-  tag fix_id: 'F-40816r880754_fix'
   tag cci: ['CCI-002227']
-  tag legacy: []
   tag nist: ['AC-6 (5)']
   tag subsystems: ['sudo']
   tag 'host'

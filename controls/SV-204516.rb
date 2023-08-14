@@ -21,13 +21,9 @@ control 'AMZL-02-730360' do
     -a always,exit -F arch=b64 -S execve -C gid!=egid -F egid=0 -k setgid
     The audit daemon must be restarted for the changes to take effect.'
   impact 0.5
-  tag legacy: ['V-72095', 'SV-86719']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000327-GPOS-00127'
-  tag gid: 'V-204516'
-  tag rid: 'AMZL-02-730360r853914_rule'
   tag stig_id: 'AMZL-02-730360'
-  tag fix_id: 'F-4640r88741_fix'
   tag cci: ['CCI-002234']
   tag nist: ['AC-6 (9)']
   tag subsystems: ['audit', 'auditd', 'audit_rule']

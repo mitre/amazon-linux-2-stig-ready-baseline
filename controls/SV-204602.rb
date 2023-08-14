@@ -20,13 +20,9 @@ If the "Compression" keyword is set to "yes", is missing, or the returned line i
     Compression no
     The SSH service must be restarted for changes to take effect.'
   impact 0.5
-  tag legacy: ['SV-86891', 'V-72267']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204602'
-  tag rid: 'AMZL-02-740470r880758_rule'
   tag stig_id: 'AMZL-02-740470'
-  tag fix_id: 'F-4726r880757_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['ssh']

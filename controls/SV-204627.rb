@@ -17,13 +17,9 @@ control 'AMZL-02-740800' do
   desc 'fix', 'If the "/etc/snmp/snmpd.conf" file exists, modify any lines that contain a community string value of
     "public" or "private" to another string value.'
   impact 0.7
-  tag legacy: ['SV-86937', 'V-72313']
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204627'
-  tag rid: 'AMZL-02-740800r603261_rule'
   tag stig_id: 'AMZL-02-740800'
-  tag fix_id: 'F-4751r89074_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['snmp']

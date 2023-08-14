@@ -23,13 +23,9 @@ control 'AMZL-02-740710' do
     The SSH service must be restarted for changes to take effect:
     # systemctl restart sshd'
   impact 0.5
-  tag legacy: ['SV-86927', 'V-72303']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204622'
-  tag rid: 'AMZL-02-740710r603849_rule'
   tag stig_id: 'AMZL-02-740710'
-  tag fix_id: 'F-4746r622312_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['ssh']

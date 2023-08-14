@@ -16,12 +16,8 @@ $ sudo passwd -l [username]'
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag satisfies: nil
-  tag gid: 'V-251702'
-  tag rid: 'AMZL-02-710291r809220_rule'
   tag stig_id: 'AMZL-02-710291'
-  tag fix_id: 'F-55093r809219_fix'
   tag cci: ['CCI-000366']
-  tag legacy: []
   tag nist: ['CM-6 b']
   tag subsystems: ['password', '/etc/shadow']
   tag 'host'

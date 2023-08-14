@@ -19,13 +19,9 @@ control 'AMZL-02-740820' do
     If "libreswan" is installed, "IPsec" is active, and an undocumented tunnel is active, this is a finding.'
   desc 'fix', 'Remove all unapproved tunnels from the system, or document them with the ISSO.'
   impact 0.5
-  tag legacy: ['V-72317', 'SV-86941']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204629'
-  tag rid: 'AMZL-02-740820r603261_rule'
   tag stig_id: 'AMZL-02-740820'
-  tag fix_id: 'F-4753r89080_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['libreswan', 'ipsec']

@@ -25,13 +25,9 @@ command:
 
     # sudo rpm -Uvh <packagename>'
   impact 0.7
-  tag legacy: ['SV-86479', 'V-71855']
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-214799'
-  tag rid: 'AMZL-02-710020r854001_rule'
   tag stig_id: 'AMZL-02-710020'
-  tag fix_id: 'F-15997r192363_fix'
   tag cci: ['CCI-001749']
   tag nist: ['CM-5 (3)']
   tag subsystems: ['rpm', 'package']

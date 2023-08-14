@@ -21,13 +21,9 @@ control 'AMZL-02-740730' do
     $ sudo yum remove xorg-x11-server-Xorg xorg-x11-server-common xorg-x11-server-utils
     A reboot is required for the changes to take effect.'
   impact 0.5
-  tag legacy: ['SV-86931', 'V-72307']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204624'
-  tag rid: 'AMZL-02-740730r646847_rule'
   tag stig_id: 'AMZL-02-740730'
-  tag fix_id: 'F-36316r646846_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['gui']

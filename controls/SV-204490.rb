@@ -13,13 +13,9 @@ command:
 
     # chown root /etc/cron.allow'
   impact 0.5
-  tag legacy: ['V-72053', 'SV-86677']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204490'
-  tag rid: 'AMZL-02-721110r603261_rule'
   tag stig_id: 'AMZL-02-721110'
-  tag fix_id: 'F-4614r88663_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['cron']

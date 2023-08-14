@@ -17,14 +17,10 @@ control 'AMZL-02-730310' do
     Uncomment the "enable_krb5" option in "/etc/audisp/audisp-remote.conf" and set it with the following line:
     enable_krb5 = yes'
   impact 0.5
-  tag legacy: ['V-72085', 'SV-86709']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000342-GPOS-00133'
   tag satisfies: ['SRG-OS-000342-GPOS-00133', 'SRG-OS-000479-GPOS-00224']
-  tag gid: 'V-204510'
-  tag rid: 'AMZL-02-730310r877390_rule'
   tag stig_id: 'AMZL-02-730310'
-  tag fix_id: 'F-4634r88723_fix'
   tag cci: ['CCI-001851']
   tag nist: ['AU-4 (1)']
   tag subsystems: ['audit', 'audisp']

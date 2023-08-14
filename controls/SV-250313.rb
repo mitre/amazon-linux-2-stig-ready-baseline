@@ -26,12 +26,8 @@ This must be documented with the ISSO as an operational requirement.'
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000324-GPOS-00125'
   tag satisfies: nil
-  tag gid: 'V-250313'
-  tag rid: 'AMZL-02-720022r877392_rule'
   tag stig_id: 'AMZL-02-720022'
-  tag fix_id: 'F-53701r792845_fix'
   tag cci: ['CCI-002165', 'CCI-002235']
-  tag legacy: []
   tag nist: ['AC-3 (4)', 'AC-6 (10)']
   tag subsystems: ['ssh']
   tag 'host'

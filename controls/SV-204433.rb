@@ -16,13 +16,9 @@ control 'AMZL-02-710450' do
     [daemon]
     TimedLoginEnable=false'
   impact 0.7
-  tag legacy: ['V-71955', 'SV-86579']
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000480-GPOS-00229'
-  tag gid: 'V-204433'
-  tag rid: 'AMZL-02-710450r877377_rule'
   tag stig_id: 'AMZL-02-710450'
-  tag fix_id: 'F-4557r88492_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['gdm']

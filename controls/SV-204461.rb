@@ -11,13 +11,9 @@ control 'AMZL-02-720300' do
     file to add any non-existent group referenced in the "/etc/passwd" file, or change the GIDs referenced in the
     "/etc/passwd" file to a group that exists in "/etc/group".'
   impact 0.3
-  tag legacy: ['V-72003', 'SV-86627']
   tag severity: 'low'
   tag gtitle: 'SRG-OS-000104-GPOS-00051'
-  tag gid: 'V-204461'
-  tag rid: 'AMZL-02-720300r603261_rule'
   tag stig_id: 'AMZL-02-720300'
-  tag fix_id: 'F-4585r88576_fix'
   tag cci: ['CCI-000764']
   tag nist: ['IA-2']
   tag subsystems: ['accounts']

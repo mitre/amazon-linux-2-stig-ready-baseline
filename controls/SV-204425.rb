@@ -14,13 +14,9 @@ control 'AMZL-02-710300' do
     The SSH service must be restarted for changes to take effect.  Any accounts with empty passwords should be disabled
     immediately, and PAM configuration should prevent users from being able to assign themselves empty passwords.'
   impact 0.7
-  tag legacy: ['SV-86563', 'V-71939']
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000106-GPOS-00053'
-  tag gid: 'V-204425'
-  tag rid: 'AMZL-02-710300r603261_rule'
   tag stig_id: 'AMZL-02-710300'
-  tag fix_id: 'F-4549r88468_fix'
   tag cci: ['CCI-000766']
   tag nist: ['IA-2 (2)']
   tag subsystems: ['ssh']

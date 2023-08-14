@@ -13,13 +13,9 @@ control 'AMZL-02-710470' do
     HostbasedAuthentication no
     The SSH service must be restarted for changes to take effect.'
   impact 0.5
-  tag legacy: ['SV-86583', 'V-71959']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00229'
-  tag gid: 'V-204435'
-  tag rid: 'AMZL-02-710470r877377_rule'
   tag stig_id: 'AMZL-02-710470'
-  tag fix_id: 'F-4559r88498_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['ssh']

@@ -12,13 +12,9 @@ control 'AMZL-02-720330' do
     valid group to all files and directories on the system with the "chgrp" command:
     # chgrp <group> <file>'
   impact 0.5
-  tag legacy: ['V-72009', 'SV-86633']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204464'
-  tag rid: 'AMZL-02-720330r853898_rule'
   tag stig_id: 'AMZL-02-720330'
-  tag fix_id: 'F-4588r88585_fix'
   tag cci: ['CCI-002165']
   tag nist: ['AC-3 (4)']
   tag subsystems: ['file_system', 'groups', 'files']

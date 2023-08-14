@@ -18,13 +18,9 @@ control 'AMZL-02-710120' do
     Add the following line to "/etc/security/pwquality.conf" (or modify the line to have the required value):
     ucredit = -1'
   impact 0.5
-  tag legacy: ['SV-86527', 'V-71903']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000069-GPOS-00037'
-  tag gid: 'V-204407'
-  tag rid: 'AMZL-02-710120r603261_rule'
   tag stig_id: 'AMZL-02-710120'
-  tag fix_id: 'F-4531r88414_fix'
   tag cci: ['CCI-000192']
   tag nist: ['IA-5 (1) (a)']
   tag subsystems: ['pwquality', 'password']

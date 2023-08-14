@@ -18,13 +18,9 @@ control 'AMZL-02-710491' do
     Enter password:
     Confirm password:'
   impact 0.7
-  tag legacy: ['SV-95719', 'V-81007']
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000080-GPOS-00048'
-  tag gid: 'V-204440'
-  tag rid: 'AMZL-02-710491r744098_rule'
   tag stig_id: 'AMZL-02-710491'
-  tag fix_id: 'F-4564r744097_fix'
   tag cci: ['CCI-000213']
   tag nist: ['AC-3']
   tag subsystems: ['boot', 'uefi']

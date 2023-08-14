@@ -16,13 +16,9 @@ If any file has a mode more permissive than "0640", this is a finding.)
 
 # chmod 0640 /path/to/file/ssh_host*key'
   impact 0.5
-  tag legacy: ['V-72257', 'SV-86881']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204597'
-  tag rid: 'AMZL-02-740420r880743_rule'
   tag stig_id: 'AMZL-02-740420'
-  tag fix_id: 'F-4721r880742_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['ssh']

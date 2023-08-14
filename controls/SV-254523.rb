@@ -21,11 +21,8 @@ The automatic expiration or disabling time period may be extended as needed unti
   impact 0.5
   tag check_id: 'C-58007r858499_chk'
   tag severity: 'medium'
-  tag gid: 'V-254523'
-  tag rid: 'AMZL-02-710271r858501_rule'
   tag stig_id: 'AMZL-02-710271'
   tag gtitle: 'SRG-OS-000123-GPOS-00064'
-  tag fix_id: 'F-57956r858500_fix'
   tag 'documentable'
   tag cci: ['CCI-001682']
   tag nist: ['AC-2 (2)']

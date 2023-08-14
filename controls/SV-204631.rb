@@ -25,14 +25,10 @@ Install the pam_pkcs11 package with the following command:
 
 # yum install pam_pkcs11'
   impact 0.5
-  tag legacy: ['SV-87041', 'V-72417']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000375-GPOS-00160'
   tag satisfies: ['SRG-OS-000375-GPOS-00160', 'SRG-OS-000375-GPOS-00161', 'SRG-OS-000375-GPOS-00162']
-  tag gid: 'V-204631'
-  tag rid: 'AMZL-02-741001r853997_rule'
   tag stig_id: 'AMZL-02-741001'
-  tag fix_id: 'F-4755r462473_fix'
   tag cci: ['CCI-001948', 'CCI-001953', 'CCI-001954']
   tag nist: ['IA-2 (11)', 'IA-2 (12)', 'IA-2 (12)']
   tag subsystems: ['MFA', 'smartcard']

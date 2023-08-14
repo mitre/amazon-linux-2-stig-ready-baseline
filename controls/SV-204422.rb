@@ -20,13 +20,9 @@ Add the following line in "/etc/pam.d/system-auth" and "/etc/pam.d/password-auth
 
 Note: Per requirement AMZL-02-710199, RHEL 7 must be configured to not overwrite custom authentication configuration settings while using the authconfig utility, otherwise manual changes to the listed files will be overwritten whenever the authconfig utility is used.'
   impact 0.5
-  tag legacy: ['V-71933', 'SV-86557']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000077-GPOS-00045'
-  tag gid: 'V-204422'
-  tag rid: 'AMZL-02-710270r880836_rule'
   tag stig_id: 'AMZL-02-710270'
-  tag fix_id: 'F-4546r880835_fix'
   tag cci: ['CCI-000200']
   tag nist: ['IA-5 (1) (e)']
   tag subsystems: ['pam', 'password']

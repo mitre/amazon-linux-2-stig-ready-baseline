@@ -17,13 +17,9 @@ control 'AMZL-02-720660' do
     Note: The example will be for the user smithj, who has a home directory of "/home/smithj".
     $ sudo chown smithj /home/smithj/<file or directory>'
   impact 0.5
-  tag legacy: ['SV-86647', 'V-72023']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204471'
-  tag rid: 'AMZL-02-720660r744105_rule'
   tag stig_id: 'AMZL-02-720660'
-  tag fix_id: 'F-4595r744104_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['home_dirs']

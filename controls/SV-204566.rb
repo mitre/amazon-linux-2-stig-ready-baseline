@@ -18,13 +18,9 @@ control 'AMZL-02-730872' do
     -w /etc/gshadow -p wa -k identity
     The audit daemon must be restarted for the changes to take effect.'
   impact 0.5
-  tag legacy: ['SV-87819', 'V-73167']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000004-GPOS-00004'
-  tag gid: 'V-204566'
-  tag rid: 'AMZL-02-730872r853980_rule'
   tag stig_id: 'AMZL-02-730872'
-  tag fix_id: 'F-4690r88891_fix'
   tag cci: ['CCI-000018', 'CCI-000172', 'CCI-001403', 'CCI-002130']
   tag nist: ['AC-2 (4)', 'AU-12 c', 'AC-2 (4)', 'AC-2 (4)']
   tag subsystems: ['audit', 'auditd', 'audit_rule']

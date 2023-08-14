@@ -19,13 +19,9 @@ control 'AMZL-02-730874' do
     The audit daemon must be restarted for the changes to take effect:
     # systemctl restart auditd'
   impact 0.5
-  tag legacy: ['SV-87825', 'V-73173']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000004-GPOS-00004'
-  tag gid: 'V-204568'
-  tag rid: 'AMZL-02-730874r853982_rule'
   tag stig_id: 'AMZL-02-730874'
-  tag fix_id: 'F-4692r744114_fix'
   tag cci: ['CCI-000018', 'CCI-000172', 'CCI-001403', 'CCI-002130']
   tag nist: ['AC-2 (4)', 'AU-12 c', 'AC-2 (4)', 'AC-2 (4)']
   tag subsystems: ['audit', 'auditd', 'audit_rule']

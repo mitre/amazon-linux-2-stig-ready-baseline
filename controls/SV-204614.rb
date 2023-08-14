@@ -28,13 +28,9 @@ following line to "/etc/sysctl.conf" or a configuration file in the
 
     # sysctl --system'
   impact 0.5
-  tag legacy: ['SV-86913', 'V-72289']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204614'
-  tag rid: 'AMZL-02-740640r880812_rule'
   tag stig_id: 'AMZL-02-740640'
-  tag fix_id: 'F-4738r880811_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['kernel_parameter', 'ipv4']

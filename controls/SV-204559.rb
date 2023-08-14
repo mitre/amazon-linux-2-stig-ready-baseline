@@ -26,14 +26,10 @@ Add or update the following rules in "/etc/audit/rules.d/audit.rules":
 
 The audit daemon must be restarted for the changes to take effect.'
   impact 0.5
-  tag legacy: ['V-78999', 'SV-93705']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000471-GPOS-00216'
   tag satisfies: ['SRG-OS-000471-GPOS-00216', 'SRG-OS-000477-GPOS-00222']
-  tag gid: 'V-204559'
-  tag rid: 'AMZL-02-730819r833169_rule'
   tag stig_id: 'AMZL-02-730819'
-  tag fix_id: 'F-4683r833168_fix'
   tag cci: ['CCI-000172']
   tag nist: ['AU-12 c']
   tag subsystems: ['audit', 'auditd', 'audit_rule']

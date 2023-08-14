@@ -10,13 +10,9 @@ control 'AMZL-02-740550' do
   desc 'fix', 'Remove any found "shosts.equiv" files from the system.
     # rm /[path]/[to]/[file]/shosts.equiv'
   impact 0.7
-  tag legacy: ['SV-86903', 'V-72279']
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204607'
-  tag rid: 'AMZL-02-740550r603261_rule'
   tag stig_id: 'AMZL-02-740550'
-  tag fix_id: 'F-4731r89014_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['ssh']

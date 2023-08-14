@@ -27,13 +27,9 @@ If the file integrity application does not exist, or a script file controlling t
 
      /usr/sbin/aide --check | /var/spool/mail -s "$HOSTNAME - Daily aide integrity check run" root@sysname.mil'
   impact 0.5
-  tag legacy: ['SV-86597', 'V-71973']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000363-GPOS-00150'
-  tag gid: 'V-204445'
-  tag rid: 'AMZL-02-720030r880848_rule'
   tag stig_id: 'AMZL-02-720030'
-  tag fix_id: 'F-36304r880847_fix'
   tag cci: ['CCI-001744']
   tag nist: ['CM-3 (5)']
   tag subsystems: ['file_integrity_tool']

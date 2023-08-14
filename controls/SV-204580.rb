@@ -73,14 +73,10 @@ control 'AMZL-02-740170' do
     private and confidential. See User Agreement for details."
     The SSH service must be restarted for changes to take effect.'
   impact 0.5
-  tag legacy: ['V-72225', 'SV-86849']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000023-GPOS-00006'
   tag satisfies: ['SRG-OS-000023-GPOS-00006', 'SRG-OS-000024-GPOS-00007', 'SRG-OS-000228-GPOS-00088']
-  tag gid: 'V-204580'
-  tag rid: 'AMZL-02-740170r603261_rule'
   tag stig_id: 'AMZL-02-740170'
-  tag fix_id: 'F-4704r297486_fix'
   tag cci: ['CCI-000048', 'CCI-000050', 'CCI-001384', 'CCI-001385', 'CCI-001386', 'CCI-001387', 'CCI-001388']
   tag nist: ['AC-8 a', 'AC-8 b', 'AC-8 c 1', 'AC-8 c 2', 'AC-8 c 2', 'AC-8 c 3']
   tag subsystems: ['ssh', 'banner']

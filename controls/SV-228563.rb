@@ -13,12 +13,8 @@ If there is output, this is a finding.'
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag satisfies: nil
-  tag gid: 'V-228563'
-  tag rid: 'AMZL-02-721031r744119_rule'
   tag stig_id: 'AMZL-02-721031'
-  tag fix_id: 'F-19547r377220_fix'
   tag cci: ['CCI-000366']
-  tag legacy: []
   tag nist: ['CM-6 b']
   tag subsystems: ['world_writable', 'ww_dirs']
   tag 'host'

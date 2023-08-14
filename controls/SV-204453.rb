@@ -21,13 +21,9 @@ control 'AMZL-02-720210' do
     SELINUX=enforcing
     A reboot is required for the changes to take effect.'
   impact 0.5
-  tag legacy: ['V-71989', 'SV-86613']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000445-GPOS-00199'
-  tag gid: 'V-204453'
-  tag rid: 'AMZL-02-720210r853895_rule'
   tag stig_id: 'AMZL-02-720210'
-  tag fix_id: 'F-36306r602628_fix'
   tag cci: ['CCI-002165', 'CCI-002696']
   tag nist: ['AC-3 (4)', 'SI-6 a']
   tag subsystems: ['selinux']

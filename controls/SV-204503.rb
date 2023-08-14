@@ -22,14 +22,10 @@ control 'AMZL-02-730000' do
     Enable the auditd service with the following command:
     # systemctl start auditd.service'
   impact 0.5
-  tag legacy: ['SV-86703', 'V-72079']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000038-GPOS-00016'
   tag satisfies: ['SRG-OS-000038-GPOS-00016', 'SRG-OS-000039-GPOS-00017', 'SRG-OS-000042-GPOS-00021', 'SRG-OS-000254-GPOS-00095', 'SRG-OS-000255-GPOS-00096']
-  tag gid: 'V-204503'
-  tag rid: 'AMZL-02-730000r603261_rule'
   tag stig_id: 'AMZL-02-730000'
-  tag fix_id: 'F-36311r602643_fix'
   tag cci: ['CCI-000126', 'CCI-000131']
   tag nist: ['AU-2 d', 'AU-3', 'AU-2 c', 'AU-3 b']
   tag subsystems: ['audit', 'auditd']

@@ -11,13 +11,9 @@ control 'AMZL-02-720010' do
     from the system with the following command:
     # yum remove ypserv'
   impact 0.7
-  tag legacy: ['V-71969', 'SV-86593']
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000095-GPOS-00049'
-  tag gid: 'V-204443'
-  tag rid: 'AMZL-02-720010r603261_rule'
   tag stig_id: 'AMZL-02-720010'
-  tag fix_id: 'F-4567r88522_fix'
   tag cci: ['CCI-000381']
   tag nist: ['CM-7 a']
   tag subsystems: ['packages']

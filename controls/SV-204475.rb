@@ -27,13 +27,9 @@ control 'AMZL-02-720700' do
     of users.
     # chgrp users /home/smithj/.[^.]*)
   impact 0.5
-  tag legacy: ['V-72031', 'SV-86655']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204475'
-  tag rid: 'AMZL-02-720700r603836_rule'
   tag stig_id: 'AMZL-02-720700'
-  tag fix_id: 'F-4599r88618_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['init_files']

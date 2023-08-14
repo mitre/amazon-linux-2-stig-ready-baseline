@@ -16,13 +16,9 @@ control 'AMZL-02-720250' do
     If the release is not supported by the vendor, this is a finding.'
   desc 'fix', 'Upgrade to a supported version of the operating system.'
   impact 0.7
-  tag legacy: ['SV-86621', 'V-71997']
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204458'
-  tag rid: 'AMZL-02-720250r744100_rule'
   tag stig_id: 'AMZL-02-720250'
-  tag fix_id: 'F-4582r462547_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['redhat_release']

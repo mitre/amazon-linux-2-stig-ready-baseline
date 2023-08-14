@@ -16,13 +16,9 @@ control 'AMZL-02-740370' do
     PermitRootLogin no
     The SSH service must be restarted for changes to take effect.'
   impact 0.5
-  tag legacy: ['V-72247', 'SV-86871']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204592'
-  tag rid: 'AMZL-02-740370r603261_rule'
   tag stig_id: 'AMZL-02-740370'
-  tag fix_id: 'F-4716r88969_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['ssh']

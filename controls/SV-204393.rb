@@ -42,14 +42,10 @@ control 'AMZL-02-710030' do
     # dconf update
     Users must log out and back in again before the system-wide settings take effect.'
   impact 0.5
-  tag legacy: ['V-71859', 'SV-86483']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000023-GPOS-00006'
   tag satisfies: ['SRG-OS-000023-GPOS-00006', 'SRG-OS-000024-GPOS-00007', 'SRG-OS-000228-GPOS-00088']
-  tag gid: 'V-204393'
-  tag rid: 'AMZL-02-710030r603261_rule'
   tag stig_id: 'AMZL-02-710030'
-  tag fix_id: 'F-4517r88372_fix'
   tag cci: ['CCI-000048']
   tag nist: ['AC-8 a']
   tag subsystems: ['gui', 'banner']

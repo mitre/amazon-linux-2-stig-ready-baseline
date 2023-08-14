@@ -15,13 +15,9 @@ control 'AMZL-02-740460' do
     UsePrivilegeSeparation sandbox
     The SSH service must be restarted for changes to take effect.'
   impact 0.5
-  tag legacy: ['SV-86889', 'V-72265']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204601'
-  tag rid: 'AMZL-02-740460r603261_rule'
   tag stig_id: 'AMZL-02-740460'
-  tag fix_id: 'F-4725r88996_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['ssh']

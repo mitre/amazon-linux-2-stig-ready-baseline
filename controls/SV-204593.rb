@@ -13,13 +13,9 @@ control 'AMZL-02-740380' do
     IgnoreUserKnownHosts yes
     The SSH service must be restarted for changes to take effect.'
   impact 0.5
-  tag legacy: ['V-72249', 'SV-86873']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204593'
-  tag rid: 'AMZL-02-740380r603261_rule'
   tag stig_id: 'AMZL-02-740380'
-  tag fix_id: 'F-4717r88972_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['ssh']

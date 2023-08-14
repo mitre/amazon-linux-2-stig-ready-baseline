@@ -19,13 +19,9 @@ the following command:
 
     # chmod 0755 <file>'
   impact 0.5
-  tag legacy: ['SV-86661', 'V-72037']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204478'
-  tag rid: 'AMZL-02-720730r603261_rule'
   tag stig_id: 'AMZL-02-720730'
-  tag fix_id: 'F-4602r88627_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['init_files']

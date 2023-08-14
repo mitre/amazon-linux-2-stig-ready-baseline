@@ -43,12 +43,8 @@ Done.'
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000445-GPOS-00199'
   tag satisfies: nil
-  tag gid: 'V-251705'
-  tag rid: 'AMZL-02-720029r880854_rule'
   tag stig_id: 'AMZL-02-720029'
-  tag fix_id: 'F-55096r880853_fix'
   tag cci: ['CCI-002696']
-  tag legacy: []
   tag nist: ['SI-6 a']
   tag subsystems: ['file_integrity_tool']
   tag 'host'

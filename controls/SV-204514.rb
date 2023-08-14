@@ -17,13 +17,9 @@ control 'AMZL-02-730340' do
     Uncomment or edit the "space_left_action" keyword in "/etc/audit/auditd.conf" and set it to "email".
     space_left_action = email'
   impact 0.5
-  tag legacy: ['V-72091', 'SV-86715']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000343-GPOS-00134'
-  tag gid: 'V-204514'
-  tag rid: 'AMZL-02-730340r877389_rule'
   tag stig_id: 'AMZL-02-730340'
-  tag fix_id: 'F-4638r88735_fix'
   tag cci: ['CCI-001855']
   tag nist: ['AU-5 (1)']
   tag subsystems: ['audit', 'auditd']

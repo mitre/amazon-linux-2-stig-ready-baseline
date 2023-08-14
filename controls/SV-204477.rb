@@ -22,13 +22,9 @@ control 'AMZL-02-720720' do
     If a local interactive user requires path variables to reference a directory owned by the application, it must be
     documented with the ISSO.'
   impact 0.5
-  tag legacy: ['V-72035', 'SV-86659']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204477'
-  tag rid: 'AMZL-02-720720r792828_rule'
   tag stig_id: 'AMZL-02-720720'
-  tag fix_id: 'F-4601r88624_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['init_files']

@@ -14,13 +14,9 @@ control 'AMZL-02-710250' do
     Add the following line in "/etc/login.defs" (or modify the line to have the required value):
     PASS_MAX_DAYS     60'
   impact 0.5
-  tag legacy: ['V-71929', 'SV-86553']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000076-GPOS-00044'
-  tag gid: 'V-204420'
-  tag rid: 'AMZL-02-710250r603261_rule'
   tag stig_id: 'AMZL-02-710250'
-  tag fix_id: 'F-4544r88453_fix'
   tag cci: ['CCI-000199']
   tag nist: ['IA-5 (1) (d)']
   tag subsystems: ['login_defs', 'password']

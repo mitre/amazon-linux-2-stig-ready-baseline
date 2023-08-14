@@ -16,13 +16,9 @@ control 'AMZL-02-731000' do
     send all "rsyslog" output to a log aggregation system:
     *.* @@<log aggregation system name>'
   impact 0.5
-  tag legacy: ['SV-86833', 'V-72209']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204574'
-  tag rid: 'AMZL-02-731000r603261_rule'
   tag stig_id: 'AMZL-02-731000'
-  tag fix_id: 'F-4698r88915_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['rsyslog']

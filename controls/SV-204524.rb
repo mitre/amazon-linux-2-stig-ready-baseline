@@ -32,14 +32,10 @@ control 'AMZL-02-730440' do
     auid!=unset -k perm_mod
     The audit daemon must be restarted for the changes to take effect.'
   impact 0.5
-  tag legacy: ['SV-86735', 'V-72111']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000458-GPOS-00203'
   tag satisfies: ['SRG-OS-000458-GPOS-00203', 'SRG-OS-000392-GPOS-00172', 'SRG-OS-000064-GPOS-00033']
-  tag gid: 'V-204524'
-  tag rid: 'AMZL-02-730440r809775_rule'
   tag stig_id: 'AMZL-02-730440'
-  tag fix_id: 'F-4648r809774_fix'
   tag cci: ['CCI-000172']
   tag nist: ['AU-12 c']
   tag subsystems: ['audit', 'auditd', 'audit_rule']

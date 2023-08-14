@@ -13,13 +13,9 @@ control 'AMZL-02-710460' do
     PermitUserEnvironment no
     The SSH service must be restarted for changes to take effect.'
   impact 0.5
-  tag legacy: ['SV-86581', 'V-71957']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00229'
-  tag gid: 'V-204434'
-  tag rid: 'AMZL-02-710460r877377_rule'
   tag stig_id: 'AMZL-02-710460'
-  tag fix_id: 'F-4558r88495_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['ssh']

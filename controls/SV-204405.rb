@@ -12,13 +12,9 @@ control 'AMZL-02-710118' do
     Add the following line to "/etc/pam.d/passwd" (or modify the line to have the required value):
     password     substack    system-auth'
   impact 0.5
-  tag legacy: ['SV-95715', 'V-81003']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000069-GPOS-00037'
-  tag gid: 'V-204405'
-  tag rid: 'AMZL-02-710118r603261_rule'
   tag stig_id: 'AMZL-02-710118'
-  tag fix_id: 'F-4529r88408_fix'
   tag cci: ['CCI-000192']
   tag subsystems: ['pam', 'password']
   tag nist: ['IA-5 (1) (a)']

@@ -20,13 +20,9 @@ control 'AMZL-02-721000' do
   desc 'fix', 'Configure the "/etc/fstab" to use the "nosuid" option on file systems that contain user home
     directories.'
   impact 0.5
-  tag legacy: ['SV-86665', 'V-72041']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204480'
-  tag rid: 'AMZL-02-721000r603838_rule'
   tag stig_id: 'AMZL-02-721000'
-  tag fix_id: 'F-4604r88633_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['home_dirs', 'file_system']

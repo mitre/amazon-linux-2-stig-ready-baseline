@@ -24,13 +24,9 @@ control 'AMZL-02-720101' do
     Add or update the line:
     blacklist dccp'
   impact 0.5
-  tag legacy: ['V-77821', 'SV-92517']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000378-GPOS-00163'
-  tag gid: 'V-204450'
-  tag rid: 'AMZL-02-720101r853892_rule'
   tag stig_id: 'AMZL-02-720101'
-  tag fix_id: 'F-4574r88543_fix'
   tag cci: ['CCI-001958']
   tag nist: ['IA-3']
   tag subsystems: ['dccp', 'kernel_module']

@@ -18,13 +18,9 @@ control 'AMZL-02-710190' do
     Add the following line to "/etc/security/pwquality.conf" conf (or modify the line to have the required value):
     maxclassrepeat = 4'
   impact 0.5
-  tag legacy: ['SV-86541', 'V-71917']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000072-GPOS-00040'
-  tag gid: 'V-204414'
-  tag rid: 'AMZL-02-710190r809186_rule'
   tag stig_id: 'AMZL-02-710190'
-  tag fix_id: 'F-4538r88435_fix'
   tag cci: ['CCI-000195']
   tag nist: ['IA-5 (1) (b)']
   tag subsystems: ['pwquality', 'password']

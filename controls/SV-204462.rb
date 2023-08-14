@@ -11,13 +11,9 @@ control 'AMZL-02-720310' do
     If the account is associated with system commands or applications, the UID should be changed to one greater than "0"
     but less than "1000". Otherwise, assign a UID of greater than "1000" that has not already been assigned.'
   impact 0.7
-  tag legacy: ['SV-86629', 'V-72005']
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204462'
-  tag rid: 'AMZL-02-720310r603261_rule'
   tag stig_id: 'AMZL-02-720310'
-  tag fix_id: 'F-4586r88579_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['accounts']

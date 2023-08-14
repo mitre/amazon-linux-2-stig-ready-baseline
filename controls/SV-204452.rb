@@ -16,13 +16,9 @@ control 'AMZL-02-720200' do
     Set the "clean_requirements_on_remove" option to "1" in the "/etc/yum.conf" file:
     clean_requirements_on_remove=1'
   impact 0.3
-  tag legacy: ['V-71987', 'SV-86611']
   tag severity: 'low'
   tag gtitle: 'SRG-OS-000437-GPOS-00194'
-  tag gid: 'V-204452'
-  tag rid: 'AMZL-02-720200r853894_rule'
   tag stig_id: 'AMZL-02-720200'
-  tag fix_id: 'F-4576r88549_fix'
   tag cci: ['CCI-002617']
   tag nist: ['SI-2 (6)']
   tag subsystems: ['yum']

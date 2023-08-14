@@ -20,13 +20,9 @@ control 'AMZL-02-740000' do
     /etc/security/limits.d/ :
     * hard maxlogins 10'
   impact 0.3
-  tag legacy: ['V-72217', 'SV-86841']
   tag severity: 'low'
   tag gtitle: 'SRG-OS-000027-GPOS-00008'
-  tag gid: 'V-204576'
-  tag rid: 'AMZL-02-740000r877399_rule'
   tag stig_id: 'AMZL-02-740000'
-  tag fix_id: 'F-4700r88921_fix'
   tag cci: ['CCI-000054']
   tag nist: ['AC-10']
   tag subsystems: ['session']

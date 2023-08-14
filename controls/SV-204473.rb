@@ -22,13 +22,9 @@ directory with the following command:
 
     # chmod 0750 /home/smithj/<file>'
   impact 0.5
-  tag legacy: ['V-72027', 'SV-86651']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204473'
-  tag rid: 'AMZL-02-720680r603261_rule'
   tag stig_id: 'AMZL-02-720680'
-  tag fix_id: 'F-4597r88612_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['home_dirs']

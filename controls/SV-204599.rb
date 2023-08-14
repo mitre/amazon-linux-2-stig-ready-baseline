@@ -20,13 +20,9 @@ control 'AMZL-02-740440' do
     If Kerberos authentication is required, it must be documented, to include the location of the configuration file,
     with the ISSO.'
   impact 0.5
-  tag legacy: ['V-72261', 'SV-86885']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000364-GPOS-00151'
-  tag gid: 'V-204599'
-  tag rid: 'AMZL-02-740440r853994_rule'
   tag stig_id: 'AMZL-02-740440'
-  tag fix_id: 'F-4723r88990_fix'
   tag cci: ['CCI-000318', 'CCI-000368', 'CCI-001812', 'CCI-001813', 'CCI-001814']
   tag nist: ['CM-3 f', 'CM-6 c', 'CM-11 (2)', 'CM-5 (1)', 'CM-5 (1) (a)']
   tag subsystems: ['ssh']

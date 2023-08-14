@@ -13,13 +13,9 @@ Remove any instances of the "nullok" option in "/etc/pam.d/system-auth" and "/et
 
 Note: Per requirement AMZL-02-710199, RHEL 7 must be configured to not overwrite custom authentication configuration settings while using the authconfig utility, otherwise manual changes to the listed files will be overwritten whenever the authconfig utility is used.'
   impact 0.7
-  tag legacy: ['V-71937', 'SV-86561']
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204424'
-  tag rid: 'AMZL-02-710290r880839_rule'
   tag stig_id: 'AMZL-02-710290'
-  tag fix_id: 'F-4548r880838_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['pam', 'password']

@@ -14,13 +14,9 @@ control 'AMZL-02-720610' do
     setting the "CREATE_HOME" parameter in "/etc/login.defs" to "yes" as follows.
     CREATE_HOME yes'
   impact 0.5
-  tag legacy: ['V-72013', 'SV-86637']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204466'
-  tag rid: 'AMZL-02-720610r603261_rule'
   tag stig_id: 'AMZL-02-720610'
-  tag fix_id: 'F-4590r88591_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['login_defs']

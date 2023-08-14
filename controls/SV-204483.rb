@@ -19,13 +19,9 @@ control 'AMZL-02-721021' do
   desc 'fix', 'Configure the "/etc/fstab" to use the "noexec" option on file systems that are being imported via
     NFS.'
   impact 0.5
-  tag legacy: ['SV-87813', 'V-73161']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204483'
-  tag rid: 'AMZL-02-721021r603261_rule'
   tag stig_id: 'AMZL-02-721021'
-  tag fix_id: 'F-4607r88642_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['etc_fstab']

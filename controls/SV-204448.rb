@@ -27,13 +27,9 @@ control 'AMZL-02-720060' do
     the following option in the "/etc/yum.conf" file:
     localpkg_gpgcheck=1'
   impact 0.7
-  tag legacy: ['V-71979', 'SV-86603']
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000366-GPOS-00153'
-  tag gid: 'V-204448'
-  tag rid: 'AMZL-02-720060r877463_rule'
   tag stig_id: 'AMZL-02-720060'
-  tag fix_id: 'F-4572r88537_fix'
   tag cci: ['CCI-001749']
   tag nist: ['CM-5 (3)']
   tag subsystems: ['yum']

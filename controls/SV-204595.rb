@@ -21,13 +21,9 @@ control 'AMZL-02-740400' do
     MACs hmac-sha2-512,hmac-sha2-256
     The SSH service must be restarted for changes to take effect.'
   impact 0.5
-  tag legacy: ['SV-86877', 'V-72253']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000250-GPOS-00093'
-  tag gid: 'V-204595'
-  tag rid: 'AMZL-02-740400r877394_rule'
   tag stig_id: 'AMZL-02-740400'
-  tag fix_id: 'F-4719r622309_fix'
   tag cci: ['CCI-001453']
   tag nist: ['AC-17 (2)']
   tag subsystems: ['ssh']

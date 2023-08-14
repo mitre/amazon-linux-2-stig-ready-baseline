@@ -31,13 +31,9 @@ the /etc/sysctl.d/ directory (or modify the line to have the required value):
 
     # sysctl --system'
   impact 0.5
-  tag legacy: ['V-72319', 'SV-86943']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204630'
-  tag rid: 'AMZL-02-740830r880827_rule'
   tag stig_id: 'AMZL-02-740830'
-  tag fix_id: 'F-4754r880826_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['kernel_parameter', 'ipv6']

@@ -23,13 +23,9 @@ control 'AMZL-02-721310' do
     directories does not exist, this is a finding."
   desc 'fix', 'Migrate the "/home" directory onto a separate file system/partition.'
   impact 0.3
-  tag legacy: ['SV-86683', 'V-72059']
   tag severity: 'low'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204493'
-  tag rid: 'AMZL-02-721310r603840_rule'
   tag stig_id: 'AMZL-02-721310'
-  tag fix_id: 'F-4617r88672_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['home_dirs', 'file_system']

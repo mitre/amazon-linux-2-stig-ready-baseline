@@ -33,13 +33,9 @@ If the command does not return a result, this is a finding.'
     Add the setting to lock the session idle delay:
     /org/gnome/desktop/session/idle-delay'
   impact 0.5
-  tag legacy: ['V-73157', 'SV-87809']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000029-GPOS-00010'
-  tag gid: 'V-204400'
-  tag rid: 'AMZL-02-710082r880776_rule'
   tag stig_id: 'AMZL-02-710082'
-  tag fix_id: 'F-4524r880775_fix'
   tag cci: ['CCI-000057']
   tag nist: ['AC-11 a']
   tag subsystems: ['gui']

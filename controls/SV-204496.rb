@@ -17,13 +17,9 @@ control 'AMZL-02-721340' do
     OR
     Edit the "/etc/fstab" file and ensure the "/tmp" directory is defined in the fstab with a device and mount point.'
   impact 0.3
-  tag legacy: ['SV-86689', 'V-72065']
   tag severity: 'low'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204496'
-  tag rid: 'AMZL-02-721340r603261_rule'
   tag stig_id: 'AMZL-02-721340'
-  tag fix_id: 'F-36309r602637_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['file_system', 'tmp']

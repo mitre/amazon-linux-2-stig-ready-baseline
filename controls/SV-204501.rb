@@ -26,13 +26,9 @@ If the system is using an alternate boot loader on removable media, and document
   desc 'fix', 'Remove alternate methods of booting the system from removable media or document the configuration to
     boot from removable media with the ISSO.'
   impact 0.5
-  tag legacy: ['SV-86699', 'V-72075']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000364-GPOS-00151'
-  tag gid: 'V-204501'
-  tag rid: 'AMZL-02-721700r861008_rule'
   tag stig_id: 'AMZL-02-721700'
-  tag fix_id: 'F-4625r88696_fix'
   tag cci: ['CCI-000318', 'CCI-000368', 'CCI-001812', 'CCI-001813', 'CCI-001814']
   tag nist: ['CM-3 f', 'CM-6 c', 'CM-11 (2)', 'CM-5 (1)', 'CM-5 (1) (a)']
   tag subsystems: ['grub', 'removable_media']

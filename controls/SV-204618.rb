@@ -15,13 +15,9 @@ control 'AMZL-02-740670' do
     Set the promiscuous mode of an interface to off with the following command:
     #ip link set dev <devicename> multicast off promisc off'
   impact 0.5
-  tag legacy: ['V-72295', 'SV-86919']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204618'
-  tag rid: 'AMZL-02-740670r603261_rule'
   tag stig_id: 'AMZL-02-740670'
-  tag fix_id: 'F-4742r89047_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['network', 'ip_link']

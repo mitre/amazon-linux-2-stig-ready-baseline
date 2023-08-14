@@ -27,13 +27,9 @@ directory (or modify the line to have the required value):
 
     # sysctl --system'
   impact 0.5
-  tag legacy: ['V-92251', 'SV-102353']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204610'
-  tag rid: 'AMZL-02-740611r880800_rule'
   tag stig_id: 'AMZL-02-740611'
-  tag fix_id: 'F-4734r880799_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['kernel_parameter', 'ipv4']

@@ -35,13 +35,9 @@ The following example output is generic. It will set cron to run AIDE daily and 
 
      /usr/sbin/aide --check | /var/spool/mail -s "$HOSTNAME - Daily aide integrity check run" root@sysname.mil'
   impact 0.5
-  tag legacy: ['V-71975', 'SV-86599']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000363-GPOS-00150'
-  tag gid: 'V-204446'
-  tag rid: 'AMZL-02-720040r880851_rule'
   tag stig_id: 'AMZL-02-720040'
-  tag fix_id: 'F-36305r880850_fix'
   tag cci: ['CCI-001744']
   tag nist: ['CM-3 (5)']
   tag subsystems: ['file_integrity_tool']

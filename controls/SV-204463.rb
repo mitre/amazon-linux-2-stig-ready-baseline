@@ -12,13 +12,9 @@ control 'AMZL-02-720320' do
     valid user to all unowned files and directories on the system with the "chown" command:
     # chown <user> <file>'
   impact 0.5
-  tag legacy: ['SV-86631', 'V-72007']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204463'
-  tag rid: 'AMZL-02-720320r853897_rule'
   tag stig_id: 'AMZL-02-720320'
-  tag fix_id: 'F-4587r88582_fix'
   tag cci: ['CCI-002165']
   tag nist: ['AC-3 (4)']
   tag subsystems: ['file_system', 'users', 'files']

@@ -23,13 +23,9 @@ If the user home directory referenced in "/etc/passwd" is not group-owned by tha
     of users.
     # chgrp users /home/smithj)
   impact 0.5
-  tag legacy: ['SV-86645', 'V-72021']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204470'
-  tag rid: 'AMZL-02-720650r880764_rule'
   tag stig_id: 'AMZL-02-720650'
-  tag fix_id: 'F-4594r880763_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['home_dirs']

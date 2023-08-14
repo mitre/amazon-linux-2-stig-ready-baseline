@@ -15,13 +15,9 @@ control 'AMZL-02-721030' do
     system account. If any world-writable directories are not group-owned by a system account, this should be
     investigated. Following this, the directories should be deleted or assigned to an appropriate group.'
   impact 0.5
-  tag legacy: ['V-72047', 'SV-86671']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204487'
-  tag rid: 'AMZL-02-721030r744106_rule'
   tag stig_id: 'AMZL-02-721030'
-  tag fix_id: 'F-36308r602634_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['world_writable', 'ww_dirs']

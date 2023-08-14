@@ -28,13 +28,9 @@ If the "sha512" rule is not being used on all uncommented selection lines in the
     If AIDE is installed, ensure the "sha512" rule is present on all uncommented file and directory selection lists.
     Exclude any log files, or files expected to change frequently, to reduce unnecessary notifications.'
   impact 0.5
-  tag legacy: ['SV-86697', 'V-72073']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204500'
-  tag rid: 'AMZL-02-721620r880860_rule'
   tag stig_id: 'AMZL-02-721620'
-  tag fix_id: 'F-4624r792830_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['file_integrity_tool']

@@ -21,13 +21,9 @@ control 'AMZL-02-730320' do
     "single", or "halt", such as the following line:
     disk_full_action = single'
   impact 0.5
-  tag legacy: ['V-72087', 'SV-86711']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000342-GPOS-00133'
-  tag gid: 'V-204511'
-  tag rid: 'AMZL-02-730320r877390_rule'
   tag stig_id: 'AMZL-02-730320'
-  tag fix_id: 'F-36314r602652_fix'
   tag cci: ['CCI-001851']
   tag nist: ['AU-4 (1)']
   tag subsystems: ['audit', 'audisp']

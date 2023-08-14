@@ -18,14 +18,10 @@ control 'AMZL-02-730870' do
     -w /etc/passwd -p wa -k identity
     The audit daemon must be restarted for the changes to take effect.'
   impact 0.5
-  tag legacy: ['SV-86821', 'V-72197']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000004-GPOS-00004'
   tag satisfies: ['SRG-OS-000004-GPOS-00004', 'SRG-OS-000239-GPOS-00089', 'SRG-OS-000240-GPOS-00090', 'SRG-OS-000241-GPOS-00091', 'SRG-OS-000303-GPOS-00120', 'SRG-OS-000476-GPOS-00221']
-  tag gid: 'V-204564'
-  tag rid: 'AMZL-02-730870r853978_rule'
   tag stig_id: 'AMZL-02-730870'
-  tag fix_id: 'F-4688r88885_fix'
   tag cci: ['CCI-000018', 'CCI-000172', 'CCI-001403', 'CCI-002130']
   tag nist: ['AC-2 (4)', 'AU-12 c', 'AC-2 (4)', 'AC-2 (4)']
   tag subsystems: ['audit', 'auditd', 'audit_rule']

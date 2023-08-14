@@ -20,13 +20,9 @@ control 'AMZL-02-710430' do
     Modify the "/etc/login.defs" file to set the "FAIL_DELAY" parameter to "4" or greater:
     FAIL_DELAY 4'
   impact 0.5
-  tag legacy: ['SV-86575', 'V-71951']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00226'
-  tag gid: 'V-204431'
-  tag rid: 'AMZL-02-710430r603261_rule'
   tag stig_id: 'AMZL-02-710430'
-  tag fix_id: 'F-4555r88486_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['login_defs']

@@ -31,10 +31,7 @@ If "idle-activation-enabled" is not set to "true", this is a finding.'
   impact 0.5
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000029-GPOS-00010'
-  tag gid: 'V-204402'
-  tag rid: 'AMZL-02-710100r880782_rule'
   tag stig_id: 'AMZL-02-710100'
-  tag fix_id: 'F-4526r880781_fix'
   tag cci: ['CCI-000057']
   tag nist: ['AC-11 a']
   tag subsystems: ['gui', 'session', 'lock']

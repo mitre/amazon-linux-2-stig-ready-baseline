@@ -74,11 +74,8 @@ Note: With this solution in place any custom settings to "system-auth" and "pass
   impact 0.5
   tag check_id: 'C-59605r880828_chk'
   tag severity: 'medium'
-  tag gid: 'V-255928'
-  tag rid: 'AMZL-02-710199r880830_rule'
   tag stig_id: 'AMZL-02-710199'
   tag gtitle: 'SRG-OS-000073-GPOS-00041'
-  tag fix_id: 'F-59548r880829_fix'
   tag 'documentable'
   tag cci: ['CCI-000196']
   tag nist: ['IA-5 (1) (c)']

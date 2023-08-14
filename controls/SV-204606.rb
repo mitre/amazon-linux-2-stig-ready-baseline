@@ -11,13 +11,9 @@ control 'AMZL-02-740540' do
   desc 'fix', 'Remove any found ".shosts" files from the system.
     # rm /[path]/[to]/[file]/.shosts'
   impact 0.7
-  tag legacy: ['SV-86901', 'V-72277']
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204606'
-  tag rid: 'AMZL-02-740540r603261_rule'
   tag stig_id: 'AMZL-02-740540'
-  tag fix_id: 'F-4730r89011_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['ssh']

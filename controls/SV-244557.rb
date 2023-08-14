@@ -28,12 +28,8 @@ $ sudo grub2-mkconfig -o /boot/grub2/grub.cfg'
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000080-GPOS-00048'
   tag satisfies: nil
-  tag gid: 'V-244557'
-  tag rid: 'AMZL-02-710483r833185_rule'
   tag stig_id: 'AMZL-02-710483'
-  tag fix_id: 'F-47789r833184_fix'
   tag cci: ['CCI-000213']
-  tag legacy: []
   tag nist: ['AC-3']
   tag subsystems: ['grub']
   tag 'host'

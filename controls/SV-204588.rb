@@ -16,13 +16,9 @@ control 'AMZL-02-740330' do
     RhostsRSAAuthentication no
     The SSH service must be restarted for changes to take effect.'
   impact 0.5
-  tag legacy: ['V-72239', 'SV-86863']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204588'
-  tag rid: 'AMZL-02-740330r603261_rule'
   tag stig_id: 'AMZL-02-740330'
-  tag fix_id: 'F-4712r88957_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['ssh']

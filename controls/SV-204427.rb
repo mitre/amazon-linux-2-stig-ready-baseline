@@ -44,14 +44,10 @@ account     required      pam_faillock.so
 
 Note: Per requirement AMZL-02-710199, RHEL 7 must be configured to not overwrite custom authentication configuration settings while using the authconfig utility, otherwise manual changes to the listed files will be overwritten whenever the authconfig utility is used.'
   impact 0.5
-  tag legacy: ['V-71943', 'SV-86567']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000329-GPOS-00128'
   tag satisfies: ['SRG-OS-000329-GPOS-00128', 'SRG-OS-000021-GPOS-00005']
-  tag gid: 'V-204427'
-  tag rid: 'AMZL-02-710320r880842_rule'
   tag stig_id: 'AMZL-02-710320'
-  tag fix_id: 'F-4551r880841_fix'
   tag cci: ['CCI-000044', 'CCI-002236', 'CCI-002237', 'CCI-002238']
   tag nist: ['AC-7 a', 'AC-7 b', 'AC-7 b', 'AC-7 b']
   tag subsystems: ['pam', 'faillock']

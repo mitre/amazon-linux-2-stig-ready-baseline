@@ -14,13 +14,9 @@ control 'AMZL-02-721010' do
   desc 'fix', 'Configure the "/etc/fstab" to use the "nosuid" option on file systems that are associated with
     removable media.'
   impact 0.5
-  tag legacy: ['SV-86667', 'V-72043']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204481'
-  tag rid: 'AMZL-02-721010r603261_rule'
   tag stig_id: 'AMZL-02-721010'
-  tag fix_id: 'F-4605r88636_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['file_system', 'removable_media']

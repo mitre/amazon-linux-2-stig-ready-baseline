@@ -18,13 +18,9 @@ control 'AMZL-02-710170' do
     Add the following line to "/etc/security/pwquality.conf conf" (or modify the line to have the required value):
     minclass = 4'
   impact 0.5
-  tag legacy: ['V-71913', 'SV-86537']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000072-GPOS-00040'
-  tag gid: 'V-204412'
-  tag rid: 'AMZL-02-710170r603261_rule'
   tag stig_id: 'AMZL-02-710170'
-  tag fix_id: 'F-4536r88429_fix'
   tag cci: ['CCI-000195']
   tag nist: ['IA-5 (1) (b)']
   tag subsystems: ['pwquality', 'password']

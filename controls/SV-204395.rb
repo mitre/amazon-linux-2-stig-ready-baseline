@@ -63,14 +63,10 @@ control 'AMZL-02-710050' do
     services by attorneys, psychotherapists, or clergy, and their assistants.  Such communications and work product are
     private and confidential.  See User Agreement for details."'
   impact 0.5
-  tag legacy: ['V-71863', 'SV-86487']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000023-GPOS-00006'
   tag satisfies: ['SRG-OS-000023-GPOS-00006', 'SRG-OS-000024-GPOS-00007']
-  tag gid: 'V-204395'
-  tag rid: 'AMZL-02-710050r603261_rule'
   tag stig_id: 'AMZL-02-710050'
-  tag fix_id: 'F-4519r88378_fix'
   tag cci: ['CCI-000048']
   tag nist: ['AC-8 a']
   tag subsystems: ['banner', '/etc/issue']

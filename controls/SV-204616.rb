@@ -25,13 +25,9 @@ If conflicting results are returned, this is a finding.'
     Issue the following command to make the changes take effect:
     # sysctl --system'
   impact 0.5
-  tag legacy: ['V-72291', 'SV-86915']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204616'
-  tag rid: 'AMZL-02-740650r880818_rule'
   tag stig_id: 'AMZL-02-740650'
-  tag fix_id: 'F-4740r880817_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['kernel_parameter', 'ipv4']

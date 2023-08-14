@@ -26,12 +26,8 @@ Remove any duplicate or conflicting lines from /etc/sudoers and /etc/sudoers.d/ 
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000373-GPOS-00156'
   tag satisfies: nil
-  tag gid: 'V-237635'
-  tag rid: 'AMZL-02-710343r861075_rule'
   tag stig_id: 'AMZL-02-710343'
-  tag fix_id: 'F-40817r858491_fix'
   tag cci: ['CCI-002038']
-  tag legacy: []
   tag nist: ['IA-11']
   tag subsystems: ['sudo']
   tag 'host'

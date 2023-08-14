@@ -67,14 +67,10 @@ control 'AMZL-02-710040' do
     Run the following command to update the database:
     # dconf update)
   impact 0.5
-  tag legacy: ['V-71861', 'SV-86485']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000023-GPOS-00006'
   tag satisfies: ['SRG-OS-000023-GPOS-00006', 'SRG-OS-000024-GPOS-00007', 'SRG-OS-000228-GPOS-00088']
-  tag gid: 'V-204394'
-  tag rid: 'AMZL-02-710040r603261_rule'
   tag stig_id: 'AMZL-02-710040'
-  tag fix_id: 'F-4518r297479_fix'
   tag cci: ['CCI-000048']
   tag nist: ['AC-8 a']
   tag subsystems: ['gdm']

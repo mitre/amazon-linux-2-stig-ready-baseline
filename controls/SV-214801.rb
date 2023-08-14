@@ -11,13 +11,9 @@ control 'AMZL-02-732000' do
     If there is no anti-virus solution installed on the system, this is a finding.'
   desc 'fix', 'Install an antivirus solution on the system.'
   impact 0.7
-  tag legacy: ['V-72213', 'SV-86837']
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-214801'
-  tag rid: 'AMZL-02-732000r854324_rule'
   tag stig_id: 'AMZL-02-732000'
-  tag fix_id: 'F-15999r192369_fix'
   tag cci: ['CCI-001668', 'CCI-000366']
   tag nist: ['SI-3 a', 'CM-6 b']
   tag subsystems: ['clamav', 'nails', 'virus_scan']

@@ -36,14 +36,10 @@ authentication.
     Modify all of the "cert_policy" lines in
 "/etc/pam_pkcs11/pam_pkcs11.conf" to include "ocsp_on".'
   impact 0.5
-  tag legacy: ['V-72433', 'SV-87057']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000375-GPOS-00160'
   tag satisfies: ['SRG-OS-000375-GPOS-00160', 'SRG-OS-000375-GPOS-00161', 'SRG-OS-000375-GPOS-00162']
-  tag gid: 'V-204633'
-  tag rid: 'AMZL-02-741003r853999_rule'
   tag stig_id: 'AMZL-02-741003'
-  tag fix_id: 'F-4757r89092_fix'
   tag cci: ['CCI-001948', 'CCI-001953', 'CCI-001954']
   tag nist: ['IA-2 (11)', 'IA-2 (12)', 'IA-2 (12)']
   tag subsystems: ['pam_pkcs11', 'pam', 'pkcs11']

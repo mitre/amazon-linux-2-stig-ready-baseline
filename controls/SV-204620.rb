@@ -15,13 +15,9 @@ control 'AMZL-02-740690' do
     with the following command:
     # yum remove vsftpd'
   impact 0.7
-  tag legacy: ['SV-86923', 'V-72299']
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204620'
-  tag rid: 'AMZL-02-740690r603261_rule'
   tag stig_id: 'AMZL-02-740690'
-  tag fix_id: 'F-4744r89053_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['vsftpd']

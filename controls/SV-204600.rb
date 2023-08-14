@@ -15,13 +15,9 @@ control 'AMZL-02-740450' do
     StrictModes yes
     The SSH service must be restarted for changes to take effect.'
   impact 0.5
-  tag legacy: ['SV-86887', 'V-72263']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204600'
-  tag rid: 'AMZL-02-740450r603261_rule'
   tag stig_id: 'AMZL-02-740450'
-  tag fix_id: 'F-4724r88993_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['ssh']

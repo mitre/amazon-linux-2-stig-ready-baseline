@@ -22,13 +22,9 @@ If the "xattrs" rule is not being used on all uncommented selection lines in the
   desc 'fix', 'Configure the file integrity tool to check file and directory extended attributes.
     If AIDE is installed, ensure the "xattrs" rule is present on all uncommented file and directory selection lists.'
   impact 0.3
-  tag legacy: ['SV-86695', 'V-72071']
   tag severity: 'low'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204499'
-  tag rid: 'AMZL-02-721610r880858_rule'
   tag stig_id: 'AMZL-02-721610'
-  tag fix_id: 'F-4623r88690_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['file_integrity_tool']

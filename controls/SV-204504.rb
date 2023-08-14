@@ -39,14 +39,10 @@ If the "failure" setting is set to "1" but the availability concern is not docum
     Kernel log monitoring must also be configured to properly alert designated staff.
     The audit daemon must be restarted for the changes to take effect.'
   impact 0.5
-  tag legacy: ['V-72081', 'SV-86705']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000046-GPOS-00022'
   tag satisfies: ['SRG-OS-000046-GPOS-00022', 'SRG-OS-000047-GPOS-00023']
-  tag gid: 'V-204504'
-  tag rid: 'AMZL-02-730010r880761_rule'
   tag stig_id: 'AMZL-02-730010'
-  tag fix_id: 'F-4628r880760_fix'
   tag cci: ['CCI-000139']
   tag nist: ['AU-5 a']
   tag subsystems: ['audit', 'auditd']

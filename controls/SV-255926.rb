@@ -30,11 +30,8 @@ Install the tmux program (if it is not on the system) with the following command
   impact 0.5
   tag check_id: 'C-59603r880777_chk'
   tag severity: 'medium'
-  tag gid: 'V-255926'
-  tag rid: 'AMZL-02-710090r880779_rule'
   tag stig_id: 'AMZL-02-710090'
   tag gtitle: 'SRG-OS-000029-GPOS-00010'
-  tag fix_id: 'F-59546r880778_fix'
   tag 'documentable'
   tag cci: ['CCI-000057']
   tag nist: ['AC-11 a']

@@ -17,11 +17,8 @@ Restart the "sshd" service for changes to take effect:
   impact 0.5
   tag check_id: 'C-59602r880747_chk'
   tag severity: 'medium'
-  tag gid: 'V-255925'
-  tag rid: 'AMZL-02-740712r880749_rule'
   tag stig_id: 'AMZL-02-740712'
   tag gtitle: 'SRG-OS-000033-GPOS-00014'
-  tag fix_id: 'F-59545r880748_fix'
   tag 'documentable'
   tag cci: ['CCI-001453']
   tag nist: ['AC-17 (2)']

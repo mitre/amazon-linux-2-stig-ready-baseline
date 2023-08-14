@@ -27,13 +27,9 @@ If "TMOUT" is not set to "900" or less to enforce session termination after inac
     #!/bin/bash
     declare -xr TMOUT=900'
   impact 0.5
-  tag legacy: ['SV-86847', 'V-72223']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000163-GPOS-00072'
-  tag gid: 'V-204579'
-  tag rid: 'AMZL-02-740160r861070_rule'
   tag stig_id: 'AMZL-02-740160'
-  tag fix_id: 'F-4703r646843_fix'
   tag cci: ['CCI-001133', 'CCI-002361']
   tag nist: ['SC-10', 'AC-12']
   tag subsystems: ['user_profile']

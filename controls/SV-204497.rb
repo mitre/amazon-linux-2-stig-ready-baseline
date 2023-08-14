@@ -67,14 +67,10 @@ control 'AMZL-02-721350' do
     # touch /etc/ system-fips
     Reboot the system for the changes to take effect.'
   impact 0.7
-  tag legacy: ['SV-86691', 'V-72067']
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000033-GPOS-00014'
   tag satisfies: ['SRG-OS-000033-GPOS-00014', 'SRG-OS-000185-GPOS-00079', 'SRG-OS-000396-GPOS-00176', 'SRG-OS-000405-GPOS-00184', 'SRG-OS-000478-GPOS-00223']
-  tag gid: 'V-204497'
-  tag rid: 'AMZL-02-721350r877398_rule'
   tag stig_id: 'AMZL-02-721350'
-  tag fix_id: 'F-36310r602640_fix'
   tag cci: ['CCI-000068', 'CCI-001199', 'CCI-002450', 'CCI-002476']
   tag nist: ['AC-17 (2)', 'SC-28', 'SC-13', 'SC-28 (1)', 'SC-13 b']
   tag subsystems: ['fips']

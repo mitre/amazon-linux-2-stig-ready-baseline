@@ -22,13 +22,9 @@ control 'AMZL-02-730321' do
     or "halt".
     network_failure_action = syslog'
   impact 0.5
-  tag legacy: ['V-73163', 'SV-87815']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000342-GPOS-00133'
-  tag gid: 'V-204512'
-  tag rid: 'AMZL-02-730321r877390_rule'
   tag stig_id: 'AMZL-02-730321'
-  tag fix_id: 'F-36315r602655_fix'
   tag cci: ['CCI-001851']
   tag nist: ['AU-4 (1)']
   tag subsystems: ['audit', 'audisp']

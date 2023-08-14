@@ -21,13 +21,9 @@ control 'AMZL-02-730330' do
     space_left = 25%
     Reload the auditd daemon to apply changes made to the "/etc/audit/auditd.conf" file.'
   impact 0.5
-  tag legacy: ['V-72089', 'SV-86713']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000343-GPOS-00134'
-  tag gid: 'V-204513'
-  tag rid: 'AMZL-02-730330r877389_rule'
   tag stig_id: 'AMZL-02-730330'
-  tag fix_id: 'F-4637r744111_fix'
   tag cci: ['CCI-001855']
   tag nist: ['AU-5 (1)']
   tag subsystems: ['audit', 'auditd']

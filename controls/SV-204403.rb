@@ -35,13 +35,9 @@ If the command does not return a result, this is a finding.'
     Add the setting to lock the screensaver idle-activation-enabled setting:
     /org/gnome/desktop/screensaver/idle-activation-enabled'
   impact 0.5
-  tag legacy: ['V-78997', 'SV-93703']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000029-GPOS-00010'
-  tag gid: 'V-204403'
-  tag rid: 'AMZL-02-710101r880785_rule'
   tag stig_id: 'AMZL-02-710101'
-  tag fix_id: 'F-4527r880784_fix'
   tag cci: ['CCI-000057']
   tag nist: ['AC-11 a']
   tag subsystems: ['gui']

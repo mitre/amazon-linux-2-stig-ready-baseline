@@ -25,14 +25,10 @@ control 'AMZL-02-730910' do
     -a always,exit -F arch=b64 -S unlink,unlinkat,rename,renameat,rmdir -F auid>=1000 -F auid!=unset -k delete
     The audit daemon must be restarted for the changes to take effect.'
   impact 0.5
-  tag legacy: ['V-72205', 'SV-86829']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000466-GPOS-00210'
   tag satisfies: ['SRG-OS-000466-GPOS-00210', 'SRG-OS-000467-GPOS-00211', 'SRG-OS-000468-GPOS-00212', 'SRG-OS-000392-GPOS-00172']
-  tag gid: 'V-204572'
-  tag rid: 'AMZL-02-730910r853985_rule'
   tag stig_id: 'AMZL-02-730910'
-  tag fix_id: 'F-4696r853984_fix'
   tag cci: ['CCI-000172', 'CCI-002884']
   tag nist: ['AU-12 c', 'MA-4 (1) (a)']
   tag subsystems: ['audit', 'auditd', 'audit_rule']

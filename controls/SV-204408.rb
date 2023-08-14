@@ -19,13 +19,9 @@ control 'AMZL-02-710130' do
     in "/etc/security/pwquality.conf":
     lcredit = -1'
   impact 0.5
-  tag legacy: ['SV-86529', 'V-71905']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000070-GPOS-00038'
-  tag gid: 'V-204408'
-  tag rid: 'AMZL-02-710130r603261_rule'
   tag stig_id: 'AMZL-02-710130'
-  tag fix_id: 'F-4532r88417_fix'
   tag cci: ['CCI-000193']
   tag nist: ['IA-5 (1) (a)']
   tag subsystems: ['pwquality', 'password']

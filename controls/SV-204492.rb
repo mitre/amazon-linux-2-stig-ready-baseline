@@ -18,13 +18,9 @@ control 'AMZL-02-721300' do
     # systemctl disable kdump.service
     If kernel core dumps are required, document the need with the ISSO.'
   impact 0.5
-  tag legacy: ['SV-86681', 'V-72057']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204492'
-  tag rid: 'AMZL-02-721300r603261_rule'
   tag stig_id: 'AMZL-02-721300'
-  tag fix_id: 'F-4616r88669_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['kdump', 'kernel']

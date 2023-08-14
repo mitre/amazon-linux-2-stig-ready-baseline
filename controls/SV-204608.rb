@@ -35,13 +35,9 @@ control 'AMZL-02-740600' do
     If the "/etc/resolv.conf" file must be mutable, the required configuration must be documented with the Information
     System Security Officer (ISSO) and the file must be verified by the system file integrity tool.'
   impact 0.3
-  tag legacy: ['SV-86905', 'V-72281']
   tag severity: 'low'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204608'
-  tag rid: 'AMZL-02-740600r603261_rule'
   tag stig_id: 'AMZL-02-740600'
-  tag fix_id: 'F-4732r89017_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['dns', 'resolv']

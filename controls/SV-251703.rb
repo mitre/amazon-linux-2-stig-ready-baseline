@@ -30,12 +30,8 @@ Add or modify the following line:
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag satisfies: nil
-  tag gid: 'V-251703'
-  tag rid: 'AMZL-02-710339r833183_rule'
   tag stig_id: 'AMZL-02-710339'
-  tag fix_id: 'F-55094r809222_fix'
   tag cci: ['CCI-000366']
-  tag legacy: []
   tag nist: ['CM-6 b']
   tag subsystems: ['sudo']
   tag 'host'

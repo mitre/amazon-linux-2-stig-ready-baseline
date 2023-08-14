@@ -20,13 +20,9 @@ control 'AMZL-02-720231' do
     [org/gnome/settings-daemon/plugins/media-keys]
     logout=''"
   impact 0.7
-  tag legacy: ['V-94843', 'SV-104673']
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204456'
-  tag rid: 'AMZL-02-720231r603261_rule'
   tag stig_id: 'AMZL-02-720231'
-  tag fix_id: 'F-4580r590041_fix'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['gui', 'general']

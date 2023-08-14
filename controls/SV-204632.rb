@@ -25,14 +25,10 @@ control 'AMZL-02-741002' do
     Modify all of the services lines in "/etc/sssd/sssd.conf" or in configuration files found under "/etc/sssd/conf.d"
     to include pam.'
   impact 0.5
-  tag legacy: ['V-72427', 'SV-87051']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000375-GPOS-00160'
   tag satisfies: ['SRG-OS-000375-GPOS-00160', 'SRG-OS-000375-GPOS-00161', 'SRG-OS-000375-GPOS-00162']
-  tag gid: 'V-204632'
-  tag rid: 'AMZL-02-741002r853998_rule'
   tag stig_id: 'AMZL-02-741002'
-  tag fix_id: 'F-4756r89089_fix'
   tag cci: ['CCI-001948', 'CCI-001953', 'CCI-001954']
   tag nist: ['IA-2 (11)', 'IA-2 (12)', 'IA-2 (12)']
   tag subsystems: ['sssd']

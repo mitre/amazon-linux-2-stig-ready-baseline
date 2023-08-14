@@ -16,13 +16,9 @@ control 'AMZL-02-710119' do
     password required pam_pwquality.so retry=3
     Note: The value of "retry" should be between "1" and "3".'
   impact 0.5
-  tag legacy: ['SV-87811', 'V-73159']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000069-GPOS-00037'
-  tag gid: 'V-204406'
-  tag rid: 'AMZL-02-710119r603261_rule'
   tag stig_id: 'AMZL-02-710119'
-  tag fix_id: 'F-4530r88411_fix'
   tag cci: ['CCI-000192']
   tag nist: ['IA-5 (1) (a)']
   tag subsystems: ['pam', 'pwquality', 'password']

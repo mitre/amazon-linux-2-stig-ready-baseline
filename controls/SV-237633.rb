@@ -14,12 +14,8 @@ ALL     ALL=(ALL:ALL) ALL'
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag satisfies: nil
-  tag gid: 'V-237633'
-  tag rid: 'AMZL-02-710341r646850_rule'
   tag stig_id: 'AMZL-02-710341'
-  tag fix_id: 'F-40815r646849_fix'
   tag cci: ['CCI-000366']
-  tag legacy: []
   tag nist: ['CM-6 b']
   tag subsystems: ['sudo']
   tag 'host'

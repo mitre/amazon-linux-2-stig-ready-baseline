@@ -19,13 +19,9 @@ control 'AMZL-02-741010' do
   desc 'fix', 'Configure the system to disable all wireless network interfaces with the following command:
     #nmcli radio wifi off'
   impact 0.5
-  tag legacy: ['V-73177', 'SV-87829']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000424-GPOS-00188'
-  tag gid: 'V-204634'
-  tag rid: 'AMZL-02-741010r877465_rule'
   tag stig_id: 'AMZL-02-741010'
-  tag fix_id: 'F-4758r89095_fix'
   tag cci: ['CCI-001443', 'CCI-001444', 'CCI-002418']
   tag nist: ['AC-18 (1)', 'AC-18 (1)', 'SC-8']
   tag subsystems: ['network', 'wifi', 'nmcli']

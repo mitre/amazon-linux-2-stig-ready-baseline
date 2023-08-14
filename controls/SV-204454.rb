@@ -33,13 +33,9 @@ control 'AMZL-02-720220' do
     SELINUXTYPE=targeted
     A reboot is required for the changes to take effect.'
   impact 0.5
-  tag legacy: ['V-71991', 'SV-86615']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000445-GPOS-00199'
-  tag gid: 'V-204454'
-  tag rid: 'AMZL-02-720220r853896_rule'
   tag stig_id: 'AMZL-02-720220'
-  tag fix_id: 'F-36307r602631_fix'
   tag cci: ['CCI-002165', 'CCI-002696']
   tag nist: ['AC-3 (4)', 'SI-6 a']
   tag subsystems: ['selinux']

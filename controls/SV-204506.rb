@@ -30,14 +30,10 @@ The audit daemon must be restarted for changes to take effect:
 
 # service auditd restart'
   impact 0.5
-  tag legacy: ['SV-95729', 'V-81017']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000342-GPOS-00133'
   tag satisfies: ['SRG-OS-000342-GPOS-00133', 'SRG-OS-000479-GPOS-00224']
-  tag gid: 'V-204506'
-  tag rid: 'AMZL-02-730201r877390_rule'
   tag stig_id: 'AMZL-02-730201'
-  tag fix_id: 'F-4630r858479_fix'
   tag cci: ['CCI-001851']
   tag nist: ['AU-4 (1)']
   tag subsystems: ['audit', 'audisp']
