@@ -1,4 +1,4 @@
-control 'SV-228564' do
+control 'AMZL-02-710055' do
   title 'The Amazon Linux 2 operating system must protect audit information from unauthorized read, modification, or deletion.'
   desc 'If audit information were to become compromised, then forensic analysis and discovery of the true source of potentially malicious system activity is impossible to achieve.
 
@@ -30,12 +30,8 @@ Change the owner and group owner of the audit log files with the following comma
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000057-GPOS-00027'
   tag satisfies: ['SRG-OS-000057-GPOS-00027', 'SRG-OS-000058-GPOS-00028', 'SRG-OS-000059-GPOS-00029', 'SRG-OS-000206-GPOS-00084']
-  tag gid: 'V-228564'
-  tag rid: 'SV-228564r606407_rule'
-  tag stig_id: 'RHEL-07-910055'
-  tag fix_id: 'F-23603r419770_fix'
+  tag stig_id: 'AMZL-02-710055'
   tag cci: ['CCI-000162', 'CCI-000163', 'CCI-000164', 'CCI-001314']
-  tag legacy: []
   tag nist: ['AU-9', 'SI-11 c', 'AU-9 a', 'SI-11 b']
   tag subsystems: ['audit']
   tag 'host'

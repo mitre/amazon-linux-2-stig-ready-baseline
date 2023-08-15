@@ -1,4 +1,4 @@
-control 'SV-204480' do
+control 'AMZL-02-721000' do
   title 'The Amazon Linux 2 operating system must be configured so that file systems containing user home
     directories are mounted to prevent files with the setuid and setgid bit set from being executed.'
   desc 'The "nosuid" mount option causes the system to not execute setuid and setgid files with owner privileges.
@@ -20,13 +20,9 @@ control 'SV-204480' do
   desc 'fix', 'Configure the "/etc/fstab" to use the "nosuid" option on file systems that contain user home
     directories.'
   impact 0.5
-  tag legacy: ['SV-86665', 'V-72041']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204480'
-  tag rid: 'SV-204480r603838_rule'
-  tag stig_id: 'RHEL-07-021000'
-  tag fix_id: 'F-4604r88633_fix'
+  tag stig_id: 'AMZL-02-721000'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['home_dirs', 'file_system']

@@ -1,4 +1,4 @@
-control 'SV-204510' do
+control 'AMZL-02-730310' do
   title 'The Amazon Linux 2 operating system must encrypt the transfer of audit records off-loaded onto a
     different system or media from the system being audited.'
   desc 'Information stored in one location is vulnerable to accidental or incidental deletion or alteration.
@@ -17,14 +17,10 @@ control 'SV-204510' do
     Uncomment the "enable_krb5" option in "/etc/audisp/audisp-remote.conf" and set it with the following line:
     enable_krb5 = yes'
   impact 0.5
-  tag legacy: ['V-72085', 'SV-86709']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000342-GPOS-00133'
   tag satisfies: ['SRG-OS-000342-GPOS-00133', 'SRG-OS-000479-GPOS-00224']
-  tag gid: 'V-204510'
-  tag rid: 'SV-204510r877390_rule'
-  tag stig_id: 'RHEL-07-030310'
-  tag fix_id: 'F-4634r88723_fix'
+  tag stig_id: 'AMZL-02-730310'
   tag cci: ['CCI-001851']
   tag nist: ['AU-4 (1)']
   tag subsystems: ['audit', 'audisp']

@@ -1,4 +1,4 @@
-control 'SV-204410' do
+control 'AMZL-02-710150' do
   title 'The Amazon Linux 2 operating system must be configured so that when passwords are changed or new
     passwords are established, the new password must contain at least one special character.'
   desc 'Use of a complex password helps to increase the time and resources required to compromise the password.
@@ -20,13 +20,9 @@ control 'SV-204410' do
     Add the following line to "/etc/security/pwquality.conf" (or modify the line to have the required value):
     ocredit = -1'
   impact 0.5
-  tag legacy: ['SV-86533', 'V-71909']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000266-GPOS-00101'
-  tag gid: 'V-204410'
-  tag rid: 'SV-204410r603261_rule'
-  tag stig_id: 'RHEL-07-010150'
-  tag fix_id: 'F-4534r88423_fix'
+  tag stig_id: 'AMZL-02-710150'
   tag cci: ['CCI-001619']
   tag nist: ['IA-5 (1) (a)']
   tag subsystems: ['pwquality', 'password']

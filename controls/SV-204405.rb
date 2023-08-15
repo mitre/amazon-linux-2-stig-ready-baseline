@@ -1,4 +1,4 @@
-control 'SV-204405' do
+control 'AMZL-02-710118' do
   title 'The Amazon Linux 2 operating system must be configured so that /etc/pam.d/passwd implements
     /etc/pam.d/system-auth when changing passwords.'
   desc 'Pluggable authentication modules (PAM) allow for a modular approach to integrating authentication methods.
@@ -12,13 +12,9 @@ control 'SV-204405' do
     Add the following line to "/etc/pam.d/passwd" (or modify the line to have the required value):
     password     substack    system-auth'
   impact 0.5
-  tag legacy: ['SV-95715', 'V-81003']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000069-GPOS-00037'
-  tag gid: 'V-204405'
-  tag rid: 'SV-204405r603261_rule'
-  tag stig_id: 'RHEL-07-010118'
-  tag fix_id: 'F-4529r88408_fix'
+  tag stig_id: 'AMZL-02-710118'
   tag cci: ['CCI-000192']
   tag subsystems: ['pam', 'password']
   tag nist: ['IA-5 (1) (a)']

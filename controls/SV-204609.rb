@@ -1,4 +1,4 @@
-control 'SV-204609' do
+control 'AMZL-02-740610' do
   title 'The Amazon Linux 2 operating system must not forward Internet Protocol version 4 (IPv4)
     source-routed packets.'
   desc 'Source-routed packets allow the source of the packet to suggest that routers forward the packet along a
@@ -30,13 +30,9 @@ directory (or modify the line to have the required value):
 
     # sysctl -system'
   impact 0.5
-  tag legacy: ['V-72283', 'SV-86907']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204609'
-  tag rid: 'SV-204609r880797_rule'
-  tag stig_id: 'RHEL-07-040610'
-  tag fix_id: 'F-4733r880796_fix'
+  tag stig_id: 'AMZL-02-740610'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['kernel_parameter', 'ipv4']

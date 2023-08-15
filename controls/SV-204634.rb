@@ -1,4 +1,4 @@
-control 'SV-204634' do
+control 'AMZL-02-741010' do
   title 'The Amazon Linux 2 operating system must be configured so that all wireless network adapters are
     disabled.'
   desc "The use of wireless networking can introduce many different attack vectors into the organization's network.
@@ -19,13 +19,9 @@ control 'SV-204634' do
   desc 'fix', 'Configure the system to disable all wireless network interfaces with the following command:
     #nmcli radio wifi off'
   impact 0.5
-  tag legacy: ['V-73177', 'SV-87829']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000424-GPOS-00188'
-  tag gid: 'V-204634'
-  tag rid: 'SV-204634r877465_rule'
-  tag stig_id: 'RHEL-07-041010'
-  tag fix_id: 'F-4758r89095_fix'
+  tag stig_id: 'AMZL-02-741010'
   tag cci: ['CCI-001443', 'CCI-001444', 'CCI-002418']
   tag nist: ['AC-18 (1)', 'AC-18 (1)', 'SC-8']
   tag subsystems: ['network', 'wifi', 'nmcli']

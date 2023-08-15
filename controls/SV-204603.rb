@@ -1,4 +1,4 @@
-control 'SV-204603' do
+control 'AMZL-02-740500' do
   title 'The Amazon Linux 2 operating system must, for networked systems, synchronize clocks with a server
     that is synchronized to one of the redundant United States Naval Observatory (USNO) time servers, a time server
     designated for the appropriate DoD network (NIPRNet/SIPRNet), and/or the Global Positioning System (GPS).'
@@ -40,14 +40,10 @@ control 'SV-204603' do
     If "chronyd" was not running, it must be started:
     # systemctl start chronyd.service'
   impact 0.5
-  tag legacy: ['V-72269', 'SV-86893']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000355-GPOS-00143'
   tag satisfies: ['SRG-OS-000355-GPOS-00143', 'SRG-OS-000356-GPOS-00144']
-  tag gid: 'V-204603'
-  tag rid: 'SV-204603r877038_rule'
-  tag stig_id: 'RHEL-07-040500'
-  tag fix_id: 'F-4727r809210_fix'
+  tag stig_id: 'AMZL-02-740500'
   tag cci: ['CCI-001891', 'CCI-002046']
   tag nist: ['AU-8 (1) (a)', 'AU-8 (1) (b)']
   tag subsystems: ['ntp']

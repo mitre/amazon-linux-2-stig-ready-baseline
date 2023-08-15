@@ -1,4 +1,4 @@
-control 'SV-204602' do
+control 'AMZL-02-740470' do
   title 'The Amazon Linux 2 operating system must be configured so that the SSH daemon does not allow
     compression or only allows compression after successful authentication.'
   desc 'If compression is allowed in an SSH connection prior to authentication, vulnerabilities in the compression
@@ -20,13 +20,9 @@ If the "Compression" keyword is set to "yes", is missing, or the returned line i
     Compression no
     The SSH service must be restarted for changes to take effect.'
   impact 0.5
-  tag legacy: ['SV-86891', 'V-72267']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204602'
-  tag rid: 'SV-204602r880758_rule'
-  tag stig_id: 'RHEL-07-040470'
-  tag fix_id: 'F-4726r880757_fix'
+  tag stig_id: 'AMZL-02-740470'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['ssh']

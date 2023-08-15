@@ -1,4 +1,4 @@
-control 'SV-204511' do
+control 'AMZL-02-730320' do
   title 'The Amazon Linux 2 operating system must be configured so that the audit system takes appropriate
     action when the audit storage volume is full.'
   desc 'Taking appropriate action in case of a filled audit storage volume will minimize the possibility of losing
@@ -21,13 +21,9 @@ control 'SV-204511' do
     "single", or "halt", such as the following line:
     disk_full_action = single'
   impact 0.5
-  tag legacy: ['V-72087', 'SV-86711']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000342-GPOS-00133'
-  tag gid: 'V-204511'
-  tag rid: 'SV-204511r877390_rule'
-  tag stig_id: 'RHEL-07-030320'
-  tag fix_id: 'F-36314r602652_fix'
+  tag stig_id: 'AMZL-02-730320'
   tag cci: ['CCI-001851']
   tag nist: ['AU-4 (1)']
   tag subsystems: ['audit', 'audisp']

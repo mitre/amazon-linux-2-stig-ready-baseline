@@ -1,4 +1,4 @@
-control 'SV-204558' do
+control 'AMZL-02-730810' do
   title 'The Amazon Linux 2 operating system must audit all uses of the pam_timestamp_check command.'
   desc 'Without generating audit records that are specific to the security and mission needs of the organization, it
     would be difficult to establish, correlate, and investigate the events relating to an incident or identify those
@@ -23,13 +23,9 @@ Add or update the following rule in "/etc/audit/rules.d/audit.rules":
 
 The audit daemon must be restarted for the changes to take effect.'
   impact 0.5
-  tag legacy: ['V-72185', 'SV-86809']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000471-GPOS-00215'
-  tag gid: 'V-204558'
-  tag rid: 'SV-204558r833166_rule'
-  tag stig_id: 'RHEL-07-030810'
-  tag fix_id: 'F-4682r833165_fix'
+  tag stig_id: 'AMZL-02-730810'
   tag cci: ['CCI-000172']
   tag nist: ['AU-12 c']
   tag subsystems: ['audit', 'auditd', 'audit_rule']

@@ -1,4 +1,4 @@
-control 'SV-204599' do
+control 'AMZL-02-740440' do
   title 'The Amazon Linux 2 operating system must be configured so that the SSH daemon does not permit
     Kerberos authentication unless needed.'
   desc "Kerberos authentication for SSH is often implemented using Generic Security Service Application Program
@@ -20,13 +20,9 @@ control 'SV-204599' do
     If Kerberos authentication is required, it must be documented, to include the location of the configuration file,
     with the ISSO.'
   impact 0.5
-  tag legacy: ['V-72261', 'SV-86885']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000364-GPOS-00151'
-  tag gid: 'V-204599'
-  tag rid: 'SV-204599r853994_rule'
-  tag stig_id: 'RHEL-07-040440'
-  tag fix_id: 'F-4723r88990_fix'
+  tag stig_id: 'AMZL-02-740440'
   tag cci: ['CCI-000318', 'CCI-000368', 'CCI-001812', 'CCI-001813', 'CCI-001814']
   tag nist: ['CM-3 f', 'CM-6 c', 'CM-11 (2)', 'CM-5 (1)', 'CM-5 (1) (a)']
   tag subsystems: ['ssh']

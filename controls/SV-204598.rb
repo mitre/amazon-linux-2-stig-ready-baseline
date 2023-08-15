@@ -1,4 +1,4 @@
-control 'SV-204598' do
+control 'AMZL-02-740430' do
   title 'The Amazon Linux 2 operating system must be configured so that the SSH daemon does not permit
     Generic Security Service Application Program Interface (GSSAPI) authentication unless needed.'
   desc "GSSAPI authentication is used to provide additional authentication mechanisms to applications. Allowing
@@ -18,13 +18,9 @@ control 'SV-204598' do
     If GSSAPI authentication is required, it must be documented, to include the location of the configuration file, with
     the ISSO.'
   impact 0.5
-  tag legacy: ['V-72259', 'SV-86883']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000364-GPOS-00151'
-  tag gid: 'V-204598'
-  tag rid: 'SV-204598r853993_rule'
-  tag stig_id: 'RHEL-07-040430'
-  tag fix_id: 'F-4722r88987_fix'
+  tag stig_id: 'AMZL-02-740430'
   tag cci: ['CCI-000318', 'CCI-000368', 'CCI-001812', 'CCI-001813', 'CCI-001814']
   tag nist: ['CM-3 f', 'CM-6 c', 'CM-11 (2)', 'CM-5 (1)', 'CM-5 (1) (a)']
   tag subsystems: ['ssh']

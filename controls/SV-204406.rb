@@ -1,4 +1,4 @@
-control 'SV-204406' do
+control 'AMZL-02-710119' do
   title 'The Amazon Linux 2 operating system must be configured so that when passwords are changed or new
     passwords are established, pwquality must be used.'
   desc 'Use of a complex password helps to increase the time and resources required to compromise the password.
@@ -16,13 +16,9 @@ control 'SV-204406' do
     password required pam_pwquality.so retry=3
     Note: The value of "retry" should be between "1" and "3".'
   impact 0.5
-  tag legacy: ['SV-87811', 'V-73159']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000069-GPOS-00037'
-  tag gid: 'V-204406'
-  tag rid: 'SV-204406r603261_rule'
-  tag stig_id: 'RHEL-07-010119'
-  tag fix_id: 'F-4530r88411_fix'
+  tag stig_id: 'AMZL-02-710119'
   tag cci: ['CCI-000192']
   tag nist: ['IA-5 (1) (a)']
   tag subsystems: ['pam', 'pwquality', 'password']

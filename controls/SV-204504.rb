@@ -1,4 +1,4 @@
-control 'SV-204504' do
+control 'AMZL-02-730010' do
   title 'The Amazon Linux 2 operating system must shut down upon audit processing failure, unless
     availability is an overriding concern. If availability is a concern, the system must alert the designated staff
     (System Administrator [SA] and Information System Security Officer [ISSO] at a minimum) in the event of an audit
@@ -18,7 +18,7 @@ Check to see what level "auditctl" is set to with following command:
      # auditctl -s | grep -i "fail"
      failure 2
 
-Note: If the value of "failure" is set to "2", the system is configured to panic (shut down) in the event of an auditing failure. If the value of "failure" is set to "1", the system will not shut down and instead will record the audit failure in the kernel log. If the system is configured as per requirement RHEL-07-031000, the kernel log will be sent to a log aggregation server and generate an alert.
+Note: If the value of "failure" is set to "2", the system is configured to panic (shut down) in the event of an auditing failure. If the value of "failure" is set to "1", the system will not shut down and instead will record the audit failure in the kernel log. If the system is configured as per requirement AMZL-02-731000, the kernel log will be sent to a log aggregation server and generate an alert.
 
 If the "failure" setting is set to any value other than "1" or "2", this is a finding.
 
@@ -39,14 +39,10 @@ If the "failure" setting is set to "1" but the availability concern is not docum
     Kernel log monitoring must also be configured to properly alert designated staff.
     The audit daemon must be restarted for the changes to take effect.'
   impact 0.5
-  tag legacy: ['V-72081', 'SV-86705']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000046-GPOS-00022'
   tag satisfies: ['SRG-OS-000046-GPOS-00022', 'SRG-OS-000047-GPOS-00023']
-  tag gid: 'V-204504'
-  tag rid: 'SV-204504r880761_rule'
-  tag stig_id: 'RHEL-07-030010'
-  tag fix_id: 'F-4628r880760_fix'
+  tag stig_id: 'AMZL-02-730010'
   tag cci: ['CCI-000139']
   tag nist: ['AU-5 a']
   tag subsystems: ['audit', 'auditd']

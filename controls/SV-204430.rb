@@ -1,4 +1,4 @@
-control 'SV-204430' do
+control 'AMZL-02-710350' do
   title 'The Amazon Linux 2 operating system must be configured so that users must re-authenticate for
     privilege escalation.'
   desc 'Without re-authentication, users may access resources or perform tasks for which they do not have
@@ -17,14 +17,10 @@ control 'SV-204430' do
     # grep -i authenticate /etc/sudoers /etc/sudoers.d/*
     Remove any occurrences of "!authenticate" tags in the file(s).'
   impact 0.5
-  tag legacy: ['V-71949', 'SV-86573']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000373-GPOS-00156'
   tag satisfies: ['SRG-OS-000373-GPOS-00156', 'SRG-OS-000373-GPOS-00157', 'SRG-OS-000373-GPOS-00158']
-  tag gid: 'V-204430'
-  tag rid: 'SV-204430r853885_rule'
-  tag stig_id: 'RHEL-07-010350'
-  tag fix_id: 'F-4554r88483_fix'
+  tag stig_id: 'AMZL-02-710350'
   tag cci: ['CCI-002038']
   tag nist: ['IA-11']
   tag subsystems: ['sudo']

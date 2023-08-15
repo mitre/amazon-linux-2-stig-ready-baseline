@@ -1,4 +1,4 @@
-control 'SV-204419' do
+control 'AMZL-02-710240' do
   title 'The Amazon Linux 2 operating system must be configured so that passwords are restricted to a 24
     hours/1 day minimum lifetime.'
   desc "Enforcing a minimum password lifetime helps to prevent repeated password changes to defeat the password
@@ -12,13 +12,9 @@ control 'SV-204419' do
   desc 'fix', 'Configure non-compliant accounts to enforce a 24 hours/1 day minimum password lifetime:
     # chage -m 1 [user]'
   impact 0.5
-  tag legacy: ['SV-86551', 'V-71927']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000075-GPOS-00043'
-  tag gid: 'V-204419'
-  tag rid: 'SV-204419r603261_rule'
-  tag stig_id: 'RHEL-07-010240'
-  tag fix_id: 'F-4543r88450_fix'
+  tag stig_id: 'AMZL-02-710240'
   tag cci: ['CCI-000198']
   tag nist: ['IA-5 (1) (d)']
   tag subsystems: ['password', '/etc/shadow']

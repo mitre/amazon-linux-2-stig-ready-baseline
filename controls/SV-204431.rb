@@ -1,4 +1,4 @@
-control 'SV-204431' do
+control 'AMZL-02-710430' do
   title 'The Amazon Linux 2 operating system must be configured so that the delay between logon prompts
     following a failed console logon attempt is at least four seconds.'
   desc 'Configuring the operating system to implement organization-wide security implementation guides and security
@@ -20,13 +20,9 @@ control 'SV-204431' do
     Modify the "/etc/login.defs" file to set the "FAIL_DELAY" parameter to "4" or greater:
     FAIL_DELAY 4'
   impact 0.5
-  tag legacy: ['SV-86575', 'V-71951']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00226'
-  tag gid: 'V-204431'
-  tag rid: 'SV-204431r603261_rule'
-  tag stig_id: 'RHEL-07-010430'
-  tag fix_id: 'F-4555r88486_fix'
+  tag stig_id: 'AMZL-02-710430'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['login_defs']

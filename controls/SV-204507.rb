@@ -1,4 +1,4 @@
-control 'SV-204507' do
+control 'AMZL-02-730210' do
   title 'The Amazon Linux 2 operating system must take appropriate action when the remote logging buffer
     is full.'
   desc 'Information stored in one location is vulnerable to accidental or incidental deletion or alteration.
@@ -19,14 +19,10 @@ control 'SV-204507' do
     The audit daemon must be restarted for changes to take effect:
     # service auditd restart'
   impact 0.5
-  tag legacy: ['V-81019', 'SV-95731']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000342-GPOS-00133'
   tag satisfies: ['SRG-OS-000342-GPOS-00133', 'SRG-OS-000479-GPOS-00224']
-  tag gid: 'V-204507'
-  tag rid: 'SV-204507r877390_rule'
-  tag stig_id: 'RHEL-07-030210'
-  tag fix_id: 'F-36312r602646_fix'
+  tag stig_id: 'AMZL-02-730210'
   tag cci: ['CCI-001851']
   tag nist: ['AU-4 (1)']
   tag subsystems: ['audit', 'audisp']

@@ -1,4 +1,4 @@
-control 'SV-204575' do
+control 'AMZL-02-731010' do
   title 'The Amazon Linux 2 operating system must be configured so that the rsyslog daemon does not accept
     log messages from other servers unless the server is being used for log aggregation.'
   desc "Unintentionally running a rsyslog server accepting remote messages puts the system at increased risk.
@@ -21,13 +21,9 @@ control 'SV-204575' do
   desc 'fix', 'Modify the "/etc/rsyslog.conf" file to remove the "ModLoad imtcp", "ModLoad imudp", and "ModLoad
     imrelp" configuration lines, or document the system as being used for log aggregation.'
   impact 0.5
-  tag legacy: ['SV-86835', 'V-72211']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204575'
-  tag rid: 'SV-204575r853986_rule'
-  tag stig_id: 'RHEL-07-031010'
-  tag fix_id: 'F-4699r88918_fix'
+  tag stig_id: 'AMZL-02-731010'
   tag cci: ['CCI-000318', 'CCI-000368', 'CCI-001812', 'CCI-001813', 'CCI-001814']
   tag nist: ['CM-3 f', 'CM-6 c', 'CM-11 (2)', 'CM-5 (1)', 'CM-5 (1) (a)']
   tag subsystems: ['rsyslog']

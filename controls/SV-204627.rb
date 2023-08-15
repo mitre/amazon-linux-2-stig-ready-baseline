@@ -1,4 +1,4 @@
-control 'SV-204627' do
+control 'AMZL-02-740800' do
   title 'SNMP community strings on the Amazon Linux 2 operating system must be changed from the default.'
   desc 'Whether active or not, default Simple Network Management Protocol (SNMP) community strings must be changed
     to maintain security. If the service is running with the default authenticators, anyone can gather data about the
@@ -17,13 +17,9 @@ control 'SV-204627' do
   desc 'fix', 'If the "/etc/snmp/snmpd.conf" file exists, modify any lines that contain a community string value of
     "public" or "private" to another string value.'
   impact 0.7
-  tag legacy: ['SV-86937', 'V-72313']
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204627'
-  tag rid: 'SV-204627r603261_rule'
-  tag stig_id: 'RHEL-07-040800'
-  tag fix_id: 'F-4751r89074_fix'
+  tag stig_id: 'AMZL-02-740800'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['snmp']

@@ -1,4 +1,4 @@
-control 'SV-250314' do
+control 'AMZL-02-720023' do
   title 'The Amazon Linux 2 operating system must elevate the SELinux context when an administrator calls the sudo command.'
   desc 'Preventing non-privileged users from executing privileged functions mitigates the risk that unauthorized individuals or processes may gain unnecessary access to information or privileges.
 
@@ -26,12 +26,8 @@ Remove any configurations that conflict with the above from the following locati
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000324-GPOS-00125'
   tag satisfies: nil
-  tag gid: 'V-250314'
-  tag rid: 'SV-250314r877392_rule'
-  tag stig_id: 'RHEL-07-020023'
-  tag fix_id: 'F-53702r858494_fix'
+  tag stig_id: 'AMZL-02-720023'
   tag cci: ['CCI-002165', 'CCI-002235']
-  tag legacy: []
   tag nist: ['AC-3 (4)', 'AC-6 (10)']
   tag subsystems: ['selinux']
   tag 'host'

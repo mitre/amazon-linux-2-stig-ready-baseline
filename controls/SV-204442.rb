@@ -1,4 +1,4 @@
-control 'SV-204442' do
+control 'AMZL-02-720000' do
   title 'The Amazon Linux 2 operating system must not have the rsh-server package installed.'
   desc 'It is detrimental for operating systems to provide, or install by default, functionality exceeding
     requirements or mission objectives. These unnecessary capabilities or services are often overlooked and therefore
@@ -16,13 +16,9 @@ control 'SV-204442' do
     package from the system with the following command:
     # yum remove rsh-server'
   impact 0.7
-  tag legacy: ['V-71967', 'SV-86591']
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000095-GPOS-00049'
-  tag gid: 'V-204442'
-  tag rid: 'SV-204442r603261_rule'
-  tag stig_id: 'RHEL-07-020000'
-  tag fix_id: 'F-4566r88519_fix'
+  tag stig_id: 'AMZL-02-720000'
   tag cci: ['CCI-000381']
   tag nist: ['CM-7 a']
   tag subsystems: ['packages']

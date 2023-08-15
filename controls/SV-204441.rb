@@ -1,4 +1,4 @@
-control 'SV-204441' do
+control 'AMZL-02-710500' do
   title 'The Amazon Linux 2 operating system must uniquely identify and must authenticate organizational
     users (or processes acting on behalf of organizational users) using multifactor authentication.'
   desc 'To assure accountability and prevent unauthenticated access, organizational users must be identified and
@@ -36,14 +36,10 @@ If any of the above checks are not configured, ask the administrator to indicate
     #/usr/X11R6/bin/xscreensaver-command -lock
     Modify the "/etc/pam_pkcs11/pam_pkcs11.conf" file to use the cackey module if required.'
   impact 0.5
-  tag legacy: ['V-71965', 'SV-86589']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000104-GPOS-00051'
   tag satisfies: ['SRG-OS-000104-GPOS-00051', 'SRG-OS-000106-GPOS-00053', 'SRG-OS-000107-GPOS-00054', 'SRG-OS-000109-GPOS-00056', 'SRG-OS-000108-GPOS-00055', 'SRG-OS-000108-GPOS-00057', 'SRG-OS-000108-GPOS-00058']
-  tag gid: 'V-204441'
-  tag rid: 'SV-204441r818813_rule'
-  tag stig_id: 'RHEL-07-010500'
-  tag fix_id: 'F-4565r88516_fix'
+  tag stig_id: 'AMZL-02-710500'
   tag cci: ['CCI-000766']
   tag nist: ['IA-2 (2)']
   tag subsystems: ['pam', 'smartcard']

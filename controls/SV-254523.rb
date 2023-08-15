@@ -1,4 +1,4 @@
-control 'SV-254523' do
+control 'AMZL-02-710271' do
   title 'The Amazon Linux 2 operating system emergency accounts must be automatically removed or disabled after the crisis is resolved or within 72 hours.'
   desc "Emergency accounts are privileged accounts established in response to crisis situations where the need for rapid account activation is required. Therefore, emergency account activation may bypass normal account authorization processes. If these accounts are automatically disabled, system maintenance during emergencies may not be possible, thus adversely affecting system availability.
 
@@ -21,11 +21,8 @@ The automatic expiration or disabling time period may be extended as needed unti
   impact 0.5
   tag check_id: 'C-58007r858499_chk'
   tag severity: 'medium'
-  tag gid: 'V-254523'
-  tag rid: 'SV-254523r858501_rule'
-  tag stig_id: 'RHEL-07-010271'
+  tag stig_id: 'AMZL-02-710271'
   tag gtitle: 'SRG-OS-000123-GPOS-00064'
-  tag fix_id: 'F-57956r858500_fix'
   tag 'documentable'
   tag cci: ['CCI-001682']
   tag nist: ['AC-2 (2)']

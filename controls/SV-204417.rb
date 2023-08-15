@@ -1,4 +1,4 @@
-control 'SV-204417' do
+control 'AMZL-02-710220' do
   title 'The Amazon Linux 2 operating system must be configured so that user and group account
     administration utilities are configured to store only encrypted representations of passwords.'
   desc 'Passwords need to be protected at all times, and encryption is the standard method for protecting passwords.
@@ -16,13 +16,9 @@ control 'SV-204417' do
     Add or update the following line in "/etc/libuser.conf" in the [defaults] section:
     crypt_style = sha512'
   impact 0.5
-  tag legacy: ['V-71923', 'SV-86547']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000073-GPOS-00041'
-  tag gid: 'V-204417'
-  tag rid: 'SV-204417r877397_rule'
-  tag stig_id: 'RHEL-07-010220'
-  tag fix_id: 'F-4541r88444_fix'
+  tag stig_id: 'AMZL-02-710220'
   tag cci: ['CCI-000196']
   tag nist: ['IA-5 (1) (c)']
   tag subsystems: ['libuser_conf', 'password']

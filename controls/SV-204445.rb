@@ -1,4 +1,4 @@
-control 'SV-204445' do
+control 'AMZL-02-720030' do
   title 'The Amazon Linux 2 operating system must be configured so that a file integrity tool verifies the
     baseline operating system configuration at least weekly.'
   desc "Unauthorized changes to the baseline configuration could make the system vulnerable to various attacks or allow unauthorized access to the operating system. Changes to operating system configurations can have unintended side effects, some of which may be relevant to security.
@@ -27,13 +27,9 @@ If the file integrity application does not exist, or a script file controlling t
 
      /usr/sbin/aide --check | /var/spool/mail -s "$HOSTNAME - Daily aide integrity check run" root@sysname.mil'
   impact 0.5
-  tag legacy: ['SV-86597', 'V-71973']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000363-GPOS-00150'
-  tag gid: 'V-204445'
-  tag rid: 'SV-204445r880848_rule'
-  tag stig_id: 'RHEL-07-020030'
-  tag fix_id: 'F-36304r880847_fix'
+  tag stig_id: 'AMZL-02-720030'
   tag cci: ['CCI-001744']
   tag nist: ['CM-3 (5)']
   tag subsystems: ['file_integrity_tool']

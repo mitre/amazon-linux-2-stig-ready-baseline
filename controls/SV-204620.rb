@@ -1,4 +1,4 @@
-control 'SV-204620' do
+control 'AMZL-02-740690' do
   title 'The Amazon Linux 2 operating system must not have a File Transfer Protocol (FTP) server package
     installed unless needed.'
   desc 'The FTP service provides an unencrypted remote access that does not provide for the confidentiality and
@@ -15,13 +15,9 @@ control 'SV-204620' do
     with the following command:
     # yum remove vsftpd'
   impact 0.7
-  tag legacy: ['SV-86923', 'V-72299']
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204620'
-  tag rid: 'SV-204620r603261_rule'
-  tag stig_id: 'RHEL-07-040690'
-  tag fix_id: 'F-4744r89053_fix'
+  tag stig_id: 'AMZL-02-740690'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['vsftpd']

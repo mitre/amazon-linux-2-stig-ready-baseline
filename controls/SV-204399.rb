@@ -1,4 +1,4 @@
-control 'SV-204399' do
+control 'AMZL-02-710081' do
   title 'The Amazon Linux 2 operating system must prevent a user from overriding the screensaver
     lock-delay setting for the graphical user interface.'
   desc "A session time-out lock is a temporary action taken when a user stops work and moves away from the immediate
@@ -33,13 +33,9 @@ If the command does not return a result, this is a finding.'
     Add the setting to lock the screensaver lock delay:
     /org/gnome/desktop/screensaver/lock-delay'
   impact 0.5
-  tag legacy: ['V-73155', 'SV-87807']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000029-GPOS-00010'
-  tag gid: 'V-204399'
-  tag rid: 'SV-204399r880773_rule'
-  tag stig_id: 'RHEL-07-010081'
-  tag fix_id: 'F-4523r880772_fix'
+  tag stig_id: 'AMZL-02-710081'
   tag cci: ['CCI-000057']
   tag nist: ['AC-11 a']
   tag subsystems: ['gui']

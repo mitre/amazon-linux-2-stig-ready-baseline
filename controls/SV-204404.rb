@@ -1,4 +1,4 @@
-control 'SV-204404' do
+control 'AMZL-02-710110' do
   title 'The Amazon Linux 2 operating system must initiate a session lock for graphical user interfaces
     when the screensaver is activated.'
   desc "A session time-out lock is a temporary action taken when a user stops work and moves away from the immediate
@@ -30,13 +30,9 @@ If the "lock-delay" setting is missing, or is not set to "5" or less, this is a 
     # dconf update
     Users must log out and back in again before the system-wide settings take effect.'
   impact 0.5
-  tag legacy: ['V-71901', 'SV-86525']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000029-GPOS-00010'
-  tag gid: 'V-204404'
-  tag rid: 'SV-204404r880788_rule'
-  tag stig_id: 'RHEL-07-010110'
-  tag fix_id: 'F-4528r880787_fix'
+  tag stig_id: 'AMZL-02-710110'
   tag cci: ['CCI-000057']
   tag nist: ['AC-11 a']
   tag subsystems: ['gui', 'screensaver', 'lock', 'session']

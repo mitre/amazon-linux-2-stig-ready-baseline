@@ -1,4 +1,4 @@
-control 'SV-204619' do
+control 'AMZL-02-740680' do
   title 'The Amazon Linux 2 operating system must be configured to prevent unrestricted mail relaying.'
   desc 'If unrestricted mail relaying is permitted, unauthorized senders could use this host as a mail relay for the
     purpose of sending spam or other unauthorized activity.'
@@ -17,13 +17,9 @@ control 'SV-204619' do
     the local network with the following command:
     # postconf -e 'smtpd_client_restrictions = permit_mynetworks,reject')
   impact 0.5
-  tag legacy: ['SV-86921', 'V-72297']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204619'
-  tag rid: 'SV-204619r603261_rule'
-  tag stig_id: 'RHEL-07-040680'
-  tag fix_id: 'F-4743r89050_fix'
+  tag stig_id: 'AMZL-02-740680'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['postfix']

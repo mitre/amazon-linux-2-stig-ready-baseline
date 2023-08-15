@@ -1,4 +1,4 @@
-control 'SV-251703' do
+control 'AMZL-02-710339' do
   title 'The Amazon Linux 2 operating system must specify the default "include" directory for the /etc/sudoers file.'
   desc 'The "sudo" command allows authorized users to run programs (including shells) as other users, system users, and root. The "/etc/sudoers" file is used to configure authorized "sudo" users as well as the programs they are allowed to run. Some configuration options in the "/etc/sudoers" file allow configured users to run programs without re-authenticating. Use of these configuration options makes it easier for one compromised account to be used to compromise other accounts.
 
@@ -30,12 +30,8 @@ Add or modify the following line:
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag satisfies: nil
-  tag gid: 'V-251703'
-  tag rid: 'SV-251703r833183_rule'
-  tag stig_id: 'RHEL-07-010339'
-  tag fix_id: 'F-55094r809222_fix'
+  tag stig_id: 'AMZL-02-710339'
   tag cci: ['CCI-000366']
-  tag legacy: []
   tag nist: ['CM-6 b']
   tag subsystems: ['sudo']
   tag 'host'

@@ -1,4 +1,4 @@
-control 'SV-204458' do
+control 'AMZL-02-720250' do
   title 'The Amazon Linux 2 operating system must be a vendor supported release.'
   desc 'An operating system release is considered "supported" if the vendor continues to provide security patches
     for the product. With an unsupported release, it will not be possible to resolve security issues discovered in the
@@ -16,13 +16,9 @@ control 'SV-204458' do
     If the release is not supported by the vendor, this is a finding.'
   desc 'fix', 'Upgrade to a supported version of the operating system.'
   impact 0.7
-  tag legacy: ['SV-86621', 'V-71997']
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204458'
-  tag rid: 'SV-204458r744100_rule'
-  tag stig_id: 'RHEL-07-020250'
-  tag fix_id: 'F-4582r462547_fix'
+  tag stig_id: 'AMZL-02-720250'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['redhat_release']

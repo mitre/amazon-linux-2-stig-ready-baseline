@@ -1,4 +1,4 @@
-control 'SV-204630' do
+control 'AMZL-02-740830' do
   title 'The Amazon Linux 2 operating system must not forward IPv6 source-routed packets.'
   desc 'Source-routed packets allow the source of the packet to suggest that routers forward the packet along a
     different path than configured on the router, which can be used to bypass network security measures. This
@@ -31,13 +31,9 @@ the /etc/sysctl.d/ directory (or modify the line to have the required value):
 
     # sysctl --system'
   impact 0.5
-  tag legacy: ['V-72319', 'SV-86943']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204630'
-  tag rid: 'SV-204630r880827_rule'
-  tag stig_id: 'RHEL-07-040830'
-  tag fix_id: 'F-4754r880826_fix'
+  tag stig_id: 'AMZL-02-740830'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['kernel_parameter', 'ipv6']

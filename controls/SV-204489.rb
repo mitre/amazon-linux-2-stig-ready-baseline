@@ -1,4 +1,4 @@
-control 'SV-204489' do
+control 'AMZL-02-721100' do
   title 'The Amazon Linux 2 operating system must have cron logging implemented.'
   desc 'Cron logging can be used to trace the successful or unsuccessful execution of cron jobs. It can also be used
     to spot intrusions into the use of the cron facility by unauthorized and malicious users.'
@@ -20,13 +20,9 @@ control 'SV-204489' do
     The rsyslog daemon must be restarted for the changes to take effect:
     $ sudo systemctl restart rsyslog.service'
   impact 0.5
-  tag legacy: ['V-72051', 'SV-86675']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204489'
-  tag rid: 'SV-204489r744109_rule'
-  tag stig_id: 'RHEL-07-021100'
-  tag fix_id: 'F-4613r744108_fix'
+  tag stig_id: 'AMZL-02-721100'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['cron', 'rsyslog']

@@ -1,4 +1,4 @@
-control 'SV-204481' do
+control 'AMZL-02-721010' do
   title 'The Amazon Linux 2 operating system must prevent files with the setuid and setgid bit set from
     being executed on file systems that are used with removable media.'
   desc 'The "nosuid" mount option causes the system to not execute "setuid" and "setgid" files with owner
@@ -14,13 +14,9 @@ control 'SV-204481' do
   desc 'fix', 'Configure the "/etc/fstab" to use the "nosuid" option on file systems that are associated with
     removable media.'
   impact 0.5
-  tag legacy: ['SV-86667', 'V-72043']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204481'
-  tag rid: 'SV-204481r603261_rule'
-  tag stig_id: 'RHEL-07-021010'
-  tag fix_id: 'F-4605r88636_fix'
+  tag stig_id: 'AMZL-02-721010'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['file_system', 'removable_media']

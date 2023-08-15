@@ -1,4 +1,4 @@
-control 'SV-204581' do
+control 'AMZL-02-740180' do
   title 'The Amazon Linux 2 operating system must implement cryptography to protect the integrity of
     Lightweight Directory Access Protocol (LDAP) authentication communications.'
   desc 'Without cryptographic integrity protections, information can be altered by unauthorized users without
@@ -27,13 +27,9 @@ control 'SV-204581' do
     Add or modify the following line in "/etc/sssd/sssd.conf":
     ldap_id_use_start_tls = true'
   impact 0.5
-  tag legacy: ['V-72227', 'SV-86851']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000250-GPOS-00093'
-  tag gid: 'V-204581'
-  tag rid: 'SV-204581r877394_rule'
-  tag stig_id: 'RHEL-07-040180'
-  tag fix_id: 'F-4705r88936_fix'
+  tag stig_id: 'AMZL-02-740180'
   tag cci: ['CCI-001453']
   tag nist: ['AC-17 (2)']
   tag subsystems: ['sssd', 'ldap']

@@ -1,4 +1,4 @@
-control 'SV-251705' do
+control 'AMZL-02-720029' do
   title 'The Amazon Linux 2 operating system must use a file integrity tool to verify correct operation of all security functions.'
   desc 'Without verification of the security functions, security functions may not operate correctly, and the failure may go unnoticed. Security function is defined as the hardware, software, and/or firmware of the information system responsible for enforcing the system security policy and supporting the isolation of code and data on which the protection is based. Security functionality includes, but is not limited to, establishing system accounts, configuring access authorizations (i.e., permissions, privileges), setting events to be audited, and setting intrusion detection parameters.
 
@@ -43,12 +43,8 @@ Done.'
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000445-GPOS-00199'
   tag satisfies: nil
-  tag gid: 'V-251705'
-  tag rid: 'SV-251705r880854_rule'
-  tag stig_id: 'RHEL-07-020029'
-  tag fix_id: 'F-55096r880853_fix'
+  tag stig_id: 'AMZL-02-720029'
   tag cci: ['CCI-002696']
-  tag legacy: []
   tag nist: ['SI-6 a']
   tag subsystems: ['file_integrity_tool']
   tag 'host'

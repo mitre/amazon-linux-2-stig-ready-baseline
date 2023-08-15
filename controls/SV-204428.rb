@@ -1,4 +1,4 @@
-control 'SV-204428' do
+control 'AMZL-02-710330' do
   title 'The Amazon Linux 2 operating system must lock the associated account after three unsuccessful
     root logon attempts are made within a 15-minute period.'
   desc 'By limiting the number of failed logon attempts, the risk of unauthorized system access via user password
@@ -26,16 +26,12 @@ auth        sufficient    pam_unix.so try_first_pass
 auth        [default=die] pam_faillock.so authfail audit deny=3 even_deny_root fail_interval=900 unlock_time=900
 account     required      pam_faillock.so
 
-Note: Per requirement RHEL-07-010199, RHEL 7 must be configured to not overwrite custom authentication configuration settings while using the authconfig utility, otherwise manual changes to the listed files will be overwritten whenever the authconfig utility is used.'
+Note: Per requirement AMZL-02-710199, RHEL 7 must be configured to not overwrite custom authentication configuration settings while using the authconfig utility, otherwise manual changes to the listed files will be overwritten whenever the authconfig utility is used.'
   impact 0.5
-  tag legacy: ['V-71945', 'SV-86569']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000329-GPOS-00128'
   tag satisfies: ['SRG-OS-000329-GPOS-00128', 'SRG-OS-000021-GPOS-00005']
-  tag gid: 'V-204428'
-  tag rid: 'SV-204428r880845_rule'
-  tag stig_id: 'RHEL-07-010330'
-  tag fix_id: 'F-4552r880844_fix'
+  tag stig_id: 'AMZL-02-710330'
   tag cci: ['CCI-002238']
   tag nist: ['AC-7 b']
   tag subsystems: ['pam']

@@ -1,4 +1,4 @@
-control 'SV-204456' do
+control 'AMZL-02-720231' do
   title 'The Amazon Linux 2 operating system must be configured so that the x86 Ctrl-Alt-Delete key
     sequence is disabled in the Graphical User Interface.'
   desc 'A locally logged-on user who presses Ctrl-Alt-Delete, when at the console, can reboot the system. If
@@ -20,13 +20,9 @@ control 'SV-204456' do
     [org/gnome/settings-daemon/plugins/media-keys]
     logout=''"
   impact 0.7
-  tag legacy: ['V-94843', 'SV-104673']
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204456'
-  tag rid: 'SV-204456r603261_rule'
-  tag stig_id: 'RHEL-07-020231'
-  tag fix_id: 'F-4580r590041_fix'
+  tag stig_id: 'AMZL-02-720231'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['gui', 'general']

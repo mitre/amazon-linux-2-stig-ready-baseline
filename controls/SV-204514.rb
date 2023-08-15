@@ -1,4 +1,4 @@
-control 'SV-204514' do
+control 'AMZL-02-730340' do
   title 'The Amazon Linux 2 operating system must immediately notify the System Administrator (SA) and
     Information System Security Officer (ISSO) (at a minimum) via email when the threshold for the repository maximum
     audit record storage capacity is reached.'
@@ -17,13 +17,9 @@ control 'SV-204514' do
     Uncomment or edit the "space_left_action" keyword in "/etc/audit/auditd.conf" and set it to "email".
     space_left_action = email'
   impact 0.5
-  tag legacy: ['V-72091', 'SV-86715']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000343-GPOS-00134'
-  tag gid: 'V-204514'
-  tag rid: 'SV-204514r877389_rule'
-  tag stig_id: 'RHEL-07-030340'
-  tag fix_id: 'F-4638r88735_fix'
+  tag stig_id: 'AMZL-02-730340'
   tag cci: ['CCI-001855']
   tag nist: ['AU-5 (1)']
   tag subsystems: ['audit', 'auditd']

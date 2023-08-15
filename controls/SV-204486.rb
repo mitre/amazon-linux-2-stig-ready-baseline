@@ -1,4 +1,4 @@
-control 'SV-204486' do
+control 'AMZL-02-721024' do
   title 'The Amazon Linux 2 operating system must mount /dev/shm with secure options.'
   desc 'The "noexec" mount option causes the system to not execute binary files. This option must be used for
     mounting any file system not containing approved binary files as they may be incompatible. Executing files from
@@ -23,13 +23,9 @@ control 'SV-204486' do
     adding /modifying the /etc/fstab with the following line:
     tmpfs /dev/shm tmpfs defaults,nodev,nosuid,noexec 0 0'
   impact 0.3
-  tag legacy: ['SV-95725', 'V-81013']
   tag severity: 'low'
   tag gtitle: 'SRG-OS-000368-GPOS-00154'
-  tag gid: 'V-204486'
-  tag rid: 'SV-204486r853900_rule'
-  tag stig_id: 'RHEL-07-021024'
-  tag fix_id: 'F-4610r462553_fix'
+  tag stig_id: 'AMZL-02-721024'
   tag cci: ['CCI-001764']
   tag nist: ['CM-7 (2)']
   tag subsystems: ['etc_fstab', 'mount']

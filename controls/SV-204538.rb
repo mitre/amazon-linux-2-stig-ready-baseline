@@ -1,4 +1,4 @@
-control 'SV-204538' do
+control 'AMZL-02-730580' do
   title 'The Amazon Linux 2 operating system must audit all uses of the chcon command.'
   desc 'Without generating audit records that are specific to the security and mission needs of the organization, it
     would be difficult to establish, correlate, and investigate the events relating to an incident or identify those
@@ -25,14 +25,10 @@ Add or update the following rule in "/etc/audit/rules.d/audit.rules":
 
 The audit daemon must be restarted for the changes to take effect.'
   impact 0.5
-  tag legacy: ['V-72139', 'SV-86763']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000392-GPOS-00172'
   tag satisfies: ['SRG-OS-000392-GPOS-00172', 'SRG-OS-000463-GPOS-00207', 'SRG-OS-000465-GPOS-00209']
-  tag gid: 'V-204538'
-  tag rid: 'SV-204538r861020_rule'
-  tag stig_id: 'RHEL-07-030580'
-  tag fix_id: 'F-4662r861019_fix'
+  tag stig_id: 'AMZL-02-730580'
   tag cci: ['CCI-000172', 'CCI-002884']
   tag nist: ['AU-12 c', 'MA-4 (1) (a)']
   tag subsystems: ['audit', 'auditd', 'audit_rule']

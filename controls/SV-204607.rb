@@ -1,4 +1,4 @@
-control 'SV-204607' do
+control 'AMZL-02-740550' do
   title 'The Amazon Linux 2 operating system must not contain shosts.equiv files.'
   desc 'The shosts.equiv files are used to configure host-based authentication for the system via SSH. Host-based
     authentication is not sufficient for preventing unauthorized access to the system, as it does not require
@@ -10,13 +10,9 @@ control 'SV-204607' do
   desc 'fix', 'Remove any found "shosts.equiv" files from the system.
     # rm /[path]/[to]/[file]/shosts.equiv'
   impact 0.7
-  tag legacy: ['SV-86903', 'V-72279']
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204607'
-  tag rid: 'SV-204607r603261_rule'
-  tag stig_id: 'RHEL-07-040550'
-  tag fix_id: 'F-4731r89014_fix'
+  tag stig_id: 'AMZL-02-740550'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['ssh']

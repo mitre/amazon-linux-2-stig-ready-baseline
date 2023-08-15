@@ -1,4 +1,4 @@
-control 'SV-204446' do
+control 'AMZL-02-720040' do
   title 'The Amazon Linux 2 operating system must be configured so that designated personnel are notified
     if baseline configurations are changed in an unauthorized manner.'
   desc "Unauthorized changes to the baseline configuration could make the system vulnerable to various attacks or allow unauthorized access to the operating system. Changes to operating system configurations can have unintended side effects, some of which may be relevant to security.
@@ -35,13 +35,9 @@ The following example output is generic. It will set cron to run AIDE daily and 
 
      /usr/sbin/aide --check | /var/spool/mail -s "$HOSTNAME - Daily aide integrity check run" root@sysname.mil'
   impact 0.5
-  tag legacy: ['V-71975', 'SV-86599']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000363-GPOS-00150'
-  tag gid: 'V-204446'
-  tag rid: 'SV-204446r880851_rule'
-  tag stig_id: 'RHEL-07-020040'
-  tag fix_id: 'F-36305r880850_fix'
+  tag stig_id: 'AMZL-02-720040'
   tag cci: ['CCI-001744']
   tag nist: ['CM-3 (5)']
   tag subsystems: ['file_integrity_tool']

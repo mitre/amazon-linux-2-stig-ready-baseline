@@ -1,4 +1,4 @@
-control 'SV-204592' do
+control 'AMZL-02-740370' do
   title 'The Amazon Linux 2 operating system must not permit direct logons to the root account using
     remote access via SSH.'
   desc 'Even though the communications channel may be encrypted, an additional layer of security is gained by
@@ -16,13 +16,9 @@ control 'SV-204592' do
     PermitRootLogin no
     The SSH service must be restarted for changes to take effect.'
   impact 0.5
-  tag legacy: ['V-72247', 'SV-86871']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204592'
-  tag rid: 'SV-204592r603261_rule'
-  tag stig_id: 'RHEL-07-040370'
-  tag fix_id: 'F-4716r88969_fix'
+  tag stig_id: 'AMZL-02-740370'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['ssh']

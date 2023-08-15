@@ -1,4 +1,4 @@
-control 'SV-204416' do
+control 'AMZL-02-710210' do
   title 'The Amazon Linux 2 operating system must be configured to use the shadow file to store only
     encrypted representations of passwords.'
   desc 'Passwords need to be protected at all times, and encryption is the standard method for protecting passwords.
@@ -15,13 +15,9 @@ control 'SV-204416' do
     Add or update the following line in "/etc/login.defs":
     ENCRYPT_METHOD SHA512'
   impact 0.5
-  tag legacy: ['V-71921', 'SV-86545']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000073-GPOS-00041'
-  tag gid: 'V-204416'
-  tag rid: 'SV-204416r877397_rule'
-  tag stig_id: 'RHEL-07-010210'
-  tag fix_id: 'F-4540r88441_fix'
+  tag stig_id: 'AMZL-02-710210'
   tag cci: ['CCI-000196']
   tag nist: ['IA-5 (1) (c)']
   tag subsystems: ['login_defs', 'password']

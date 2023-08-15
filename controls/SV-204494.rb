@@ -1,4 +1,4 @@
-control 'SV-204494' do
+control 'AMZL-02-721320' do
   title 'The Amazon Linux 2 operating system must use a separate file system for /var.'
   desc 'The use of separate file systems for different paths can protect the system from failures resulting from a
     file system becoming full or failing.'
@@ -9,13 +9,9 @@ control 'SV-204494' do
     If a separate entry for "/var" is not in use, this is a finding.'
   desc 'fix', 'Migrate the "/var" path onto a separate file system.'
   impact 0.3
-  tag legacy: ['V-72061', 'SV-86685']
   tag severity: 'low'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204494'
-  tag rid: 'SV-204494r603261_rule'
-  tag stig_id: 'RHEL-07-021320'
-  tag fix_id: 'F-4618r88675_fix'
+  tag stig_id: 'AMZL-02-721320'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['/var', 'file_system']

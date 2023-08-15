@@ -1,4 +1,4 @@
-control 'SV-214937' do
+control 'AMZL-02-710062' do
   title 'The Amazon Linux 2 operating system must prevent a user from overriding the screensaver
     lock-enabled setting for the graphical user interface.'
   desc 'A session lock is a temporary action taken when a user stops work and moves away from the immediate physical
@@ -33,13 +33,9 @@ If the command does not return a result, this is a finding.'
     Add the setting to lock the screensaver lock-enabled setting:
     /org/gnome/desktop/screensaver/lock-enabled'
   impact 0.5
-  tag legacy: ['V-78995', 'SV-93701']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000029-GPOS-00010'
-  tag gid: 'V-214937'
-  tag rid: 'SV-214937r880767_rule'
-  tag stig_id: 'RHEL-07-010062'
-  tag fix_id: 'F-16135r880766_fix'
+  tag stig_id: 'AMZL-02-710062'
   tag cci: ['CCI-000057']
   tag nist: ['AC-11 a']
   tag subsystems: ['gui']

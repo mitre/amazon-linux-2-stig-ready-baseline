@@ -1,4 +1,4 @@
-control 'SV-204524' do
+control 'AMZL-02-730440' do
   title 'The Amazon Linux 2 operating system must audit all uses of the setxattr, fsetxattr, lsetxattr,
     removexattr, fremovexattr, and lremovexattr syscalls.'
   desc 'Without generating audit records that are specific to the security and mission needs of the organization, it
@@ -32,14 +32,10 @@ control 'SV-204524' do
     auid!=unset -k perm_mod
     The audit daemon must be restarted for the changes to take effect.'
   impact 0.5
-  tag legacy: ['SV-86735', 'V-72111']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000458-GPOS-00203'
   tag satisfies: ['SRG-OS-000458-GPOS-00203', 'SRG-OS-000392-GPOS-00172', 'SRG-OS-000064-GPOS-00033']
-  tag gid: 'V-204524'
-  tag rid: 'SV-204524r809775_rule'
-  tag stig_id: 'RHEL-07-030440'
-  tag fix_id: 'F-4648r809774_fix'
+  tag stig_id: 'AMZL-02-730440'
   tag cci: ['CCI-000172']
   tag nist: ['AU-12 c']
   tag subsystems: ['audit', 'auditd', 'audit_rule']

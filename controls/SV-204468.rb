@@ -1,4 +1,4 @@
-control 'SV-204468' do
+control 'AMZL-02-720630' do
   title 'The Amazon Linux 2 operating system must be configured so that all local interactive user home
     directories have mode 0750 or less permissive.'
   desc 'Excessive permissions on local interactive user home directories may allow unauthorized access to user files
@@ -16,13 +16,9 @@ control 'SV-204468' do
     Note: The example will be for the user "smithj".
     # chmod 0750 /home/smithj)
   impact 0.5
-  tag legacy: ['SV-86641', 'V-72017']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204468'
-  tag rid: 'SV-204468r603828_rule'
-  tag stig_id: 'RHEL-07-020630'
-  tag fix_id: 'F-4592r88597_fix'
+  tag stig_id: 'AMZL-02-720630'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['home_dirs']

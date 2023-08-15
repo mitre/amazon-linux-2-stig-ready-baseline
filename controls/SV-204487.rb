@@ -1,4 +1,4 @@
-control 'SV-204487' do
+control 'AMZL-02-721030' do
   title 'The Amazon Linux 2 operating system must be configured so that all world-writable directories are
     group-owned by root, sys, bin, or an application group.'
   desc 'If a world-writable directory is not group-owned by root, sys, bin, or an application Group Identifier
@@ -15,13 +15,9 @@ control 'SV-204487' do
     system account. If any world-writable directories are not group-owned by a system account, this should be
     investigated. Following this, the directories should be deleted or assigned to an appropriate group.'
   impact 0.5
-  tag legacy: ['V-72047', 'SV-86671']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204487'
-  tag rid: 'SV-204487r744106_rule'
-  tag stig_id: 'RHEL-07-021030'
-  tag fix_id: 'F-36308r602634_fix'
+  tag stig_id: 'AMZL-02-721030'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['world_writable', 'ww_dirs']

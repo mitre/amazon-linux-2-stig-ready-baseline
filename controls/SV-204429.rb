@@ -1,4 +1,4 @@
-control 'SV-204429' do
+control 'AMZL-02-710340' do
   title 'The Amazon Linux 2 operating system must be configured so that users must provide a password for
     privilege escalation.'
   desc 'Without re-authentication, users may access resources or perform tasks for which they do not have
@@ -24,14 +24,10 @@ $ sudo grep -ir nopasswd /etc/sudoers.d
 
 Remove any occurrences of "NOPASSWD" tags in the file.'
   impact 0.5
-  tag legacy: ['V-71947', 'SV-86571']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000373-GPOS-00156'
   tag satisfies: ['SRG-OS-000373-GPOS-00156', 'SRG-OS-000373-GPOS-00157', 'SRG-OS-000373-GPOS-00158']
-  tag gid: 'V-204429'
-  tag rid: 'SV-204429r861003_rule'
-  tag stig_id: 'RHEL-07-010340'
-  tag fix_id: 'F-36303r861002_fix'
+  tag stig_id: 'AMZL-02-710340'
   tag cci: ['CCI-002038']
   tag nist: ['IA-11']
   tag subsystems: ['sudo']

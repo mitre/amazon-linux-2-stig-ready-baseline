@@ -1,4 +1,4 @@
-control 'SV-204583' do
+control 'AMZL-02-740200' do
   title 'The Amazon Linux 2 operating system must implement cryptography to protect the integrity of
     Lightweight Directory Access Protocol (LDAP) communications.'
   desc 'Without cryptographic integrity protections, information can be altered by unauthorized users without
@@ -28,13 +28,9 @@ control 'SV-204583' do
     Add or modify the following line in "/etc/sssd/sssd.conf":
     ldap_tls_cacert = /etc/pki/tls/certs/ca-bundle.crt'
   impact 0.5
-  tag legacy: ['SV-86855', 'V-72231']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000250-GPOS-00093'
-  tag gid: 'V-204583'
-  tag rid: 'SV-204583r877394_rule'
-  tag stig_id: 'RHEL-07-040200'
-  tag fix_id: 'F-4707r88942_fix'
+  tag stig_id: 'AMZL-02-740200'
   tag cci: ['CCI-001453']
   tag nist: ['AC-17 (2)']
   tag subsystems: ['sssd', 'ldap']

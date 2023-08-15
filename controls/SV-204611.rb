@@ -1,4 +1,4 @@
-control 'SV-204611' do
+control 'AMZL-02-740612' do
   title 'The Amazon Linux 2 operating system must use a reverse-path filter for IPv4 network traffic when
     possible by default.'
   desc 'Enabling reverse path filtering drops packets with source addresses that should not have been able to be
@@ -29,13 +29,9 @@ directory (or modify the line to have the required value):
 
     # sysctl --system'
   impact 0.5
-  tag legacy: ['V-92253', 'SV-102355']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204611'
-  tag rid: 'SV-204611r880803_rule'
-  tag stig_id: 'RHEL-07-040612'
-  tag fix_id: 'F-4735r880802_fix'
+  tag stig_id: 'AMZL-02-740612'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['kernel_parameter', 'ipv4']

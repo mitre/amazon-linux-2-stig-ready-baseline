@@ -1,4 +1,4 @@
-control 'SV-204591' do
+control 'AMZL-02-740360' do
   title 'The Amazon Linux 2 operating system must display the date and time of the last successful account
     logon upon an SSH logon.'
   desc 'Providing users with feedback on when account accesses via SSH last occurred facilitates user recognition
@@ -17,13 +17,9 @@ control 'SV-204591' do
     PrintLastLog yes
     The SSH service must be restarted for changes to "sshd_config" to take effect.'
   impact 0.5
-  tag legacy: ['V-72245', 'SV-86869']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204591'
-  tag rid: 'SV-204591r858477_rule'
-  tag stig_id: 'RHEL-07-040360'
-  tag fix_id: 'F-4715r88966_fix'
+  tag stig_id: 'AMZL-02-740360'
   tag cci: ['CCI-000366', 'CCI-000052']
   tag nist: ['CM-6 b', 'AC-9']
   tag subsystems: ['pam', 'ssh', 'lastlog']

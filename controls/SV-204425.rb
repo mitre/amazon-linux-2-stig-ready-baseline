@@ -1,4 +1,4 @@
-control 'SV-204425' do
+control 'AMZL-02-710300' do
   title 'The Amazon Linux 2 operating system must be configured so that the SSH daemon does not allow
     authentication using an empty password.'
   desc 'Configuring this setting for the SSH daemon provides additional assurance that remote logon via SSH will
@@ -14,13 +14,9 @@ control 'SV-204425' do
     The SSH service must be restarted for changes to take effect.  Any accounts with empty passwords should be disabled
     immediately, and PAM configuration should prevent users from being able to assign themselves empty passwords.'
   impact 0.7
-  tag legacy: ['SV-86563', 'V-71939']
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000106-GPOS-00053'
-  tag gid: 'V-204425'
-  tag rid: 'SV-204425r603261_rule'
-  tag stig_id: 'RHEL-07-010300'
-  tag fix_id: 'F-4549r88468_fix'
+  tag stig_id: 'AMZL-02-710300'
   tag cci: ['CCI-000766']
   tag nist: ['IA-2 (2)']
   tag subsystems: ['ssh']

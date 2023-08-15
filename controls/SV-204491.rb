@@ -1,4 +1,4 @@
-control 'SV-204491' do
+control 'AMZL-02-721120' do
   title 'The Amazon Linux 2 operating system must be configured so that the cron.allow file, if it exists,
     is group-owned by root.'
   desc 'If the group owner of the "cron.allow" file is not set to root, sensitive information could be viewed or
@@ -13,13 +13,9 @@ following command:
 
     # chgrp root /etc/cron.allow'
   impact 0.5
-  tag legacy: ['SV-86679', 'V-72055']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204491'
-  tag rid: 'SV-204491r603261_rule'
-  tag stig_id: 'RHEL-07-021120'
-  tag fix_id: 'F-4615r88666_fix'
+  tag stig_id: 'AMZL-02-721120'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['cron']

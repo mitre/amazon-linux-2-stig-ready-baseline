@@ -1,4 +1,4 @@
-control 'SV-250312' do
+control 'AMZL-02-720021' do
   title 'The Amazon Linux 2 operating system must confine SELinux users to roles that conform to least privilege.'
   desc 'Preventing non-privileged users from executing privileged functions mitigates the risk that unauthorized individuals or processes may gain unnecessary access to information or privileges.
 
@@ -34,12 +34,8 @@ $ sudo semanage -m user_u -R user_r'
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000324-GPOS-00125'
   tag satisfies: nil
-  tag gid: 'V-250312'
-  tag rid: 'SV-250312r877392_rule'
-  tag stig_id: 'RHEL-07-020021'
-  tag fix_id: 'F-53700r792842_fix'
+  tag stig_id: 'AMZL-02-720021'
   tag cci: ['CCI-002165', 'CCI-002235']
-  tag legacy: []
   tag nist: ['AC-3 (4)', 'AC-6 (10)']
   tag subsystems: ['selinux']
   tag 'host'

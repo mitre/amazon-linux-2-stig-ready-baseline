@@ -1,4 +1,4 @@
-control 'SV-204517' do
+control 'AMZL-02-730370' do
   title 'The Amazon Linux 2 operating system must audit all uses of the chown, fchown, fchownat, and
     lchown syscalls.'
   desc 'Without generating audit records that are specific to the security and mission needs of the organization, it
@@ -29,14 +29,10 @@ control 'SV-204517' do
 
 The audit daemon must be restarted for the changes to take effect.'
   impact 0.5
-  tag legacy: ['SV-86721', 'V-72097']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000064-GPOS-00033'
   tag satisfies: ['SRG-OS-000064-GPOS-00033', 'SRG-OS-000392-GPOS-00172', 'SRG-OS-000458-GPOS-00203', 'SRG-OS-000474-GPOS-00219']
-  tag gid: 'V-204517'
-  tag rid: 'SV-204517r809570_rule'
-  tag stig_id: 'RHEL-07-030370'
-  tag fix_id: 'F-4641r809192_fix'
+  tag stig_id: 'AMZL-02-730370'
   tag cci: ['CCI-000126', 'CCI-000172']
   tag nist: ['AU-2 d', 'AU-12 c', 'AU-2 c']
   tag subsystems: ['audit', 'auditd', 'audit_rule']

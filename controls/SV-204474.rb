@@ -1,4 +1,4 @@
-control 'SV-204474' do
+control 'AMZL-02-720690' do
   title 'The Amazon Linux 2 operating system must be configured so that all local initialization files for
     interactive users are owned by the home directory user or root.'
   desc "Local initialization files are used to configure the user's shell environment upon logon. Malicious
@@ -24,13 +24,9 @@ either the directory owner or root with the following command:
 
     # chown smithj /home/smithj/.[^.]*'
   impact 0.5
-  tag legacy: ['V-72029', 'SV-86653']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204474'
-  tag rid: 'SV-204474r603834_rule'
-  tag stig_id: 'RHEL-07-020690'
-  tag fix_id: 'F-4598r462464_fix'
+  tag stig_id: 'AMZL-02-720690'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['init_files']

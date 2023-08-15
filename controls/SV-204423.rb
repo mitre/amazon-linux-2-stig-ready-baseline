@@ -1,4 +1,4 @@
-control 'SV-204423' do
+control 'AMZL-02-710280' do
   title 'The Amazon Linux 2 operating system must be configured so that passwords are a minimum of 15
     characters in length.'
   desc 'The shorter the password, the lower the number of possible combinations that need to be tested before the
@@ -17,13 +17,9 @@ control 'SV-204423' do
     Add the following line to "/etc/security/pwquality.conf" (or modify the line to have the required value):
     minlen = 15'
   impact 0.5
-  tag legacy: ['V-71935', 'SV-86559']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000078-GPOS-00046'
-  tag gid: 'V-204423'
-  tag rid: 'SV-204423r603261_rule'
-  tag stig_id: 'RHEL-07-010280'
-  tag fix_id: 'F-4547r88462_fix'
+  tag stig_id: 'AMZL-02-710280'
   tag cci: ['CCI-000205']
   tag nist: ['IA-5 (1) (a)']
   tag subsystems: ['pwquality', 'password']

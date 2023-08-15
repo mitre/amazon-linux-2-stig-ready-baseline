@@ -1,4 +1,4 @@
-control 'SV-204590' do
+control 'AMZL-02-740350' do
   title 'The Amazon Linux 2 operating system must be configured so that the SSH daemon does not allow
     authentication using rhosts authentication.'
   desc 'Configuring this setting for the SSH daemon provides additional assurance that remote logon via SSH will
@@ -12,13 +12,9 @@ control 'SV-204590' do
     Add the following line in "/etc/ssh/sshd_config", or uncomment the line and set the value to "yes":
     IgnoreRhosts yes'
   impact 0.5
-  tag legacy: ['V-72243', 'SV-86867']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204590'
-  tag rid: 'SV-204590r603261_rule'
-  tag stig_id: 'RHEL-07-040350'
-  tag fix_id: 'F-4714r88963_fix'
+  tag stig_id: 'AMZL-02-740350'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['ssh']

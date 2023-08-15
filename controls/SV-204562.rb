@@ -1,4 +1,4 @@
-control 'SV-204562' do
+control 'AMZL-02-730830' do
   title 'The Amazon Linux 2 operating system must audit all uses of the delete_module syscall.'
   desc 'Without generating audit records that are specific to the security and mission needs of the organization, it
     would be difficult to establish, correlate, and investigate the events relating to an incident or identify those
@@ -26,14 +26,10 @@ Add or update the following rules in "/etc/audit/rules.d/audit.rules":
 
 The audit daemon must be restarted for the changes to take effect.'
   impact 0.5
-  tag legacy: ['V-72189', 'SV-86813']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000471-GPOS-00216'
   tag satisfies: ['SRG-OS-000471-GPOS-00216', 'SRG-OS-000477-GPOS-00222']
-  tag gid: 'V-204562'
-  tag rid: 'SV-204562r833175_rule'
-  tag stig_id: 'RHEL-07-030830'
-  tag fix_id: 'F-4686r833174_fix'
+  tag stig_id: 'AMZL-02-730830'
   tag cci: ['CCI-000172']
   tag nist: ['AU-12 c']
   tag subsystems: ['audit', 'auditd', 'audit_rule']

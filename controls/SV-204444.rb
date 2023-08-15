@@ -1,4 +1,4 @@
-control 'SV-204444' do
+control 'AMZL-02-720020' do
   title 'The Amazon Linux 2 operating system must prevent non-privileged users from executing privileged
     functions to include disabling, circumventing, or altering implemented security safeguards/countermeasures.'
   desc 'Preventing non-privileged users from executing privileged functions mitigates the risk that unauthorized
@@ -38,13 +38,9 @@ control 'SV-204444' do
     Use the following command to map an existing user to the "user_u" SELinux user:
     $ sudo semanage login -m -s user_u <username>'
   impact 0.5
-  tag legacy: ['SV-86595', 'V-71971']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000324-GPOS-00125'
-  tag gid: 'V-204444'
-  tag rid: 'SV-204444r877392_rule'
-  tag stig_id: 'RHEL-07-020020'
-  tag fix_id: 'F-4568r792825_fix'
+  tag stig_id: 'AMZL-02-720020'
   tag cci: ['CCI-002165', 'CCI-002235']
   tag nist: ['AC-3 (4)', 'AC-6 (10)']
   tag subsystems: ['selinux']

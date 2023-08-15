@@ -1,4 +1,4 @@
-control 'SV-204424' do
+control 'AMZL-02-710290' do
   title 'The Amazon Linux 2 operating system must not allow accounts configured with blank or null
     passwords.'
   desc 'If an account has an empty password, anyone could log on and run commands with the privileges of that
@@ -11,15 +11,11 @@ control 'SV-204424' do
 
 Remove any instances of the "nullok" option in "/etc/pam.d/system-auth" and "/etc/pam.d/password-auth" to prevent logons with empty passwords.
 
-Note: Per requirement RHEL-07-010199, RHEL 7 must be configured to not overwrite custom authentication configuration settings while using the authconfig utility, otherwise manual changes to the listed files will be overwritten whenever the authconfig utility is used.'
+Note: Per requirement AMZL-02-710199, RHEL 7 must be configured to not overwrite custom authentication configuration settings while using the authconfig utility, otherwise manual changes to the listed files will be overwritten whenever the authconfig utility is used.'
   impact 0.7
-  tag legacy: ['V-71937', 'SV-86561']
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204424'
-  tag rid: 'SV-204424r880839_rule'
-  tag stig_id: 'RHEL-07-010290'
-  tag fix_id: 'F-4548r880838_fix'
+  tag stig_id: 'AMZL-02-710290'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['pam', 'password']

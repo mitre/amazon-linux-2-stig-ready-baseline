@@ -1,4 +1,4 @@
-control 'SV-204450' do
+control 'AMZL-02-720101' do
   title 'The Amazon Linux 2 operating system must be configured so that the Datagram Congestion Control
     Protocol (DCCP) kernel module is disabled unless required.'
   desc 'Disabling DCCP protects the system against exploitation of any flaws in the protocol implementation.'
@@ -24,13 +24,9 @@ control 'SV-204450' do
     Add or update the line:
     blacklist dccp'
   impact 0.5
-  tag legacy: ['V-77821', 'SV-92517']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000378-GPOS-00163'
-  tag gid: 'V-204450'
-  tag rid: 'SV-204450r853892_rule'
-  tag stig_id: 'RHEL-07-020101'
-  tag fix_id: 'F-4574r88543_fix'
+  tag stig_id: 'AMZL-02-720101'
   tag cci: ['CCI-001958']
   tag nist: ['IA-3']
   tag subsystems: ['dccp', 'kernel_module']

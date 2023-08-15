@@ -1,4 +1,4 @@
-control 'SV-204626' do
+control 'AMZL-02-740750' do
   title 'The Amazon Linux 2 operating system must be configured so that the Network File System (NFS) is
     configured to use RPCSEC_GSS.'
   desc 'When an NFS server is configured to use RPCSEC_SYS, a selected userid and groupid are used to handle
@@ -16,13 +16,9 @@ control 'SV-204626' do
     "sec" option does not have the "sys" setting.
     Ensure the "sec" option is defined as "krb5:krb5i:krb5p".'
   impact 0.5
-  tag legacy: ['SV-86935', 'V-72311']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204626'
-  tag rid: 'SV-204626r603261_rule'
-  tag stig_id: 'RHEL-07-040750'
-  tag fix_id: 'F-4750r89071_fix'
+  tag stig_id: 'AMZL-02-740750'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['nfs', 'etc_fstab']

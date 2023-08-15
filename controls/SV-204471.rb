@@ -1,4 +1,4 @@
-control 'SV-204471' do
+control 'AMZL-02-720660' do
   title 'The Amazon Linux 2 operating system must be configured so that all files and directories
     contained in local interactive user home directories have a valid owner.'
   desc 'Unowned files and directories may be unintentionally inherited if a user is assigned the same User
@@ -17,13 +17,9 @@ control 'SV-204471' do
     Note: The example will be for the user smithj, who has a home directory of "/home/smithj".
     $ sudo chown smithj /home/smithj/<file or directory>'
   impact 0.5
-  tag legacy: ['SV-86647', 'V-72023']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204471'
-  tag rid: 'SV-204471r744105_rule'
-  tag stig_id: 'RHEL-07-020660'
-  tag fix_id: 'F-4595r744104_fix'
+  tag stig_id: 'AMZL-02-720660'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['home_dirs']

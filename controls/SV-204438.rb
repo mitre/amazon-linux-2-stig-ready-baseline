@@ -1,4 +1,4 @@
-control 'SV-204438' do
+control 'AMZL-02-710482' do
   title 'Amazon Linux 2 operating systems version 7.2 or newer with a Basic Input/Output System (BIOS)
     must require authentication upon booting into single-user and maintenance modes.'
   desc 'If the system does not require valid authentication before it boots into single-user or maintenance mode,
@@ -18,13 +18,9 @@ control 'SV-204438' do
     Enter password:
     Confirm password:'
   impact 0.7
-  tag legacy: ['SV-95717', 'V-81005']
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000080-GPOS-00048'
-  tag gid: 'V-204438'
-  tag rid: 'SV-204438r744095_rule'
-  tag stig_id: 'RHEL-07-010482'
-  tag fix_id: 'F-4562r744094_fix'
+  tag stig_id: 'AMZL-02-710482'
   tag cci: ['CCI-000213']
   tag nist: ['AC-3']
   tag subsystems: ['boot', 'bios']

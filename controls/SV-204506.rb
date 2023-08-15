@@ -1,4 +1,4 @@
-control 'SV-204506' do
+control 'AMZL-02-730201' do
   title 'The Amazon Linux 2 operating system must be configured to off-load audit logs onto a different
     system or storage media from the system being audited.'
   desc 'Information stored in one location is vulnerable to accidental or incidental deletion or alteration.
@@ -30,14 +30,10 @@ The audit daemon must be restarted for changes to take effect:
 
 # service auditd restart'
   impact 0.5
-  tag legacy: ['SV-95729', 'V-81017']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000342-GPOS-00133'
   tag satisfies: ['SRG-OS-000342-GPOS-00133', 'SRG-OS-000479-GPOS-00224']
-  tag gid: 'V-204506'
-  tag rid: 'SV-204506r877390_rule'
-  tag stig_id: 'RHEL-07-030201'
-  tag fix_id: 'F-4630r858479_fix'
+  tag stig_id: 'AMZL-02-730201'
   tag cci: ['CCI-001851']
   tag nist: ['AU-4 (1)']
   tag subsystems: ['audit', 'audisp']

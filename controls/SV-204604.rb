@@ -1,4 +1,4 @@
-control 'SV-204604' do
+control 'AMZL-02-740520' do
   title 'The Amazon Linux 2 operating system must enable an application firewall, if available.'
   desc 'Firewalls protect computers from network attacks by blocking or limiting access to open network ports.
     Application firewalls limit which applications are allowed to communicate over the network.'
@@ -25,14 +25,10 @@ control 'SV-204604' do
     Start the firewall via "systemctl" with the following command:
     # systemctl start firewalld)
   impact 0.5
-  tag legacy: ['SV-86897', 'V-72273']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
   tag satisfies: ['SRG-OS-000480-GPOS-00227', 'SRG-OS-000480-GPOS-00231', 'SRG-OS-000480-GPOS-00232']
-  tag gid: 'V-204604'
-  tag rid: 'SV-204604r603261_rule'
-  tag stig_id: 'RHEL-07-040520'
-  tag fix_id: 'F-4728r89005_fix'
+  tag stig_id: 'AMZL-02-740520'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['firewalld', 'iptables']

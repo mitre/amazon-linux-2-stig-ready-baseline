@@ -1,4 +1,4 @@
-control 'SV-204594' do
+control 'AMZL-02-740390' do
   title 'The Amazon Linux 2 operating system must be configured so that the SSH daemon is configured to
     only use the SSHv2 protocol.'
   desc 'SSHv1 is an insecure implementation of the SSH protocol and has many well-known vulnerability exploits.
@@ -18,14 +18,10 @@ control 'SV-204594' do
     Protocol 2
     The SSH service must be restarted for changes to take effect.'
   impact 0.7
-  tag legacy: ['SV-86875', 'V-72251']
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000074-GPOS-00042'
   tag satisfies: ['SRG-OS-000074-GPOS-00042', 'SRG-OS-000480-GPOS-00227']
-  tag gid: 'V-204594'
-  tag rid: 'SV-204594r877396_rule'
-  tag stig_id: 'RHEL-07-040390'
-  tag fix_id: 'F-4718r88975_fix'
+  tag stig_id: 'AMZL-02-740390'
   tag cci: ['CCI-000197', 'CCI-000366']
   tag nist: ['IA-5 (1) (c)', 'CM-6 b']
   tag subsystems: ['ssh']

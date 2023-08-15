@@ -1,4 +1,4 @@
-control 'SV-204454' do
+control 'AMZL-02-720220' do
   title 'The Amazon Linux 2 operating system must enable the SELinux targeted policy.'
   desc 'Without verification of the security functions, security functions may not operate correctly and the failure
     may go unnoticed. Security function is defined as the hardware, software, and/or firmware of the information system
@@ -33,13 +33,9 @@ control 'SV-204454' do
     SELINUXTYPE=targeted
     A reboot is required for the changes to take effect.'
   impact 0.5
-  tag legacy: ['V-71991', 'SV-86615']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000445-GPOS-00199'
-  tag gid: 'V-204454'
-  tag rid: 'SV-204454r853896_rule'
-  tag stig_id: 'RHEL-07-020220'
-  tag fix_id: 'F-36307r602631_fix'
+  tag stig_id: 'AMZL-02-720220'
   tag cci: ['CCI-002165', 'CCI-002696']
   tag nist: ['AC-3 (4)', 'SI-6 a']
   tag subsystems: ['selinux']

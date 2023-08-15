@@ -1,4 +1,4 @@
-control 'SV-204418' do
+control 'AMZL-02-710230' do
   title 'The Amazon Linux 2 operating system must be configured so that passwords for new users are
     restricted to a 24 hours/1 day minimum lifetime.'
   desc "Enforcing a minimum password lifetime helps to prevent repeated password changes to defeat the password
@@ -15,13 +15,9 @@ control 'SV-204418' do
     Add the following line in "/etc/login.defs" (or modify the line to have the required value):
     PASS_MIN_DAYS     1'
   impact 0.5
-  tag legacy: ['V-71925', 'SV-86549']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000075-GPOS-00043'
-  tag gid: 'V-204418'
-  tag rid: 'SV-204418r603261_rule'
-  tag stig_id: 'RHEL-07-010230'
-  tag fix_id: 'F-4542r88447_fix'
+  tag stig_id: 'AMZL-02-710230'
   tag cci: ['CCI-000198']
   tag nist: ['IA-5 (1) (d)']
   tag subsystems: ['login_defs', 'password']

@@ -1,4 +1,4 @@
-control 'SV-204578' do
+control 'AMZL-02-740110' do
   title 'The Amazon Linux 2 7 operating system must implement DoD-approved encryption to protect the
     confidentiality of SSH connections.'
   desc 'Unapproved mechanisms that are used for authentication to the cryptographic module are not verified and
@@ -27,14 +27,10 @@ control 'SV-204578' do
     Ciphers aes256-ctr,aes192-ctr,aes128-ctr
     The SSH service must be restarted for changes to take effect.'
   impact 0.5
-  tag legacy: ['V-72221', 'SV-86845']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000033-GPOS-00014'
   tag satisfies: ['SRG-OS-000033-GPOS-00014', 'SRG-OS-000120-GPOS-00061', 'SRG-OS-000125-GPOS-00065', 'SRG-OS-000250-GPOS-00093', 'SRG-OS-000393-GPOS-00173']
-  tag gid: 'V-204578'
-  tag rid: 'SV-204578r877398_rule'
-  tag stig_id: 'RHEL-07-040110'
-  tag fix_id: 'F-4702r622306_fix'
+  tag stig_id: 'AMZL-02-740110'
   tag cci: ['CCI-000068', 'CCI-000366', 'CCI-000803']
   tag nist: ['AC-17 (2)', 'CM-6 b', 'IA-7']
   tag subsystems: ['ssh']

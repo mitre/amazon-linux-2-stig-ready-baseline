@@ -1,4 +1,4 @@
-control 'SV-204555' do
+control 'AMZL-02-730770' do
   title 'The Amazon Linux 2 operating system must audit all uses of the postqueue command.'
   desc 'Reconstruction of harmful events or forensic analysis is not possible if audit records do not contain enough
     information.
@@ -25,14 +25,10 @@ Add or update the following rule in "/etc/audit/rules.d/audit.rules":
 
 The audit daemon must be restarted for the changes to take effect.'
   impact 0.5
-  tag legacy: ['SV-86801', 'V-72177']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000042-GPOS-00020'
   tag satisfies: ['SRG-OS-000042-GPOS-00020', 'SRG-OS-000392-GPOS-00172']
-  tag gid: 'V-204555'
-  tag rid: 'SV-204555r861062_rule'
-  tag stig_id: 'RHEL-07-030770'
-  tag fix_id: 'F-4679r861061_fix'
+  tag stig_id: 'AMZL-02-730770'
   tag cci: ['CCI-000135', 'CCI-002884']
   tag nist: ['AU-3 (1)', 'MA-4 (1) (a)']
   tag subsystems: ['audit', 'auditd', 'audit_rule']

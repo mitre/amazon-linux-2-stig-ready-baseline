@@ -1,4 +1,4 @@
-control 'SV-204568' do
+control 'AMZL-02-730874' do
   title 'The Amazon Linux 2 operating system must generate audit records for all account creations,
     modifications, disabling, and termination events that affect /etc/security/opasswd.'
   desc 'Without generating audit records that are specific to the security and mission needs of the organization, it
@@ -19,13 +19,9 @@ control 'SV-204568' do
     The audit daemon must be restarted for the changes to take effect:
     # systemctl restart auditd'
   impact 0.5
-  tag legacy: ['SV-87825', 'V-73173']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000004-GPOS-00004'
-  tag gid: 'V-204568'
-  tag rid: 'SV-204568r853982_rule'
-  tag stig_id: 'RHEL-07-030874'
-  tag fix_id: 'F-4692r744114_fix'
+  tag stig_id: 'AMZL-02-730874'
   tag cci: ['CCI-000018', 'CCI-000172', 'CCI-001403', 'CCI-002130']
   tag nist: ['AC-2 (4)', 'AU-12 c', 'AC-2 (4)', 'AC-2 (4)']
   tag subsystems: ['audit', 'auditd', 'audit_rule']

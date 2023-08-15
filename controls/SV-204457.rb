@@ -1,4 +1,4 @@
-control 'SV-204457' do
+control 'AMZL-02-720240' do
   title 'The Amazon Linux 2 operating system must define default permissions for all authenticated users
     in such a way that the user can only read and modify their own files.'
   desc 'Setting the most restrictive default permissions ensures that when new accounts are created, they do not
@@ -17,13 +17,9 @@ control 'SV-204457' do
     Add or edit the line for the "UMASK" parameter in "/etc/login.defs" file to "077":
     UMASK  077'
   impact 0.5
-  tag legacy: ['SV-86619', 'V-71995']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00228'
-  tag gid: 'V-204457'
-  tag rid: 'SV-204457r603261_rule'
-  tag stig_id: 'RHEL-07-020240'
-  tag fix_id: 'F-4581r88564_fix'
+  tag stig_id: 'AMZL-02-720240'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['login_defs']

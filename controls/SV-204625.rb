@@ -1,4 +1,4 @@
-control 'SV-204625' do
+control 'AMZL-02-740740' do
   title 'The Amazon Linux 2 operating system must not be performing packet forwarding unless the system is
     a router.'
   desc 'Routing protocol daemons are typically used on routers to exchange network topology information with other
@@ -29,13 +29,9 @@ directory (or modify the line to have the required value):
 
     # sysctl --system'
   impact 0.5
-  tag legacy: ['SV-86933', 'V-72309']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204625'
-  tag rid: 'SV-204625r880824_rule'
-  tag stig_id: 'RHEL-07-040740'
-  tag fix_id: 'F-4749r880823_fix'
+  tag stig_id: 'AMZL-02-740740'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['kernel_parameter']

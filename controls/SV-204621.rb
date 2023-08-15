@@ -1,4 +1,4 @@
-control 'SV-204621' do
+control 'AMZL-02-740700' do
   title 'The Amazon Linux 2 operating system must not have the Trivial File Transfer Protocol (TFTP)
     server package installed if not required for operational support.'
   desc 'If TFTP is required for operational support (such as the transmission of router configurations) its use must
@@ -12,13 +12,9 @@ control 'SV-204621' do
   desc 'fix', 'Remove the TFTP package from the system with the following command:
     # yum remove tftp-server'
   impact 0.7
-  tag legacy: ['SV-86925', 'V-72301']
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204621'
-  tag rid: 'SV-204621r853996_rule'
-  tag stig_id: 'RHEL-07-040700'
-  tag fix_id: 'F-4745r89056_fix'
+  tag stig_id: 'AMZL-02-740700'
   tag cci: ['CCI-000318', 'CCI-000368', 'CCI-001812', 'CCI-001813', 'CCI-001814']
   tag nist: ['CM-3 f', 'CM-6 c', 'CM-11 (2)', 'CM-5 (1)', 'CM-5 (1) (a)']
   tag subsystems: ['tftp']

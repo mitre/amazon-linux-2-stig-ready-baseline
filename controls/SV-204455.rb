@@ -1,4 +1,4 @@
-control 'SV-204455' do
+control 'AMZL-02-720230' do
   title 'The Amazon Linux 2 operating system must be configured so that the x86 Ctrl-Alt-Delete key
     sequence is disabled on the command line.'
   desc 'A locally logged-on user who presses Ctrl-Alt-Delete, when at the console, can reboot the system. If
@@ -25,13 +25,9 @@ $ sudo systemctl disable ctrl-alt-del.target
 
 $ sudo systemctl mask ctrl-alt-del.target'
   impact 0.7
-  tag legacy: ['SV-86617', 'V-71993']
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204455'
-  tag rid: 'SV-204455r833106_rule'
-  tag stig_id: 'RHEL-07-020230'
-  tag fix_id: 'F-4579r833105_fix'
+  tag stig_id: 'AMZL-02-720230'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['gui', 'general']

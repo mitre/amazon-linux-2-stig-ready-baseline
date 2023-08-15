@@ -1,4 +1,4 @@
-control 'SV-204396' do
+control 'AMZL-02-710060' do
   title 'The Amazon Linux 2 operating system must enable a user session lock until that user
     re-establishes access using established identification and authentication procedures.'
   desc 'A session lock is a temporary action taken when a user stops work and moves away from the immediate physical
@@ -28,14 +28,10 @@ If the "lock-enabled" setting is missing or is not set to "true", this is a find
     # dconf update
     Users must log out and back in again before the system-wide settings take effect.)
   impact 0.5
-  tag legacy: ['SV-86515', 'V-71891']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000028-GPOS-00009'
   tag satisfies: ['SRG-OS-000028-GPOS-00009', 'SRG-OS-000030-GPOS-00011']
-  tag gid: 'V-204396'
-  tag rid: 'SV-204396r880746_rule'
-  tag stig_id: 'RHEL-07-010060'
-  tag fix_id: 'F-4520r880745_fix'
+  tag stig_id: 'AMZL-02-710060'
   tag cci: ['CCI-000056']
   tag nist: ['AC-11 b']
   tag subsystems: ['session', 'lock', 'gui', 'screensaver']

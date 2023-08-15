@@ -1,4 +1,4 @@
-control 'SV-204472' do
+control 'AMZL-02-720670' do
   title 'The Amazon Linux 2 operating system must be configured so that all files and directories
     contained in local interactive user home directories are group-owned by a group of which the home directory owner is
     a member.'
@@ -27,13 +27,9 @@ control 'SV-204472' do
     users group.
     # chgrp users /home/smithj/<file>)
   impact 0.5
-  tag legacy: ['V-72025', 'SV-86649']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204472'
-  tag rid: 'SV-204472r603261_rule'
-  tag stig_id: 'RHEL-07-020670'
-  tag fix_id: 'F-4596r88609_fix'
+  tag stig_id: 'AMZL-02-720670'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['home_dirs']

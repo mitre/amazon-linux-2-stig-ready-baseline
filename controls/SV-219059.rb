@@ -1,4 +1,4 @@
-control 'SV-219059' do
+control 'AMZL-02-720111' do
   title 'The Amazon Linux 2 operating system must disable the graphical user interface automounter unless required.'
   desc 'Automatically mounting file systems permits easy introduction of unknown devices, thereby facilitating malicious activity.'
   desc 'check', 'Note: If the operating system does not have a graphical user interface installed, this requirement is Not Applicable.
@@ -57,12 +57,8 @@ Run the following command to update the database:
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000114-GPOS-00059'
   tag satisfies: ['SRG-OS-000114-GPOS-00059', 'SRG-OS-000378-GPOS-00163', 'SRG-OS-000480-GPOS-00227']
-  tag gid: 'V-219059'
-  tag rid: 'SV-219059r854002_rule'
-  tag stig_id: 'RHEL-07-020111'
-  tag fix_id: 'F-36318r602663_fix'
+  tag stig_id: 'AMZL-02-720111'
   tag cci: ['CCI-000366', 'CCI-000778', 'CCI-001958']
-  tag legacy: ['V-100023', 'SV-109127']
   tag nist: ['CM-6 b', 'IA-3']
   tag subsystems: ['gui', 'automount']
   tag 'host'

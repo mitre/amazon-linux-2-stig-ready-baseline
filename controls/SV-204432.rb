@@ -1,4 +1,4 @@
-control 'SV-204432' do
+control 'AMZL-02-710440' do
   title 'The Amazon Linux 2 operating system must not allow an unattended or automatic logon to the system
     via a graphical user interface.'
   desc 'Failure to restrict system access to authenticated users negatively impacts operating system security.'
@@ -17,13 +17,9 @@ control 'SV-204432' do
     [daemon]
     AutomaticLoginEnable=false'
   impact 0.7
-  tag legacy: ['V-71953', 'SV-86577']
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000480-GPOS-00229'
-  tag gid: 'V-204432'
-  tag rid: 'SV-204432r877377_rule'
-  tag stig_id: 'RHEL-07-010440'
-  tag fix_id: 'F-4556r88489_fix'
+  tag stig_id: 'AMZL-02-710440'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['gdm']

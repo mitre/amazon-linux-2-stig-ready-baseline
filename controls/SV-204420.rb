@@ -1,4 +1,4 @@
-control 'SV-204420' do
+control 'AMZL-02-710250' do
   title 'The Amazon Linux 2 operating system must be configured so that passwords for new users are
     restricted to a 60-day maximum lifetime.'
   desc 'Any password, no matter how complex, can eventually be cracked. Therefore, passwords need to be changed
@@ -14,13 +14,9 @@ control 'SV-204420' do
     Add the following line in "/etc/login.defs" (or modify the line to have the required value):
     PASS_MAX_DAYS     60'
   impact 0.5
-  tag legacy: ['V-71929', 'SV-86553']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000076-GPOS-00044'
-  tag gid: 'V-204420'
-  tag rid: 'SV-204420r603261_rule'
-  tag stig_id: 'RHEL-07-010250'
-  tag fix_id: 'F-4544r88453_fix'
+  tag stig_id: 'AMZL-02-710250'
   tag cci: ['CCI-000199']
   tag nist: ['IA-5 (1) (d)']
   tag subsystems: ['login_defs', 'password']

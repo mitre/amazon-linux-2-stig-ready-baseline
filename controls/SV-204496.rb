@@ -1,4 +1,4 @@
-control 'SV-204496' do
+control 'AMZL-02-721340' do
   title 'The Amazon Linux 2 operating system must use a separate file system for /tmp (or equivalent).'
   desc 'The use of separate file systems for different paths can protect the system from failures resulting from a
     file system becoming full or failing.'
@@ -17,13 +17,9 @@ control 'SV-204496' do
     OR
     Edit the "/etc/fstab" file and ensure the "/tmp" directory is defined in the fstab with a device and mount point.'
   impact 0.3
-  tag legacy: ['SV-86689', 'V-72065']
   tag severity: 'low'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204496'
-  tag rid: 'SV-204496r603261_rule'
-  tag stig_id: 'RHEL-07-021340'
-  tag fix_id: 'F-36309r602637_fix'
+  tag stig_id: 'AMZL-02-721340'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['file_system', 'tmp']

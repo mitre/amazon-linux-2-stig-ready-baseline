@@ -1,4 +1,4 @@
-control 'SV-204413' do
+control 'AMZL-02-710180' do
   title 'The Amazon Linux 2 operating system must be configured so that when passwords are changed the
     number of repeating consecutive characters must not be more than three characters.'
   desc 'Use of a complex password helps to increase the time and resources required to compromise the password.
@@ -18,13 +18,9 @@ control 'SV-204413' do
     Add the following line to "/etc/security/pwquality.conf conf" (or modify the line to have the required value):
     maxrepeat = 3'
   impact 0.5
-  tag legacy: ['SV-86539', 'V-71915']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000072-GPOS-00040'
-  tag gid: 'V-204413'
-  tag rid: 'SV-204413r603261_rule'
-  tag stig_id: 'RHEL-07-010180'
-  tag fix_id: 'F-4537r88432_fix'
+  tag stig_id: 'AMZL-02-710180'
   tag cci: ['CCI-000195']
   tag nist: ['IA-5 (1) (b)']
   tag subsystems: ['pwquality', 'password']

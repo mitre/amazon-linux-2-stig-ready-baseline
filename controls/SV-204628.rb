@@ -1,4 +1,4 @@
-control 'SV-204628' do
+control 'AMZL-02-740810' do
   title 'The Amazon Linux 2 operating system access control program must be configured to grant or deny
     system access to specific hosts and services.'
   desc 'If the systems access control program is not configured with appropriate rules for allowing and denying
@@ -43,13 +43,9 @@ control 'SV-204628' do
     If "firewalld" is not "active", enable "tcpwrappers" by configuring "/etc/hosts.allow" and "/etc/hosts.deny" to
     allow or deny access to specific hosts.'
   impact 0.5
-  tag legacy: ['SV-86939', 'V-72315']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204628'
-  tag rid: 'SV-204628r603261_rule'
-  tag stig_id: 'RHEL-07-040810'
-  tag fix_id: 'F-4752r89077_fix'
+  tag stig_id: 'AMZL-02-740810'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['iptables', 'firewall']

@@ -1,4 +1,4 @@
-control 'SV-204596' do
+control 'AMZL-02-740410' do
   title 'The Amazon Linux 2 operating system must be configured so that the SSH public host key files have
     mode 0644 or less permissive.'
   desc 'If a public host key file is modified by an unauthorized user, the SSH service may be compromised.'
@@ -15,13 +15,9 @@ control 'SV-204596' do
     Change the mode of public host key files under "/etc/ssh" to "0644" with the following command:
     # chmod 0644 /etc/ssh/*.key.pub'
   impact 0.5
-  tag legacy: ['V-72255', 'SV-86879']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204596'
-  tag rid: 'SV-204596r603261_rule'
-  tag stig_id: 'RHEL-07-040410'
-  tag fix_id: 'F-4720r88981_fix'
+  tag stig_id: 'AMZL-02-740410'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['ssh']

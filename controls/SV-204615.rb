@@ -1,4 +1,4 @@
-control 'SV-204615' do
+control 'AMZL-02-740641' do
   title 'The Amazon Linux 2 operating system must ignore Internet Protocol version 4 (IPv4) Internet
     Control Message Protocol (ICMP) redirect messages.'
   desc "ICMP redirect messages are used by routers to inform hosts that a more direct route exists for a particular
@@ -28,13 +28,9 @@ following line to "/etc/sysctl.conf" or a configuration file in the
 
     # sysctl --system'
   impact 0.5
-  tag legacy: ['SV-87827', 'V-73175']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204615'
-  tag rid: 'SV-204615r880815_rule'
-  tag stig_id: 'RHEL-07-040641'
-  tag fix_id: 'F-4739r880814_fix'
+  tag stig_id: 'AMZL-02-740641'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['kernel_parameter', 'ipv4']

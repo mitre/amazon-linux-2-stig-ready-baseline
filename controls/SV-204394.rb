@@ -1,4 +1,4 @@
-control 'SV-204394' do
+control 'AMZL-02-710040' do
   title 'The Amazon Linux 2 operating system must display the approved Standard Mandatory DoD Notice and
     Consent Banner before granting local or remote access to the system via a graphical user logon.'
   desc 'Display of a standardized and approved use notification before granting access to the operating system
@@ -67,14 +67,10 @@ control 'SV-204394' do
     Run the following command to update the database:
     # dconf update)
   impact 0.5
-  tag legacy: ['V-71861', 'SV-86485']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000023-GPOS-00006'
   tag satisfies: ['SRG-OS-000023-GPOS-00006', 'SRG-OS-000024-GPOS-00007', 'SRG-OS-000228-GPOS-00088']
-  tag gid: 'V-204394'
-  tag rid: 'SV-204394r603261_rule'
-  tag stig_id: 'RHEL-07-010040'
-  tag fix_id: 'F-4518r297479_fix'
+  tag stig_id: 'AMZL-02-710040'
   tag cci: ['CCI-000048']
   tag nist: ['AC-8 a']
   tag subsystems: ['gdm']

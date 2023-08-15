@@ -1,4 +1,4 @@
-control 'SV-204409' do
+control 'AMZL-02-710140' do
   title 'The Amazon Linux 2 operating system must be configured so that when passwords are changed or new
     passwords are assigned, the new password must contain at least one numeric character.'
   desc 'Use of a complex password helps to increase the time and resources required to compromise the password.
@@ -18,13 +18,9 @@ control 'SV-204409' do
     Add the following line to /etc/security/pwquality.conf (or modify the line to have the required value):
     dcredit = -1'
   impact 0.5
-  tag legacy: ['SV-86531', 'V-71907']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000071-GPOS-00039'
-  tag gid: 'V-204409'
-  tag rid: 'SV-204409r603261_rule'
-  tag stig_id: 'RHEL-07-010140'
-  tag fix_id: 'F-4533r88420_fix'
+  tag stig_id: 'AMZL-02-710140'
   tag cci: ['CCI-000194']
   tag nist: ['IA-5 (1) (a)']
   tag subsystems: ['pwquality', 'password']

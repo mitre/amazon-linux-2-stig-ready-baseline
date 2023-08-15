@@ -1,4 +1,4 @@
-control 'SV-204579' do
+control 'AMZL-02-740160' do
   title 'The Amazon Linux 2 operating system must be configured so that all network connections associated
     with a communication session are terminated at the end of the session or after 15 minutes of inactivity from the
     user at a command prompt, except to fulfill documented and validated mission requirements.'
@@ -27,13 +27,9 @@ If "TMOUT" is not set to "900" or less to enforce session termination after inac
     #!/bin/bash
     declare -xr TMOUT=900'
   impact 0.5
-  tag legacy: ['SV-86847', 'V-72223']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000163-GPOS-00072'
-  tag gid: 'V-204579'
-  tag rid: 'SV-204579r861070_rule'
-  tag stig_id: 'RHEL-07-040160'
-  tag fix_id: 'F-4703r646843_fix'
+  tag stig_id: 'AMZL-02-740160'
   tag cci: ['CCI-001133', 'CCI-002361']
   tag nist: ['SC-10', 'AC-12']
   tag subsystems: ['user_profile']

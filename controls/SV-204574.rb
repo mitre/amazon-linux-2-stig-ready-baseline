@@ -1,4 +1,4 @@
-control 'SV-204574' do
+control 'AMZL-02-731000' do
   title 'The Amazon Linux 2 operating system must send rsyslog output to a log aggregation server.'
   desc 'Sending rsyslog output to another system ensures that the logs cannot be removed or modified in the event
     that the system is compromised or has a hardware failure.'
@@ -16,13 +16,9 @@ control 'SV-204574' do
     send all "rsyslog" output to a log aggregation system:
     *.* @@<log aggregation system name>'
   impact 0.5
-  tag legacy: ['SV-86833', 'V-72209']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204574'
-  tag rid: 'SV-204574r603261_rule'
-  tag stig_id: 'RHEL-07-031000'
-  tag fix_id: 'F-4698r88915_fix'
+  tag stig_id: 'AMZL-02-731000'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['rsyslog']

@@ -1,4 +1,4 @@
-control 'SV-204565' do
+control 'AMZL-02-730871' do
   title 'The Amazon Linux 2 operating system must generate audit records for all account creations,
     modifications, disabling, and termination events that affect /etc/group.'
   desc 'Without generating audit records that are specific to the security and mission needs of the organization, it
@@ -18,13 +18,9 @@ control 'SV-204565' do
     -w /etc/group -p wa -k identity
     The audit daemon must be restarted for the changes to take effect.'
   impact 0.5
-  tag legacy: ['SV-87817', 'V-73165']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000004-GPOS-00004'
-  tag gid: 'V-204565'
-  tag rid: 'SV-204565r853979_rule'
-  tag stig_id: 'RHEL-07-030871'
-  tag fix_id: 'F-4689r88888_fix'
+  tag stig_id: 'AMZL-02-730871'
   tag cci: ['CCI-000018', 'CCI-000172', 'CCI-001403', 'CCI-002130']
   tag nist: ['AC-2 (4)', 'AU-12 c', 'AC-2 (4)', 'AC-2 (4)']
   tag subsystems: ['audit', 'auditd', 'audit_rule']

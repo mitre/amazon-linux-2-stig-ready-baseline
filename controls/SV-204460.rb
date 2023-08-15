@@ -1,4 +1,4 @@
-control 'SV-204460' do
+control 'AMZL-02-720270' do
   title 'The Amazon Linux 2 operating system must not have unnecessary accounts.'
   desc 'Accounts providing no operational purpose provide additional opportunities for system compromise.
     Unnecessary accounts include user accounts for individuals not requiring access to the system and application
@@ -25,13 +25,9 @@ control 'SV-204460' do
     administrative-level actions.
     Document all authorized accounts on the system.'
   impact 0.5
-  tag legacy: ['SV-86625', 'V-72001']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204460'
-  tag rid: 'SV-204460r603261_rule'
-  tag stig_id: 'RHEL-07-020270'
-  tag fix_id: 'F-4584r88573_fix'
+  tag stig_id: 'AMZL-02-720270'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['accounts']

@@ -1,4 +1,4 @@
-control 'SV-204479' do
+control 'AMZL-02-720900' do
   title 'The Amazon Linux 2 operating system must be configured so that all system device files are
     correctly labeled to prevent unauthorized modification.'
   desc 'If an unauthorized or modified device is allowed to exist on the system, there is the possibility the system
@@ -29,13 +29,9 @@ command:
 
     # sudo rpm -Uvh <packagename>'
   impact 0.5
-  tag legacy: ['SV-86663', 'V-72039']
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
-  tag gid: 'V-204479'
-  tag rid: 'SV-204479r853899_rule'
-  tag stig_id: 'RHEL-07-020900'
-  tag fix_id: 'F-4603r88630_fix'
+  tag stig_id: 'AMZL-02-720900'
   tag cci: ['CCI-000318', 'CCI-000368', 'CCI-001812', 'CCI-001813', 'CCI-001814']
   tag nist: ['CM-3 f', 'CM-6 c', 'CM-11 (2)', 'CM-5 (1)', 'CM-5 (1) (a)']
   tag subsystems: ['system_device', 'device_files']

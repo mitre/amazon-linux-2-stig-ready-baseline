@@ -1,4 +1,4 @@
-control 'SV-204433' do
+control 'AMZL-02-710450' do
   title 'The Amazon Linux 2 operating system must not allow an unrestricted logon to the system.'
   desc 'Failure to restrict system access to authenticated users negatively impacts operating system security.'
   desc 'check', 'Verify the operating system does not allow an unrestricted logon to the system via a graphical user
@@ -16,13 +16,9 @@ control 'SV-204433' do
     [daemon]
     TimedLoginEnable=false'
   impact 0.7
-  tag legacy: ['V-71955', 'SV-86579']
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000480-GPOS-00229'
-  tag gid: 'V-204433'
-  tag rid: 'SV-204433r877377_rule'
-  tag stig_id: 'RHEL-07-010450'
-  tag fix_id: 'F-4557r88492_fix'
+  tag stig_id: 'AMZL-02-710450'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
   tag subsystems: ['gdm']
