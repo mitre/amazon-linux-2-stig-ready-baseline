@@ -13,7 +13,7 @@ control 'AMZL-02-720660' do
     -rw-r--r-- 1 smithj smithj 231 Mar  5 17:06 file3
     If any files or directories are found without an owner, this is a finding.)
   desc 'fix', 'Either remove all files and directories from the system that do not have a valid user, or assign a
-    valid user to all unowned files and directories on RHEL 7 with the "chown" command:
+    valid user to all unowned files and directories on Amazon Linux 2 with the "chown" command:
     Note: The example will be for the user smithj, who has a home directory of "/home/smithj".
     $ sudo chown smithj /home/smithj/<file or directory>'
   impact 0.5

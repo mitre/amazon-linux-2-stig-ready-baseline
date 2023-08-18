@@ -28,6 +28,7 @@ If conflicting results are returned, this is a finding.'
   impact 0.5
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
+  tag satisfies: ['SRG-OS-000433-GPOS-00193']
   tag stig_id: 'AMZL-02-740201'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']

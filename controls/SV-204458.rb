@@ -2,17 +2,11 @@ control 'AMZL-02-720250' do
   title 'The Amazon Linux 2 operating system must be a vendor supported release.'
   desc 'An operating system release is considered "supported" if the vendor continues to provide security patches
     for the product. With an unsupported release, it will not be possible to resolve security issues discovered in the
-    system software.
-    Red Hat offers the Extended Update Support (EUS) Add-On to a Amazon Linux 2 subscription, for a fee, for
-    those customers who wish to standardize on a specific minor release for an extended period. RHEL 7.7 marks the final
-    minor release that EUS will be available, while 7.9 is the final minor release overall.'
+    system software.'
   desc 'check', 'Verify the version of the operating system is vendor supported.
     Check the version of the operating system with the following command:
-    # cat /etc/redhat-release
-    Amazon Linux 2 Server release 7.9 (Maipo)
-    Current End of Extended Update Support for RHEL 7.6 is 31 May 2021.
-    Current End of Extended Update Support for RHEL 7.7 is 30 August 2021.
-    Current End of Maintenance Support for RHEL 7.9 is 30 June 2024.
+    # cat /etc/system-releasecat /etc/system-release-cpe
+    cpe:2.3:o:amazon:amazon_linux:2
     If the release is not supported by the vendor, this is a finding.'
   desc 'fix', 'Upgrade to a supported version of the operating system.'
   impact 0.7
@@ -25,30 +19,7 @@ control 'AMZL-02-720250' do
   tag 'host'
   tag 'container'
 
-  release = os.release
-  if !release.match(/^7\.[6789]/)
-    describe "RHEL #{release}" do
-      it 'is not a supported release' do
-        supported_releases = ['7.6', '7.7', '7.8', '7.9']
-        fail_msg = "It should be one of the following supported releases: #{supported_releases}"
-        expect(release).to be_between(7.6, 7.9), fail_msg
-      end
-    end
-  else
-    EOMS_DATE = case release
-                when /^7\.6/
-                  '31 May 2021'
-                when /^7\.7/
-                  '30 August 2021'
-                when /^7\.8/
-                  '30 June 2024'
-                when /^7\.9/
-                  '30 June 2024'
-                end
-
-    describe "The release \"#{release}\" must still be within the support window, ending #{EOMS_DATE}" do
-      subject { Date.today <= Date.parse(EOMS_DATE) }
-      it { should be true }
-    end
+  describe "Manually review that the release is not supported by the vendor" do
+    skip "Manually review that the release is not supported by the vendor"
   end
 end

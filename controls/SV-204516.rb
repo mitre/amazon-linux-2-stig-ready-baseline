@@ -23,6 +23,7 @@ control 'AMZL-02-730360' do
   impact 0.5
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000327-GPOS-00127'
+  tag satisfies: ['SRG-OS-000326-GPOS-00126', 'SRG-OS-000327-GPOS-00127']
   tag stig_id: 'AMZL-02-730360'
   tag cci: ['CCI-002234']
   tag nist: ['AC-6 (9)']

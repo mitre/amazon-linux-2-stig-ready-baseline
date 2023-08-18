@@ -4,7 +4,7 @@ control 'AMZL-02-710271' do
 
 Emergency accounts are different from infrequently used accounts (i.e., local logon accounts used by the organization's system administrators when network or normal logon/access is not available). Infrequently used accounts are not subject to automatic termination dates. Emergency accounts are accounts created in response to crisis situations, usually for use by maintenance personnel. The automatic expiration or disabling time period may be extended as needed until the crisis is resolved; however, it must not be extended indefinitely. A permanent account should be established for privileged users who need long-term maintenance accounts.
 
-To address access requirements, many RHEL systems can be integrated with enterprise-level authentication/access mechanisms that meet or exceed access control policy requirements."
+To address access requirements, many Amazon Linux 2 systems can be integrated with enterprise-level authentication/access mechanisms that meet or exceed access control policy requirements."
   desc 'check', 'Verify emergency accounts have been provisioned with an expiration date of 72 hours.
 
 For every existing emergency account, run the following command to obtain its account expiration information.

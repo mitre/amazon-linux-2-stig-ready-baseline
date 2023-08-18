@@ -21,6 +21,7 @@ control 'AMZL-02-741010' do
   impact 0.5
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000424-GPOS-00188'
+  tag satisfies: ['SRG-OS-000299-GPOS-00117', 'SRG-OS-000300-GPOS-00118', 'SRG-OS-000481-GPOS-000481']
   tag stig_id: 'AMZL-02-741010'
   tag cci: ['CCI-001443', 'CCI-001444', 'CCI-002418']
   tag nist: ['AC-18 (1)', 'AC-18 (1)', 'SC-8']

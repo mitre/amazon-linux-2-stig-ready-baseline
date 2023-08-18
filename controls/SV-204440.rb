@@ -3,7 +3,7 @@ control 'AMZL-02-710491' do
     (UEFI) must require authentication upon booting into single-user and maintenance modes.'
   desc 'If the system does not require valid authentication before it boots into single-user or maintenance mode,
     anyone who invokes single-user or maintenance mode is granted privileged access to all files on the system. GRUB 2
-    is the default boot loader for RHEL 7 and is designed to require a password to boot into single-user mode or make
+    is the default boot loader for Amazon Linux 2 and is designed to require a password to boot into single-user mode or make
     modifications to the boot menu.'
   desc 'check', 'For systems that use BIOS, this is Not Applicable.
     For systems that are running a version of RHEL prior to 7.2, this is Not Applicable.

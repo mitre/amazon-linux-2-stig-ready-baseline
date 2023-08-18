@@ -21,7 +21,7 @@ Add the following line in "/etc/pam.d/system-auth":
 Add the following line in "/etc/pam.d/password-auth":
      pam_unix.so sha512 shadow try_first_pass use_authtok
 
-Note: Per requirement AMZL-02-710199, RHEL 7 must be configured to not overwrite custom authentication configuration settings while using the authconfig utility, otherwise manual changes to the listed files will be overwritten whenever the authconfig utility is used.'
+Note: Per requirement AMZL-02-710199, Amazon Linux 2 must be configured to not overwrite custom authentication configuration settings while using the authconfig utility, otherwise manual changes to the listed files will be overwritten whenever the authconfig utility is used.'
   impact 0.5
   tag severity: 'medium'
   tag gtitle: 'SRG-OS-000073-GPOS-00041'

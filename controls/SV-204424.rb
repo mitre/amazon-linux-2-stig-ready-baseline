@@ -11,7 +11,7 @@ control 'AMZL-02-710290' do
 
 Remove any instances of the "nullok" option in "/etc/pam.d/system-auth" and "/etc/pam.d/password-auth" to prevent logons with empty passwords.
 
-Note: Per requirement AMZL-02-710199, RHEL 7 must be configured to not overwrite custom authentication configuration settings while using the authconfig utility, otherwise manual changes to the listed files will be overwritten whenever the authconfig utility is used.'
+Note: Per requirement AMZL-02-710199, Amazon Linux 2 must be configured to not overwrite custom authentication configuration settings while using the authconfig utility, otherwise manual changes to the listed files will be overwritten whenever the authconfig utility is used.'
   impact 0.7
   tag severity: 'high'
   tag gtitle: 'SRG-OS-000480-GPOS-00227'
