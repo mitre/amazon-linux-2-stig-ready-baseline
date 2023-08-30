@@ -302,7 +302,7 @@ inputs:
   - name: grub_uefi_main_cfg
     desc: Main grub boot config file
     type: String
-    value: "/boot/efi/EFI/redhat/grub.cfg"
+    value: "/boot/efi/EFI/amzn/grub.cfg"
 
   - name: grub_user_boot_files
     desc: Grub boot config files
@@ -314,7 +314,7 @@ inputs:
     desc: Grub boot config files
     type: Array
     value:
-      - "/boot/efi/EFI/redhat/user.cfg"
+      - "/boot/efi/EFI/amzn/user.cfg"
 
   # SV-204444
   - name: admin_logins
