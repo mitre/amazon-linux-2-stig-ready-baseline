@@ -1,12 +1,11 @@
 control 'AMZL-02-710482' do
-  title 'Amazon Linux 2 operating systems version 7.2 or newer with a Basic Input/Output System (BIOS)
+  title 'Amazon Linux 2 operating systems with a Basic Input/Output System (BIOS)
     must require authentication upon booting into single-user and maintenance modes.'
   desc 'If the system does not require valid authentication before it boots into single-user or maintenance mode,
     anyone who invokes single-user or maintenance mode is granted privileged access to all files on the system. GRUB 2
     is the default boot loader for Amazon Linux 2 and is designed to require a password to boot into single-user mode or make
     modifications to the boot menu.'
   desc 'check', 'For systems that use UEFI, this is Not Applicable.
-    For systems that are running a version of RHEL prior to 7.2, this is Not Applicable.
     Check to see if an encrypted grub superusers password is set. On systems that use a BIOS, use the following command:
     $ sudo grep -iw grub2_password /boot/grub2/user.cfg
     GRUB2_PASSWORD=grub.pbkdf2.sha512.[password_hash]
@@ -36,17 +35,12 @@ control 'AMZL-02-710482' do
     describe 'System running UEFI' do
       skip 'The System is running UEFI, this control is Not Applicable.'
     end
-  elsif os[:release] >= '7.2'
+  else
     impact 0.7
     input('grub_user_boot_files').each do |grub_user_file|
       describe parse_config_file(grub_user_file) do
         its('GRUB2_PASSWORD') { should include 'grub.pbkdf2.sha512' }
       end
-    end
-  else
-    impact 0.0
-    describe 'System running version of RHEL prior to 7.2' do
-      skip 'The System is running an outdated version of RHEL, this control is Not Applicable.'
     end
   end
 end
