@@ -15,7 +15,7 @@ control 'AMZL-02-720250' do
   tag stig_id: 'AMZL-02-720250'
   tag cci: ['CCI-000366']
   tag nist: ['CM-6 b']
-  tag subsystems: ['redhat_release']
+  tag subsystems: ['supported_release']
   tag 'host'
   tag 'container'
 
