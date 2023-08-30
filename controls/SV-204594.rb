@@ -3,11 +3,7 @@ control 'AMZL-02-740390' do
     only use the SSHv2 protocol.'
   desc 'SSHv1 is an insecure implementation of the SSH protocol and has many well-known vulnerability exploits.
     Exploits of the SSH daemon could provide immediate root access to the system.'
-  desc 'check', 'Check the version of the operating system with the following command:
-    # cat /etc/redhat-release
-    If the release is 7.4 or newer this requirement is Not Applicable.
-    Verify the SSH daemon is configured to only use the SSHv2 protocol.
-    Check that the SSH daemon is configured to only use the SSHv2 protocol with the following command:
+  desc 'check', 'Check that the SSH daemon is configured to only use the SSHv2 protocol with the following command:
     # grep -i protocol /etc/ssh/sshd_config
     Protocol 2
     #Protocol 1,2
@@ -29,18 +25,13 @@ control 'AMZL-02-740390' do
 
   if virtualization.system.eql?('docker') && !file('/etc/sysconfig/sshd').exist?
     impact 0.0
-    describe 'Control not applicable - SSH is not installed within containerized RHEL' do
-      skip 'Control not applicable - SSH is not installed within containerized RHEL'
-    end
-  elsif os.release.to_f >= 7.4
-
-    impact 0.0
-    describe "The release is #{os.release}" do
-      skip 'The release is newer than 7.4; this control is Not Applicable.'
+    describe 'Control not applicable - SSH is not installed within containerized AMZN' do
+      skip 'Control not applicable - SSH is not installed within containerized AMZN'
     end
   else
-    describe sshd_config do
-      its('Protocol') { should cmp '2' }
+    impact 0.0
+    describe "Amazon Linux 2 uses the more recent version of SSH whereby Protocol 2 is configured by default and cannot be downgraded to 1. Not Applicable." do
+      skip 'Amazon Linux 2 uses the more recent version of SSH whereby Protocol 2 is configured by default and cannot be downgraded to 1. Not Applicable.'
     end
   end
 end
