@@ -14,7 +14,7 @@ control 'AMZL-02-721350' do
     If a "dracut-fips" package is installed, check to see if the kernel command line is configured to use FIPS mode with
     the following command:
     Note: GRUB 2 reads its configuration from the "/boot/grub2/grub.cfg" file on traditional BIOS-based machines and
-    from the "/boot/efi/EFI/redhat/grub.cfg" file on UEFI machines.
+    from the "/boot/efi/EFI/amzn/grub.cfg" file on UEFI machines.
     # grep fips /boot/grub2/grub.cfg
     /vmlinuz-3.8.0-0.40.el7.x86_64 root=/dev/mapper/rhel-root ro rd.md=0 rd.dm=0 rd.lvm.lv=rhel/swap crashkernel=auto
     rd.luks=0 vconsole.keymap=us rd.lvm.lv=rhel/root rhgb fips=1 quiet
@@ -50,7 +50,7 @@ control 'AMZL-02-721350' do
     On BIOS-based machines, use the following command:
     # grub2-mkconfig -o /boot/grub2/grub.cfg
     On UEFI-based machines, use the following command:
-    # grub2-mkconfig -o /boot/efi/EFI/redhat/grub.cfg
+    # grub2-mkconfig -o /boot/efi/EFI/amzn/grub.cfg
     If /boot or /boot/efi reside on separate partitions, the kernel parameter boot=<partition of /boot or /boot/efi>
     must be added to the kernel command line. You can identify a partition by running the df /boot or df /boot/efi
     command:
