@@ -28,25 +28,13 @@ control 'AMZL-02-740470' do
 
   if virtualization.system.eql?('docker') && !file('/etc/sysconfig/sshd').exist?
     impact 0.0
-    describe 'Control not applicable - SSH is not installed within containerized RHEL' do
-      skip 'Control not applicable - SSH is not installed within containerized RHEL'
+    describe 'Control not applicable - SSH is not installed within containerized AMZN' do
+      skip 'Control not applicable - SSH is not installed within containerized AMZN'
     end
-
-  elsif os.release.to_f >= 7.4
-    impact 0.0
-    describe "The release is #{os.release}" do
-      skip 'For RHEL 7.4 and above, this requirement is not applicable.'
-    end
-
   else
-
-    describe.one do
-      describe sshd_config do
-        its('Compression') { should cmp 'delayed' }
-      end
-      describe sshd_config do
-        its('Compression') { should cmp 'no' }
-      end
-    end
+    impact 0.0
+    describe "Amazon Linux 2 uses the more recent version of SSH whereby the SSH daemon does not allow compression. Not Applicable." do
+      skip 'Amazon Linux 2 uses the more recent version of SSH whereby the SSH daemon does not allow compression. Not Applicable.'
+     end
   end
 end
