@@ -21,7 +21,7 @@ ID     | Command line             | Date and time    | Action(s)      | Altered
     67 | update -y                | 2016-04-21 17:04 | Update     |     7 EE
     66 | update -y                | 2016-04-15 16:47 | E, I, U         |   84 EE
 
-If package updates have not been performed on the system within the timeframe that the site/program documentation requires, this is a finding.
+If package updates have not been performed on the system within the timeframe that the site/program documentation requires, this is a finding.'
 
   desc 'fix', 'Install the operating system patches or updated packages as local policy dictates.'
   impact 0.5

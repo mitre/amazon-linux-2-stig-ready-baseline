@@ -64,31 +64,33 @@ control 'AMZL-02-740500' do
   if service('ntpd').installed?
     time_service = service('ntpd')
     time_sources = ntp_conf('/etc/ntp.conf').server
-    max_poll_values = time_sources.map do |val|
-      if val.match?(/.*maxpoll.*/)
-        val.gsub(/.*maxpoll\s+(\d+)(\s+.*|$)/,
-                 '\1').to_i
-      else
-        99
+    if time_sources.nil?
+      describe 'NTP time sources list' do
+        subject { time_sources }
+        it { should_not be_nil }
       end
-    end
-    ntpdate_crons = command('grep -l "ntpd -q" /etc/cron.daily/*').stdout.strip.lines
-
-    describe 'ntpd time sources list' do
-      subject { time_sources }
-      it { should_not be_empty }
-    end
-
-    describe.one do
-      # Case where maxpoll empty
-      describe "Daily cron jobs for 'ntpd -q'" do
-        subject { ntpdate_crons }
-        it { should_not be_empty }
+    else
+      max_poll_values = time_sources.map do |val|
+        if val.match?(/.*maxpoll.*/)
+          val.gsub(/.*maxpoll\s+(\d+)(\s+.*|$)/,
+                  '\1').to_i
+        else
+          99
+        end
       end
-      # All time sources must contain valid maxpoll entries
-      describe 'ntpd maxpoll values (99=maxpoll absent)' do
-        subject { max_poll_values }
-        it { should all be <= input('maxpoll') }
+      ntpdate_crons = command('grep -l "ntpd -q" /etc/cron.daily/*').stdout.strip.lines
+  
+      describe.one do
+        # Case where maxpoll empty
+        describe "Daily cron jobs for 'ntpd -q'" do
+          subject { ntpdate_crons }
+          it { should_not be_empty }
+        end
+        # All time sources must contain valid maxpoll entries
+        describe 'ntpd maxpoll values (99=maxpoll absent)' do
+          subject { max_poll_values }
+          it { should all be <= input('maxpoll') }
+        end
       end
     end
   end
@@ -96,24 +98,26 @@ control 'AMZL-02-740500' do
   if service('chronyd').installed?
     time_service = service('chronyd')
     time_sources = ntp_conf('/etc/chrony.conf').server
-    max_poll_values = time_sources.map do |val|
-      if val.match?(/.*maxpoll.*/)
-        val.gsub(/.*maxpoll\s+(\d+)(\s+.*|$)/,
-                 '\1').to_i
-      else
-        99
+    if time_sources.nil?
+      describe 'chronyd time sources list' do
+        subject { time_sources }
+        it { should_not be_nil }
       end
-    end
+    else
+      max_poll_values = time_sources.map do |val|
+        if val.match?(/.*maxpoll.*/)
+          val.gsub(/.*maxpoll\s+(\d+)(\s+.*|$)/,
+                  '\1').to_i
+        else
+          99
+        end
+      end
 
-    describe 'chronyd time sources list' do
-      subject { time_sources }
-      it { should_not be_empty }
-    end
-
-    # All time sources must contain valid maxpoll entries
-    describe 'chronyd maxpoll values (99=maxpoll absent)' do
-      subject { max_poll_values }
-      it { should all be <= input('maxpoll') }
+      # All time sources must contain valid maxpoll entries
+      describe 'chronyd maxpoll values (99=maxpoll absent)' do
+        subject { max_poll_values }
+        it { should all be <= input('maxpoll') }
+      end
     end
   end
 end
