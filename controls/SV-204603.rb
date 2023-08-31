@@ -16,7 +16,7 @@ control 'AMZL-02-740500' do
     If NTP or "chronyd" is not running, this is a finding.
     If the NTP process is found, then check the "ntp.conf" file for the "maxpoll" option setting:
     # grep maxpoll /etc/ntp.conf
-    server 0.rhel.pool.ntp.org iburst maxpoll 16
+    server aaa.bbb.ccc.ddd iburst maxpoll 16
     If the "maxpoll" option is set to a number greater than 16 or the line is commented out, this is a finding.
     If the file does not exist, check the "/etc/cron.daily" subdirectory for a crontab file controlling the execution of
     the "ntpd -q" command.
@@ -26,11 +26,11 @@ control 'AMZL-02-740500' do
     If a crontab file does not exist in the "/etc/cron.daily" that executes the "ntpd -q" command, this is a finding.
     If the "chronyd" process is found, then check the "chrony.conf" file for the "maxpoll" option setting:
     # grep maxpoll /etc/chrony.conf
-    server 0.rhel.pool.ntp.org iburst maxpoll 16
+    server aaa.bbb.ccc.ddd iburst maxpoll 16
     If the option is not set or the line is commented out, this is a finding.'
   desc 'fix', 'Edit the "/etc/ntp.conf" or "/etc/chrony.conf" file and add or update an entry to define "maxpoll" to
     "16" as follows:
-    server 0.rhel.pool.ntp.org iburst maxpoll 16
+    server aaa.bbb.ccc.ddd iburst maxpoll 16
     If NTP was running and "maxpoll" was updated, the NTP service must be restarted:
     # systemctl restart ntpd
     If NTP was not running, it must be started:
