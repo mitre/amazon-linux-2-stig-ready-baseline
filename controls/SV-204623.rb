@@ -6,7 +6,7 @@ control 'AMZL-02-740720' do
   desc 'check', 'Verify the TFTP daemon is configured to operate in secure mode.
     Check to see if a TFTP server has been installed with the following commands:
     # yum list installed tftp-server
-    tftp-server.x86_64 x.x-x.el7 rhel-7-server-rpms
+    tftp-server.x86_64 x.x-x.amzn2 amzn2-core
     If a TFTP server is not installed, this is Not Applicable.
     If a TFTP server is installed, check for the server arguments with the following command:
     # grep server_args /etc/xinetd.d/tftp
