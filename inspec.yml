@@ -1,10 +1,10 @@
-name: RHEL_7_STIG
-title: Red Hat Enterprise Linux 7 Security Technical Implementation Guide
+name: AMAZON_LINUX_2_STIG-READY_BASELINE
+title: Amazon Linux 2 Security Technical Implementation Guide Ready Baseline
 maintainer: MITRE SAF Team
-copyright: MITRE, 2022
+copyright: MITRE, 2023
 copyright_email: saf@groups.mitre.org
 license: Apache-2.0
-summary: "Inspec Validation Profile for Red Hat Enterprise Linux 7 STIG"
+summary: "Inspec Validation Profile for Amazon Linux 2 STIG-Ready Baseline"
 version: 3.10.0
 inspec_version: ">= 4.26"
 
