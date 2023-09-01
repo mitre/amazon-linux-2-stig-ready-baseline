@@ -28,4 +28,9 @@ control 'AMZL-02-710220' do
   describe command('cat /etc/libuser.conf | grep -i sha512') do
     its('stdout.strip') { should match(/^crypt_style = sha512$/) }
   end
+
+  # Alternative:
+  # describe parse_config_file('/etc/libuser.conf') do
+  #   its('defaults.crypt_style') { should cmp 'sha512' }  
+  # end 
 end
