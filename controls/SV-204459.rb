@@ -15,11 +15,11 @@ Check that the available package security updates have been installed on the sys
 Loaded plugins: langpacks, product-id, subscription-manager
 ID     | Command line             | Date and time    | Action(s)      | Altered
 -------------------------------------------------------------------------------
-    70 | install aide             | 2016-05-05 10:58 | Install       |     1
-    69 | update -y                | 2016-05-04 14:34 | Update     |   18 EE
-    68 | install vlc                | 2016-04-21 17:12 | Install        |   21
-    67 | update -y                | 2016-04-21 17:04 | Update     |     7 EE
-    66 | update -y                | 2016-04-15 16:47 | E, I, U         |   84 EE
+    70 | install aide             | 2016-05-05 10:58 | Install        |     1
+    69 | update -y                | 2016-05-04 14:34 | Update         |   18 EE
+    68 | install vlc              | 2016-04-21 17:12 | Install        |   21
+    67 | update -y                | 2016-04-21 17:04 | Update         |     7 EE
+    66 | update -y                | 2016-04-15 16:47 | E, I, U        |   84 EE
 
 If package updates have not been performed on the system within the timeframe that the site/program documentation requires, this is a finding.'
 
@@ -40,7 +40,7 @@ If package updates have not been performed on the system within the timeframe th
       skip "The system is set to a `disconnected` state and you must validate
         the state of the system packages manually, or through another process, if you
         have an established update and patch process, please set this control as
-        `Not Applicable` with a `caevat` via an overlay."
+        `Not Applicable` with a `caveat` via an overlay."
     end
   else
     updates = linux_update.updates
