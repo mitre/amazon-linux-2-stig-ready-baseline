@@ -26,8 +26,8 @@ If any file has a mode more permissive than "0640", this is a finding.)
 
   if virtualization.system.eql?('docker') && !file('/etc/sysconfig/sshd').exist?
     impact 0.0
-    describe 'Control not applicable - SSH is not installed within containerized RHEL' do
-      skip 'Control not applicable - SSH is not installed within containerized RHEL'
+    describe 'Control not applicable - SSH is not installed within containerized AMZN' do
+      skip 'Control not applicable - SSH is not installed within containerized AMZN'
     end
   else
     pub_files = command("find #{input('private_host_key_directories').join(' ')} -xdev -name '*ssh_host*key'").stdout.split("\n")

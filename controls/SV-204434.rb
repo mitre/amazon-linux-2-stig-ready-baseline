@@ -23,8 +23,8 @@ control 'AMZL-02-710460' do
 
   if virtualization.system.eql?('docker') && !file('/etc/sysconfig/sshd').exist?
     impact 0.0
-    describe 'Control not applicable - SSH is not installed within containerized RHEL' do
-      skip 'Control not applicable - SSH is not installed within containerized RHEL'
+    describe 'Control not applicable - SSH is not installed within containerized AMZN' do
+      skip 'Control not applicable - SSH is not installed within containerized AMZN'
     end
   else
     describe sshd_config do
