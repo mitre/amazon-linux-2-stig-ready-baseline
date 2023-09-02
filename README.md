@@ -14,7 +14,7 @@ Latest versions and installation options are available at the [InSpec](http://in
 The following inputs may be configured in an inputs ".yml" file for the profile to run correctly for your specific environment. More information about InSpec inputs can be found in the [InSpec Profile Documentation](https://www.inspec.io/docs/reference/profiles/).
 
 ```yaml
-# Used by InSpec checks SV-204392, SV-204478, SV-214799
+# Used by InSpec checks AMZL-02-710010, AMZL-02-720730, AMZL-02-710020
 # InSpec Tests that are known to consistently have long run times can be disabled with this attribute
 # Acceptable values: false, true
 # (default: false)
@@ -24,11 +24,11 @@ disable_slow_controls:
 # (default: true)
 monitor_kernel_log: 
 
-# Used by InSpec check SV-204392
+# Used by InSpec check AMZL-02-710010
 # list of system files that should be allowed to change from an rpm verify point of view
 rpm_verify_perms_except: []
 
-# Used by InSpec check SV-214799
+# Used by InSpec check AMZL-02-710020
 # list of system files that should be allowed to change from an rpm verify point of view
 rpm_verify_integrity_except: []
 
@@ -36,11 +36,11 @@ rpm_verify_integrity_except: []
 # (default: true)
 banner_message_enabled: 
 
-# Used by InSpec check SV-204575 (default: false)
+# Used by InSpec check AMZL-02-731010(default: false)
 # Do NOT set to 'true' UNLESS the server is documented as being used as a log aggregation server. 
 log_aggregation_server: 
 
-# Used by InSpec check SV-204624 (default: false)
+# Used by InSpec check AMZL-02-740730 (default: false)
 # Do NOT set to 'true' UNLESS use of X Windows System is documented and approved. 
 x11_enabled: 
 
@@ -98,7 +98,7 @@ file_integrity_tool: ''
 # Interval to run the file integrity tool (monthly, weekly, or daily).
 file_integrity_interval: ''
 
-# Used by InSpec checks SV-204498 SV-204499 SV-204500 (default: "/etc/aide.conf")
+# Used by InSpec checks AMZL-02-721600 AMZL-02-721610 AMZL-02-721620 (default: "/etc/aide.conf")
 # Path to the aide.conf file
 aide_conf_path:
 
@@ -108,20 +108,20 @@ system_activity_timeout: 600
 # Client alive interval (time in seconds).
 client_alive_interval: 600
 
-# SV-204441, SV-204631, SV-204633
+# AMZL-02-710500, AMZL-02-741001, AMZL-02-741003
 # (enabled or disabled)
 smart_card_status: "enabled"
 
-# SV-204489, SV-204574
+# AMZL-02-721100, AMZL-02-731000
 # The path to the logging package
 log_pkg_path: "/etc/rsyslog.conf"
 
-# SV-204467, SV-204468, SV-204469, SV-204470, SV-204471, SV-204472, SV-204473
-# SV-204474, SV-204475, SV-204476, SV-204477, SV-204478, SV-204493
+# AMZL-02-720620, AMZL-02-720630, AMZL-02-720640, AMZL-02-720650, AMZL-02-720660, AMZL-02-720670, AMZL-02-720680
+# AMZL-02-720690, AMZL-02-720700, AMZL-02-720710, AMZL-02-720720, AMZL-02-720730, AMZL-02-721310
 # Users exempt from home directory-based controls in array format
 exempt_home_users: []
 
-# SV-244557
+# AMZL-02-710483
 # main grub boot config file
 grub_main_cfg: ""
 
@@ -131,14 +131,14 @@ grub_uefi_main_cfg: ''
 # grub boot config files
 grub_user_boot_files: []
 
-# SV-204444
+# AMZL-02-720020
 # system accounts that support approved system activities
 admin_logins: []
 
 # The list of packages needed for MFA on AMZN
 mfa_pkg_list: []
 
-# SV-204397
+# AMZL-02-710061
 # should dconf have smart card authentication (e.g., true or false <- no quotes!)
 multifactor_enabled: true
 
@@ -151,12 +151,12 @@ randomize_va_space: 2
 # File systems that don't correspond to removable media
 non_removable_media_fs: []
 
-# SV-204629
+# AMZL-02-740820
 # approved configured tunnels prepended with word 'conn'
 # Example: ['conn myTunnel']
 approved_tunnels: []
 
-# SV-204479
+# AMZL-02-720900
 # Is the target expected to be a virtual machine
 virtual_machine: false
 
