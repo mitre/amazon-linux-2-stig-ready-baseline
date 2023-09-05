@@ -32,7 +32,7 @@ control 'AMZL-02-721340' do
     describe etc_fstab.where { mount_point == '/tmp' } do
       its('count') { should cmp 1 }
       it 'Should have a device name specified' do
-        expect(subject.device_name[0]).to_not(be_empty)
+        expect(subject.device_name[0]).to_not(be_nil)
       end
     end
   end
