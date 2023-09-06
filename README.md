@@ -36,7 +36,7 @@ rpm_verify_integrity_except: []
 # (default: true)
 banner_message_enabled: 
 
-# Used by InSpec check AMZL-02-731010(default: false)
+# Used by InSpec check AMZL-02-731010 (default: false)
 # Do NOT set to 'true' UNLESS the server is documented as being used as a log aggregation server. 
 log_aggregation_server: 
 
