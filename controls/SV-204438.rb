@@ -38,6 +38,10 @@ control 'AMZL-02-710482' do
   else
     impact 0.7
     input('grub_user_boot_files').each do |grub_user_file|
+      describe file(grub_user_file) do
+        it { should exist }
+      end
+
       describe parse_config_file(grub_user_file) do
         its('GRUB2_PASSWORD') { should include 'grub.pbkdf2.sha512' }
       end
