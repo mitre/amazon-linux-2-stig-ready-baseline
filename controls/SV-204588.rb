@@ -4,7 +4,7 @@ control 'AMZL-02-740330' do
   desc 'Configuring this setting for the SSH daemon provides additional assurance that remote logon via SSH will
     require a password, even in the event of misconfiguration elsewhere.'
   desc 'check', 'Verify the SSH daemon does not allow authentication using RSA rhosts authentication.
-    To determine how the SSH daemon's "RhostsRSAAuthentication" option is set, run the following command:
+    To determine how the SSH daemon\'s "RhostsRSAAuthentication" option is set, run the following command:
     # grep RhostsRSAAuthentication /etc/ssh/sshd_config
     RhostsRSAAuthentication no
     If the value is returned as "yes", the returned line is commented out, or no output is returned, this is a finding.)'
