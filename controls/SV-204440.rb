@@ -33,10 +33,19 @@ control 'AMZL-02-710491' do
   elsif file('/sys/firmware/efi').exist?
     impact 0.7
     input('grub_uefi_user_boot_files').each do |grub_user_file|
+      describe file(grub_user_file) do
+        it { should exist }
+      end
+
       describe parse_config_file(grub_user_file) do
         its('GRUB2_PASSWORD') { should include 'grub.pbkdf2.sha512' }
       end
     end
+
+    describe file(input('grub_uefi_main_cfg')) do
+      it { should exist }
+    end
+
     describe parse_config_file(input('grub_uefi_main_cfg')) do
       its('set superusers') { should cmp '"root"' }
     end
