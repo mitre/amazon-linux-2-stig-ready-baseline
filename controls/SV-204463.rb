@@ -21,10 +21,9 @@ control 'AMZL-02-720320' do
   tag 'host'
   tag 'container'
 
-  command('grep -v "nodev" /proc/filesystems | awk \'NF{ print $NF }\'')
-    .stdout.strip.split("\n").each do |fs|
-      describe command("find / -xdev -xautofs -fstype #{fs} -nouser") do
-        its('stdout.strip') { should be_empty }
-      end
+  command('grep -v "nodev" /proc/filesystems | awk \'NF{ print $NF }\'').stdout.strip.split("\n").each do |fs|
+    describe command("find / -xdev -xautofs -fstype #{fs} -nouser") do
+      its('stdout.strip') { should be_empty }
     end
+  end
 end
