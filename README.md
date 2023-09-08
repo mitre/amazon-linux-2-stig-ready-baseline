@@ -1,6 +1,6 @@
-# red-hat-enterprise-linux-7-stig-baseline
+# amazon-linux-2-stig-ready-baseline
 
-InSpec profile to validate the secure configuration of Red Hat Enterprise Linux 7 against [DISA's](https://public.cyber.mil/stigs/downloads/) Red Hat Enterprise Linux 7 STIG Version 3 Release 10.
+InSpec profile to validate the secure configuration of Amazon Linux 2 against STIG-ready content.
 
 ## Getting Started  
 It is intended and recommended that InSpec and this profile be run from a __"runner"__ host (such as a DevOps orchestration server, an administrative management system, or a developer's workstation/laptop) against the target remotely over __ssh__.
@@ -135,7 +135,7 @@ grub_user_boot_files: []
 # system accounts that support approved system activities
 admin_logins: []
 
-# The list of packages needed for MFA on RHEL
+# The list of packages needed for MFA on AMZN
 mfa_pkg_list: []
 
 # AMZL-02-710061
@@ -232,19 +232,19 @@ The input `disable_slow_controls (bool: false)` can be set to `true` or `false` 
 Against a remote target using ssh with escalated privileges (i.e., InSpec installed on a separate runner host)
 ```bash
 # How to run 
-inspec exec https://github.com/mitre/redhat-enterprise-linux-7-stig-baseline/archive/main.tar.gz -t ssh://TARGET_USERNAME:TARGET_PASSWORD@TARGET_IP:TARGET_PORT --sudo --sudo-password=<SUDO_PASSWORD_IF_REQUIRED> --input-file <path_to_your_input_file/name_of_your_input_file.yml> --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json> 
+inspec exec https://github.com/mitre/amazon-linux-2-stig-ready-baseline/archive/main.tar.gz -t ssh://TARGET_USERNAME:TARGET_PASSWORD@TARGET_IP:TARGET_PORT --sudo --sudo-password=<SUDO_PASSWORD_IF_REQUIRED> --input-file <path_to_your_input_file/name_of_your_input_file.yml> --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json> 
 ```
 
 Against a remote target using a pem key with escalated privileges (i.e., InSpec installed on a separate runner host)
 ```bash
 # How to run 
-inspec exec https://github.com/mitre/redhat-enterprise-linux-7-stig-baseline/archive/main.tar.gz -t ssh://TARGET_USERNAME@TARGET_IP:TARGET_PORT --sudo -i <your_PEM_KEY> --input-file <path_to_your_input_file/name_of_your_input_file.yml> --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json>  
+inspec exec https://github.com/mitre/amazon-linux-2-stig-ready-baseline/archive/main.tar.gz -t ssh://TARGET_USERNAME@TARGET_IP:TARGET_PORT --sudo -i <your_PEM_KEY> --input-file <path_to_your_input_file/name_of_your_input_file.yml> --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json>  
 ```
 
 Against a local Red Hat host with escalated privileges (i.e., InSpec installed on the target)
 ```bash
 # How to run
-sudo inspec exec https://github.com/mitre/redhat-enterprise-linux-7-stig-baseline/archive/main.tar.gz --input-file <path_to_your_input_file/name_of_your_input_file.yml> --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json> 
+sudo inspec exec https://github.com/mitre/amazon-linux-2-stig-ready-baseline/archive/main.tar.gz --input-file <path_to_your_input_file/name_of_your_input_file.yml> --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json> 
 ```
 ### Different Run Options
 
@@ -258,18 +258,18 @@ If your runner is not always expected to have direct access to GitHub, use the f
 ```
 mkdir profiles
 cd profiles
-git clone https://github.com/mitre/redhat-enterprise-linux-7-stig-baseline.git
-inspec archive redhat-enterprise-linux-7-stig-baseline
+git clone https://github.com/mitre/amazon-linux-2-stig-ready-baseline.git
+inspec archive amazon-linux-2-stig-ready-baseline
 sudo inspec exec <name of generated archive> --input-file <path_to_your_input_file/name_of_your_input_file.yml> --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json> 
 ```
 
 For every successive run, follow these steps to always have the latest version of this baseline and dependent profiles:
 
 ```
-cd redhat-enterprise-linux-7-stig-baseline
+cd amazon-linux-2-stig-ready-baseline
 git pull
 cd ..
-inspec archive redhat-enterprise-linux-7-stig-baseline --overwrite
+inspec archive amazon-linux-2-stig-ready-baseline --overwrite
 sudo inspec exec <name of generated archive> --input-file <path_to_your_input_file/name_of_your_input_file.yml> --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json> 
 ```
 
@@ -282,92 +282,16 @@ The JSON results output file can be loaded into __[heimdall-lite](https://heimda
 The JSON InSpec results file may also be loaded into a __[full heimdall server](https://github.com/mitre/heimdall)__, allowing for additional functionality such as to store and compare multiple profile runs.
 
 ## Authors
-* Sam Cornwell
-* Danny Haynes
-* Trevor Vaughan
-* Aaron Lippold
-* Kyle Fagan
-* LJ Kimmel
-* KC Linden
-* Rony Xavier
-* Mohamed El-Sharkawi
+* Shivani Karikar
 * Will Dower
-* Emily Rodriguez
-* Henry Xiao
 
 ## Special Thanks
-* The SIMP Project Team
 * Eugene Aronne
-* Shivani Karikar
+* Emily Rodriguez
+* Aaron Lippold
 
 ## Contributing and Getting Help
-To report a bug or feature request, please open an [issue](https://github.com/mitre/redhat-enterprise-linux-7-stig-baseline/issues/new).
-
-
-# Appendix - (For Developers Interested in Running Hardening Tests):
-
-This repository uses [KitchenCI](http://kitchen.ci) framework to run tests on the
-various profiles. Please see the documentation below on how to use the framework. 
-
-# Testing with Kitchen
-
-## Dependencies
-
-- Ruby 2.3.0 or later
-- [Virtualbox](https://www.virtualbox.org)
-- [Vagrant](https://www.vagrantup.com)
-
-#### _Notes to Windows Users_
-
-1. An installation of ChefDK may generate conflicts when combined with the
-   installed kitchen gems. **Recommend NOT installing ChefDK before testing
-   with this repo.**
-
-2. If you run into errors when running `bundle install`, use the following
-   commands to install gems:
-
-- `gem install kitchen-ansible`
-- `gem install kitchen-vagrant`
-
-3. If the tests are not found when running `kitchen verify`, open
-   `.kitchen.yml` and consult `inspec_tests` under the `suites` section.
-
-4) You may also experience an error when running `kitchen converge` where a
-   folder is unable to be created due to the length of the path. In this case,
-   you may need to edit a registry key as explained
-   [here](https://www.howtogeek.com/266621/how-to-make-windows-10-accept-file-paths-over-260-characters/).
-
-## Setting up your box
-
-1. Clone the repo via `git clone https://github.com/mitre/redhat-enterprise-linux-7-stig-baseline/main.git`
-2. cd to `redhat-enterprise-linux-7-stig-baseline`
-3. Run `bundle install`
-4. Run `kitchen list` - you should see the following choice:
-   - `vanilla-rhel-7`
-   - `hardened-rhel-7`
-5. Run `kitchen converge`
-6. Run `kitchen list` - your should see your host with status "converged"
-7. RUn `kitchen verify` to execute inspec profiles against target
-
-# Hardening Development
-
-Included in this repository are testing scripts which allow you to run the profile using Vagrant or EC2 VMs. You can choose which environment your VMs are run in by passing the appropriate test-kitchen `yml` file to your `KITCHEN_LOCAL_YAML` environment variable. All of the commands below use the `kitchen.vagrant.yml` file as an example, however a `kitchen.ec2.yaml` is also available in the repository and can be substituted below to run the tests in EC2.
-
-- Making Changes and Testing
-
-  - run `CHEF_LICENSE=accept KITCHEN_LOCAL_YAML=kitchen.vagrant.yml kitchen converge (machine name)` - runs any changes to your hardening scripts
-  - run `kitchen verify (machine name)` - runs the inspec tests
-
-- Starting Clean:
-  - run `CHEF_LICENSE=accept KITCHEN_LOCAL_YAML=kitchen.vagrant.yml kitchen destroy (machine name)` kitchen will drop your box and you can start clean
-- Going through the entire process ( create, build, configure, verify, destroy )
-  - run `CHEF_LICENSE=accept KITCHEN_LOCAL_YAML=kitchen.vagrant.yml kitchen test (machine name)` or to test all defined machines `kitchen test`
-- Just running the validation scripts
-  - run `CHEF_LICENSE=accept KITCHEN_LOCAL_YAML=kitchen.vagrant.yml kitchen verify (machine name)`
-- Just run one or more controls in the validation
-  - edit the kitchen.yml file in the `controls:` section add the `control id(s)` to the list
-- Skipping one or more tags in the hardening content 
-  - run `CHEF_LICENSE=accept KITCHEN_LOCAL_YAML=kitchen.vagrant.yml ANSIBLE_EXTRA_FLAGS='--skip-tags=(tags)' kitchen converge (machine name)` kitchen will skip the tasks in the hardening script specified with the tags. 
+To report a bug or feature request, please open an [issue](https://github.com/mitre/amazon-linux-2-stig-ready-baseline/issues/new).
 
 ### NOTICE
 

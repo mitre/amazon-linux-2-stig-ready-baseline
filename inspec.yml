@@ -1,60 +1,50 @@
-name: RHEL_7_STIG
-title: Red Hat Enterprise Linux 7 Security Technical Implementation Guide
+name: amazon-linux-2-stig-ready-baseline
+title: Amazon Linux 2 Security Technical Implementation Guide Ready Baseline
 maintainer: MITRE SAF Team
-copyright: MITRE, 2022
+copyright: MITRE, 2023
 copyright_email: saf@groups.mitre.org
 license: Apache-2.0
-summary: "Inspec Validation Profile for Red Hat Enterprise Linux 7 STIG"
-version: 3.10.0
+summary: "Inspec Validation Profile for Amazon Linux 2 STIG-Ready Baseline"
+version: 1.1.0
 inspec_version: ">= 4.26"
 
 supports:
-  - platform-name: centos
-    release: 7.*
-  - platform-name: redhat
-    release: 7.*
   - platform-name: amazon
     release: 2*
 
-# The following defines the default inputs for the configurable controls used in the RHEL 7 DISA STIG.
+# The following defines the default inputs for the configurable controls used in the Amazon Linux 2 stig-ready content.
 inputs:
   - name: disable_slow_controls
     desc: Controls that are known to consistently have long run times can be disabled with this attribute
     type: Boolean
     value: false
 
-  # SV-204504
   - name: monitor_kernel_log
     desc: Set this to false if your system availability concern is not documented or there is no monitoring of the kernel log
     type: Boolean
     value: true
 
-  # SV-204392
   - name: rpm_verify_perms_except
     desc: List of system files that should be allowed to change from an rpm verify point of view
     type: Array
     value:
       - "/etc/issue"
 
-  # SV-214799
   - name: rpm_verify_integrity_except
     desc: List of system files that should be allowed to change from an rpm verify point of view
     type: Array
     value: []
 
-  # SV-204393
   - name: banner_message_enabled
     desc: Set to 'true' if the login banner message should be enabled
     type: Boolean
     value: true
 
-  # SV-204575
   - name: log_aggregation_server
     desc: Set to 'true' if the system is being used as a log aggregation server
     type: Boolean
     value: false
 
-  # SV-204624
   - name: x11_enabled
     desc: Set to 'true' if X11 is needed on the system.
     type: Boolean
@@ -90,7 +80,6 @@ inputs:
       - "sshd"
       - "ntp"
 
-  # SV-204393/SV-204397
   - name: dconf_user
     desc: User to use to check dconf settings. Nil means to use whatever user is running inspec currently.
     type: String
@@ -104,7 +93,6 @@ inputs:
   #    - This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.
   #    - Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details.
 
-  # SV-204394
   - name: banner_message_text_gui
     desc: Banner message text for graphical user interface logins.
     type: String
@@ -133,7 +121,6 @@ inputs:
     type: String
     value: "I've read & consent to terms in IS user agreem't."
 
-  # SV-204395
   - name: banner_message_text_cli
     desc: Banner message text for command line interface logins.
     type: String
@@ -162,7 +149,6 @@ inputs:
     type: String
     value: "I've read & consent to terms in IS user agreem't."
 
-  # SV-204580
   - name: banner_message_text_ral
     desc: Banner message text for remote access logins.
     type: String
@@ -191,37 +177,31 @@ inputs:
     type: String
     value: "I've read & consent to terms in IS user agreem't."
 
-  # SV-204404
   - name: lock_delay
     desc: Maximum value for the screensaver lock-delay
     type: Numeric
     value: 5
 
-  # SV-204411
   - name: difok
     desc: Minimum number of characters that must be different from previous password, by policy
     type: Numeric
     value: 8
 
-  # SV-204413
   - name: passwd_repeats
     desc: Maximum number of allowed same consecutive characters in a new password, by policy
     type: Numeric
     value: 3
 
-  # SV-204422
   - name: min_reuse_generations
     desc: Minimum number of reuse generations for passwords by policy
     type: Numeric
     value: 5
 
-  # SV-204423
   - name: min_len
     desc: Minimum number of characters a password needs, by policy
     type: Numeric
     value: 15
 
-  # SV-204426
   - name: days_of_inactivity
     desc: Maximum allowable number of days an account can stay inactive before deactivation.
     type: Numeric
@@ -241,43 +221,36 @@ inputs:
     desc: Minimum amount of time account must be locked out after failed logins by policy. This attribute should never be set greater than 604800 (time in seconds).
     value: 604800
 
-  # SV-204445 SV-251705
   - name: file_integrity_tool
     desc: Name of tool
     type: String
     value: "aide"
 
-  # SV-204498 SV-204499 SV-204500
   - name: aide_conf_path
     desc: Path to the aide.conf file
     type: String
     value: "/etc/aide.conf"
 
-  # SV-204445
   - name: file_integrity_interval
     desc: Interval to run the file integrity tool (monthly, weekly, or daily).
     type: String
     value: "weekly"
 
-  # SV-204579
   - name: system_activity_timeout
     desc: System activity timeout (time in seconds).
     type: Numeric
     value: 600
 
-  # SV-204587
   - name: client_alive_interval
     desc: Value of the client alive interval (time in seconds).
     type: Numeric
     value: 600
 
-  # SV-204441, SV-204631, SV-204633
   - name: smart_card_status
     desc: Smart card status (enabled or disabled)
     type: String
     value: "enabled"
 
-  # SV-204489/V-204574
   - name: log_pkg_paths
     desc: Paths to files and directories that may include logging config
     type: Array
@@ -285,24 +258,20 @@ inputs:
       - "/etc/rsyslog.conf"
       - "/etc/rsyslog.d/*"
 
-  # SV-204467, SV-204468, SV-204469, SV-204470, SV-204471, SV-204472
-  # SV-204473, SV-204474, SV-204475, SV-204476, SV-204477, SV-204478, SV-204493
   - name: exempt_home_users
     desc: Users exempt from home directory-based controls in array format
     type: Array
     value: []
 
-  # SV-244557
   - name: grub_main_cfg
     desc: Main grub boot config file
     type: String
     value: "/boot/grub2/grub.cfg"
 
-  # SV-204440 SV-244558
   - name: grub_uefi_main_cfg
     desc: Main grub boot config file
     type: String
-    value: "/boot/efi/EFI/redhat/grub.cfg"
+    value: "/boot/efi/EFI/amzn/grub.cfg"
 
   - name: grub_user_boot_files
     desc: Grub boot config files
@@ -314,15 +283,13 @@ inputs:
     desc: Grub boot config files
     type: Array
     value:
-      - "/boot/efi/EFI/redhat/user.cfg"
+      - "/boot/efi/EFI/amzn/user.cfg"
 
-  # SV-204444
   - name: admin_logins
     desc: System accounts that support approved system activities
     type: Array
     value: []
 
-  # SV-204631
   - name: mfa_pkg_list
     desc: The list of packages (including dependencies) needed for MFA
     type: Array
@@ -343,7 +310,6 @@ inputs:
       - "pcsc-lite"
       - "pcsc-lite-libs"
 
-  # SV-204397
   - name: multifactor_enabled
     desc: Should dconf have smart card authentication
     type: Boolean
@@ -360,13 +326,11 @@ inputs:
       - "/bin/sync"
       - "/bin/true"
 
-  # SV-204584
   - name: randomize_va_space
     desc: Randomize virtual address space kernel parameter
     type: Numeric
     value: 2
 
-  # SV-204481
   - name: non_removable_media_fs
     desc: File systems that don't correspond to removable media
     type: Array
@@ -376,31 +340,26 @@ inputs:
       - "swap"
       - "tmpfs"
 
-  # SV-204629
   - name: approved_tunnels
     desc: Approved configured tunnels prepended with word 'conn' (e.g., ['conn myTunnel'])
     type: Array
     value: []
 
-  # SV-204479
   - name: virtual_machine
     desc: Is the target expected to be a virtual machine
     type: Boolean
     value: false
 
-  # SV-204406
   - name: retry
     desc: number of allowed password retries
     type: Numeric
     value: 3
 
-  # SV-204406
   - name: max_retry
     desc: maximum number of password retries by policy
     type: Numeric
     value: 3
 
-  # SV-204628, SV-204577
   - name: firewalld_services
     desc: "Services that firewalld should be configured to allow."
     type: Array
@@ -463,7 +422,6 @@ inputs:
     # '-P INPUT ACCEPT',
     value: []
 
-  # SV-204577
   - name: firewalld_services_deny
     desc: "Services that firewalld should be configured to deny."
     type: Hash
@@ -490,25 +448,21 @@ inputs:
     # - 'trusted'
     value: []
 
-  # SV-204604
   - name: firewall_application_package
     desc: "If a third-party firewall application is in use (other than firewalld or iptables), indicate the package name here. Otherwise, set this value to an empty string"
     type: String
     value: ""
 
-  # SV-204604
   - name: firewall_application_service
     desc: "If a third-party firewall application is in use (other than firewalld or iptables), indicate the service name here. Otherwise, set this value to an empty string"
     type: String
     value: ""
 
-  # SV-204576
   - name: maxlogins_limit
     desc: "Value for the maxlogins setting."
     type: Numeric
     value: 10
 
-  # SV-214801
   - name: custom_antivirus
     desc: "Whether an antivirus solution, other than nails, is in use."
     type: Boolean
@@ -520,7 +474,6 @@ inputs:
     # Default of 'None' is used by control code -- DO NOT CHANGE DEFAULT
     value: "None"
 
-  # SV-204500
   - name: aide_exclude_patterns
     desc: "It is reasonable and advisable to skip checksum on frequently changing files"
     type: Array
@@ -558,141 +511,118 @@ inputs:
     type: Boolean
     value: false
 
-  # SV-219059
   - name: automount_config
     desc: "Full path to config file for automount settings"
     type: String
     value: "/etc/dconf/db/local.d/00-No-Automount"
 
-  # SV-219059
   - name: automount_locks_config
     desc: "Full path to locks config file for automount settings"
     type: String
     value: "/etc/dconf/db/local.d/locks/00-No-Automount"
 
-  # SV-204414
   - name: max_classrepeat
     desc: "System setting for the maximum number of allowed same consecutive characters in the same class of a new password."
     type: Numeric
     value: 4
 
-  #SV-204603
   - name: maxpoll
     desc: "This option specifies the maximum interval between requests sent to the NTP server as a power of 2 in seconds."
     type: Numeric
     value: 16
 
-  #SV-204420
   - name: pass_max_days
     desc: "Password lifetime restriction for new user accounts"
     type: Numeric
     value: 60
 
-  #SV-204431
   - name: fail_delay
     desc: "Value for the delay between logon prompts following a failed console logon attempt in seconds"
     type: Numeric
     value: 4
 
-  # SV-204468
   - name: home_dir_mode
     desc: Maximum mode allowed for user home directories (in octal format)
     type: String
     value: "0750"
 
-  # SV-204473
   - name: home_dir_files_mode
     desc: Maximum mode allowed for files contained within user home directories (in octal format)
     type: String
     value: "0750"
 
-  # SV-204476
   - name: init_files_mode
     desc: Maximum mode allowed for initialization files (in octal format)
     type: String
     value: "0740"
 
-  # SV-204476
   - name: user_umask
     desc: Expected value for all user UMASK values (in octal format)
     type: String
     value: "0077"
 
-  # SV-204509
   - name: audit_remote_server
     desc: "Address of the remote server to which audit logs can be sent -- if left blank, control will check that any non-local server is in use"
     type: String
     value: ""
 
-  # SV-204511
   - name: expected_disk_full_action
     desc: "Action that the server should take to preserve audit logs when the disk becomes full -- must be one of syslog, single, halt"
     type: String
     value: "single"
 
-  # SV-204512
   - name: expected_network_failure_action
     desc: "Action that the server should take to preserve audit logs when the network fails -- must be one of syslog, single, halt"
     type: String
     value: "single"
 
-  #SV-204513
   - name: min_space_left
     desc: "Minimum percentage for the space remaining in the audit log file before an alert is generated"
     type: Numeric
     value: 25
 
-  # SV-204596
   - name: public_host_key_file_mode
     desc: Maximum mode allowed for directories containing SSH public host keys (in octal format)
     type: String
     value: "0644"
 
-  # SV-204596
   - name: public_host_key_directories
     desc: "List of any directories containing SSH public host keys"
     type: Array
     value:
       - /etc/ssh
 
-  # SV-204597
   - name: private_host_key_file_mode
     desc: Maximum mode allowed for directories containing SSH private host keys (in octal format)
     type: String
     value: "0640"
 
-  # SV-204597
   - name: private_host_key_directories
     desc: "List of any directories containing SSH private host keys"
     type: Array
     value:
       - /
 
-  # SV-228564
   - name: max_audit_file_mode
     desc: Maximum mode allowed for the audit log (in octal format)
     type: String
     value: "0600"
 
-  #SV-204412
   - name: minclass
     desc: "Value for the minimum number of characters that must change between password resets"
     type: Numeric
     value: 4
 
-  #SV-204419
   - name: min_password_lifetime
     desc: "Minimum lifetime of a password before it can be a reset"
     type: Numeric
     value: 1
 
-  #SV-204421
   - name: max_password_lifetime
     desc: "Maximum lifetime of a password before it needs a reset"
     type: Numeric
     value: 60
-  
-  #SV-254523
+
   - name: emergency_accounts
     desc: Emergency user accounts
     type: Array
