@@ -46,7 +46,7 @@ jobs:
       - name: Lint the Inspec profile
         run: bundle exec inspec check .
       - name: Run kitchen test
-        run: bundle exec kitchen test --destroy=always ${{ matrix.suite }}-rhel-7 || true
+        run: bundle exec kitchen test --destroy=always ${{ matrix.suite }}-al2 || true
       - name: Save Test Result JSON
         uses: actions/upload-artifact@v3
         with:
@@ -54,8 +54,8 @@ jobs:
       - name: Display our ${{ matrix.suite }} results summary
         uses: mitre/saf_action@v1
         with:
-          command_string: 'view summary -i spec/results/ec2_rhel-7_${{ matrix.suite }}.json'
+          command_string: 'view summary -i spec/results/ec2_al2_${{ matrix.suite }}.json'
       - name: Ensure the scan meets our ${{ matrix.suite }} results threshold
         uses: mitre/saf_action@v1
         with:
-          command_string: 'validate threshold -i spec/results/ec2_rhel-7_${{ matrix.suite }}.json -F ${{ matrix.suite }}.threshold.yml'
+          command_string: 'validate threshold -i spec/results/ec2_al2_${{ matrix.suite }}.json -F ${{ matrix.suite }}.threshold.yml'

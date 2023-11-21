@@ -9,7 +9,7 @@ verifier:
     - cli
     - json:spec/results/%{platform}_%{suite}.json
   inspec_tests:
-    - name: RedHat Enterprise Linux 7 STIG
+    - name: Amazon Linux 2 STIG
       path: .
   load_plugins: true
 
@@ -30,13 +30,13 @@ provisioner:
     - ANSIBLE_REMOTE_TEMP=$HOME/.ansible/tmp
 
 platforms:
-  - name: rhel-7
+  - name: al2
 
 suites:
   - name: vanilla
     provisioner:
-      playbook: spec/ansible/roles/ansible-role-rhel-vanilla.yml
+      playbook: spec/ansible/roles/ansible-role-al2-vanilla.yml
       
   - name: hardened
     provisioner:
-      playbook: spec/ansible/roles/ansible-role-rhel-hardened.yml
+      playbook: spec/ansible/roles/ansible-role-al2-hardened.yml

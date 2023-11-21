@@ -16,7 +16,7 @@ driver:
       clipboard: "disabled"
 
 platforms:
-  - name: rhel-7
+  - name: al2
 
     driver:
       box: generic/centos7

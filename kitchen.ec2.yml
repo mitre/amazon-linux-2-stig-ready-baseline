@@ -1,6 +1,6 @@
 ---
 platforms:
-  - name: rhel-7
+  - name: al2
 
 driver:
   name: ec2
