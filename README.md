@@ -9,6 +9,14 @@ __For the best security of the runner, always install on the runner the _latest 
 
 Latest versions and installation options are available at the [InSpec](http://inspec.io/) site.
 
+### Sudo Password
+
+The hardening configures the system to require a sudo password.  You should set the sudo password you want via an Environment Variable as `SUDO_PASSWD` to test-kitchen can set it correctly. 
+
+The default is set to 'P@ssw0rd!' ***WHICH YOU NEED TO UPDATE***.
+
+The GitHub Actions Set the sudo password they use via a shared secret.
+
 ## Tailoring to Your Environment
 
 The following inputs may be configured in an inputs ".yml" file for the profile to run correctly for your specific environment. More information about InSpec inputs can be found in the [InSpec Profile Documentation](https://www.inspec.io/docs/reference/profiles/).

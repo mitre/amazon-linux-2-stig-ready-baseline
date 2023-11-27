@@ -8,6 +8,8 @@ verifier:
   reporter:
     - cli
     - json:spec/results/%{platform}_%{suite}.json
+  input_files:
+    - ec2.inputs.yml
   inspec_tests:
     - name: Amazon Linux 2 STIG
       path: .
@@ -30,13 +32,18 @@ provisioner:
     - ANSIBLE_REMOTE_TEMP=$HOME/.ansible/tmp
 
 platforms:
-  - name: al2
+  - name: amazon2
+  # - name: amazon2023
 
 suites:
   - name: vanilla
     provisioner:
       playbook: spec/ansible/roles/ansible-role-al2-vanilla.yml
-      
+    verifier:
+      sudo_password: <%= ENV['SUDO_PASSWD'] || 'P@ssw0rd!' %>
+
   - name: hardened
     provisioner:
       playbook: spec/ansible/roles/ansible-role-al2-hardened.yml
+    verifier:
+      sudo_password: <%= ENV['SUDO_PASSWD'] || 'P@ssw0rd!' %>

@@ -2,7 +2,7 @@ name: Vagrant Testing Matrix
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
 
 jobs:
@@ -13,9 +13,10 @@ jobs:
     env:
       CHEF_LICENSE: accept-silent
       KITCHEN_LOCAL_YAML: kitchen.vagrant.yml
+      SUDO_PASSWD: ${{ secrets.SAF_SUDO_PASSWORD }}
     strategy:
       matrix:
-        suite: ['vanilla', 'hardened']
+        suite: ["vanilla", "hardened"]
       fail-fast: false
     steps:
       - name: Add jq for output formatting
@@ -25,7 +26,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '2.7'
+          ruby-version: "3.1"
       - name: Disable ri and rdoc
         run: 'echo "gem: --no-ri --no-rdoc" >> ~/.gemrc'
       - name: ensure bundler up-to-date
@@ -37,7 +38,7 @@ jobs:
       - name: Lint the Inspec profile
         run: bundle exec inspec check .
       - name: Run kitchen test
-        run: bundle exec kitchen test --destroy=always ${{ matrix.suite }}-al2 || true
+        run: bundle exec kitchen test --destroy=always ${{ matrix.suite }}-amazon2 || true
       - name: Save Test Result JSON
         uses: actions/upload-artifact@v3
         with:
@@ -45,8 +46,8 @@ jobs:
       - name: Display our ${{ matrix.suite }} results summary
         uses: mitre/saf_action@v1
         with:
-          command_string: 'view summary -i spec/results/al2_${{ matrix.suite }}.json'
+          command_string: "view summary -i spec/results/vagrant_amazon2_${{ matrix.suite }}.json"
       - name: Ensure the scan meets our ${{ matrix.suite }} results threshold
         uses: mitre/saf_action@v1
         with:
-          command_string: 'validate threshold -i spec/results/al2_${{ matrix.suite }}.json -F ${{ matrix.suite }}.threshold.yml'
+          command_string: "validate threshold -i spec/results/vagrant_amazon2_${{ matrix.suite }}.json -F ${{ matrix.suite }}.threshold.yml"

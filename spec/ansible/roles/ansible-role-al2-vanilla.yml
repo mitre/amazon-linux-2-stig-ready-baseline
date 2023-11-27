@@ -4,3 +4,4 @@
   roles:
     - roles/ansible-role-al2-vanilla
   serial: 50
+  become: yes
