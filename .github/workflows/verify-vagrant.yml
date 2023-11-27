@@ -35,6 +35,7 @@ jobs:
       - name: Regenerate current `profile.json`
         run: |
           bundle exec inspec json . | jq . > profile.json
+          cp profile.json ./spec/results
       - name: Lint the Inspec profile
         run: bundle exec inspec check .
       - name: Run kitchen test
@@ -42,12 +43,12 @@ jobs:
       - name: Save Test Result JSON
         uses: actions/upload-artifact@v3
         with:
-          path: spec/results/
+          path: spec/results
       - name: Display our ${{ matrix.suite }} results summary
         uses: mitre/saf_action@v1
         with:
-          command_string: 'view summary -i spec/results/vagrant_amazon2_${{ matrix.suite }}.json'
+          command_string: "view summary -i spec/results/vagrant_amazon2_${{ matrix.suite }}.json"
       - name: Ensure the scan meets our ${{ matrix.suite }} results threshold
         uses: mitre/saf_action@v1
         with:
-          command_string: 'validate threshold -i spec/results/vagrant_amazon2_${{ matrix.suite }}.json -F ${{ matrix.suite }}.threshold.yml'
+          command_string: "validate threshold -i spec/results/vagrant_amazon2_${{ matrix.suite }}.json -F ${{ matrix.suite }}.threshold.yml"

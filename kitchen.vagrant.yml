@@ -16,8 +16,7 @@ driver:
       clipboard: "disabled"
 
 platforms:
-  - name: al2
-
+  - name: amazon2
     driver:
       box: generic/centos7
 
