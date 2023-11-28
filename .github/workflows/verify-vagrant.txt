@@ -35,7 +35,6 @@ jobs:
       - name: Regenerate current `profile.json`
         run: |
           bundle exec inspec json . | jq . > profile.json
-          cp profile.json ./spec/results/profile.json
       - name: Lint the Inspec profile
         run: bundle exec inspec check .
       - name: Run kitchen test
