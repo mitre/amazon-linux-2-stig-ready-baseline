@@ -1,10 +1,10 @@
 ---
 - name: Upgrade all packages
-  yum:
+  ansible.builtin.yum:
     name: "*"
     state: latest
 - name: Install required packages via yum
-  yum:
+  ansible.builtin.yum:
     name:
       - vim
       - bc
@@ -12,7 +12,7 @@
     state: latest
 
 - name: Install required packages via pip
-  pip:
+  ansible.builtin.pip:
     name:
       - jmespath
     state: latest
