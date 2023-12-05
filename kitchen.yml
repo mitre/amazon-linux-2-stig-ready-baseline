@@ -13,6 +13,10 @@ verifier:
   inspec_tests:
     - name: Amazon Linux 2 STIG
       path: .
+  <% if ENV['INSPEC_CONTROL'] %>
+  controls:
+    - "<%= ENV['INSPEC_CONTROL'] %>"
+  <% end %>
   load_plugins: true
 
 provisioner:

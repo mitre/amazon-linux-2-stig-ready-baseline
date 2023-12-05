@@ -47,8 +47,7 @@ control 'AMZL-02-740320' do
     # convert it to an integer using to_i it will convert it to 0 and pass the
     # <= client_alive_interval check. However, the control as a whole will still fail.
     describe sshd_config do
-      its('ClientAliveInterval') { should be_between(1, input('client_alive_interval')) }
-      its('ClientAliveInterval') { should_not eq nil }
+      its('ClientAliveInterval.to_i') { should be_between(1, input('client_alive_interval')) }
     end
   end
 end
