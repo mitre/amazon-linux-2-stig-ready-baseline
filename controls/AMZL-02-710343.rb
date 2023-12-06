@@ -39,7 +39,7 @@ Remove any duplicate or conflicting lines from /etc/sudoers and /etc/sudoers.d/ 
     end
   else
     describe command("grep -ir 'timestamp_timeout' /etc/sudoers /etc/sudoers.d").stdout.strip do
-      it { should match /^[^#].*Defaults timestamp_timeout=\d/ }
+      it { should match /^[^#].*Defaults\s*timestamp_timeout=\d/ }
       it { should_not match /\n/ }
     end
   end
