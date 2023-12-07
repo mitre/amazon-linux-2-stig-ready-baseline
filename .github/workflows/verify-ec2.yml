@@ -25,7 +25,7 @@ jobs:
         env:
           AWS_SG_ID: ${{ secrets.SAF_AWS_SG_ID }}
           AWS_SUBNET_ID: ${{ secrets.SAF_AWS_SUBNET_ID }}
-        uses: aws-actions/configure-aws-credentials@v2
+        uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-access-key-id: ${{ secrets.SAF_AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.SAF_AWS_SECRET_ACCESS_KEY }}
