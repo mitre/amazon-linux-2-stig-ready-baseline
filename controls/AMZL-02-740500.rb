@@ -97,21 +97,26 @@ control 'AMZL-02-740500' do
 
   if service('chronyd').installed?
     time_service = service('chronyd')
-    time_sources = ntp_conf('/etc/chrony.conf').server
+    time_sources = ntp_conf('/etc/chrony.d/link-local.sources').server
     if time_sources.nil?
       describe 'chronyd time sources list' do
         subject { time_sources }
         it { should_not be_nil }
       end
     else
-      max_poll_values = time_sources.map do |val|
-        if val.match?(/.*maxpoll.*/)
-          val.gsub(/.*maxpoll\s+(\d+)(\s+.*|$)/,
-                  '\1').to_i
-        else
-          99
-        end
-      end
+      # max_poll_values = time_sources.map do |val|
+      #   if val.match?(/.*maxpoll.*/)
+      #     val.gsub(/.*maxpoll\s+(\d+)(\s+.*|$)/,
+      #             '\1').to_i
+      #   else
+      #     99
+      #   end
+      # end
+      # max_poll_values = time_sources.match(/maxpoll\s+(\d+)/)[1].to_i
+      # max_poll_values = time_sources.findall(/maxpoll\s+(\d+)/).map {|x| x.to_i}
+      # max_poll_values = time_sources.scan(/maxpoll\s+(\d+)/).map {|x| x.to_i}
+      max_poll_values = time_sources.scan(/maxpoll\s+(\d+)/).map {|x| x[0].to_i}
+
 
       # All time sources must contain valid maxpoll entries
       describe 'chronyd maxpoll values (99=maxpoll absent)' do

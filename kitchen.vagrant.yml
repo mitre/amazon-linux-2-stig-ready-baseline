@@ -16,16 +16,26 @@ driver:
       clipboard: "disabled"
 
 platforms:
-  - name: rhel-7
-
+  - name: amazon2
     driver:
       box: generic/centos7
 
+verifier:
+  input_files:
+    - ec2.inputs.yml
+  reporter:
+    - cli
+    - json:spec/results/vagrant_%{platform}_%{suite}.json
+
 lifecycle:
+  post_create:
+    - remote: |
+        sudo yum -y install git python3-pip
+        sudo python3 -m pip install --user --upgrade pip
   pre_converge:
     - remote: |
-        echo "NOTICE - Installing needed packages"
-        sudo yum install -y bc bind-utils redhat-lsb-core vim
+        echo 'updating the ec2-user password'
+        sudo chpasswd <<<"ec2-user:<%= ENV['SUDO_PASSWD'] || 'P@ssw0rd!' %>"
         echo "NOTICE - Updating the vagrant user to keep sudo working"
         sudo chage -d $(( $( date +%s ) / 86400 )) vagrant
         echo "NOTICE - Updating root passwd"
