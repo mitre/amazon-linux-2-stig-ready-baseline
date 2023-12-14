@@ -27,7 +27,7 @@ control 'AMZL-02-732000' do
       describe service('nails') do
         it { should be_running }
       end
-      describe service('clamav-daemon.socket') do
+      describe service('clamd@scan.service') do
         it { should be_running }
       end
       describe service('ds_agent') do
