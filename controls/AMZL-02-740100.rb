@@ -43,9 +43,9 @@ control 'AMZL-02-740100' do
   tag 'host'
   tag 'container'
 
-  if input('firewall_application_package') != ''
+  if input('firewall_application_package')
     describe 'Manual review of third-party firewall needed' do
-      skip "A manual review of firewall application \'#{input('firewall_application_package')}\' is needed to determine if it is properly configured"
+      skip "A manual review of firewall application is needed to determine if it is properly configured"
     end
   else
 

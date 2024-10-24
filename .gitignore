@@ -26,7 +26,6 @@ doc/
 .librarian/
 .tmp/
 reports/
-.github*
 .fixtures*
 .gemrc
 .gitignore

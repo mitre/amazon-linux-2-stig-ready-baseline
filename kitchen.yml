@@ -8,9 +8,15 @@ verifier:
   reporter:
     - cli
     - json:spec/results/%{platform}_%{suite}.json
+  input_files:
+    - ec2.inputs.yml
   inspec_tests:
-    - name: RedHat Enterprise Linux 7 STIG
+    - name: Amazon Linux 2 STIG
       path: .
+  <% if ENV['INSPEC_CONTROL'] %>
+  controls:
+    - "<%= ENV['INSPEC_CONTROL'] %>"
+  <% end %>
   load_plugins: true
 
 provisioner:
@@ -30,13 +36,18 @@ provisioner:
     - ANSIBLE_REMOTE_TEMP=$HOME/.ansible/tmp
 
 platforms:
-  - name: rhel-7
+  - name: amazon2
+  # - name: amazon2023
 
 suites:
   - name: vanilla
     provisioner:
-      playbook: spec/ansible/roles/ansible-role-rhel-vanilla.yml
-      
+      playbook: spec/ansible/roles/ansible-role-al2-vanilla.yml
+    verifier:
+      sudo_password: <%= ENV['SUDO_PASSWD'] || 'P@ssw0rd!' %>
+
   - name: hardened
     provisioner:
-      playbook: spec/ansible/roles/ansible-role-rhel-hardened.yml
+      playbook: spec/ansible/roles/ansible-role-al2-hardened.yml
+    verifier:
+      sudo_password: <%= ENV['SUDO_PASSWD'] || 'P@ssw0rd!' %>

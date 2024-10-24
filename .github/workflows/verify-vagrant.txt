@@ -1,4 +1,4 @@
-name: EC2 Testing Matrix
+name: Vagrant Testing Matrix
 
 on:
   push:
@@ -8,38 +8,29 @@ on:
 jobs:
   my-job:
     name: Validate my profile
-    runs-on: ubuntu-latest
+    # macos-latest no longer has Vagrant. Must use the specified version per documentation.
+    runs-on: macos-12
     env:
       CHEF_LICENSE: accept-silent
-      KITCHEN_LOCAL_YAML: kitchen.ec2.yml
+      KITCHEN_LOCAL_YAML: kitchen.vagrant.yml
       SUDO_PASSWD: ${{ secrets.SAF_SUDO_PASSWORD }}
-      LC_ALL: "en_US.UTF-8"
     strategy:
       matrix:
         suite: ["vanilla", "hardened"]
       fail-fast: false
     steps:
-      - name: add needed packages
-        run: sudo apt-get install -y jq
-      - name: Configure AWS credentials
-        env:
-          AWS_SG_ID: ${{ secrets.SAF_AWS_SG_ID }}
-          AWS_SUBNET_ID: ${{ secrets.SAF_AWS_SUBNET_ID }}
-        uses: aws-actions/configure-aws-credentials@v4
-        with:
-          aws-access-key-id: ${{ secrets.SAF_AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.SAF_AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-1
+      - name: Add jq for output formatting
+        run: brew install jq
       - name: Check out repository
         uses: actions/checkout@v3
-      - name: Clone full repository so we can push
-        run: git fetch --prune --unshallow
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.1"
       - name: Disable ri and rdoc
         run: 'echo "gem: --no-ri --no-rdoc" >> ~/.gemrc'
+      - name: ensure bundler up-to-date
+        run: gem install bundler
       - run: bundle install
       - name: Regenerate current `profile.json`
         run: |
@@ -50,16 +41,16 @@ jobs:
         run: bundle exec kitchen test --destroy=always ${{ matrix.suite }}-amazon2 || true
       - name: Show the 'spec/results'
         run: |
-          ls -alh ./spec/results       
+          ls -alh ./spec/results  
       - name: Save Test Result JSON
         uses: actions/upload-artifact@v3
         with:
           path: spec/results/*.json
-      - name: Display our Amazon 2 ${{ matrix.suite }} Results Summary
+      - name: Display our ${{ matrix.suite }} results summary
         uses: mitre/saf_action@v1
         with:
-          command_string: "view summary -i spec/results/ec2_amazon2_${{ matrix.suite }}.json"
+          command_string: "view summary -i spec/results/vagrant_amazon2_${{ matrix.suite }}.json"
       - name: Ensure the scan meets our ${{ matrix.suite }} results threshold
         uses: mitre/saf_action@v1
         with:
-          command_string: "validate threshold -i spec/results/ec2_amazon2_${{ matrix.suite }}.json -F ${{ matrix.suite }}.threshold.yml"
+          command_string: "validate threshold -i spec/results/vagrant_amazon2_${{ matrix.suite }}.json -F ${{ matrix.suite }}.threshold.yml"
