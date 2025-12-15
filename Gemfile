@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 
 gem 'inspec-bin'
-gem 'inspec', '>=4.26'
+gem 'inspec', '5.22.36'
 gem 'kitchen-ec2'
 gem 'kitchen-inspec'
 gem 'kitchen-ansible'

@@ -1,3 +1,0 @@
----
-# defaults file for ansible-role-rhel-stig-vanilla
-ansible_python_interpreter: /usr/bin/python3

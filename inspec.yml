@@ -451,7 +451,7 @@ inputs:
   - name: firewall_application_package
     desc: "If a third-party firewall application is in use (other than firewalld or iptables), indicate the package name here. Otherwise, set this value to an empty string"
     type: String
-    value: ""
+    value: "3rd Party Firewall"
 
   - name: firewall_application_service
     desc: "If a third-party firewall application is in use (other than firewalld or iptables), indicate the service name here. Otherwise, set this value to an empty string"
@@ -564,7 +564,7 @@ inputs:
   - name: audit_remote_server
     desc: "Address of the remote server to which audit logs can be sent -- if left blank, control will check that any non-local server is in use"
     type: String
-    value: ""
+    value: "logcollector"
 
   - name: expected_disk_full_action
     desc: "Action that the server should take to preserve audit logs when the disk becomes full -- must be one of syslog, single, halt"

@@ -1,0 +1,8 @@
+---
+auto_security_group_id: sg-08e0fb662109f5641
+auto_key_id: kitchen-vanillaamazon2-alippold-MM282990PC-2023-11-30T16:18:01Z-4thlzqr0
+ssh_key: "/Users/alippold/github/mitre/amazon-linux-2-stig-ready-baseline/.kitchen/vanilla-amazon2.pem"
+server_id: i-0fff6e8270daf9e04
+hostname: ec2-54-224-172-157.compute-1.amazonaws.com
+last_action: create
+last_error:
